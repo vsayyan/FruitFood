@@ -218,7 +218,7 @@ export default async function AboutPage() {
 ### 7.1 Սկիզբ (մեկ անգամ)
 
 ```bash
-git clone git@github.com:vsayyan/Fruit-Food.git
+git clone git@github.com:vsayyan/FruitFood.git
 cd Fruit-Food
 git checkout main
 git pull origin main
