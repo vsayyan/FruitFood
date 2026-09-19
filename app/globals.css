@@ -1,0 +1,119 @@
+:root {
+  /* Գույներ */
+  --color-green: #006620;       /* text/headings/links (sampled from Figma) */
+  --color-green-dark: #005b30;  /* solid fills — buttons, footer, dark bands */
+  --color-mint: #e8f2ea;        /* light card/tag backgrounds */
+  --color-cream: #faf9f5;       /* section off-white backgrounds */
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-border: #e5e5e5;
+  --color-error: #dc2626;
+
+  /* Spacing scale — բոլոր margin/padding սրանցից, ոչ պատահական թվեր */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+
+  /* Border radius scale */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --container-padding: var(--space-md);
+
+  /* Typography scale */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.75rem;
+  --font-size-2xl: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-main, 'Noto Sans Armenian', sans-serif);
+  color: var(--color-text);
+  background: #ffffff;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  height: 100%;
+}
+
+body.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.main-content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Focus-ը երևում ա ամեն interactive element-ի համար
+   (all-ի համար պետք ա, չպետք ա փոխարինել outline: none-ով) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+/*
+  Ամբողջ site-ում կիրառվող page wrapper։ Այլևս `.main`-ի մեջ չի կրկնվում
+  "max-width + margin auto + padding" ամեն page-ում, այլ օգտագործվում ա
+  ուղղակի այս մեկ class-ից։
+
+  Օրինակ՝ <main className={`${styles.main} container`}>...</main>
+*/
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Screen-reader-only text — a11y label-երի համար, որ տեսանելի չեն,
+   բայց screen reader-ը կարդում ա (օր. Header-ի "Հիմնական նավիգացիա" label) */
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

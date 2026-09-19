@@ -1,0 +1,33 @@
+.error {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-xs);
+  padding: var(--space-xl) var(--container-padding);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  color: var(--color-error);
+}
+
+.text {
+  color: var(--color-text-muted);
+  max-width: 480px;
+}
+
+.button {
+  margin-top: var(--space-sm);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  background: var(--color-green);
+  color: #fff;
+  font-size: var(--font-size-base);
+}
+
+.button:hover {
+  background: var(--color-green-dark);
+}
