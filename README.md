@@ -5,7 +5,7 @@
 > 2. `db_orinak_example`-ը **չես փոխում**։ Դա ընդհանուր օրինակ ա։ Ամեն մարդ իր համակարգչում ունի **իր սեփական `db.json`**-ը (git-ի մեջ չի գնում)։
 > 3. Քո նոր տվյալները (collection-ները) ուղարկում ես առանձին ֆայլով՝ `db_parts/<քո-անուն>.json`։ Մանրամասն՝ [§5](#5-քո-dbjson-ը) և [§7](#7-git--ինչպես-աշխատել-ու-ուղարկել)։
 
-Այս պրոեկտը **վերջնական օրինակն** ա. արդեն աշխատող էջերը (header/footer, home, catalog, product, contact) ցույց են տալիս, թե ինչպես պետք ա գրվի ամեն նոր էջ։ Քո task-ը սկսելուց առաջ բաց արա դրանցից մեկը ու նույն pattern-ով գրիր։
+Այս պրոեկտի folder-ները / route-երը **վերջնական են** ու պատրաստ (skeleton-ֆայլեր՝ page.jsx, actions.js, _components/, ամեն մեկն իր տեղում)։ Content-ը դեռ ոչ մեկը չի գրել — բոլոր page/component ֆայլերը դեռ **դատարկ են**, բացի `app/layout.jsx`, `app/error.jsx`, `app/loading.jsx`, `app/not-found.jsx`, `app/sitemap.js`, `app/robots.js` և `lib/*`-ից, որոնք արդեն աշխատում են ու կարող ես որպես օրինակ նայել (special ինչպես ա գրվում axios/lang-ի հետ)։ Քո task-ը սկսելուց առաջ նայիր §4-ի «Նոր էջի template»-ը ու գրիր նույն pattern-ով։
 
 **Stack.** Next.js 16 (App Router) + React 19 · plain JavaScript (`.jsx`) · CSS Modules · axios · json-server (mock API)
 
@@ -74,9 +74,17 @@ app/
     [categorySlug]/
       actions.js               getCategory(), getProductsByCategory()
       page.jsx                 Կատեգորիայի էջ
-      [productSlug]/
-        actions.js             getProduct(), getTags()
-        page.jsx + page.module.css   Մեկ ապրանքի էջ
+  products/
+    [id]/
+      actions.js               getProduct(id), getTags()
+      page.jsx + page.module.css   Մեկ ապրանքի էջ (Arnak + Vahag, §6)
+      _components/Gallery.jsx, Info.jsx, CompositionModal.jsx + .module.css
+
+  ⚠️ `app/products/`-ի տակ (առանց `[id]`-ի) կա նաև հին, օգտագործման
+  ենթակա **չլինող** skeleton (page.jsx, actions.js, _components/) —
+  Vahe-ն կհեռացնի ինտեգրման ժամանակ։ Աշխատիր միայն `app/products/[id]/`-ում,
+  մյուսին մի դիպչիր։
+
   contact/
     actions.js                 getContactPageContent(), submitContact() (POST)
     page.jsx + page.module.css
