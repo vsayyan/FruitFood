@@ -104,7 +104,7 @@ textarea:focus-visible {
   padding: 0 var(--container-padding);
 }
 
-/* Screen-reader-only text — a11y label-երի համար, որ տեսանելի չեն,
+/* Screen-reader-only text — ally label-երի համար, որ տեսանելի չեն,
    բայց screen reader-ը կարդում ա (օր. Header-ի "Հիմնական նավիգացիա" label) */
 .visuallyHidden {
   position: absolute;
