@@ -93,6 +93,8 @@ app/
 components/                    Global component-ներ (ամեն էջում են)
   header/  index.jsx, Logo.jsx, Navbar.jsx, Langs.jsx, Header.module.css
   footer/  index.jsx, Footer.module.css
+  partner-cta/  PartnerCta.jsx, PartnerCtaWrapper.jsx ('use client', pathname-ով
+                ստուգում ա /contact-ը), PartnerCta.module.css   (Vahram, §6)
 
 lib/
   axios.js                     axios instance (ՉԵՍ ՓՈԽՈՒՄ)
@@ -210,7 +212,7 @@ export default async function AboutPage() {
 | Home · Section 1 (Hero) | Vahag | `app/_components/Hero.jsx` | `/` |
 | Home · Section 2 («Մեր տեսականին») | Ashot | `app/_components/Assortment.jsx` | `/` |
 | Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` (→ `/about-us#philosophy`) |
-| Home · Section 5 (Համագործակցության CTA) | Vahram | `app/_components/PartnerCta.jsx` | `/` (→ `/contact`) |
+| Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
 | Ապրանքի մանրամասն էջ | Arnak + Vahag | `app/products/[id]/*` | `/products/[id]` |
 | About Us · Section 1–3 (Բնական որակ, Փիլիսոփայություն, Ապրանքանիշեր) | Milena | `app/about-us/_components/NaturalQuality.jsx`, `Philosophy.jsx`, `Brands.jsx` | `/about-us` |
@@ -220,6 +222,41 @@ export default async function AboutPage() {
 | Կապ | Vahram | `app/contact/*` | `/contact` |
 
 Եթե 2+ հոգի նույն folder-ում են (օրինակ `app/about-us` կամ Home page-ը)՝ ամեն մեկը գրում ա **իր առանձին component-ը** `_components/`-ում, իսկ `page.jsx`-ում ընդհամենը import ա անում։ `page.jsx`-ում conflict-ը Vahe-ն ա լուծում ինտեգրման ժամանակ։ Ամեն մեկն իր section-ի համար db collection(-ներ)ը ինքն ա որոշում ու ավելացնում իր `db.json`-ում, §5-ի կանոններով։
+
+**PartnerCta-ի մասին (Vahram).** Սա այլևս Home-ի section չի՝ պետք ա երևա **բոլոր էջերում, բացի `/contact`**-ից, ուրեմն `page.jsx`-երից յուրաքանչյուրում առանձին import անելու փոխարեն դրվում ա մեկ տեղում՝ `app/layout.jsx`-ում (որ բոլոր էջերը wrap ա անում)։ Դրա համար.
+- Component-ը գնում ա `components/` (global, ոչ թե `app/_components/`, քանի որ home-ին հատուկ չի)՝ `components/partner-cta/PartnerCta.jsx` + `.module.css`։
+- Քանի որ `layout.jsx`-ը Server Component ա, իսկ ուր ես գտնվում (pathname) իմանալու համար պետք ա client-side ստուգում՝ ավելացրու `components/partner-cta/PartnerCtaWrapper.jsx` (`'use client'`), որը `usePathname()`-ով ստուգում ա, եթե `pathname.startsWith('/contact')` ա՝ վերադարձնում `null`, հակառակ դեպքում՝ `<PartnerCta />`։
+- `layout.jsx`-ը **ընդհանուր ֆայլ ա** (§4, կանոն 9) — Vahram ինքը չի փոխում, այլ իր branch-ում գրում ա `components/partner-cta/*`-ը, PR-ի description-ում գրում ա, թե որ մեկ տողը (`<PartnerCtaWrapper />`) ու որտեղ (`{children}`-ից հետո/առաջ) պետք ա ավելացվի `layout.jsx`-ում, ու Vahe-ն ինտեգրման ժամանակ ինքն ա ավելացնում։
+- Նոր folder ա (`components/partner-cta/`), ուրիշ տեղ ոչինչ avelacնելու պետք չի (`app/_components/PartnerCta.jsx`-ի հին տեղը հանվում ա)։
+
+**Vahram-ի task-ը կոնկրետ.**
+1. Գրիր `components/partner-cta/PartnerCta.jsx` — ինքը CTA-ի content-ը (տեքստը՝ db-ից, §4 կանոն 7)։
+2. Գրիր `components/partner-cta/PartnerCtaWrapper.jsx` (սա wrapper-ն ա, պատրաստ կոդ, ուղղակի copy արա).
+
+```jsx
+// components/partner-cta/PartnerCtaWrapper.jsx
+'use client'
+
+import { usePathname } from 'next/navigation'
+import PartnerCta from './PartnerCta'
+
+export default function PartnerCtaWrapper() {
+  const pathname = usePathname()
+
+  if (pathname.startsWith('/contact')) {
+    return null
+  }
+
+  return <PartnerCta />
+}
+```
+
+3. `layout.jsx`-ին **ինքդ չես դիպչում** (ընդհանուր ֆայլ ա)։ PR-ի description-ում գրիր հստակ, թե Vahe-ն ինչ պիտի ավելացնի `layout.jsx`-ում.
+```jsx
+import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
+// ...
+<PartnerCtaWrapper />   // {children}-ից հետո, footer-ից առաջ
+```
 
 ## 7. Git — ինչպես աշխատել ու ուղարկել
 
