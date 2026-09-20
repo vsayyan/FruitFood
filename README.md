@@ -36,7 +36,7 @@ lib/axios.js  ← baseURL = NEXT_PUBLIC_API_URL
 
 ```bash
 git clone git@github.com:vsayyan/FruitFood.git
-cd Fruit-Food
+cd FruitFood
 npm install
 cp .env.example .env.local
 cp db_orinak_example db.json
