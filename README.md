@@ -35,7 +35,7 @@ lib/axios.js  ← baseURL = NEXT_PUBLIC_API_URL
 Պետք ա՝ **Node.js 20+** և **git**։
 
 ```bash
-git clone git@github.com:vsayyan/FruitFood.git
+git clone https://github.com/vsayyan/FruitFood.git
 cd FruitFood
 npm install
 cp .env.example .env.local
