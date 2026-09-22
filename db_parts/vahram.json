@@ -1,0 +1,40 @@
+{
+  "contact_page_contents": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Կապ",
+      "description": "Գրեք մեզ՝ համագործակցության, պատվերների կամ ցանկացած այլ հարցի համար:",
+      "form_title": "Ուղարկեք հաղորդագրություն",
+      "name_label": "Անուն",
+      "email_label": "Էլ. փոստ",
+      "phone_label": "Հեռախոսահամար",
+      "message_label": "Հաղորդագրություն",
+      "submit_label": "Ուղարկել"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Контакты",
+      "description": "Напишите нам по вопросам сотрудничества, заказов или любым другим вопросам.",
+      "form_title": "Отправьте сообщение",
+      "name_label": "Имя",
+      "email_label": "Эл. почта",
+      "phone_label": "Номер телефона",
+      "message_label": "Сообщение",
+      "submit_label": "Отправить"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Contact",
+      "description": "Write to us about partnership, orders, or any other question.",
+      "form_title": "Send a message",
+      "name_label": "Name",
+      "email_label": "Email",
+      "phone_label": "Phone number",
+      "message_label": "Message",
+      "submit_label": "Send"
+    }
+  ]
+}
