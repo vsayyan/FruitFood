@@ -4,10 +4,13 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import styles from './Header.module.css'
 import { useState } from 'react'
+import { useMenubar } from '@/context/menubarContext'
 
 export default function Navbar({ data, categories, lang }) {
   const pathname = usePathname()
   const [openProducts, setOpenProducts] = useState(false)  
+  const {setIsMenuOpen} = useMenubar
+
 
   const allProducts = {
     "am": "Ամբողջ արտադրանքը",
@@ -18,7 +21,6 @@ export default function Navbar({ data, categories, lang }) {
   return (
     <nav className={styles.nav}>
       {data.map((item) => {
-        const has_sign = item.title === "Արտադրանք" || item.title === "Продукция" || item.title === "Products"
 
         return (
           <div key={item.id} className={styles.link_div}>
@@ -26,14 +28,17 @@ export default function Navbar({ data, categories, lang }) {
               href={item.url} 
               className={`
                 ${styles.navLink} ${pathname === item.url ? styles.active : ""}
-                ${has_sign && pathname.startsWith("/catalog") ? styles.active : ""}
+                ${item.url.startsWith("/catalog") && pathname.startsWith("/catalog") ? styles.active : ""}
               `}
-              onClick={() => setOpenProducts(false)}
+              onClick={() => {
+                 setOpenProducts(false)
+                 setIsMenuOpen(false)
+              }}
             >
               {item.title}
             </Link>
             {
-              has_sign && 
+              item.url.startsWith("/catalog") &&
               <div className={styles.products} onClick={() => setOpenProducts(!openProducts)}>
                 <Image 
                             src={`${ openProducts ? "/images/header/up.svg" : "/images/header/down.svg"}`}
@@ -44,7 +49,7 @@ export default function Navbar({ data, categories, lang }) {
                 />
                 <div className={`${styles.categories} ${openProducts ? styles.open_products : ""}`}>
                   {categories && categories.map((elem) => (
-                    <Link href={`/catalog/${elem.slug}`} key={elem.id} className={styles.category}>
+                    <Link href={`/catalog/${elem.slug}`} key={elem.id} className={styles.category} onClick={() => setIsMenuOpen(false)}>
                       <Image
                         src={`${elem.slug === "dried-fruits" ? "/images/header/dried-fruits.svg" : "/images/header/chocolate-covered.svg"}`}
                         alt={elem.name}
@@ -57,7 +62,7 @@ export default function Navbar({ data, categories, lang }) {
                     </Link>
                   ))}
                   
-                  <Link href={`/catalog`} className={styles.category}>
+                  <Link href={`/catalog`} className={styles.category} onClick={() => setIsMenuOpen(false)}>
                       <Image
                         src={"/images/header/all-products.svg"}
                         alt={"mark for all products"}
