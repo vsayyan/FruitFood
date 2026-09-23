@@ -26,6 +26,7 @@ export default async function RootLayout({ children }) {
       <body className="layout">
         {/* TODO(Vahag): <Header /> — components/header (§6) */}
         <main className="main-content">{children}</main>
+        <PartnerCtaWrapper />
         {/* TODO(Vahag): <Footer /> — components/footer (§6) */}
       </body>
     </html>
