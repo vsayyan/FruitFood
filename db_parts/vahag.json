@@ -1,5 +1,5 @@
 {
-  "logos": {
+ "logos": {
     "id": 1,
     "title": "Fruit Food",
     "image": "/images/header/logo.svg"
@@ -41,7 +41,7 @@
       "id": 3,
       "lang": "am",
       "title": "Մեր մասին",
-      "url": "/about"
+      "url": "/about-us"
     },
     {
       "id": 4,
@@ -71,7 +71,7 @@
       "id": 8,
       "lang": "ru",
       "title": "О нас",
-      "url": "/about"
+      "url": "/about-us"
     },
     {
       "id": 9,
@@ -101,7 +101,7 @@
       "id": 13,
       "lang": "en",
       "title": "About us",
-      "url": "/about"
+      "url": "/about-us"
     },
     {
       "id": 14,
@@ -125,7 +125,7 @@
       "description": "Հայաստանյան բնական չրագործեր և միրգային քաղցրավենիք 1995 թվականից:",
       "copyright": "© 2026 Fruit Food: Բոլոր իրավունքները պաշտպանված են:",
       "subtitle":"Կապվեք մեզ հետ",
-      "address": "Մ. Գալշոյան 6-8, ք. Սուրենավան, Արարատի մարզ, Հայաստան",
+      "address": "Մ. Գալշոյան 6-8  գ.Սուրենավան, Արարատի մարզ Հայաստան",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -148,7 +148,7 @@
       "description": "Армянские натуральные сухофрукты и фруктовые сладости с 1995 года.",
       "copyright": "© 2026 Fruit Food. Все права защищены.",
       "subtitle":"Свяжитесь с нами",
-      "address": "М. Галшоян 6-8, г. Суренаван, Араратская область, Армения",
+      "address": "М. Галшоян 6-8  с.Суренаван, Араратская область  Армения",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -171,7 +171,7 @@
       "description": "Armenian natural dried fruit and fruit sweets since 1995.",
       "copyright": "© 2026 Fruit Food. All rights reserved.",
       "subtitle":"Contact us",
-      "address": "M. Galshoyan 6-8, Surenavan, Ararat region, Armenia",
+      "address": "M. Galshoyan 6-8  Surenavan, Ararat region  Armenia",
       "email": "chocochir@mail.ru",
       "social_links": [
         {

@@ -7,10 +7,10 @@ export default function Logo({ data }) {
     <Link href="/" className={styles.logo}>
         <Image
             src={data.image}
-            alt="logo"
+            alt='logo'
             width={101}
             height={34}
-            loading="eager"
+            loading='eager'
         />
     </Link>
   )

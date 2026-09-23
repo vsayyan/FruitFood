@@ -2,18 +2,16 @@
 
 import Image from 'next/image'
 import styles from './Header.module.css'
-import { useMenubar } from '@/context/menubarContext'
 
 // Լեզուն փոխելը = cookie գրել + reload անել, որ Server Component-երը
 // (page.jsx, layout.js) նոր lang-ով նորից fetch անեն json-server-ից։
 export default function Langs({ data, lang }) {
-  const {isMenuOpen} = useMenubar();
 
   const changeLang = (code) => {
     const date = new Date()
     date.setFullYear(date.getFullYear() + 10)
+    // eslint-disable-next-line react-hooks/immutability
     document.cookie = `lang=${code}; path=/; expires=${date.toUTCString()}`
-    document.cookie = `munubar=${isMenuOpen}; path=/; expires=${date.toUTCString()}`
     window.location.reload()
   }
 
@@ -22,10 +20,10 @@ export default function Langs({ data, lang }) {
       <span className={styles.currentLang}>
         <Image
                 src={`/images/header/${lang}.svg`}
-                alt="language"
+                alt='language'
                 width={19}
                 height={15}
-                loading="eager"
+                loading='eager'
             />
       </span>
       <div className={styles.langMenu}>

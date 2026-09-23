@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useState } from 'react'
 
 
-const MenubarContext = createContext(undefined, undefined);
+const MenubarContext = createContext(undefined, undefined)
 
 export const MenubarProvider = ({ children }) => {
 
@@ -12,7 +12,7 @@ export const MenubarProvider = ({ children }) => {
         <MenubarContext.Provider value={{isMenuOpen, setIsMenuOpen}}>
             {children}
         </MenubarContext.Provider>
-    );
-};
+    )
+}
 
 export const useMenubar = () => useContext(MenubarContext)
