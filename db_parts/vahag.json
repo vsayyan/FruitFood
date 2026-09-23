@@ -1,0 +1,190 @@
+{
+ "logos": {
+    "id": 1,
+    "title": "Fruit Food",
+    "image": "/images/header/logo.svg"
+  },
+  "languages": [
+    {
+      "id": 1,
+      "code": "am",
+      "label": "Հայ",
+      "image" : "/images/header/am.svg"
+    },
+    {
+      "id": 2,
+      "code": "ru",
+      "label": "Рус",
+      "image" : "/images/header/ru.svg"
+    },
+    {
+      "id": 3,
+      "code": "en",
+      "label": "Eng",
+      "image" : "/images/header/en.svg"
+    }
+  ],
+  "navbars": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Գլխավոր",
+      "url": "/"
+    },
+    {
+      "id": 2,
+      "lang": "am",
+      "title": "Արտադրանք",
+      "url": "/catalog"
+    },
+    {
+      "id": 3,
+      "lang": "am",
+      "title": "Մեր մասին",
+      "url": "/about-us"
+    },
+    {
+      "id": 4,
+      "lang": "am",
+      "title": "Աշխարհագրություն",
+      "url": "/geography"
+    },
+    {
+      "id": 5,
+      "lang": "am",
+      "title": "Կապ",
+      "url": "/contact"
+    },
+    {
+      "id": 6,
+      "lang": "ru",
+      "title": "Главная",
+      "url": "/"
+    },
+    {
+      "id": 7,
+      "lang": "ru",
+      "title": "Продукция",
+      "url": "/catalog"
+    },
+    {
+      "id": 8,
+      "lang": "ru",
+      "title": "О нас",
+      "url": "/about-us"
+    },
+    {
+      "id": 9,
+      "lang": "ru",
+      "title": "География",
+      "url": "/geography"
+    },
+    {
+      "id": 10,
+      "lang": "ru",
+      "title": "Контакты",
+      "url": "/contact"
+    },
+    {
+      "id": 11,
+      "lang": "en",
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "title": "Products",
+      "url": "/catalog"
+    },
+    {
+      "id": 13,
+      "lang": "en",
+      "title": "About us",
+      "url": "/about-us"
+    },
+    {
+      "id": 14,
+      "lang": "en",
+      "title": "Geography",
+      "url": "/geography"
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "title": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer_labels": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Fruit Food",
+      "image": "/images/footer/logo.svg",
+      "description": "Հայաստանյան բնական չրագործեր և միրգային քաղցրավենիք 1995 թվականից:",
+      "copyright": "© 2026 Fruit Food: Բոլոր իրավունքները պաշտպանված են:",
+      "subtitle":"Կապվեք մեզ հետ",
+      "address": "Մ. Գալշոյան 6-8  գ.Սուրենավան, Արարատի մարզ Հայաստան",
+      "email": "chocochir@mail.ru",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/footer/facebook.svg",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "id": 2,
+          "image": "/images/footer/instagram.svg",
+          "url": "https://www.instagram.com/"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Fruit Food",
+      "image": "/images/footer/logo.svg",
+      "description": "Армянские натуральные сухофрукты и фруктовые сладости с 1995 года.",
+      "copyright": "© 2026 Fruit Food. Все права защищены.",
+      "subtitle":"Свяжитесь с нами",
+      "address": "М. Галшоян 6-8  с.Суренаван, Араратская область  Армения",
+      "email": "chocochir@mail.ru",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/footer/facebook.svg",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "id": 2,
+          "image": "/images/footer/instagram.svg",
+          "url": "https://www.instagram.com/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Fruit Food",
+      "image": "/images/footer/logo.svg",
+      "description": "Armenian natural dried fruit and fruit sweets since 1995.",
+      "copyright": "© 2026 Fruit Food. All rights reserved.",
+      "subtitle":"Contact us",
+      "address": "M. Galshoyan 6-8  Surenavan, Ararat region  Armenia",
+      "email": "chocochir@mail.ru",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/footer/facebook.svg",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "id": 2,
+          "image": "/images/footer/instagram.svg",
+          "url": "https://www.instagram.com/"
+        }
+      ]
+    }
+  ]
+}
