@@ -1,24 +1,27 @@
 {
   "logos": {
     "id": 1,
-    "title": "Fruit Food"
+    "title": "Fruit Food",
+    "image": "/images/header/logo.svg"
   },
   "languages": [
     {
       "id": 1,
       "code": "am",
-      "label": "Հայ"
-      
+      "label": "Հայ",
+      "image" : "/images/header/am.svg"
     },
     {
       "id": 2,
       "code": "ru",
-      "label": "Рус"
+      "label": "Рус",
+      "image" : "/images/header/ru.svg"
     },
     {
       "id": 3,
       "code": "en",
-      "label": "Eng"
+      "label": "Eng",
+      "image" : "/images/header/en.svg"
     }
   ],
   "navbars": [
