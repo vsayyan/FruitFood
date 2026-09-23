@@ -75,15 +75,10 @@ app/
       actions.js               getCategory(), getProductsByCategory()
       page.jsx                 Կատեգորիայի էջ
   products/
-    [id]/
+    [productSlug]/
       actions.js               getProduct(id), getTags()
       page.jsx + page.module.css   Մեկ ապրանքի էջ (Arnak + Vahag, §6)
       _components/Gallery.jsx, Info.jsx, CompositionModal.jsx + .module.css
-
-  ⚠️ `app/products/`-ի տակ (առանց `[id]`-ի) կա նաև հին, օգտագործման
-  ենթակա **չլինող** skeleton (page.jsx, actions.js, _components/) —
-  Vahe-ն կհեռացնի ինտեգրման ժամանակ։ Աշխատիր միայն `app/products/[id]/`-ում,
-  մյուսին մի դիպչիր։
 
   contact/
     actions.js                 getContactPageContent(), submitContact() (POST)
@@ -214,7 +209,7 @@ export default async function AboutPage() {
 | Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` (→ `/about-us#philosophy`) |
 | Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
-| Ապրանքի մանրամասն էջ | Arnak + Vahag | `app/products/[id]/*` | `/products/[id]` |
+| Ապրանքի մանրամասն էջ | Arnak + Vahag | `app/products/[productSlug]/*` | `/products/[slug]` |
 | About Us · Section 1–3 (Բնական որակ, Փիլիսոփայություն, Ապրանքանիշեր) | Milena | `app/about-us/_components/NaturalQuality.jsx`, `Philosophy.jsx`, `Brands.jsx` | `/about-us` |
 | About Us · Section 4–6 (Արտադրություն, Վստահություն, Որակ ու բնականություն) | Hamlet | `app/about-us/_components/Production.jsx`, `WhyTrustUs.jsx`, `QualityNaturalness.jsx` | `/about-us` |
 | About Us · Section 7–9 (Արտահանում, Գործարան, «Մենք հավատում ենք») | Jor | `app/about-us/_components/ExportCooperation.jsx`, `OurFactory.jsx`, `WeBelieve.jsx` | `/about-us` |
@@ -222,6 +217,11 @@ export default async function AboutPage() {
 | Կապ | Vahram | `app/contact/*` | `/contact` |
 
 Եթե 2+ հոգի նույն folder-ում են (օրինակ `app/about-us` կամ Home page-ը)՝ ամեն մեկը գրում ա **իր առանձին component-ը** `_components/`-ում, իսկ `page.jsx`-ում ընդհամենը import ա անում։ `page.jsx`-ում conflict-ը Vahe-ն ա լուծում ինտեգրման ժամանակ։ Ամեն մեկն իր section-ի համար db collection(-ներ)ը ինքն ա որոշում ու ավելացնում իր `db.json`-ում, §5-ի կանոններով։
+
+**Catalog → Product-ի կապը (Elina ↔ Arnak+Vahag).** Elina-ի catalog-ի ProductCard-ը (`Link href="/products/..."`) պիտի տանի Arnak+Vahag-ի էջին, բայց կարևոր ա, թե **ինչո՞վ** է link-ը կառուցվում.
+- `db_orinak_example`-ում ապրանքի `id`-ն **լեզվով ա տարբերվում** (նույն ապրանքը am-ում ունի, ասենք, `id: 1`, ru-ում՝ `id: 2`), մինչդեռ `slug`-ը (`shokoladapatat-chrer-230`) **նույնն ա բոլոր լեզուներում**։
+- Ուրեմն Elina-ի Link-ը պիտի կառուցվի **`slug`-ով, ոչ թե `id`-ով** (`/products/${product.slug}`), հակառակ դեպքում լեզուն փոխելիս (cookie) նույն ապրանքի URL-ը կփոխվի ու կխափանվի (նույն սկզբունքով, ինչով `/catalog/[categorySlug]`-ն ա category_slug-ով, ոչ թե id-ով)։
+- `app/products/[productSlug]`-ի Arnak+Vahag-ը իրենց `actions.js`-ում `getProduct()`-ը պետք ա փնտրի db-ում **`slug`-ով** (զտելով `lang`-ով), ոչ թե numeric `id`-ով. `params.productSlug`-ը ուղղակի string ա, որով db-ում `.slug === params.productSlug` ես անում։
 
 **PartnerCta-ի մասին (Vahram).** Սա այլևս Home-ի section չի՝ պետք ա երևա **բոլոր էջերում, բացի `/contact`**-ից, ուրեմն `page.jsx`-երից յուրաքանչյուրում առանձին import անելու փոխարեն դրվում ա մեկ տեղում՝ `app/layout.jsx`-ում (որ բոլոր էջերը wrap ա անում)։ Դրա համար.
 - Component-ը գնում ա `components/` (global, ոչ թե `app/_components/`, քանի որ home-ին հատուկ չի)՝ `components/partner-cta/PartnerCta.jsx` + `.module.css`։
@@ -257,6 +257,7 @@ import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
 // ...
 <PartnerCtaWrapper />   // {children}-ից հետո, footer-ից առաջ
 ```
+4. Եթե հին `app/_components/PartnerCta.jsx` արդեն ստեղծած ես եղել՝ ջնջիր, տեղափոխված ա `components/partner-cta/`-ի մեջ։
 
 ## 7. Git — ինչպես աշխատել ու ուղարկել
 
@@ -362,7 +363,7 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 ## 9. Ինչ դեռ չկա
 
 - `about-us` / `geography` էջերի բովանդակությունը. folder/skeleton-ը (page.jsx, actions.js, `_components/`) արդեն կա, բայց բոլոր ֆայլերը դատարկ են — ամեն մեկն իր section-ը գրելու ա §6-ի աղյուսակի համաձայն
-- Single product page (`app/products/[id]`)-ի բովանդակությունը՝ նույն կերպ, դատարկ skeleton (Arnak + Vahag, §6)
+- Single product page (`app/products/[productSlug]`)-ի բովանդակությունը՝ նույն կերպ, դատարկ skeleton (Arnak + Vahag, §6)
 - `public/images/`-ում նկարները (db-ում path-երը գրված են, ֆայլերը՝ դեռ ոչ)
 - Language switcher-ը պարզ dropdown ա, design-ը դեռ չկա
 - `next/image` (հիմա `<img>`)
