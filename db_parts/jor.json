@@ -33,19 +33,19 @@
       "second_text": "Գործարանի տեղակայումը պատահական չէ․ արևմուտքում այն հսկում է վեհաշուք Արարատ լեռը, իսկ ընդամենը մի քանի կիլոմետր հեռավորության վրա գտնվում է պատմական Խոր Վիրապ վանական համալիրը։ Այս յուրահատուկ միջավայրը մեր արտադրանքին հաղորդում է հայկական բնության և մշակույթի առանձնահատուկ շունչը։",
       "main_image": "/images/about-us/factory-1.jpg",
       "slider": [
-  {
-    "id": 1,
-    "image": "/images/about-us/factory-1.jpg"
-  },
-  {
-    "id": 2,
-    "image": "/images/about-us/factory-1.jpg"
-  },
-  {
-    "id": 3,
-    "image": "/images/about-us/factory-1.jpg"
-  }
-],
+        {
+          "id": 1,
+          "image": "/images/about-us/factory-1.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/factory-1.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/factory-1.jpg"
+        }
+      ],
       "gallery": [
         {
           "id": 1,
@@ -75,6 +75,14 @@
       "slider": [
         {
           "id": 1,
+          "image": "/images/about-us/factory-1.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/factory-1.jpg"
+        },
+        {
+          "id": 3,
           "image": "/images/about-us/factory-1.jpg"
         }
       ],
@@ -107,6 +115,14 @@
       "slider": [
         {
           "id": 1,
+          "image": "/images/about-us/factory-1.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/factory-1.jpg"
+        },
+        {
+          "id": 3,
           "image": "/images/about-us/factory-1.jpg"
         }
       ],
