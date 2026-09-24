@@ -23,82 +23,6 @@
     gap: var(--space-lg);
 }
 
-/* ==================================================================
-                                navbar CSS                            */
-
-.nav {
-  display: flex;
-  gap: var(--space-lg);
-}
-
-.link_div {
-  position: relative;
-  display: flex;
-}
-
-.navLink {
-  color: var(--color-text);
-  font-size: var(--font-size-base);
-  font-weight: 500;
-  line-height: 160%;
-  cursor: pointer;
-}
-
-.navLink:hover {
-  color: var(--color-green);
-}
-
-.active {
-  color: var(--color-green);
-  border-bottom: 2px solid var(--color-green);
-}
-
-.downup_sign {
-  display: inline-block;
-  margin-left: var(--space-xs);
-  cursor: pointer;
-}
-
-.categories {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  display: none;
-  border: 1px solid #e8f1ea;
-  border-radius: var(--radius-md);
-  padding: var(--space-xs);
-  width: 400px;
-  height: 226px;
-  min-width: 380px;
-  box-shadow: 0 20px 50px -18px rgba(31, 31, 31, 0.18);
-  background: #fff;
-}
-
-.categories.open_products {
-  display: block;
-}
-
-.category {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-
-  border-radius: var(--radius-sm);
-  padding: var(--space-xs);
-  height: 68px;
-
-  span {
-    font-weight: 600;
-    font-size: var(--font-size-base);
-    line-height: 130%;
-    color: var(--color-text);
-  }
-}
-
-.category:hover {
-  background: var(--color-cream);
-}
-
 /* =========================================================================
                                   languages CSS                                */
 
@@ -170,10 +94,10 @@
 .menubar_div {
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .menubar {
-    display: none;
     cursor: pointer;
 }
 
@@ -199,6 +123,8 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding: 0 var(--space-sm);
+
   }   
 
   .row {
@@ -207,8 +133,12 @@
 
   /* Hamburger button */
 
-  .menubar {
+  .menubar_div {
     display: flex;
+
+  }
+
+  .menubar {
     align-items: center;
     justify-content: center;
     width: var(--space-md);
@@ -235,49 +165,14 @@
     display: flex;
   }
 
-  /* Navbar */
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    width: 100%;
-  }
-
-  .link_div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navLink {
-    display: block;
-  }
-
-  /* Categories dropdown */
-
-  .categories {
-    display: none;
-    z-index: 1001;
-    width: 100%;
-    min-width: 0;
-    height: auto;
-  }
-  
-  .categories.open_products {
-    display: block;
-  }
-  
-  .category {
-    height: auto;
-    min-height: 56px;
-    padding: var(--space-sm);
-  }
-
   /* Language dropdown */
 
   .langDropdown:hover .langMenu {
-    top: -355%;
-    right: -60%;
+    top: -390%;
+    right: -90%;
+  }
+
+  .langOption {
+    width: 100px; 
   }
 }

@@ -1,0 +1,227 @@
+
+/* ==========================================================
+   NAVBAR
+   ========================================================== */
+
+.nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.link_div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.products_row {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar link */
+
+.navLink {
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 160%;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--color-green);
+}
+
+.active {
+  color: var(--color-green);
+  border-bottom: 2px solid var(--color-green);
+}
+
+/* ==========================================================
+   ARROW BUTTON
+   ========================================================== */
+
+.products_toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+  margin-left: var(--space-xs);
+
+  cursor: pointer;
+}
+
+.downup_sign {
+  display: inline-block;
+}
+
+/* Default state */
+
+.down_sign {
+  display: inline-block;
+}
+
+.up_sign {
+  display: none;
+}
+
+/* ==========================================================
+   DROPDOWN
+   ========================================================== */
+
+.categories {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  display: block;
+
+  width: 400px;
+  min-width: 380px;
+  height: 226px;
+
+  padding: var(--space-xs);
+
+  border: 1px solid #e8f1ea;
+  border-radius: var(--radius-md);
+
+  background: #fff;
+  box-shadow: 0 20px 50px -18px rgba(31, 31, 31, 0.18);
+
+  z-index: 1001;
+
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+}
+
+/* ==========================================================
+   DESKTOP HOVER
+   ========================================================== */
+
+@media (min-width: 901px) {
+  .catalog_link:hover .categories {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .catalog_link:hover .down_sign {
+    display: none;
+  }
+
+  .catalog_link:hover .up_sign {
+    display: inline-block;
+  }
+}
+
+/* ==========================================================
+   CATEGORY ITEMS
+   ========================================================== */
+
+.category {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  height: 68px;
+  padding: var(--space-xs);
+
+  border-radius: var(--radius-sm);
+}
+
+.category span {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  line-height: 130%;
+
+  color: var(--color-text);
+}
+
+.category:hover {
+  background: var(--color-cream);
+}
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 900px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        width: 100%;
+    }
+
+  .link_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .products_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .categories {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease,
+      max-height 0.25s ease;
+  }
+
+  /* Opened by React state */
+
+  .categories.mobile_open_products {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    max-height: 500px;
+  }
+
+  /* Mobile arrow */
+
+  .catalog_link:has(.mobile_open_products) .down_sign {
+    display: none;
+  }
+
+  .catalog_link:has(.mobile_open_products) .up_sign {
+    display: inline-block;
+  }
+
+  .category {
+    height: auto;
+    min-height: var(--space-xl);
+
+    padding: var(--space-sm);
+  }
+}

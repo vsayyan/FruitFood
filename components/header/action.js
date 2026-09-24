@@ -1,4 +1,3 @@
-import { getCategories } from '@/app/catalog/actions'
 import { displayLang } from '@/lib/lang'
 import axios from '@/lib/axios'
 
@@ -14,6 +13,11 @@ export async function getNavbar(lang) {
 
 export async function getLangs() {
   const res = await axios.get('languages')
+  return res.data
+}
+
+export async function getCategories(lang)  {
+  const res = await axios.get(`categories?lang=${lang}`)
   return res.data
 }
 
