@@ -30,7 +30,8 @@ export default async function RootLayout({ children }) {
       <MenubarProvider>
         <Header />
         <main className="main-content">{children}</main>
-        <PartnerCtaWrapper />
+        {/* TODO: uncomment երբ Vahram push անի PartnerCta-ի իրական կոդը */}
+        {/* <PartnerCtaWrapper /> */}
         <Footer />
       </MenubarProvider>
     </body>

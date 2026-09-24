@@ -1,24 +1,27 @@
 {
   "logos": {
     "id": 1,
-    "title": "Fruit Food"
+    "title": "Fruit Food",
+    "image": "/images/header/logo.svg"
   },
   "languages": [
     {
       "id": 1,
       "code": "am",
-      "label": "Հայ"
-      
+      "label": "Հայ",
+      "image" : "/images/header/am.svg"
     },
     {
       "id": 2,
       "code": "ru",
-      "label": "Рус"
+      "label": "Рус",
+      "image" : "/images/header/ru.svg"
     },
     {
       "id": 3,
       "code": "en",
-      "label": "Eng"
+      "label": "Eng",
+      "image" : "/images/header/en.svg"
     }
   ],
   "navbars": [
@@ -38,7 +41,7 @@
       "id": 3,
       "lang": "am",
       "title": "Մեր մասին",
-      "url": "/about"
+      "url": "/about-us"
     },
     {
       "id": 4,
@@ -68,7 +71,7 @@
       "id": 8,
       "lang": "ru",
       "title": "О нас",
-      "url": "/about"
+      "url": "/about-us"
     },
     {
       "id": 9,
@@ -98,7 +101,7 @@
       "id": 13,
       "lang": "en",
       "title": "About us",
-      "url": "/about"
+      "url": "/about-us"
     },
     {
       "id": 14,
