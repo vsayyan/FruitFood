@@ -36,5 +36,44 @@
       "message_label": "Message",
       "submit_label": "Send"
     }
+  ],
+  "contact_messages": [],
+  "contact_info": [
+    {
+      "id": 1,
+      "lang": "am",
+      "address_label": "ՀԱՍՑԵ",
+      "address": "Մ․Գալշոյան 6-8 գ․Սուրենավան, Արարատի մարզ Հայաստան",
+      "email_label": "ԷԼ․ ՓՈՍՏ",
+      "email": "chocochir@mail.ru",
+      "social_label": "ՍՈՑ․ ՑԱՆՑԵՐ",
+      "facebook_icon": "/images/contact/facebook.svg",
+      "instagram_icon": "/images/contact/instagram.svg",
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1960.5613936985835!2d44.77311600727224!3d39.790580635133864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790324201049!5m2!1sen!2sam"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "address_label": "АДРЕС",
+      "address": "М․Галшоян 6-8 с․Суренаван, Араратская область, Армения",
+      "email_label": "ЭЛ․ ПОЧТА",
+      "email": "chocochir@mail.ru",
+      "social_label": "СОЦ․ СЕТИ",
+      "facebook_icon": "/images/contact/facebook.svg",
+      "instagram_icon": "/images/contact/instagram.svg",
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1960.5613936985835!2d44.77311600727224!3d39.790580635133864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790324201049!5m2!1sen!2sam"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "address_label": "ADDRESS",
+      "address": "M.Galshoyan 6-8, Surenavan village, Ararat Province, Armenia",
+      "email_label": "EMAIL",
+      "email": "chocochir@mail.ru",
+      "social_label": "SOCIAL MEDIA",
+      "facebook_icon": "/images/contact/facebook.svg",
+      "instagram_icon": "/images/contact/instagram.svg",
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1960.5613936985835!2d44.77311600727224!3d39.790580635133864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790324201049!5m2!1sen!2sam"
+    }
   ]
 }
