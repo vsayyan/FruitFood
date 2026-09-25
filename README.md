@@ -5,7 +5,7 @@
 > 2. `db_orinak_example`-ը **չես փոխում**։ Դա ընդհանուր օրինակ ա։ Ամեն մարդ իր համակարգչում ունի **իր սեփական `db.json`**-ը (git-ի մեջ չի գնում)։
 > 3. Քո նոր տվյալները (collection-ները) ուղարկում ես առանձին ֆայլով՝ `db_parts/<քո-անուն>.json`։ Մանրամասն՝ [§5](#5-քո-dbjson-ը) և [§7](#7-git--ինչպես-աշխատել-ու-ուղարկել)։
 
-Այս պրոեկտի folder-ները / route-երը **վերջնական են** ու պատրաստ (skeleton-ֆայլեր՝ page.jsx, actions.js, _components/, ամեն մեկն իր տեղում)։ Content-ը դեռ ոչ մեկը չի գրել — բոլոր page/component ֆայլերը դեռ **դատարկ են**, բացի `app/layout.jsx`, `app/error.jsx`, `app/loading.jsx`, `app/not-found.jsx`, `app/sitemap.js`, `app/robots.js` և `lib/*`-ից, որոնք արդեն աշխատում են ու կարող ես որպես օրինակ նայել (special ինչպես ա գրվում axios/lang-ի հետ)։ Քո task-ը սկսելուց առաջ նայիր §4-ի «Նոր էջի template»-ը ու գրիր նույն pattern-ով։
+Project-ի էջերի skeleton-ներն ու ընդհանուր ֆայլերը գտնվում են ստորև նշված տեղերում։ Որոշ էջեր արդեն իրականացված են, մյուսները դեռ ընթացքի մեջ են. յուրաքանչյուր էջի վիճակը նշված է §6 և §9 բաժիններում։ Նոր էջ կամ component ավելացնելիս պահպանիր §4-ի կոդի կանոններն ու տվյալների ստացման pattern-ը։
 
 **Stack.** Next.js 16 (App Router) + React 19 · plain JavaScript (`.jsx`) · CSS Modules · axios · json-server (mock API)
 
@@ -76,9 +76,10 @@ app/
       page.jsx                 Կատեգորիայի էջ
   products/
     [productSlug]/
-      actions.js               getProduct(id), getTags()
-      page.jsx + page.module.css   Մեկ ապրանքի էջ (Arnak + Vahag, §6)
+      actions.js               getProduct(slug, lang), getProductCategory(), getProductTags()
+      page.jsx + page.module.css   Մեկ ապրանքի էջ (Arnak + Vahe (Teamlead), §6)
       _components/Gallery.jsx, Info.jsx, CompositionModal.jsx + .module.css
+                                ապրանքի պատկերասրահ, տարբերակներ ու բաղադրության modal
 
   contact/
     actions.js                 getContactPageContent(), submitContact() (POST)
@@ -106,7 +107,7 @@ public/images/<բաժին>/         Նկարներ (db-ում գրվում ա `/
 4. **Ամեն component-ն ունի իր `.module.css`-ը**, class-երը camelCase։ Tailwind / inline style չկա։
 5. **Գույն / spacing / radius / font-size՝ միայն CSS variable-ից** (`var(--color-green)`, `var(--space-md)`), պատահական թվեր չկան։ Նոր variable պետք ա՝ ասա Vahe-ին։
 6. **Server Component default ա.** `'use client'` դնում ես միայն եթե պետք ա `useState`, `onClick` և այլն (տես `ContactForm.jsx`, `Langs.jsx`)։
-7. **Տեքստ կոդի մեջ hardcode չկա.** Ամեն տեքստ, որ էջում երևում ա, գալիս ա db-ից՝ ճիշտ լեզվով։
+7. **UI-ի տեքստը կոդի մեջ hardcode չի արվում.** Էջում երևացող վերնագրերը, կոճակները, aria-label-ները և պատկերների description-ները գալիս են տվյալների շտեմարանից՝ ճիշտ լեզվով։
 8. Code style (ESLint). առանց `;`, single quotes `'...'`, `const`/`let` (ոչ `var`), `===`։
 9. **Ուրիշի ֆայլերին չես դիպչում** (տես §6 աղյուսակը)։ Եթե պետք ա ընդհանուր ֆայլ փոխել (`layout.jsx`, `globals.css`, `lib/*`, `package.json`)՝ նախ գրիր Vahe-ին։
 
@@ -180,7 +181,7 @@ export default async function AboutPage() {
 }
 ```
 
-5. Եթե **արդեն գոյություն ունեցող** collection ես փոխել (օրինակ field ես ավելացրել `products`-ին)՝ PR-ի նկարագրության մեջ **պարտադիր գրիր**, թե ինչ ես փոխել։
+5. Եթե **արդեն գոյություն ունեցող** collection ես փոխել՝ PR-ի նկարագրության մեջ **պարտադիր գրիր**, թե ինչ ես փոխել։ Product page-ի task-երի դեպքում `db_parts/<անուն>.json`-ի `products` դաշտում ներառիր տեղային `db.json`-ի **ամբողջ `products` collection-ը**, բոլոր ապրանքներով և լեզուներով, ոչ թե միայն փոփոխված ապրանքի տողերը։
 
 ### 5.3 db-ի ձևաչափի կանոններ
 
@@ -192,12 +193,47 @@ export default async function AboutPage() {
 6. Նկար՝ `public/images/<բաժին>/file.jpg`, db-ում գրվում ա `"/images/<բաժին>/file.jpg"`
 7. Ֆիլտր՝ `GET /products?lang=am&category_slug=dried-fruits` (2 ֆիլտրը՝ AND)
 8. Նոր collection = պարզապես նոր key JSON-ում, json-server-ը ինքն ա endpoint ստեղծում
+9. **UI label-ներ** պահիր `product_page_labels`-ի նման collection-ում՝ յուրաքանչյուր լեզվի համար առանձին տողով։ Լեզվից անկախ icon-ները պահիր առանձին lookup collection-ում, օրինակ՝ `tag_icons` (`code`, `icon`)։ Component-ը ստանում է դրանք page-ի `actions.js`-ից, լեզվական բառարաններ կամ code-to-icon object-ներ component-ում չպետք է լինեն։
+
+Product detail էջի label-ների օրինակ (`db.json`-ի `product_page_labels` collection-ից)․
+
+```json
+{
+  "product_page_labels": [
+    {
+      "id": 1,
+      "lang": "am",
+      "home_label": "Գլխավոր",
+      "catalog_label": "Տեսականի",
+      "composition_eyebrow": "Բաղադրությունը",
+      "close_button": "Փակել",
+      "previous_image": "Նախորդ նկարը",
+      "next_image": "Հաջորդ նկարը",
+      "image_label": "Նկար",
+      "sku_label": "Կոդ",
+      "variants_label": "Համեր",
+      "selected_label": "Ընտրված է",
+      "composition_button": "Դիտել բաղադրությունը",
+      "weight_unit": "Գ",
+      "taste_unit": "համ"
+    }
+  ],
+  "tag_icons": [
+    { "id": 1, "code": "100_natural", "icon": "🌿" },
+    { "id": 2, "code": "made_in_armenia", "icon": "🇦🇲" },
+    { "id": 3, "code": "armenian_fruit", "icon": "🇦🇲" },
+    { "id": 4, "code": "cocoa_62", "icon": "🍫" }
+  ]
+}
+```
+
+`product_page_labels`-ում նույն դաշտերը ավելացրու `ru` և `en` լեզուներով առանձին տողերում։ `tag_icons`-ում լեզու պետք չէ, քանի որ icon-ը լեզվից կախված չէ։
 
 Մեկ տող collection-ի օրինակ (`about_intro`, `contact_page_contents`)՝ actions-ում վերադարձնում ես `res.data[0]`։
 
 ## 6. Ով ինչ ա անում
 
-Ստորև՝ նախագծի վերջնական Information Architecture-ը (IA & Routes), ըստ բոլոր էջերի, բաժինների ու պատասխանատուների։ Folder-ի սյունակը ցույց ա տալիս, թե կոնկրետ որ ֆայլում ա գրվում այս section-ը (already ստեղծված են որպես դատարկ skeleton-ֆայլեր)։
+Ստորև՝ նախագծի Information Architecture-ը (IA & Routes), ըստ էջերի, բաժինների ու պատասխանատուների։ Folder-ի սյունակը ցույց է տալիս, թե որ ֆայլերում է իրականացվում համապատասխան section-ը. ֆայլերը կարող են լինել skeleton կամ արդեն ունենալ իրականացված բովանդակություն։
 
 | Էջ / Section | Ով | Folder | Route |
 |---|---|---|---|
@@ -209,7 +245,7 @@ export default async function AboutPage() {
 | Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` (→ `/about-us#philosophy`) |
 | Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
-| Ապրանքի մանրամասն էջ | Arnak + Vahag | `app/products/[productSlug]/*` | `/products/[slug]` |
+| Ապրանքի մանրամասն էջ | Arnak + Vahe | `app/products/[productSlug]/*` | `/products/[slug]` |
 | About Us · Section 1–3 (Բնական որակ, Փիլիսոփայություն, Ապրանքանիշեր) | Milena | `app/about-us/_components/NaturalQuality.jsx`, `Philosophy.jsx`, `Brands.jsx` | `/about-us` |
 | About Us · Section 4–6 (Արտադրություն, Վստահություն, Որակ ու բնականություն) | Hamlet | `app/about-us/_components/Production.jsx`, `WhyTrustUs.jsx`, `QualityNaturalness.jsx` | `/about-us` |
 | About Us · Section 7–9 (Արտահանում, Գործարան, «Մենք հավատում ենք») | Jor | `app/about-us/_components/ExportCooperation.jsx`, `OurFactory.jsx`, `WeBelieve.jsx` | `/about-us` |
@@ -218,10 +254,10 @@ export default async function AboutPage() {
 
 Եթե 2+ հոգի նույն folder-ում են (օրինակ `app/about-us` կամ Home page-ը)՝ ամեն մեկը գրում ա **իր առանձին component-ը** `_components/`-ում, իսկ `page.jsx`-ում ընդհամենը import ա անում։ `page.jsx`-ում conflict-ը Vahe-ն ա լուծում ինտեգրման ժամանակ։ Ամեն մեկն իր section-ի համար db collection(-ներ)ը ինքն ա որոշում ու ավելացնում իր `db.json`-ում, §5-ի կանոններով։
 
-**Catalog → Product-ի կապը (Elina ↔ Arnak+Vahag).** Elina-ի catalog-ի ProductCard-ը (`Link href="/products/..."`) պիտի տանի Arnak+Vahag-ի էջին, բայց կարևոր ա, թե **ինչո՞վ** է link-ը կառուցվում.
+**Catalog → Product-ի կապը (Elina ↔ Arnak+Vahe).** Elina-ի catalog-ի ProductCard-ը (`Link href="/products/..."`) պիտի տանի Arnak+Vahe-ի էջին, բայց կարևոր ա, թե **ինչո՞վ** է link-ը կառուցվում.
 - `db_orinak_example`-ում ապրանքի `id`-ն **լեզվով ա տարբերվում** (նույն ապրանքը am-ում ունի, ասենք, `id: 1`, ru-ում՝ `id: 2`), մինչդեռ `slug`-ը (`shokoladapatat-chrer-230`) **նույնն ա բոլոր լեզուներում**։
 - Ուրեմն Elina-ի Link-ը պիտի կառուցվի **`slug`-ով, ոչ թե `id`-ով** (`/products/${product.slug}`), հակառակ դեպքում լեզուն փոխելիս (cookie) նույն ապրանքի URL-ը կփոխվի ու կխափանվի (նույն սկզբունքով, ինչով `/catalog/[categorySlug]`-ն ա category_slug-ով, ոչ թե id-ով)։
-- `app/products/[productSlug]`-ի Arnak+Vahag-ը իրենց `actions.js`-ում `getProduct()`-ը պետք ա փնտրի db-ում **`slug`-ով** (զտելով `lang`-ով), ոչ թե numeric `id`-ով. `params.productSlug`-ը ուղղակի string ա, որով db-ում `.slug === params.productSlug` ես անում։
+- `app/products/[productSlug]`-ի Arnak+Vahe-ը իրենց `actions.js`-ում `getProduct()`-ը պետք ա փնտրի db-ում **`slug`-ով** (զտելով `lang`-ով), ոչ թե numeric `id`-ով. `params.productSlug`-ը ուղղակի string ա, որով db-ում `.slug === params.productSlug` ես անում։
 
 **PartnerCta-ի մասին (Vahram).** Սա այլևս Home-ի section չի՝ պետք ա երևա **բոլոր էջերում, բացի `/contact`**-ից, ուրեմն `page.jsx`-երից յուրաքանչյուրում առանձին import անելու փոխարեն դրվում ա մեկ տեղում՝ `app/layout.jsx`-ում (որ բոլոր էջերը wrap ա անում)։ Դրա համար.
 - Component-ը գնում ա `components/` (global, ոչ թե `app/_components/`, քանի որ home-ին հատուկ չի)՝ `components/partner-cta/PartnerCta.jsx` + `.module.css`։
@@ -360,14 +396,30 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 3. `.env.local`-ում `NEXT_PUBLIC_API_URL`-ը փոխվում ա Django-ի հասցեին
 4. Component-ները և `actions.js`-երը **չեն փոխվում**
 
-## 9. Ինչ դեռ չկա
+## 9. Էջերի վիճակն ու Product detail page-ը
 
-- `about-us` / `geography` էջերի բովանդակությունը. folder/skeleton-ը (page.jsx, actions.js, `_components/`) արդեն կա, բայց բոլոր ֆայլերը դատարկ են — ամեն մեկն իր section-ը գրելու ա §6-ի աղյուսակի համաձայն
-- Single product page (`app/products/[productSlug]`)-ի բովանդակությունը՝ նույն կերպ, դատարկ skeleton (Arnak + Vahag, §6)
-- `public/images/`-ում նկարները (db-ում path-երը գրված են, ֆայլերը՝ դեռ ոչ)
-- Language switcher-ը պարզ dropdown ա, design-ը դեռ չկա
-- `next/image` (հիմա `<img>`)
-- `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language
+### 9.1 Product detail page (`/products/[productSlug]`)
+
+Figma-ի Product Card-ի հղումից բացվող ապրանքի մանրամասն էջի հիմքը գտնվում է `app/products/[productSlug]/`-ում։ Էջի route-ը `/products/<slug>` է, իսկ ապրանքը ընտրվում է `products` collection-ից՝ `slug` և ակտիվ լեզվի `lang` դաշտերով։
+
+- `actions.js`-ը բերում է ապրանքը, համապատասխան category-ն, tag-երի թարգմանությունները/icon-ները և էջի UI label-ները `axios`-ով։
+- `page.jsx`-ը ստանում է լեզուն `displayLang()`-ից, հավաքում breadcrumb-ները, տվյալներ է փոխանցում Gallery-ին ու Info-ին, իսկ չգտնված ապրանքի դեպքում ցույց է տալիս 404-ը։
+- `Gallery`-ը ցույց է տալիս հիմնական նկարները, thumbnail-ները և նախորդ/հաջորդ կառավարումը։
+- `Info`-ը ցույց է տալիս ապրանքի անվանումը, քաշը, տարբերակների քանակն ու համերը, բնութագրիչ tag-երը և բաղադրությունը։
+- `CompositionModal`-ը բացում է բաղադրության մանրամասները և փակվում է close կոճակով, ֆոնի սեղմումով կամ Escape-ով։
+- Էջի ոճերը պահվում են component-ների կողքի CSS Module ֆայլերում, իսկ layout-ը հարմարեցված է նեղ էկրաններին։
+
+Ներկայիս տեղային `db.json`-ում `shokoladapatat-chrer-230` ապրանքի համար կան երեք gallery image և հինգ flavor variant՝ հայերեն, ռուսերեն և անգլերեն տվյալներով։ Նկարները պահվում են `public/images/products/`-ում, իսկ JSON-ում նշվում են public path-երով, օրինակ՝ `/images/products/choco-chir-230-1.png`։ Նոր կամ փոփոխված տվյալները PR-ով փոխանցելու համար հետևիր §5-ի `db_parts/<անուն>.json` կանոնին. `db.json`-ը git չի ավելացվում։
+
+Product detail-ի task-ի ժամանակ `db_parts/vahe-arnak-product-page.json`-ում պահիր տեղային `db.json`-ի ամբողջ `products` collection-ը, ինչպես նաև `product_page_labels` և `tag_icons` collection-ները։
+
+Տեղային էջը բացելու համար գործարկիր `npm run dev` և այցելիր `http://localhost:3000/products/shokoladapatat-chrer-230`։ Այդ հրամանը միաժամանակ աշխատեցնում է Next.js-ը՝ port `3000`-ում, և json-server-ը՝ port `8000`-ում։ Եթե `db.json`-ը փոփոխելուց հետո API-ն հին տվյալներն է վերադարձնում, վերագործարկիր dev հրամանը, որպեսզի json-server-ը նորից կարդա ֆայլը։
+
+### 9.2 Մյուս էջերի ընթացքը
+
+- `about-us` և `geography` էջերը բաժանված են §6-ում նշված պատասխանատուների և component-ների միջև. յուրաքանչյուր section-ի ավարտը պետք է ստուգել իր route-ում։
+- `components/header/Langs.jsx`-ի լեզու փոխող control-ը կարող է դեռ պահանջել ավարտում; նայիր հենց ֆայլի ընթացիկ վիճակին։
+- Նկարները local public assets են. path-երը պետք է մատնանշեն առկա ֆայլեր։ Օգտագործիր սովորական `<img>`՝ համաձայն §4-ի նախագծային կանոնի։
 
 
 ## 10. `db.json`-ի կարճ օրինակ

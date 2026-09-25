@@ -1,0 +1,325 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "lang": "am",
+      "slug": "shokoladapatat-chrer-230",
+      "category_slug": "chocolate-covered",
+      "sku": "230",
+      "weight_value": 230,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-chir-230-1.png",
+        "/images/products/choco-chir-230-2.jpg",
+        "/images/products/choco-chir-230-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "cocoa_62"
+      ],
+      "name": "Շոկոլադապատ չրեր",
+      "composition": "Բնական չրեր (ծիրան, դեղձ, սալորաչիր, թուզ, ընկույզ, նուշ), մուգ շոկոլադ (62% կակաոյի պարունակությամբ)՝ կակաոյի զանգված, կակաոյի կարագ, շաքար, էմուլգատոր (սոյայի լեցիտին), վանիլին։",
+      "description": "Չրերի ընտիր հավաքածու՝ պատված մուգ շոկոլադով։ Փաթեթավորված է որպես նվիրատու տուփ՝ ձեռքի համար նախատեսված ճարմանդով։ Իդեալական ընտրություն տոնական առիթների և գործնական նվերների համար։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Դեղձ, թուզ, սալոր՝ նուշով և ընկույզով",
+          "image": "/images/products/variant-walnut.png"
+        },
+        {
+          "id": "v2",
+          "flavor": "Դեղձ ընկույզով",
+          "image": "/images/products/variant-peach.png"
+        },
+        {
+          "id": "v3",
+          "flavor": "Սալոր նուշով",
+          "image": "/images/products/variant-plum.png"
+        },
+        {
+          "id": "v4",
+          "flavor": "Ծիրան ընկույզով",
+          "image": "/images/products/variant-apricot.png"
+        },
+        {
+          "id": "v5",
+          "flavor": "Թուզ ընկույզով",
+          "image": "/images/products/variant-fig.png"
+        }
+      ],
+      "shelf_life_months": 5
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "slug": "shokoladapatat-chrer-230",
+      "category_slug": "chocolate-covered",
+      "sku": "230",
+      "weight_value": 230,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-chir-230-1.png",
+        "/images/products/choco-chir-230-2.jpg",
+        "/images/products/choco-chir-230-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "cocoa_62"
+      ],
+      "name": "Сухофрукты в шоколаде",
+      "composition": "Натуральные сухофрукты (абрикосы, персики, чернослив, инжир, грецкие орехи, миндаль), темный шоколад (62% какао): какао-масса, какао-масло, сахар, эмульгатор (соевый лецитин), ванилин.",
+      "description": "Ассортимент сухофруктов в темном шоколаде. Упаковано в подарочную коробку с удобной застежкой. Идеальный выбор для праздничных мероприятий и практичных подарков.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Ассорти: персик, инжир и слива с миндалём и грецким орехом",
+          "image": "/images/products/variant-walnut.png"
+        },
+        {
+          "id": "v2",
+          "flavor": "Персик с грецким орехом",
+          "image": "/images/products/variant-peach.png"
+        },
+        {
+          "id": "v3",
+          "flavor": "Слива с миндалём",
+          "image": "/images/products/variant-plum.png"
+        },
+        {
+          "id": "v4",
+          "flavor": "Абрикос с грецким орехом",
+          "image": "/images/products/variant-apricot.png"
+        },
+        {
+          "id": "v5",
+          "flavor": "Инжир с грецким орехом",
+          "image": "/images/products/variant-fig.png"
+        }
+      ],
+      "shelf_life_months": 5
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "slug": "shokoladapatat-chrer-230",
+      "category_slug": "chocolate-covered",
+      "sku": "230",
+      "weight_value": 230,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-chir-230-1.png",
+        "/images/products/choco-chir-230-2.jpg",
+        "/images/products/choco-chir-230-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "cocoa_62"
+      ],
+      "name": "Chocolate-covered dried fruits",
+      "composition": "Natural dried fruits (apricot, peach, prune, fig, walnut, almond), dark chocolate (62% cocoa content): cocoa mass, cocoa butter, sugar, emulsifier (soy lecithin), vanillin.",
+      "description": "A premium assortment of dried fruits coated in dark chocolate. Packaged as a gift box featuring a convenient carrying handle. An ideal choice for festive occasions and corporate gifts.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Assorted peach, fig and plum with almond and walnut",
+          "image": "/images/products/variant-walnut.png"
+        },
+        {
+          "id": "v2",
+          "flavor": "Peach with walnut",
+          "image": "/images/products/variant-peach.png"
+        },
+        {
+          "id": "v3",
+          "flavor": "Plum with almond",
+          "image": "/images/products/variant-plum.png"
+        },
+        {
+          "id": "v4",
+          "flavor": "Apricot with walnut",
+          "image": "/images/products/variant-apricot.png"
+        },
+        {
+          "id": "v5",
+          "flavor": "Fig with walnut",
+          "image": "/images/products/variant-fig.png"
+        }
+      ],
+      "shelf_life_months": 5
+    },
+    {
+      "id": 4,
+      "lang": "am",
+      "slug": "chrer-200",
+      "category_slug": "dried-fruits",
+      "sku": "1042",
+      "weight_value": 200,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/chrer-200-1.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Չրեր",
+      "composition": "100% բնական չրեր, առանց շաքարի և կոնսերվանտների ավելացման:",
+      "description": "Բնական չրեր՝ առանց հավելումների:",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Դեղձ",
+          "image": "/images/products/variant-default.jpg"
+        },
+        {
+          "id": "v2",
+          "flavor": "Խնձոր",
+          "image": "/images/products/variant-default.jpg"
+        }
+      ],
+      "shelf_life_months": 5
+    },
+    {
+      "id": 5,
+      "lang": "ru",
+      "slug": "chrer-200",
+      "category_slug": "dried-fruits",
+      "sku": "1042",
+      "weight_value": 200,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/chrer-200-1.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Сухофрукты",
+      "composition": "100% натуральные сухофрукты, без добавления сахара и консервантов.",
+      "description": "Натуральные сухофрукты без добавок.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Персик",
+          "image": "/images/products/variant-default.jpg"
+        },
+        {
+          "id": "v2",
+          "flavor": "Яблоко",
+          "image": "/images/products/variant-default.jpg"
+        }
+      ],
+      "shelf_life_months": 5
+    },
+    {
+      "id": 6,
+      "lang": "en",
+      "slug": "chrer-200",
+      "category_slug": "dried-fruits",
+      "sku": "1042",
+      "weight_value": 200,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/chrer-200-1.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Dried fruits",
+      "composition": "100% natural dried fruit, no added sugar or preservatives.",
+      "description": "Natural dried fruit with no additives.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Peach",
+          "image": "/images/products/variant-default.jpg"
+        },
+        {
+          "id": "v2",
+          "flavor": "Apple",
+          "image": "/images/products/variant-default.jpg"
+        }
+      ],
+      "shelf_life_months": 5
+    }
+  ],
+  "product_page_labels": [
+    {
+      "id": 1,
+      "lang": "am",
+      "home_label": "Գլխավոր",
+      "catalog_label": "Տեսականի",
+      "composition_eyebrow": "Բաղադրությունը",
+      "close_button": "Փակել",
+      "previous_image": "Նախորդ նկարը",
+      "next_image": "Հաջորդ նկարը",
+      "image_label": "Նկար",
+      "sku_label": "Կոդ",
+      "variants_label": "Համեր",
+      "selected_label": "Ընտրված է",
+      "composition_button": "Դիտել բաղադրությունը",
+      "weight_unit": "Գ",
+      "taste_unit": "համ"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "home_label": "Главная",
+      "catalog_label": "Каталог",
+      "composition_eyebrow": "Состав продукта",
+      "close_button": "Закрыть",
+      "previous_image": "Предыдущее фото",
+      "next_image": "Следующее фото",
+      "image_label": "Фото",
+      "sku_label": "Артикул",
+      "variants_label": "Вкусы",
+      "selected_label": "Выбрано",
+      "composition_button": "Состав продукта",
+      "weight_unit": "Г",
+      "taste_unit": "вкусов"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "home_label": "Home",
+      "catalog_label": "Catalog",
+      "composition_eyebrow": "Ingredients",
+      "close_button": "Close",
+      "previous_image": "Previous image",
+      "next_image": "Next image",
+      "image_label": "Image",
+      "sku_label": "SKU",
+      "variants_label": "Tastes",
+      "selected_label": "Selected",
+      "composition_button": "View ingredients",
+      "weight_unit": "G",
+      "taste_unit": "tastes"
+    }
+  ],
+  "tag_icons": [
+    {
+      "id": 1,
+      "code": "100_natural",
+      "icon": "🌿"
+    },
+    {
+      "id": 2,
+      "code": "made_in_armenia",
+      "icon": "🇦🇲"
+    },
+    {
+      "id": 3,
+      "code": "armenian_fruit",
+      "icon": "🇦🇲"
+    },
+    {
+      "id": 4,
+      "code": "cocoa_62",
+      "icon": "🍫"
+    }
+  ]
+}
