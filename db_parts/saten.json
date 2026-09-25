@@ -1,0 +1,69 @@
+{
+  "philosophy_headings": [
+    {
+      "id": 1,
+      "lang": "am",
+      "heading_1": "Մեր փիլիսոփայությունը",
+      "heading_2": "Բնությունն իր ամենամաքուր տեսքով։"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "heading_1": "Наша философия",
+      "heading_2": "Природа в своей чистейшей форме."
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "heading_1": "Our philosophy",
+      "heading_2": "Nature in its purest form."
+    }
+  ],
+  "philosophy_text": [
+    {
+      "id": "1",
+      "lang": "am",
+      "text": "Մենք օգտագործում ենք բացառապես հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի, բուրավետիչների և կոնսերվանտների։ Յուրաքանչյուր արտադրանք ստեղծվում է այնպես, որպեսզի հնարավորինս պահպանվեն մրգի բնական համը, բույրը և օգտակար հատկությունները։",
+      "btn": "Կարդալ ավելին →"
+    },
+    {
+      "id": "2",
+      "lang": "ru",
+      "text": "Мы используем исключительно отборные армянские фрукты, без добавления сахара, искусственных красителей, ароматизаторов и консервантов. Каждый продукт создается таким образом, чтобы максимально сохранить естественный вкус, аромат и полезные свойства фруктов.",
+      "btn": "Читать далее →"
+    },
+    {
+      "id": "3",
+      "lang": "en",
+      "text": "We use exclusively select Armenian fruits, with no added sugar, artificial colorings, flavorings, or preservatives. Each product is crafted to preserve the fruit's natural taste, aroma, and beneficial properties as much as possible.",
+      "btn": "Read more →"
+    }
+  ],
+  "faq_small": [
+    {
+      "id": 1,
+      "lang": "en",
+      "text": "FAQ"
+    }
+  ],
+  "faq_heading": [
+    {
+      "id": 1,
+      "lang": "am",
+      "heading": "Հաճախ տրվող հարցեր",
+      "text": "Արտադրանքի, արտադրության և համագործակցության մասին հիմնական հարցերի պատասխանները։"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "heading": "Часто задаваемые вопросы",
+      "text": "Ответы на ключевые вопросы о продукции, производстве и сотрудничестве."
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "heading": "Frequently Asked Questions",
+      "text": "Answers to key questions regarding products, production, and cooperation."
+    }
+  ]
+}
