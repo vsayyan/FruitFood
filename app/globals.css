@@ -7,7 +7,7 @@
   --color-text: #1a1a1a;
   --color-text-muted: #6b6b6b;
   --color-border: #e5e5e5;
-  --color-error: #dc2626;
+  --color-error: #005b30;
 
   /* Spacing scale — բոլոր margin/padding սրանցից, ոչ պատահական թվեր */
   --space-xs: 8px;
@@ -23,7 +23,7 @@
   --radius-lg: 20px;
 
   /* Layout */
-  --container-width: 1200px;
+  --container-width: 1280px;
   --container-padding: var(--space-md);
 
   /* Typography scale */
