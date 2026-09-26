@@ -4,7 +4,14 @@ import { useState } from 'react'
 import styles from './OurFactory.module.css'
 
 export default function OurFactory({ data }) {
-  const sliderImages = data.slider || []
+  const sliderImages = [
+    ...new Map((data.slider || []).map((item) => [item.image, item])).values(),
+  ]
+  const galleryImages = [
+    ...new Map((data.gallery || []).map((item) => [item.image, item])).values(),
+  ].filter(
+    (item) => !sliderImages.some((sliderImage) => sliderImage.image === item.image)
+  )
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -58,6 +65,7 @@ export default function OurFactory({ data }) {
                   type="button"
                   className={`${styles.arrow} ${styles.prev}`}
                   onClick={prevSlide}
+                  aria-label={data.previous_image_label}
                 >
                   ‹
                 </button>
@@ -66,6 +74,7 @@ export default function OurFactory({ data }) {
                   type="button"
                   className={`${styles.arrow} ${styles.next}`}
                   onClick={nextSlide}
+                  aria-label={data.next_image_label}
                 >
                   ›
                 </button>
@@ -79,6 +88,8 @@ export default function OurFactory({ data }) {
                         index === currentIndex ? styles.active : ''
                       }`}
                       onClick={() => setCurrentIndex(index)}
+                      aria-label={`${data.image_label} ${index + 1}`}
+                      aria-pressed={index === currentIndex}
                     />
                   ))}
                 </div>
@@ -87,19 +98,18 @@ export default function OurFactory({ data }) {
           </div>
         </div>
 
-        <div className={styles.gallery}>
-          {data.gallery?.map((item) => (
-            <div
-              key={item.id}
-              className={styles.galleryItem}
-            >
-              <img
-                src={item.image}
-                alt={`${data.label} ${item.id}`}
-              />
-            </div>
-          ))}
-        </div>
+        {galleryImages.length > 0 && (
+          <div className={styles.gallery}>
+            {galleryImages.map((item) => (
+              <div key={item.id} className={styles.galleryItem}>
+                <img
+                  src={item.image}
+                  alt={`${data.label} ${item.id}`}
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className={styles.bottomContent}>
           <p>{data.bottom_left_text}</p>

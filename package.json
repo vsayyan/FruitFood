@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"json-server -w db_parts/jor.json -p 8000\" \"next dev\"",
+    "dev": "concurrently \"json-server -w db.json -p 8000\" \"next dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
