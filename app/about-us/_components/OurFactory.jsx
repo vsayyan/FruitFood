@@ -27,15 +27,15 @@ export default function OurFactory({ data }) {
     )
   }
 
-  if (!sliderImages.length) {
-    return null
-  }
-
   return (
     <section className={styles.section}>
       <div className={styles.container}>
 
-        <div className={styles.main}>
+        <div
+          className={`${styles.main} ${
+            sliderImages.length === 0 ? styles.mainWithoutSlider : ''
+          }`}
+        >
           <div className={styles.content}>
             <span className={styles.label}>
               {data.label}
@@ -52,50 +52,52 @@ export default function OurFactory({ data }) {
             </div>
           </div>
 
-          <div className={styles.slider}>
-            <img
-              src={sliderImages[currentIndex].image}
-              alt={data.label}
-              className={styles.sliderImage}
-            />
+          {sliderImages.length > 0 && (
+            <div className={styles.slider}>
+              <img
+                src={sliderImages[currentIndex].image}
+                alt={data.label}
+                className={styles.sliderImage}
+              />
 
-            {sliderImages.length > 1 && (
-              <>
-                <button
-                  type="button"
-                  className={`${styles.arrow} ${styles.prev}`}
-                  onClick={prevSlide}
-                  aria-label={data.previous_image_label}
-                >
-                  ‹
-                </button>
+              {sliderImages.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    className={`${styles.arrow} ${styles.prev}`}
+                    onClick={prevSlide}
+                    aria-label={data.previous_image_label}
+                  >
+                    ‹
+                  </button>
 
-                <button
-                  type="button"
-                  className={`${styles.arrow} ${styles.next}`}
-                  onClick={nextSlide}
-                  aria-label={data.next_image_label}
-                >
-                  ›
-                </button>
+                  <button
+                    type="button"
+                    className={`${styles.arrow} ${styles.next}`}
+                    onClick={nextSlide}
+                    aria-label={data.next_image_label}
+                  >
+                    ›
+                  </button>
 
-                <div className={styles.dots}>
-                  {sliderImages.map((item, index) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      className={`${styles.dot} ${
-                        index === currentIndex ? styles.active : ''
-                      }`}
-                      onClick={() => setCurrentIndex(index)}
-                      aria-label={`${data.image_label} ${index + 1}`}
-                      aria-pressed={index === currentIndex}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
+                  <div className={styles.dots}>
+                    {sliderImages.map((item, index) => (
+                      <button
+                        key={item.id}
+                        type="button"
+                        className={`${styles.dot} ${
+                          index === currentIndex ? styles.active : ''
+                        }`}
+                        onClick={() => setCurrentIndex(index)}
+                        aria-label={`${data.image_label} ${index + 1}`}
+                        aria-pressed={index === currentIndex}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
+          )}
         </div>
 
         {galleryImages.length > 0 && (
