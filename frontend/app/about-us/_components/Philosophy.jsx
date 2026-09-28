@@ -26,7 +26,7 @@ export default function Philosophy({ headings, text }) {
                     {heading.heading_2_after}
                 </h2>
                 <p>{content.text}</p>
-                <a href="#faq">
+                <a href="/#faq">
                     {content.btn}
                     <span>→</span>
                 </a>
