@@ -14,3 +14,13 @@ export async function getFaqSmall(lang) {
   const res = await axios.get('/faq_small', { params: { lang } })
   return res.data
 }
+
+export async function getPhilosophyHeadings(lang) {
+  const res = await axios.get(`philosophy_headings?lang=${lang}`)
+  return res.data
+}
+
+export async function getPhilosophyText(lang) {
+  const res = await axios.get(`philosophy_text?lang=${lang}`)
+  return res.data
+}
