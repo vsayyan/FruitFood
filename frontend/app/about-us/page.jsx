@@ -17,10 +17,10 @@ export default async function AboutUsPage() {
   const weBelieve = await getWeBelieve(lang)
 
   return (
-    <main>
+    <>
       <ExportCooperation data={exportCooperation[0]} />
       <OurFactory data={ourFactory[0]} />
       <WeBelieve data={weBelieve[0]} />
-    </main>
+    </>
   )
 }

@@ -15,13 +15,11 @@
   width: 610px;
   min-height: 109px;
   margin-bottom: var(--space-xl);
-  color: #00681C;
+  color: var(--color-green);
   font-size: 51.8px;
   line-height: 54.4px;
   letter-spacing: -0.93px;
   font-weight: 700;
-  -webkit-text-stroke: 2px #000000;
-  paint-order: stroke fill;
 }
 
 .content {
