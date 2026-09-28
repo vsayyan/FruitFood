@@ -29,4 +29,3 @@ export async function getWeBelieve(lang) {
 
   return res.data
 }
-

@@ -11,10 +11,15 @@ import WeBelieve from './_components/WeBelieve'
 
 export default async function AboutUsPage() {
   const lang = await displayLang()
-
-  const exportCooperation = await getExportCooperation(lang)
-  const ourFactory = await getOurFactory(lang)
-  const weBelieve = await getWeBelieve(lang)
+  const [
+    exportCooperation,
+    ourFactory,
+    weBelieve,
+  ] = await Promise.all([
+    getExportCooperation(lang),
+    getOurFactory(lang),
+    getWeBelieve(lang)
+  ])
 
   return (
     <>
