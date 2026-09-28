@@ -2,6 +2,9 @@ import { Noto_Sans_Armenian } from 'next/font/google'
 import { displayLang } from '@/lib/lang'
 import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
 import './globals.css'
+import { MenubarProvider } from '@/context/menubarContext'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 const notoSansArmenian = Noto_Sans_Armenian({
   subsets: ['armenian', 'latin'],
@@ -24,10 +27,12 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={lang} className={notoSansArmenian.variable}>
       <body className="layout">
-        {/* TODO(Vahag): <Header /> — components/header (§6) */}
-        <main className="main-content">{children}</main>
-        {/* <PartnerCtaWrapper /> */}
-        {/* TODO(Vahag): <Footer /> — components/footer (§6) */}
+        <MenubarProvider>
+          <Header />
+          <main className="main-content">{children}</main>
+          {/* <PartnerCtaWrapper /> */}
+          <Footer />
+        </MenubarProvider>
       </body>
     </html>
   )

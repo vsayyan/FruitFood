@@ -121,9 +121,11 @@
       "id": 1,
       "lang": "am",
       "title": "Fruit Food",
+      "image": "/images/footer/logo.svg",
       "description": "Հայաստանյան բնական չրագործեր և միրգային քաղցրավենիք 1995 թվականից:",
       "copyright": "© 2026 Fruit Food: Բոլոր իրավունքները պաշտպանված են:",
-      "address": "Մ. Գալշոյան 6-8, ք. Սուրենավան, Արարատի մարզ, Հայաստան",
+      "subtitle":"Կապվեք մեզ հետ",
+      "address": "Մ. Գալշոյան 6-8  գ.Սուրենավան, Արարատի մարզ Հայաստան",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -142,9 +144,11 @@
       "id": 2,
       "lang": "ru",
       "title": "Fruit Food",
+      "image": "/images/footer/logo.svg",
       "description": "Армянские натуральные сухофрукты и фруктовые сладости с 1995 года.",
       "copyright": "© 2026 Fruit Food. Все права защищены.",
-      "address": "М. Галшоян 6-8, г. Суренаван, Араратская область, Армения",
+      "subtitle":"Свяжитесь с нами",
+      "address": "М. Галшоян 6-8  с.Суренаван, Араратская область  Армения",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -163,9 +167,11 @@
       "id": 3,
       "lang": "en",
       "title": "Fruit Food",
+      "image": "/images/footer/logo.svg",
       "description": "Armenian natural dried fruit and fruit sweets since 1995.",
       "copyright": "© 2026 Fruit Food. All rights reserved.",
-      "address": "M. Galshoyan 6-8, Surenavan, Ararat region, Armenia",
+      "subtitle":"Contact us",
+      "address": "M. Galshoyan 6-8  Surenavan, Ararat region  Armenia",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -302,11 +308,11 @@
       "lang": "am",
       "slug": "shokoladapatat-chrer-230",
       "category_slug": "chocolate-covered",
-      "sku": "2309",
+      "sku": "230",
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-1.jpg",
+        "/images/products/choco-chir-230-1.png",
         "/images/products/choco-chir-230-2.jpg",
         "/images/products/choco-chir-230-3.jpg"
       ],
@@ -316,37 +322,47 @@
         "cocoa_62"
       ],
       "name": "Շոկոլադապատ չրեր",
-      "composition": "Չրեր (ծիրան, դեղձ, սալոր, թուզ), մուգ շոկոլադ (62% կակավի պարունակությամբ), կակավի ձավեր, կակավի կարագ, շաքար, էմուլգատոր (սոյայի լեցիտին), վանիլին:",
-      "description": "Չրերի ընտիր համադրություն՝ պատված մուգ շոկոլադով:",
+      "composition": "Բնական չրեր (ծիրան, դեղձ, սալորաչիր, թուզ, ընկույզ, նուշ), մուգ շոկոլադ (62% կակաոյի պարունակությամբ)՝ կակաոյի զանգված, կակաոյի կարագ, շաքար, էմուլգատոր (սոյայի լեցիտին), վանիլին։",
+      "description": "Չրերի ընտիր հավաքածու՝ պատված մուգ շոկոլադով։ Փաթեթավորված է որպես նվիրատու տուփ՝ ձեռքի համար նախատեսված ճարմանդով։ Իդեալական ընտրություն տոնական առիթների և գործնական նվերների համար։",
       "variants": [
         {
           "id": "v1",
-          "flavor": "Ընկույզ"
+          "flavor": "Դեղձ, թուզ, սալոր՝ նուշով և ընկույզով",
+          "image": "/images/products/variant-walnut.png"
         },
         {
           "id": "v2",
-          "flavor": "Թուզ"
+          "flavor": "Դեղձ ընկույզով",
+          "image": "/images/products/variant-peach.png"
         },
         {
           "id": "v3",
-          "flavor": "Ծիրան"
+          "flavor": "Սալոր նուշով",
+          "image": "/images/products/variant-plum.png"
         },
         {
           "id": "v4",
-          "flavor": "Սալոր"
+          "flavor": "Ծիրան ընկույզով",
+          "image": "/images/products/variant-apricot.png"
+        },
+        {
+          "id": "v5",
+          "flavor": "Թուզ ընկույզով",
+          "image": "/images/products/variant-fig.png"
         }
-      ]
+      ],
+      "shelf_life_months": 5
     },
     {
       "id": 2,
       "lang": "ru",
       "slug": "shokoladapatat-chrer-230",
       "category_slug": "chocolate-covered",
-      "sku": "2309",
+      "sku": "230",
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-1.jpg",
+        "/images/products/choco-chir-230-1.png",
         "/images/products/choco-chir-230-2.jpg",
         "/images/products/choco-chir-230-3.jpg"
       ],
@@ -356,37 +372,47 @@
         "cocoa_62"
       ],
       "name": "Сухофрукты в шоколаде",
-      "composition": "Сухофрукты (абрикос, персик, слива, инжир), тёмный шоколад (62% какао), тёртое какао, какао-масло, сахар, эмульгатор (соевый лецитин), ванилин.",
-      "description": "Отборные сухофрукты в тёмном шоколаде.",
+      "composition": "Натуральные сухофрукты (абрикосы, персики, чернослив, инжир, грецкие орехи, миндаль), темный шоколад (62% какао): какао-масса, какао-масло, сахар, эмульгатор (соевый лецитин), ванилин.",
+      "description": "Ассортимент сухофруктов в темном шоколаде. Упаковано в подарочную коробку с удобной застежкой. Идеальный выбор для праздничных мероприятий и практичных подарков.",
       "variants": [
         {
           "id": "v1",
-          "flavor": "Грецкий орех"
+          "flavor": "Ассорти: персик, инжир и слива с миндалём и грецким орехом",
+          "image": "/images/products/variant-walnut.png"
         },
         {
           "id": "v2",
-          "flavor": "Инжир"
+          "flavor": "Персик с грецким орехом",
+          "image": "/images/products/variant-peach.png"
         },
         {
           "id": "v3",
-          "flavor": "Абрикос"
+          "flavor": "Слива с миндалём",
+          "image": "/images/products/variant-plum.png"
         },
         {
           "id": "v4",
-          "flavor": "Слива"
+          "flavor": "Абрикос с грецким орехом",
+          "image": "/images/products/variant-apricot.png"
+        },
+        {
+          "id": "v5",
+          "flavor": "Инжир с грецким орехом",
+          "image": "/images/products/variant-fig.png"
         }
-      ]
+      ],
+      "shelf_life_months": 5
     },
     {
       "id": 3,
       "lang": "en",
       "slug": "shokoladapatat-chrer-230",
       "category_slug": "chocolate-covered",
-      "sku": "2309",
+      "sku": "230",
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-1.jpg",
+        "/images/products/choco-chir-230-1.png",
         "/images/products/choco-chir-230-2.jpg",
         "/images/products/choco-chir-230-3.jpg"
       ],
@@ -396,26 +422,36 @@
         "cocoa_62"
       ],
       "name": "Chocolate-covered dried fruits",
-      "composition": "Dried fruits (apricot, peach, plum, fig), dark chocolate (62% cocoa), cocoa mass, cocoa butter, sugar, emulsifier (soy lecithin), vanillin.",
-      "description": "A select mix of dried fruits coated in dark chocolate.",
+      "composition": "Natural dried fruits (apricot, peach, prune, fig, walnut, almond), dark chocolate (62% cocoa content): cocoa mass, cocoa butter, sugar, emulsifier (soy lecithin), vanillin.",
+      "description": "A premium assortment of dried fruits coated in dark chocolate. Packaged as a gift box featuring a convenient carrying handle. An ideal choice for festive occasions and corporate gifts.",
       "variants": [
         {
           "id": "v1",
-          "flavor": "Walnut"
+          "flavor": "Assorted peach, fig and plum with almond and walnut",
+          "image": "/images/products/variant-walnut.png"
         },
         {
           "id": "v2",
-          "flavor": "Fig"
+          "flavor": "Peach with walnut",
+          "image": "/images/products/variant-peach.png"
         },
         {
           "id": "v3",
-          "flavor": "Apricot"
+          "flavor": "Plum with almond",
+          "image": "/images/products/variant-plum.png"
         },
         {
           "id": "v4",
-          "flavor": "Plum"
+          "flavor": "Apricot with walnut",
+          "image": "/images/products/variant-apricot.png"
+        },
+        {
+          "id": "v5",
+          "flavor": "Fig with walnut",
+          "image": "/images/products/variant-fig.png"
         }
-      ]
+      ],
+      "shelf_life_months": 5
     },
     {
       "id": 4,
@@ -438,13 +474,16 @@
       "variants": [
         {
           "id": "v1",
-          "flavor": "Դեղձ"
+          "flavor": "Դեղձ",
+          "image": "/images/products/variant-default.jpg"
         },
         {
           "id": "v2",
-          "flavor": "Խնձոր"
+          "flavor": "Խնձոր",
+          "image": "/images/products/variant-default.jpg"
         }
-      ]
+      ],
+      "shelf_life_months": 5
     },
     {
       "id": 5,
@@ -467,13 +506,16 @@
       "variants": [
         {
           "id": "v1",
-          "flavor": "Персик"
+          "flavor": "Персик",
+          "image": "/images/products/variant-default.jpg"
         },
         {
           "id": "v2",
-          "flavor": "Яблоко"
+          "flavor": "Яблоко",
+          "image": "/images/products/variant-default.jpg"
         }
-      ]
+      ],
+      "shelf_life_months": 5
     },
     {
       "id": 6,
@@ -496,51 +538,158 @@
       "variants": [
         {
           "id": "v1",
-          "flavor": "Peach"
+          "flavor": "Peach",
+          "image": "/images/products/variant-default.jpg"
         },
         {
           "id": "v2",
-          "flavor": "Apple"
+          "flavor": "Apple",
+          "image": "/images/products/variant-default.jpg"
         }
-      ]
+      ],
+      "shelf_life_months": 5
     }
   ],
-  "faq": [
+  "product_page_labels": [
     {
       "id": 1,
       "lang": "am",
-      "question": "Արդյո՞ք ձեր արտադրանքը բնական է",
-      "answer": "Այո: Fruit Food ընկերության արտադրանքները պատրաստվում են բացառապես բնական հումքից՝ առանց արհեստական հավելումների, կոնսերվանտների և ներկանյութերի:"
+      "home_label": "Գլխավոր",
+      "catalog_label": "Տեսականի",
+      "composition_eyebrow": "Բաղադրությունը",
+      "close_button": "Փակել",
+      "previous_image": "Նախորդ նկարը",
+      "next_image": "Հաջորդ նկարը",
+      "image_label": "Նկար",
+      "sku_label": "Կոդ",
+      "variants_label": "Համեր",
+      "selected_label": "Ընտրված է",
+      "composition_button": "Դիտել բաղադրությունը",
+      "weight_unit": "Գ",
+      "taste_unit": "համ"
     },
     {
       "id": 2,
       "lang": "ru",
-      "question": "Ваша продукция натуральная?",
-      "answer": "Да. Продукция Fruit Food производится исключительно из натурального сырья, без искусственных добавок, консервантов и красителей."
+      "home_label": "Главная",
+      "catalog_label": "Каталог",
+      "composition_eyebrow": "Состав продукта",
+      "close_button": "Закрыть",
+      "previous_image": "Предыдущее фото",
+      "next_image": "Следующее фото",
+      "image_label": "Фото",
+      "sku_label": "Артикул",
+      "variants_label": "Вкусы",
+      "selected_label": "Выбрано",
+      "composition_button": "Состав продукта",
+      "weight_unit": "Г",
+      "taste_unit": "вкусов"
     },
     {
       "id": 3,
       "lang": "en",
-      "question": "Are your products natural?",
-      "answer": "Yes. Fruit Food products are made exclusively from natural raw materials, with no artificial additives, preservatives, or colorants."
+      "home_label": "Home",
+      "catalog_label": "Catalog",
+      "composition_eyebrow": "Ingredients",
+      "close_button": "Close",
+      "previous_image": "Previous image",
+      "next_image": "Next image",
+      "image_label": "Image",
+      "sku_label": "SKU",
+      "variants_label": "Tastes",
+      "selected_label": "Selected",
+      "composition_button": "View ingredients",
+      "weight_unit": "G",
+      "taste_unit": "tastes"
+    }
+  ],
+  "tag_icons": [
+    {
+      "id": 1,
+      "code": "100_natural",
+      "icon": "🌿"
+    },
+    {
+      "id": 2,
+      "code": "made_in_armenia",
+      "icon": "🇦🇲"
+    },
+    {
+      "id": 3,
+      "code": "armenian_fruit",
+      "icon": "🇦🇲"
     },
     {
       "id": 4,
+      "code": "cocoa_62",
+      "icon": "🍫"
+    }
+  ],
+  "philosophy_headings": [
+    {
+      "id": 1,
       "lang": "am",
-      "question": "Որտեղի՞ց են արտադրվում Fruit Food-ի արտադրանքները",
-      "answer": "Մեր արտադրանքները արտադրվում են Հայաստանում, Արարատյան դաշտավայրի բնական հումքից:"
+      "heading_1": "Մեր փիլիսոփայությունը",
+      "heading_2": "Բնությունն իր ամենամաքուր տեսքով։"
     },
     {
-      "id": 5,
+      "id": 2,
       "lang": "ru",
-      "question": "Где производится продукция Fruit Food?",
-      "answer": "Наша продукция производится в Армении, из натурального сырья Араратской долины."
+      "heading_1": "Наша философия",
+      "heading_2": "Природа в своей чистейшей форме."
     },
     {
-      "id": 6,
+      "id": 3,
       "lang": "en",
-      "question": "Where is Fruit Food produced?",
-      "answer": "Our products are made in Armenia, from natural raw materials of the Ararat valley."
+      "heading_1": "Our philosophy",
+      "heading_2": "Nature in its purest form."
+    }
+  ],
+  "philosophy_text": [
+    {
+      "id": "1",
+      "lang": "am",
+      "text": "Մենք օգտագործում ենք բացառապես հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի, բուրավետիչների և կոնսերվանտների։ Յուրաքանչյուր արտադրանք ստեղծվում է այնպես, որպեսզի հնարավորինս պահպանվեն մրգի բնական համը, բույրը և օգտակար հատկությունները։",
+      "btn": "Կարդալ ավելին →"
+    },
+    {
+      "id": "2",
+      "lang": "ru",
+      "text": "Мы используем исключительно отборные армянские фрукты, без добавления сахара, искусственных красителей, ароматизаторов и консервантов. Каждый продукт создается таким образом, чтобы максимально сохранить естественный вкус, аромат и полезные свойства фруктов.",
+      "btn": "Читать далее →"
+    },
+    {
+      "id": "3",
+      "lang": "en",
+      "text": "We use exclusively select Armenian fruits, with no added sugar, artificial colorings, flavorings, or preservatives. Each product is crafted to preserve the fruit's natural taste, aroma, and beneficial properties as much as possible.",
+      "btn": "Read more →"
+    }
+  ],
+  "faq_small": [
+    {
+      "id": 1,
+      "lang": "en",
+      "text": "FAQ"
+    }
+  ],
+  "faq_heading": [
+    {
+      "id": 1,
+      "lang": "am",
+      "heading": "Հաճախ տրվող հարցեր",
+      "text": "Արտադրանքի, արտադրության և համագործակցության մասին հիմնական հարցերի պատասխանները։"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "heading": "Часто задаваемые вопросы",
+      "text": "Ответы на ключевые вопросы о продукции, производстве и сотрудничестве."
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "heading": "Frequently Asked Questions",
+      "text": "Answers to key questions regarding products, production, and cooperation."
     }
   ],
   "stats": [
