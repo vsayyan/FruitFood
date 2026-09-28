@@ -25,16 +25,15 @@ export default async function RootLayout({ children }) {
   const lang = await displayLang()
 
   return (
-  <html lang={lang} className={notoSansArmenian.variable}>
-    <body className="layout">
-      <MenubarProvider>
-        <Header />
-        <main className="main-content">{children}</main>
-        {/* TODO: uncomment երբ Vahram push անի PartnerCta-ի իրական կոդը */}
-        {/* <PartnerCtaWrapper /> */}
-        <Footer />
-      </MenubarProvider>
-    </body>
-  </html>
-)
+    <html lang={lang} className={notoSansArmenian.variable}>
+      <body className="layout">
+        <MenubarProvider>
+          <Header />
+          <main className="main-content">{children}</main>
+          {/* <PartnerCtaWrapper /> */}
+          <Footer />
+        </MenubarProvider>
+      </body>
+    </html>
+  )
 }
