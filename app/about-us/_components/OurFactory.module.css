@@ -1,18 +1,19 @@
 .section {
-  width: 100%;
-  padding: var(--space-2xl) 0;
+  width: 1440px;
+  max-width: 100%;
+  padding: 120px 120px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: var(--container-width);
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--container-padding);
 }
 
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
+  gap: 60px;
   align-items: start;
 }
 
@@ -23,18 +24,21 @@
 
 .label {
   margin-bottom: var(--space-sm);
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 1.8px;
+  color: #6B6B6B;
 }
 
 .title {
   width: 570px;
   height: 88px;
   margin: 0 0 var(--space-md);
-  font-size: 38px;
+  font-size: 40px;
   line-height: 44px;
   font-weight: 600;
+  letter-spacing: -0.6px;
 }
 
 .title span {
@@ -49,16 +53,19 @@
 
 .text p {
   margin: 0;
-  font-size: var(--font-size-base);
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #6B6B6B;
 }
 
 .slider {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 484.5px;
   overflow: hidden;
-  border-radius: var(--radius-lg);
+  border-radius: 32px;
 }
 
 .sliderImage {
@@ -134,10 +141,10 @@
 }
 
 .galleryItem {
-  width: 333px;
-  height: 444px;
+  width: 333.7px;
+  height: 444.95px;
   overflow: hidden;
-  border-radius: var(--radius-md);
+  border-radius: 24px;
 }
 
 .galleryItem img {
@@ -145,6 +152,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 .bottomContent {
@@ -156,11 +164,29 @@
 
 .bottomContent p {
   margin: 0;
-  font-size: var(--font-size-base);
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 29.8px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #1F1F1F;
+}
+
+.bottomContent p:first-child {
+  max-width: 480px;
+  min-height: 149px;
+}
+
+.bottomContent p:last-child {
+  max-width: 480px;
+  min-height: 238px;
 }
 
 @media (max-width: 900px) {
+  .section {
+    width: 100%;
+    padding: var(--space-xl) var(--container-padding);
+  }
+
   .main {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -191,11 +217,17 @@
     grid-template-columns: 1fr;
     gap: var(--space-md);
   }
+
+  .bottomContent p:first-child,
+  .bottomContent p:last-child {
+    max-width: 100%;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 600px) {
   .section {
-    padding: var(--space-xl) 0;
+    padding: var(--space-xl) var(--container-padding);
   }
 
   .title {

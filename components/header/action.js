@@ -16,9 +16,8 @@ export async function getLangs() {
   return res.data
 }
 
-export async function getCategories(lang)  {
-  const res = await axios.get(`categories?lang=${lang}`)
-  return res.data
+export async function getCategories(lang) {
+  return []
 }
 
 export async function getHeaderData() {
