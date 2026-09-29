@@ -28,7 +28,7 @@ export default function Philosophy({ headings, text }) {
                 <p>{content.text}</p>
                 <a href="/#faq">
                     {content.btn}
-                    <span>→</span>
+                    
                 </a>
             </div>
         </section>
