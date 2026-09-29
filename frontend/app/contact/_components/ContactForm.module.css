@@ -54,10 +54,11 @@
   color: #b3261e;
 }
 
+
 .form .title {
   font-weight: 400;
   font-family: var(--font-family);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-green);
 }
 
@@ -69,10 +70,11 @@
   gap: 4px;
 }
 
+
 .buttonContent .buttonText {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-mint);
 }
 
