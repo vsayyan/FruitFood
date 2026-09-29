@@ -1,0 +1,62 @@
+/* Չափերը՝ Figma «product card» (desktop 1440 / mobile 375) frame-երից */
+
+.inner {
+  width: 100%;
+  max-width: calc(1200px + 2 * var(--space-sm));
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+/* Header-ը fixed ա (65px), ուստի վերևի 120px-ը ներառում ա header-ի տեղը */
+.breadcrumbSection {
+  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-mint);
+  padding: 120px 0 56px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px var(--space-xs);
+  list-style: none;
+  font-size: 13px;
+  line-height: 20.8px;
+  color: var(--color-text-muted);
+}
+
+.crumbLink:hover {
+  color: var(--color-green-dark);
+}
+
+.separator {
+  opacity: 0.4;
+}
+
+.crumbCurrent {
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.product {
+  display: grid;
+  grid-template-columns: minmax(0, 560px) minmax(0, 560px);
+  justify-content: space-between;
+  column-gap: var(--space-lg);
+  align-items: start;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+@media (max-width: 900px) {
+  .breadcrumbSection {
+    padding: 95px 0 32px;
+  }
+
+  .product {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: var(--space-lg);
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+}
