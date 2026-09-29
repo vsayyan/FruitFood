@@ -8,7 +8,7 @@ import Footer from '@/components/footer'
 
 const notoSansArmenian = Noto_Sans_Armenian({
   subsets: ['armenian', 'latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-main',
 })
 
