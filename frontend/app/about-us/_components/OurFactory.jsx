@@ -58,6 +58,7 @@ export default function OurFactory({ data }) {
                   type="button"
                   className={`${styles.arrow} ${styles.prev}`}
                   onClick={prevSlide}
+                  aria-label={data.slider_previous_label}
                 >
                   ‹
                 </button>
@@ -66,11 +67,12 @@ export default function OurFactory({ data }) {
                   type="button"
                   className={`${styles.arrow} ${styles.next}`}
                   onClick={nextSlide}
+                  aria-label={data.slider_next_label}
                 >
                   ›
                 </button>
 
-                <div className={styles.dots}>
+                <div className={styles.dots} role="group" aria-label={data.slider_navigation_label}>
                   {sliderImages.map((item, index) => (
                     <button
                       key={item.id}
@@ -79,6 +81,8 @@ export default function OurFactory({ data }) {
                         index === currentIndex ? styles.active : ''
                       }`}
                       onClick={() => setCurrentIndex(index)}
+                      aria-label={`${data.slider_image_label} ${index + 1}`}
+                      aria-current={index === currentIndex ? 'true' : undefined}
                     />
                   ))}
                 </div>

@@ -5,16 +5,34 @@ import './globals.css'
 import { MenubarProvider } from '@/context/menubarContext'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import { getLogo } from '@/components/header/action'
+import { getFooterLabel } from '@/components/footer/action'
 
 const notoSansArmenian = Noto_Sans_Armenian({
   subsets: ['armenian', 'latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-main',
 })
 
-export const metadata = {
-  title: { default: 'Fruit Food', template: '%s | Fruit Food' },
-  description: 'Հայաստանյան բնական չրագործեր և միրգային քաղցրավենիք 1995 թվականից',
+// Site-ի անունը և նկարագրությունը գալիս են db-ից՝ ըստ լեզվի։ Եթե API-ն
+// հասանելի չի, metadata-ն պարզապես մնում ա անունով, էջը չի ընկնում։
+export async function generateMetadata() {
+  const lang = await displayLang()
+  let siteName = 'Fruit Food'
+  let description
+
+  try {
+    const [logo, footer] = await Promise.all([getLogo(), getFooterLabel(lang)])
+    siteName = logo?.title || siteName
+    description = footer?.description
+  } catch {
+    // API-ն հասանելի չի՝ թողնում ենք default-ը
+  }
+
+  return {
+    title: { default: siteName, template: `%s | ${siteName}` },
+    description,
+  }
 }
 
 export default async function RootLayout({ children }) {
