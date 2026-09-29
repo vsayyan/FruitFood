@@ -8,6 +8,9 @@
   --color-text-muted: #6b6b6b;
   --color-border: #e5e5e5;
   --color-error: #005b30;
+  --color-green-accent: #45a14c; /* eyebrow/փոքր label-ներ (Figma) */
+  --color-green-deep: #003d20;   /* tag-երի տեքստ (Figma) */
+  --color-overlay: rgba(31, 31, 31, 0.55); /* modal-ի ետևի ֆոն */
 
   /* Spacing scale — բոլոր margin/padding սրանցից, ոչ պատահական թվեր */
   --space-xs: 8px;

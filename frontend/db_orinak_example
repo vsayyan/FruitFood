@@ -264,7 +264,7 @@
       "lang": "am",
       "code": "made_in_armenia",
       "icon": "flag",
-      "label": "Հայկական միրգ"
+      "label": "Հայկական մրգեր"
     },
     {
       "id": 5,
@@ -285,7 +285,7 @@
       "lang": "am",
       "code": "cocoa_62",
       "icon": "cocoa",
-      "label": "62% կակավ"
+      "label": "62% կակաո"
     },
     {
       "id": 8,
@@ -312,7 +312,7 @@
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-1.png",
+        "/images/products/choco-chir-230-assorted.webp",
         "/images/products/choco-chir-230-2.jpg",
         "/images/products/choco-chir-230-3.jpg"
       ],
@@ -328,27 +328,32 @@
         {
           "id": "v1",
           "flavor": "Դեղձ, թուզ, սալոր՝ նուշով և ընկույզով",
-          "image": "/images/products/variant-walnut.png"
+          "image": "/images/products/taste-assorted.jpg",
+          "box_image": "/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Դեղձ ընկույզով",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Սալոր նուշով",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": "/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Ծիրան ընկույզով",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Թուզ ընկույզով",
-          "image": "/images/products/variant-fig.png"
+          "image": "/images/products/taste-fig-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
       "shelf_life_months": 5
@@ -362,7 +367,7 @@
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-1.png",
+        "/images/products/choco-chir-230-assorted.webp",
         "/images/products/choco-chir-230-2.jpg",
         "/images/products/choco-chir-230-3.jpg"
       ],
@@ -378,27 +383,32 @@
         {
           "id": "v1",
           "flavor": "Ассорти: персик, инжир и слива с миндалём и грецким орехом",
-          "image": "/images/products/variant-walnut.png"
+          "image": "/images/products/taste-assorted.jpg",
+          "box_image": "/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Персик с грецким орехом",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Слива с миндалём",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": "/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Абрикос с грецким орехом",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Инжир с грецким орехом",
-          "image": "/images/products/variant-fig.png"
+          "image": "/images/products/taste-fig-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
       "shelf_life_months": 5
@@ -412,7 +422,7 @@
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-1.png",
+        "/images/products/choco-chir-230-assorted.webp",
         "/images/products/choco-chir-230-2.jpg",
         "/images/products/choco-chir-230-3.jpg"
       ],
@@ -428,27 +438,32 @@
         {
           "id": "v1",
           "flavor": "Assorted peach, fig and plum with almond and walnut",
-          "image": "/images/products/variant-walnut.png"
+          "image": "/images/products/taste-assorted.jpg",
+          "box_image": "/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Peach with walnut",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Plum with almond",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": "/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Apricot with walnut",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Fig with walnut",
-          "image": "/images/products/variant-fig.png"
+          "image": "/images/products/taste-fig-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
       "shelf_life_months": 5
@@ -555,8 +570,8 @@
       "id": 1,
       "lang": "am",
       "home_label": "Գլխավոր",
-      "catalog_label": "Տեսականի",
-      "composition_eyebrow": "Բաղադրությունը",
+      "catalog_label": "Արտադրանք",
+      "composition_eyebrow": "Բաղադրություն",
       "close_button": "Փակել",
       "previous_image": "Նախորդ նկարը",
       "next_image": "Հաջորդ նկարը",
@@ -565,15 +580,16 @@
       "variants_label": "Համեր",
       "selected_label": "Ընտրված է",
       "composition_button": "Դիտել բաղադրությունը",
-      "weight_unit": "Գ",
-      "taste_unit": "համ"
+      "weight_unit": "գ",
+      "taste_unit": "համ",
+      "breadcrumb_label": "Նավիգացիոն ուղի"
     },
     {
       "id": 2,
       "lang": "ru",
       "home_label": "Главная",
-      "catalog_label": "Каталог",
-      "composition_eyebrow": "Состав продукта",
+      "catalog_label": "Продукция",
+      "composition_eyebrow": "Состав",
       "close_button": "Закрыть",
       "previous_image": "Предыдущее фото",
       "next_image": "Следующее фото",
@@ -582,14 +598,15 @@
       "variants_label": "Вкусы",
       "selected_label": "Выбрано",
       "composition_button": "Состав продукта",
-      "weight_unit": "Г",
-      "taste_unit": "вкусов"
+      "weight_unit": "г",
+      "taste_unit": "вкусов",
+      "breadcrumb_label": "Навигационная цепочка"
     },
     {
       "id": 3,
       "lang": "en",
       "home_label": "Home",
-      "catalog_label": "Catalog",
+      "catalog_label": "Products",
       "composition_eyebrow": "Ingredients",
       "close_button": "Close",
       "previous_image": "Previous image",
@@ -599,8 +616,9 @@
       "variants_label": "Tastes",
       "selected_label": "Selected",
       "composition_button": "View ingredients",
-      "weight_unit": "G",
-      "taste_unit": "tastes"
+      "weight_unit": "g",
+      "taste_unit": "tastes",
+      "breadcrumb_label": "Breadcrumb"
     }
   ],
   "tag_icons": [
