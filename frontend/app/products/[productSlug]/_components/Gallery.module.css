@@ -22,17 +22,17 @@
 
 .mainImage {
   position: absolute;
-  top: 10.85%;
+  top: 10.89%;
   left: 0;
   width: 100%;
-  height: 77.94%;
+  height: 78.21%;
   object-fit: cover;
 }
 
 .controls {
   position: absolute;
   left: 50%;
-  bottom: var(--space-md);
+  bottom: 26px;
   transform: translateX(-50%);
   display: flex;
   gap: var(--space-md);
