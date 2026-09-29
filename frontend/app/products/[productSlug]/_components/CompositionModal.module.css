@@ -1,0 +1,74 @@
+/* Figma՝ «product card» frame-ի composition modal (560px, padding 40) */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: grid;
+  place-items: center;
+  padding: var(--space-sm);
+  background: var(--color-overlay);
+  backdrop-filter: blur(4px);
+}
+
+.dialog {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  max-height: calc(100vh - 2 * var(--space-sm));
+  overflow-y: auto;
+  padding: var(--space-lg);
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 32px 80px -20px rgba(31, 31, 31, 0.3);
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-green-accent);
+}
+
+.title {
+  padding: 10px var(--space-lg) 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.4px;
+  color: var(--color-green);
+}
+
+.body {
+  margin-top: var(--space-md);
+  padding: 22px var(--space-md);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  line-height: 25.5px;
+  color: var(--color-text);
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-cream);
+}
+
+@media (max-width: 600px) {
+  .dialog {
+    padding: var(--space-md);
+  }
+
+  .closeButton {
+    top: 12px;
+    right: 12px;
+  }
+}
