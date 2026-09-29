@@ -20,7 +20,7 @@ export default function Langs({ data, lang }) {
       <span className={styles.currentLang}>
         <Image
                 src={`/images/header/${lang}.svg`}
-                alt='language'
+                alt={data.find((item) => item.code === lang)?.label ?? ''}
                 width={19}
                 height={15}
                 loading='eager'

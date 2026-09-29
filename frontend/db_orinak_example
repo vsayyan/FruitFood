@@ -131,12 +131,14 @@
         {
           "id": 1,
           "image": "/images/footer/facebook.svg",
-          "url": "https://www.facebook.com/"
+          "url": "https://www.facebook.com/",
+          "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/footer/instagram.svg",
-          "url": "https://www.instagram.com/"
+          "url": "https://www.instagram.com/",
+          "label": "Instagram"
         }
       ]
     },
@@ -154,12 +156,14 @@
         {
           "id": 1,
           "image": "/images/footer/facebook.svg",
-          "url": "https://www.facebook.com/"
+          "url": "https://www.facebook.com/",
+          "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/footer/instagram.svg",
-          "url": "https://www.instagram.com/"
+          "url": "https://www.instagram.com/",
+          "label": "Instagram"
         }
       ]
     },
@@ -177,12 +181,14 @@
         {
           "id": 1,
           "image": "/images/footer/facebook.svg",
-          "url": "https://www.facebook.com/"
+          "url": "https://www.facebook.com/",
+          "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/footer/instagram.svg",
-          "url": "https://www.instagram.com/"
+          "url": "https://www.instagram.com/",
+          "label": "Instagram"
         }
       ]
     }
@@ -1565,6 +1571,29 @@
       "lang": "en",
       "question": "Do you accept individual or corporate orders?",
       "answer": "Yes, we accept corporate gift orders as well as bespoke individual requests."
+    }
+  ],
+  "header_labels": [
+    {
+      "id": 1,
+      "lang": "am",
+      "all_products": "Ամբողջ արտադրանքը",
+      "products_toggle_label": "Բացել արտադրանքի ցանկը",
+      "menu_label": "Մենյու"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "all_products": "Все продукты",
+      "products_toggle_label": "Открыть список продукции",
+      "menu_label": "Меню"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "all_products": "All products",
+      "products_toggle_label": "Toggle products list",
+      "menu_label": "Menu"
     }
   ]
 }

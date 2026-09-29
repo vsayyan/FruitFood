@@ -13,7 +13,7 @@ export default async function Footer() {
           <div className={`${styles.title} ${styles.boxes}`}>
               <Image
                 src={data.image}
-                alt='logo'
+                alt={data.title}
                 width={101}
                 height={37}
                 loading='eager'
@@ -41,7 +41,7 @@ export default async function Footer() {
                   <a key={link.id} href={link.url} target='_blank' rel='noreferrer'>
                     <Image
                       src={link.image}
-                      alt={'Link to social media'}
+                      alt={link.label ?? ''}
                       width={38}
                       height={38}
                       loading='eager'

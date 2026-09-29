@@ -10,7 +10,7 @@ export default function Philosophy({ headings, text }) {
             <div className={styles.left_side}>
                 <Image
                     src="/images/img.png"
-                    alt={heading.heading_1 || 'Our Philosophy'}
+                    alt={heading.heading_1 ?? ''}
                     width={579}
                     height={510}
                     className={styles.image}

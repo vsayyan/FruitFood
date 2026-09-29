@@ -15,7 +15,7 @@ export default async function Header() {
             <Logo data={data.logo} />
             <RightSide data={data}/>
           </div>
-          <Menubar/>
+          <Menubar label={data.labels.menu_label} />
         </div>
       </div>
     </header>
