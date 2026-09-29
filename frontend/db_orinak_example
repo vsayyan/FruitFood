@@ -1306,7 +1306,11 @@
         }
       ],
       "bottom_left_text": "Արտադրական համալիրի ճարտարապետությունը համատեղում է ժամանակակից տեխնոլոգիաներն ու հայկական ավանդական ոճը։ Հնաոճ ամրոց հիշեցնող արտաքին տեսքը խորհրդանշում է մեր նվիրվածությունը հայկական արժեքներին։",
-      "bottom_right_text": "Գործարանին կից գործում է նաև Fruit Food ցուցասրահ-խանութը, որտեղ այցելուները կարող են ծանոթանալ մեր արտադրանքի ամբողջ տեսականուն, համտեսել նորույթները և ձեռք բերել արտադրանքը անմիջապես արտադրողից։ Այն նաև հնարավորություն է տալիս մեր գործընկերներին և հյուրերին մոտիկից ծանոթանալ ընկերության գործունեությանը, արտադրական մշակույթին և արտադրանքի որակին։"
+      "bottom_right_text": "Գործարանին կից գործում է նաև Fruit Food ցուցասրահ-խանութը, որտեղ այցելուները կարող են ծանոթանալ մեր արտադրանքի ամբողջ տեսականուն, համտեսել նորույթները և ձեռք բերել արտադրանքը անմիջապես արտադրողից։ Այն նաև հնարավորություն է տալիս մեր գործընկերներին և հյուրերին մոտիկից ծանոթանալ ընկերության գործունեությանը, արտադրական մշակույթին և արտադրանքի որակին։",
+      "slider_previous_label": "Նախորդ նկարը",
+      "slider_next_label": "Հաջորդ նկարը",
+      "slider_image_label": "Նկար",
+      "slider_navigation_label": "Նկարների կառավարում"
     },
     {
       "id": "2",
@@ -1346,7 +1350,11 @@
         }
       ],
       "bottom_left_text": "Архитектура производственного комплекса сочетает современные технологии и традиционный армянский стиль. Внешний вид, напоминающий старинную крепость, символизирует нашу приверженность армянским ценностям.",
-      "bottom_right_text": "Рядом с фабрикой также работает выставочный зал-магазин Fruit Food, где посетители могут ознакомиться со всем ассортиментом нашей продукции, попробовать новинки и приобрести продукцию непосредственно у производителя. Это также даёт нашим партнёрам и гостям возможность поближе познакомиться с деятельностью компании, производственной культурой и качеством продукции."
+      "bottom_right_text": "Рядом с фабрикой также работает выставочный зал-магазин Fruit Food, где посетители могут ознакомиться со всем ассортиментом нашей продукции, попробовать новинки и приобрести продукцию непосредственно у производителя. Это также даёт нашим партнёрам и гостям возможность поближе познакомиться с деятельностью компании, производственной культурой и качеством продукции.",
+      "slider_previous_label": "Предыдущее фото",
+      "slider_next_label": "Следующее фото",
+      "slider_image_label": "Фото",
+      "slider_navigation_label": "Управление изображениями"
     },
     {
       "id": "3",
@@ -1386,7 +1394,11 @@
         }
       ],
       "bottom_left_text": "The architecture of the production complex combines modern technologies with traditional Armenian style. Its appearance, reminiscent of an ancient fortress, symbolizes our dedication to Armenian values.",
-      "bottom_right_text": "A Fruit Food showroom-store also operates next to the factory, where visitors can explore our full range of products, taste new products and purchase products directly from the manufacturer. It also gives our partners and guests the opportunity to learn more about the company's activities, production culture and product quality."
+      "bottom_right_text": "A Fruit Food showroom-store also operates next to the factory, where visitors can explore our full range of products, taste new products and purchase products directly from the manufacturer. It also gives our partners and guests the opportunity to learn more about the company's activities, production culture and product quality.",
+      "slider_previous_label": "Previous image",
+      "slider_next_label": "Next image",
+      "slider_image_label": "Image",
+      "slider_navigation_label": "Image navigation"
     }
   ],
   "we_believe": [
