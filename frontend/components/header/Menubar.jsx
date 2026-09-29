@@ -5,7 +5,7 @@ import { useMenubar } from '@/context/menubarContext'
 import styles from './Header.module.css'
 
 
-const Menubar = () => {
+const Menubar = ({ label }) => {
     const {isMenuOpen, setIsMenuOpen} = useMenubar()
 
     return (
@@ -16,7 +16,7 @@ const Menubar = () => {
                                 : '/images/header/menubar.svg'
                 }
                 className={styles.menubar}
-                alt='menu-bar'
+                alt={label ?? ''}
                 width={30}
                 height={30}
                 onClick={() => setIsMenuOpen(prev => !prev)}

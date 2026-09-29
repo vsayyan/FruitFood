@@ -10,7 +10,7 @@ export default function RightSide({data}) {
 
   return (
      <div className={`${styles.right_side} ${isMenuOpen ? styles.mobile_open : ''}`}>
-        <Navbar data={data.navbar} categories={data.categories} lang={data.lang}/>
+        <Navbar data={data.navbar} categories={data.categories} labels={data.labels} />
         <Langs data={data.langs} lang={data.lang} />                              
     </div>
   )

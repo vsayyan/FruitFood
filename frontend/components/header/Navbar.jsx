@@ -7,18 +7,12 @@ import { usePathname } from 'next/navigation'
 import { useMenubar } from '@/context/menubarContext'
 import styles from './Navbar.module.css'
 
-export default function Navbar({ data, categories, lang }) {
+export default function Navbar({ data, categories, labels }) {
   const pathname = usePathname()
 
   const [openProducts, setOpenProducts] = useState(false)
 
   const { setIsMenuOpen } = useMenubar()
-
-  const allProducts = {
-    am: 'Ամբողջ արտադրանքը',
-    ru: 'Все продукты',
-    en: 'All products'
-  }
 
   return (
     <nav className={styles.nav}>
@@ -56,7 +50,7 @@ export default function Navbar({ data, categories, lang }) {
                 <button
                   type="button"
                   className={styles.products_toggle}
-                  aria-label="Toggle products dropdown"
+                  aria-label={labels?.products_toggle_label}
                   aria-expanded={openProducts}
                   onClick={() => setOpenProducts((prev) => !prev)}
                 >
@@ -121,12 +115,12 @@ export default function Navbar({ data, categories, lang }) {
                 >
                   <Image
                     src="/images/header/all-products.svg"
-                    alt="mark for all products"
+                    alt=""
                     width={48}
                     height={48}
                   />
 
-                  <span>{allProducts[lang]}</span>
+                  <span>{labels?.all_products}</span>
                 </Link>
               </div>
             )}
