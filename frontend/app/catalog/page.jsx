@@ -1,12 +1,7 @@
-import Breadcrumbs from './_components/Breadcrumbs';
+import { getProducts, getProductsByCategory, getBreadcrumbItems, getCooperationCta, getProductPageLabels } from './actions';
 import ProductCard from './_components/ProductCard';
+import Breadcrumbs from './_components/Breadcrumbs';
 import CooperationCta from './_components/CooperationCta';
-import { 
-  getProducts, 
-  getProductsByCategory, 
-  getBreadcrumbItems, 
-  getCooperationCta 
-} from './actions';
 import styles from './page.module.css';
 
 export default async function CatalogPage({ searchParams }) {
@@ -19,6 +14,8 @@ export default async function CatalogPage({ searchParams }) {
 
   const breadcrumbItems = await getBreadcrumbItems(categorySlug);
   const ctaData = await getCooperationCta();
+  
+  const pageLabels = await getProductPageLabels();
 
   return (
     <>
@@ -28,7 +25,11 @@ export default async function CatalogPage({ searchParams }) {
 
           <div className={styles.grid}>
             {products?.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard 
+                key={product.id} 
+                product={product} 
+                tasteLabel={pageLabels.taste_unit} 
+              />
             ))}
           </div>
         </div>

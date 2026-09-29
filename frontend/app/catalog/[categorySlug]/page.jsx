@@ -4,17 +4,19 @@ import CooperationCta from '../_components/CooperationCta';
 import { 
   getProductsByCategory, 
   getBreadcrumbItems, 
-  getCooperationCta 
+  getCooperationCta,
+  getProductPageLabels 
 } from '../actions';
 import styles from '../page.module.css';
 
 export default async function CategoryPage({ params }) {
   const resolvedParams = await params;
-  const categorySlug = resolvedParams?.categorySlug;
+  const categorySlug = resolvedParams?.categorySlug || resolvedParams?.category;
 
   const products = await getProductsByCategory(categorySlug);
   const breadcrumbItems = await getBreadcrumbItems(categorySlug);
   const ctaData = await getCooperationCta();
+  const pageLabels = await getProductPageLabels();
 
   return (
     <>
@@ -24,7 +26,11 @@ export default async function CategoryPage({ params }) {
 
           <div className={styles.grid}>
             {products?.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard 
+                key={product.id} 
+                product={product} 
+                tasteLabel={pageLabels.taste_unit} 
+              />
             ))}
           </div>
         </div>
