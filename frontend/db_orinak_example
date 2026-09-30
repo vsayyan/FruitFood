@@ -362,7 +362,8 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2"
     },
     {
       "id": 2,
@@ -417,7 +418,8 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2"
     },
     {
       "id": 3,
@@ -472,7 +474,8 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2"
     },
     {
       "id": 4,
@@ -495,13 +498,11 @@
       "variants": [
         {
           "id": "v1",
-          "flavor": "Դեղձ",
-          "image": "/images/products/variant-default.jpg"
+          "flavor": "Դեղձ"
         },
         {
           "id": "v2",
-          "flavor": "Խնձոր",
-          "image": "/images/products/variant-default.jpg"
+          "flavor": "Խնձոր"
         }
       ],
       "shelf_life_months": 5
@@ -527,13 +528,11 @@
       "variants": [
         {
           "id": "v1",
-          "flavor": "Персик",
-          "image": "/images/products/variant-default.jpg"
+          "flavor": "Персик"
         },
         {
           "id": "v2",
-          "flavor": "Яблоко",
-          "image": "/images/products/variant-default.jpg"
+          "flavor": "Яблоко"
         }
       ],
       "shelf_life_months": 5
@@ -559,13 +558,11 @@
       "variants": [
         {
           "id": "v1",
-          "flavor": "Peach",
-          "image": "/images/products/variant-default.jpg"
+          "flavor": "Peach"
         },
         {
           "id": "v2",
-          "flavor": "Apple",
-          "image": "/images/products/variant-default.jpg"
+          "flavor": "Apple"
         }
       ],
       "shelf_life_months": 5
