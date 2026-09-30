@@ -34,7 +34,7 @@ export default async function ProductPage({ params }) {
   return (
     <>
       <section className={styles.breadcrumbSection}>
-        <nav className={styles.inner} aria-label={labels.breadcrumb_label}>
+        <nav className="container" aria-label={labels.breadcrumb_label}>
           <ol className={styles.breadcrumbs}>
             <li>
               <Link className={styles.crumbLink} href="/">{labels.home_label}</Link>
@@ -57,7 +57,7 @@ export default async function ProductPage({ params }) {
         </nav>
       </section>
 
-      <div className={`${styles.inner} ${styles.product}`}>
+      <div className={`container ${styles.product}`}>
         <ProductDetails product={product} tags={tags} labels={labels} />
       </div>
     </>
