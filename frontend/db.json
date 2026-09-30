@@ -312,7 +312,9 @@
       "weight_value": 230,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-chir-230.png"
+        "/images/products/choco-chir-230-assorted.webp",
+        "/images/products/choco-chir-230-2.jpg",
+        "/images/products/choco-chir-230-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -326,30 +328,36 @@
         {
           "id": "v1",
           "flavor": "Դեղձ, թուզ, սալոր՝ նուշով և ընկույզով",
-          "image": "/images/products/variant-walnut.png"
+          "image": "/images/products/taste-assorted.jpg",
+          "box_image": "/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Դեղձ ընկույզով",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Սալոր նուշով",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": "/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Ծիրան ընկույզով",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Թուզ ընկույզով",
-          "image": "/images/products/variant-fig.png"
+          "image": "/images/products/taste-fig-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2"
     },
     {
       "id": 2,
@@ -360,7 +368,9 @@
       "weight_value": 230,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-chir-230.png"
+        "/images/products/choco-chir-230-assorted.webp",
+        "/images/products/choco-chir-230-2.jpg",
+        "/images/products/choco-chir-230-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -374,30 +384,36 @@
         {
           "id": "v1",
           "flavor": "Ассорти: персик, инжир и слива с миндалём и грецким орехом",
-          "image": "/images/products/variant-walnut.png"
+          "image": "/images/products/taste-assorted.jpg",
+          "box_image": "/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Персик с грецким орехом",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Слива с миндалём",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": "/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Абрикос с грецким орехом",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Инжир с грецким орехом",
-          "image": "/images/products/variant-fig.png"
+          "image": "/images/products/taste-fig-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2"
     },
     {
       "id": 3,
@@ -408,7 +424,9 @@
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-chir-230.png"
+        "/images/products/choco-chir-230-assorted.webp",
+        "/images/products/choco-chir-230-2.jpg",
+        "/images/products/choco-chir-230-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -422,30 +440,36 @@
         {
           "id": "v1",
           "flavor": "Assorted peach, fig and plum with almond and walnut",
-          "image": "/images/products/variant-walnut.png"
+          "image": "/images/products/taste-assorted.jpg",
+          "box_image": "/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Peach with walnut",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Plum with almond",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": "/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Apricot with walnut",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Fig with walnut",
-          "image": "/images/products/variant-fig.png"
+          "image": "/images/products/taste-fig-walnut.jpg",
+          "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2"
     },
     {
       "id": 4,
@@ -456,7 +480,7 @@
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
-        "/images/product/chrer-200.png"
+        "/images/products/chrer-200.png"
       ],
       "tags": [
         "100_natural",
@@ -469,15 +493,18 @@
         {
           "id": "v1",
           "flavor": "Դեղձ",
-          "image": "/images/products/variant-default.jpg"
+          "image": "",
+          "box_image": ""
         },
         {
           "id": "v2",
           "flavor": "Խնձոր",
-          "image": "/images/products/variant-default.jpg"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1"
     },
     {
       "id": 5,
@@ -488,7 +515,7 @@
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
-        "/images/product/chrer-200.png"
+        "/images/products/chrer-200.png"
       ],
       "tags": [
         "100_natural",
@@ -501,15 +528,18 @@
         {
           "id": "v1",
           "flavor": "Персик",
-          "image": "/images/products/variant-default.jpg"
+          "image": "",
+          "box_image": ""
         },
         {
           "id": "v2",
           "flavor": "Яблоко",
-          "image": "/images/products/variant-default.jpg"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1"
     },
     {
       "id": 6,
@@ -520,7 +550,7 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/product/chrer-200.png"
+        "/images/products/chrer-200.png"
       ],
       "tags": [
         "100_natural",
@@ -533,15 +563,18 @@
         {
           "id": "v1",
           "flavor": "Peach",
-          "image": "/images/products/variant-default.jpg"
+          "image": "",
+          "box_image": ""
         },
         {
           "id": "v2",
           "flavor": "Apple",
-          "image": "/images/products/variant-default.jpg"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1"
     },
     {
       "id": 7,
@@ -552,7 +585,7 @@
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-chir-200.png"
+        "/images/products/choco-chir-200.png"
       ],
       "tags": [
         "100_natural",
@@ -562,14 +595,9 @@
       "name": "Շոկոլադապատ չրեր",
       "composition": "Բնական չրեր, մուգ շոկոլադ (62% կակաոյի պարունակությամբ), շաքար, էմուլգատոր (սոյայի լեցիտին), վանիլին։",
       "description": "Ընտիր չրերի տեսականի՝ պատված բարձրորակ մուգ շոկոլադով։",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Տեսականի",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 5
+      "variants": [],
+      "shelf_life_months": 5,
+      "default_variant": ""
     },
     {
       "id": 8,
@@ -580,7 +608,7 @@
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-chir-200.png"
+        "/images/products/choco-chir-200.png"
       ],
       "tags": [
         "100_natural",
@@ -590,14 +618,9 @@
       "name": "Сухофрукты в шоколаде",
       "composition": "Натуральные сухофрукты, темный шоколад (62% какао), сахар, эмульгатор (соевый лецитин), ванилин.",
       "description": "Ассорти отборных сухофруктов в высококачественном темном шоколаде.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Ассорти",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 5
+      "variants": [],
+      "shelf_life_months": 5,
+      "default_variant": ""
     },
     {
       "id": 9,
@@ -608,7 +631,7 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-chir-200.png"
+        "/images/products/choco-chir-200.png"
       ],
       "tags": [
         "100_natural",
@@ -618,14 +641,9 @@
       "name": "Chocolate-covered dried fruits",
       "composition": "Natural dried fruits, dark chocolate (62% cocoa), sugar, emulsifier (soy lecithin), vanillin.",
       "description": "Assorted dried fruits coated in dark chocolate.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Assorted",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 5
+      "variants": [],
+      "shelf_life_months": 5,
+      "default_variant": ""
     },
     {
       "id": 10,
@@ -636,7 +654,7 @@
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
-        "/images/product/pastilles-mini-250.png"
+        "/images/products/pastilles-mini-250.png"
       ],
       "tags": [
         "100_natural",
@@ -645,14 +663,9 @@
       "name": "Զնարակապատ պաստեղներ մինի",
       "composition": "Բնական մրգային պաստեղ, շոկոլադե զնարակ, շաքար։",
       "description": "Փոքրիկ մրգային պաստեղներ՝ պատված նուրբ շոկոլադե զնարակով։",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Մրգային տեսականի",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 11,
@@ -663,7 +676,7 @@
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
-        "/images/product/pastilles-mini-250.png"
+        "/images/products/pastilles-mini-250.png"
       ],
       "tags": [
         "100_natural",
@@ -672,14 +685,9 @@
       "name": "Мини-пастила в глазури",
       "composition": "Натуральная фруктовая пастила, шоколадная глазурь, сахар.",
       "description": "Маленькие фруктовые пастилки, покрытые нежной шоколадной глазурью.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Фруктовое ассорти",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 12,
@@ -690,7 +698,7 @@
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
-        "/images/product/pastilles-mini-250.png"
+        "/images/products/pastilles-mini-250.png"
       ],
       "tags": [
         "100_natural",
@@ -699,14 +707,9 @@
       "name": "Glazed Mini Fruit Pastilles",
       "composition": "Natural fruit pastille, chocolate glaze, sugar.",
       "description": "Bite-sized fruit pastilles coated in smooth chocolate glaze.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Assorted Fruit",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 13,
@@ -717,7 +720,7 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-pastilles-30.png"
+        "/images/products/choco-pastilles-30.png"
       ],
       "tags": [
         "100_natural",
@@ -730,15 +733,18 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         },
         {
           "id": "v2",
           "flavor": "Դեղձ",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 14,
@@ -749,7 +755,7 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-pastilles-30.png"
+        "/images/products/choco-pastilles-30.png"
       ],
       "tags": [
         "100_natural",
@@ -762,15 +768,18 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         },
         {
           "id": "v2",
           "flavor": "Персик",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 15,
@@ -781,7 +790,7 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-pastilles-30.png"
+        "/images/products/choco-pastilles-30.png"
       ],
       "tags": [
         "100_natural",
@@ -794,15 +803,18 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         },
         {
           "id": "v2",
           "flavor": "Peach",
-          "image": "/images/products/variant-peach.png"
+          "image": "/images/products/taste-peach-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 16,
@@ -813,7 +825,7 @@
       "weight_value": 170,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-bars-170.png"
+        "/images/products/choco-bars-170.png"
       ],
       "tags": [
         "100_natural",
@@ -826,10 +838,12 @@
         {
           "id": "v1",
           "flavor": "Կեռաս",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 17,
@@ -840,7 +854,7 @@
       "weight_value": 170,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-bars-170.png"
+        "/images/products/choco-bars-170.png"
       ],
       "tags": [
         "100_natural",
@@ -853,10 +867,12 @@
         {
           "id": "v1",
           "flavor": "Черешня",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 18,
@@ -867,7 +883,7 @@
       "weight_value": 170,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-bars-170.png"
+        "/images/products/choco-bars-170.png"
       ],
       "tags": [
         "100_natural",
@@ -880,10 +896,12 @@
         {
           "id": "v1",
           "flavor": "Cherry",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 19,
@@ -894,7 +912,7 @@
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-bars-50.png"
+        "/images/products/choco-bars-50.png"
       ],
       "tags": [
         "100_natural",
@@ -907,10 +925,12 @@
         {
           "id": "v1",
           "flavor": "Բալ",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 20,
@@ -921,7 +941,7 @@
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-bars-50.png"
+        "/images/products/choco-bars-50.png"
       ],
       "tags": [
         "100_natural",
@@ -934,10 +954,12 @@
         {
           "id": "v1",
           "flavor": "Вишня",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 21,
@@ -948,7 +970,7 @@
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-bars-50.png"
+        "/images/products/choco-bars-50.png"
       ],
       "tags": [
         "100_natural",
@@ -961,10 +983,12 @@
         {
           "id": "v1",
           "flavor": "Sour Cherry",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 22,
@@ -975,7 +999,7 @@
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-chir-120.png"
+        "/images/products/choco-chir-120.png"
       ],
       "tags": [
         "100_natural",
@@ -984,14 +1008,9 @@
       "name": "Շոկոլադապատ չրեր",
       "composition": "Բնական չրեր, մուգ շոկոլադ։",
       "description": "Շոկոլադապատ չրերի հավաքածու հարմար տուփով։",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Տեսականի",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 5
+      "variants": [],
+      "shelf_life_months": 5,
+      "default_variant": ""
     },
     {
       "id": 23,
@@ -1002,7 +1021,7 @@
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-chir-120.png"
+        "/images/products/choco-chir-120.png"
       ],
       "tags": [
         "100_natural",
@@ -1011,14 +1030,9 @@
       "name": "Сухофрукты в шоколаде",
       "composition": "Натуральные сухофрукты, темный шоколад.",
       "description": "Набор сухофруктов в шоколаде в удобной упаковке.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Ассорти",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 5
+      "variants": [],
+      "shelf_life_months": 5,
+      "default_variant": ""
     },
     {
       "id": 24,
@@ -1029,7 +1043,7 @@
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-chir-120.png"
+        "/images/products/choco-chir-120.png"
       ],
       "tags": [
         "100_natural",
@@ -1038,14 +1052,9 @@
       "name": "Chocolate-covered dried fruits",
       "composition": "Natural dried fruits, dark chocolate.",
       "description": "Chocolate-covered dried fruits set in a convenient box.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Assorted",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 5
+      "variants": [],
+      "shelf_life_months": 5,
+      "default_variant": ""
     },
     {
       "id": 25,
@@ -1056,7 +1065,7 @@
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
-        "/images/product/choco-chir-nuts-120.png"
+        "/images/products/choco-chir-nuts-120.png"
       ],
       "tags": [
         "100_natural",
@@ -1069,10 +1078,12 @@
         {
           "id": "v1",
           "flavor": "Ծիրան նուշով և ընկույզով",
-          "image": "/images/products/variant-apricot-nut.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1"
     },
     {
       "id": 26,
@@ -1083,7 +1094,7 @@
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
-        "/images/product/choco-chir-nuts-120.png"
+        "/images/products/choco-chir-nuts-120.png"
       ],
       "tags": [
         "100_natural",
@@ -1096,10 +1107,12 @@
         {
           "id": "v1",
           "flavor": "Абрикос с миндалем и грецким орехом",
-          "image": "/images/products/variant-apricot-nut.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1"
     },
     {
       "id": 27,
@@ -1110,7 +1123,7 @@
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
-        "/images/product/choco-chir-nuts-120.png"
+        "/images/products/choco-chir-nuts-120.png"
       ],
       "tags": [
         "100_natural",
@@ -1123,10 +1136,12 @@
         {
           "id": "v1",
           "flavor": "Apricot with almond and walnut",
-          "image": "/images/products/variant-apricot-nut.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1"
     },
     {
       "id": 28,
@@ -1137,7 +1152,7 @@
       "weight_value": 100,
       "weight_unit": "գ",
       "images": [
-        "/images/product/apple-dry-100.png"
+        "/images/products/apple-dry-100.png"
       ],
       "tags": [
         "100_natural",
@@ -1151,10 +1166,12 @@
         {
           "id": "v1",
           "flavor": "Խնձոր",
-          "image": "/images/products/variant-apple.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 29,
@@ -1165,7 +1182,7 @@
       "weight_value": 100,
       "weight_unit": "г",
       "images": [
-        "/images/product/apple-dry-100.png"
+        "/images/products/apple-dry-100.png"
       ],
       "tags": [
         "100_natural",
@@ -1179,10 +1196,12 @@
         {
           "id": "v1",
           "flavor": "Яблоко",
-          "image": "/images/products/variant-apple.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 30,
@@ -1193,7 +1212,7 @@
       "weight_value": 100,
       "weight_unit": "g",
       "images": [
-        "/images/product/apple-dry-100.png"
+        "/images/products/apple-dry-100.png"
       ],
       "tags": [
         "100_natural",
@@ -1207,10 +1226,12 @@
         {
           "id": "v1",
           "flavor": "Apple",
-          "image": "/images/products/variant-apple.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 31,
@@ -1221,7 +1242,7 @@
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
-        "/images/product/frutamin-250.png"
+        "/images/products/frutamin-250.png"
       ],
       "tags": [
         "100_natural",
@@ -1230,14 +1251,9 @@
       "name": "Ֆրուտամին",
       "composition": "Բնական մրգային խտանյութ, պաստեղ։",
       "description": "Վիտամիններով հարուստ մրգային պաստեղների հավաքածու։",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Մրգային տեսականի",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 32,
@@ -1248,7 +1264,7 @@
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
-        "/images/product/frutamin-250.png"
+        "/images/products/frutamin-250.png"
       ],
       "tags": [
         "100_natural",
@@ -1257,14 +1273,9 @@
       "name": "Фрутамин",
       "composition": "Натуральный фруктовый концентрат, пастила.",
       "description": "Богатый витаминами набор фруктовой пастилы.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Фруктовое ассорти",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 33,
@@ -1275,7 +1286,7 @@
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
-        "/images/product/frutamin-250.png"
+        "/images/products/frutamin-250.png"
       ],
       "tags": [
         "100_natural",
@@ -1284,14 +1295,9 @@
       "name": "Frutamin Fruit Pastilles",
       "composition": "Natural fruit concentrate, pastille.",
       "description": "Vitamin-rich assortment of fruit pastilles.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Fruit Mix",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 34,
@@ -1302,7 +1308,7 @@
       "weight_value": 400,
       "weight_unit": "գ",
       "images": [
-        "/images/product/frutini-400.png"
+        "/images/products/frutini-400.png"
       ],
       "tags": [
         "100_natural",
@@ -1311,14 +1317,9 @@
       "name": "Ֆրուտինի մրգային լավաշներ",
       "composition": "Տարբեր մրգերի բնական պյուրե (խնձոր, ծիրան, սալոր, ելակ)։",
       "description": "Փաթեթավորված մրգային լավաշների մեծ տեսականի։",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Մրգային տեսականի",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 35,
@@ -1329,7 +1330,7 @@
       "weight_value": 400,
       "weight_unit": "г",
       "images": [
-        "/images/product/frutini-400.png"
+        "/images/products/frutini-400.png"
       ],
       "tags": [
         "100_natural",
@@ -1338,14 +1339,9 @@
       "name": "Фрутини фруктовый лаваш",
       "composition": "Натуральное пюре различных фруктов (яблоко, абрикос, слива, клубника).",
       "description": "Большое ассорти упакованного фруктового лаваша.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Фруктовое ассорти",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 36,
@@ -1356,7 +1352,7 @@
       "weight_value": 400,
       "weight_unit": "g",
       "images": [
-        "/images/product/frutini-400.png"
+        "/images/products/frutini-400.png"
       ],
       "tags": [
         "100_natural",
@@ -1365,14 +1361,9 @@
       "name": "Frutini Fruit Lavash",
       "composition": "Natural fruit puree mix (apple, apricot, plum, strawberry).",
       "description": "A large packaged assortment of traditional fruit lavash.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Fruit Assortment",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 37,
@@ -1383,7 +1374,7 @@
       "weight_value": 90,
       "weight_unit": "գ",
       "images": [
-        "/images/product/fruit-lavash-90.png"
+        "/images/products/fruit-lavash-90.png"
       ],
       "tags": [
         "100_natural",
@@ -1396,10 +1387,12 @@
         {
           "id": "v1",
           "flavor": "Կեռաս",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 38,
@@ -1410,7 +1403,7 @@
       "weight_value": 90,
       "weight_unit": "г",
       "images": [
-        "/images/product/fruit-lavash-90.png"
+        "/images/products/fruit-lavash-90.png"
       ],
       "tags": [
         "100_natural",
@@ -1423,10 +1416,12 @@
         {
           "id": "v1",
           "flavor": "Черешня",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 39,
@@ -1437,7 +1432,7 @@
       "weight_value": 90,
       "weight_unit": "g",
       "images": [
-        "/images/product/fruit-lavash-90.png"
+        "/images/products/fruit-lavash-90.png"
       ],
       "tags": [
         "100_natural",
@@ -1450,10 +1445,12 @@
         {
           "id": "v1",
           "flavor": "Cherry",
-          "image": "/images/products/variant-cherry.png"
+          "image": "",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 40,
@@ -1464,7 +1461,7 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/product/pastilles-box-30.png"
+        "/images/products/pastilles-box-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1477,10 +1474,12 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 41,
@@ -1491,7 +1490,7 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/product/pastilles-box-30.png"
+        "/images/products/pastilles-box-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1504,10 +1503,12 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 42,
@@ -1518,7 +1519,7 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/product/pastilles-box-30.png"
+        "/images/products/pastilles-box-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1531,10 +1532,12 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 43,
@@ -1545,7 +1548,7 @@
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
-        "/images/product/natural-lavash-50.png"
+        "/images/products/natural-lavash-50.png"
       ],
       "tags": [
         "100_natural",
@@ -1558,10 +1561,12 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 44,
@@ -1572,7 +1577,7 @@
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
-        "/images/product/natural-lavash-50.png"
+        "/images/products/natural-lavash-50.png"
       ],
       "tags": [
         "100_natural",
@@ -1585,10 +1590,12 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 45,
@@ -1599,7 +1606,7 @@
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
-        "/images/product/natural-lavash-50.png"
+        "/images/products/natural-lavash-50.png"
       ],
       "tags": [
         "100_natural",
@@ -1612,10 +1619,12 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 46,
@@ -1626,7 +1635,7 @@
       "weight_value": 20,
       "weight_unit": "գ",
       "images": [
-        "/images/product/fruit-sticks-20.png"
+        "/images/products/fruit-sticks-20.png"
       ],
       "tags": [
         "100_natural",
@@ -1635,14 +1644,9 @@
       "name": "Մրգային ստիկներ",
       "composition": "Բնական մրգային պյուրե, խտացված հյութ։",
       "description": "Մրգային ստիկներ (Fruit Snack) հարմար փոքր փաթեթով։",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Մրգային",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 47,
@@ -1653,7 +1657,7 @@
       "weight_value": 20,
       "weight_unit": "г",
       "images": [
-        "/images/product/fruit-sticks-20.png"
+        "/images/products/fruit-sticks-20.png"
       ],
       "tags": [
         "100_natural",
@@ -1662,14 +1666,9 @@
       "name": "Фруктовые палочки (стики)",
       "composition": "Натуральное фруктовое пюре, концентрированный сок.",
       "description": "Фруктовые стики (Fruit Snack) в удобной маленькой упаковке.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Фруктовый",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 48,
@@ -1680,7 +1679,7 @@
       "weight_value": 20,
       "weight_unit": "g",
       "images": [
-        "/images/product/fruit-sticks-20.png"
+        "/images/products/fruit-sticks-20.png"
       ],
       "tags": [
         "100_natural",
@@ -1689,14 +1688,9 @@
       "name": "Fruit Sticks",
       "composition": "Natural fruit puree, concentrated juice.",
       "description": "Fruit sticks snack in a convenient pocket-size package.",
-      "variants": [
-        {
-          "id": "v1",
-          "flavor": "Fruit Mix",
-          "image": "/images/products/variant-default.jpg"
-        }
-      ],
-      "shelf_life_months": 6
+      "variants": [],
+      "shelf_life_months": 6,
+      "default_variant": ""
     },
     {
       "id": 49,
@@ -1707,7 +1701,7 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/product/pastilles-cigar-30.png"
+        "/images/products/pastilles-cigar-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1721,10 +1715,12 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 50,
@@ -1735,7 +1731,7 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/product/pastilles-cigar-30.png"
+        "/images/products/pastilles-cigar-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1749,10 +1745,12 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 51,
@@ -1763,7 +1761,7 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/product/pastilles-cigar-30.png"
+        "/images/products/pastilles-cigar-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1777,10 +1775,12 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/variant-apricot.png"
+          "image": "/images/products/taste-apricot-walnut.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 52,
@@ -1791,7 +1791,7 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/product/fruit-patety-30.png"
+        "/images/products/fruit-patety-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1804,10 +1804,12 @@
         {
           "id": "v1",
           "flavor": "Սալոր",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 53,
@@ -1818,7 +1820,7 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/product/fruit-patety-30.png"
+        "/images/products/fruit-patety-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1831,10 +1833,12 @@
         {
           "id": "v1",
           "flavor": "Слива",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     },
     {
       "id": 54,
@@ -1845,7 +1849,7 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/product/fruit-patety-30.png"
+        "/images/products/fruit-patety-30.png"
       ],
       "tags": [
         "100_natural",
@@ -1858,10 +1862,12 @@
         {
           "id": "v1",
           "flavor": "Plum",
-          "image": "/images/products/variant-plum.png"
+          "image": "/images/products/taste-plum-almond.jpg",
+          "box_image": ""
         }
       ],
-      "shelf_life_months": 6
+      "shelf_life_months": 6,
+      "default_variant": "v1"
     }
   ],
   "product_page_labels": [
@@ -1870,7 +1876,7 @@
       "lang": "am",
       "home_label": "Գլխավոր",
       "catalog_label": "Տեսականի",
-      "all_products_label":"Ամբողջ տեսականին",
+      "all_products_label": "Ամբողջ տեսականին",
       "composition_eyebrow": "Բաղադրությունը",
       "close_button": "Փակել",
       "previous_image": "Նախորդ նկարը",
@@ -1888,7 +1894,7 @@
       "lang": "ru",
       "home_label": "Главная",
       "catalog_label": "Каталог",
-      "all_products_label":"Весь ассортимент",
+      "all_products_label": "Весь ассортимент",
       "composition_eyebrow": "Состав продукта",
       "close_button": "Закрыть",
       "previous_image": "Предыдущее фото",
@@ -1906,7 +1912,7 @@
       "lang": "en",
       "home_label": "Home",
       "catalog_label": "Catalog",
-      "all_products_label":"All products",
+      "all_products_label": "All products",
       "composition_eyebrow": "Ingredients",
       "close_button": "Close",
       "previous_image": "Previous image",
