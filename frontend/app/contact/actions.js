@@ -10,8 +10,11 @@ export async function getContactInfo(lang) {
   return res.data[0]
 }
 
+
 export async function submitContact(data) {
   const res = await axios.post('contact_messages', data)
   return res.data
 }
+
+
 

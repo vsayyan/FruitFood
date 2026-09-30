@@ -1,6 +1,7 @@
 import styles from './Map.module.css'
 
-export default function Map({ mapUrl }) {
+export default function Map({ mapUrl, mapTitle }) {
+   
   return (
     <div className={styles.map}>
       <iframe
@@ -8,8 +9,8 @@ export default function Map({ mapUrl }) {
         loading="lazy"
         allowFullScreen
         referrerPolicy="strict-origin-when-cross-origin"
+        title={mapTitle}
       />
     </div>
   )
 }
-

@@ -1,20 +1,38 @@
-.page {
-  padding-top: var(--space-56);
+
+
+.introSection {
+  border-bottom: 1px solid var(--color-mint);
 }
 
 
 .intro {
   display: flex;
   flex-direction: column;
-  margin-top: var(--space-2xl);
+  padding-top: var(--space-120);
+  padding-bottom: var(--space-80);
+
+  
 }
+
+.intro .breadcrumb {
+  color: var(--color-text-muted);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--font-size-caption);
+  display: flex;
+  gap: var(--space-xs);
+  line-height: 160%
+}
+
 
 .intro .title {
   font-weight: 700;
   font-family: var(--font-family);
   font-size: var(--font-size-display);
-  line-height: 160%;
+  line-height: 100%;
   color: var(--color-text);
+  padding-bottom: var(--space-md);
+  padding-top: var( --space-32);
 }
 
 
@@ -27,13 +45,6 @@
 }
 
 
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-border);
-  margin-block: var(--space-xl);
-}
-
 
 .contactContent {
   display: grid;
@@ -41,6 +52,7 @@
   gap: var(--space-xl);
   align-items: stretch;
   margin-bottom: 0;
+  padding-top: 75px;
 }
 
 
@@ -51,6 +63,7 @@
 
   .intro {
     margin-top: var(--space-lg);
+    padding-top: 95px;
   }
 
   .intro .title {
@@ -62,12 +75,12 @@
     max-width: 100%;
   }
 
-  .divider {
-    margin-block: var(--space-lg);
-  }
-
   .contactContent {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: var(--space-lg);
+  }
+
+  .contactContent > :nth-child(2) {
+    order: -1;
   }
 }

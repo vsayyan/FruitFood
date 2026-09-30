@@ -28,7 +28,7 @@ export default function ContactInfo({ info }) {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={link.image} alt="Link to social media" />
+              <img src={link.image} alt={link.label} />
             </a>
           ))}
         </div>

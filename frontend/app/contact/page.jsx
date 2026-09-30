@@ -13,24 +13,36 @@ export default async function ContactPage() {
 
 
   return (
-   <>
-    <div className={`container ${styles.page}`}>
-      <div className={styles.intro}>
-        <h1 className={styles.title}>{content.title}</h1>
-        <p className={styles.description}>{content.description}</p>
+    <>
+      <div className={styles.introSection}>
+        <div className={`container ${styles.page}`}>
+          <div className={styles.intro}>
+            <div className={styles.breadcrumb}>
+              <span>{content.breadcrumb_home}</span>
+              <span>/</span>
+              <span>{content.breadcrumb_contact}</span>
+            </div>
+
+            <h1 className={styles.title}>{content.title}</h1>
+            <p className={styles.description}>{content.description}</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div className={styles.divider}></div>
-
-    <div className={`container ${styles.page}`}>
-      <div className={styles.contactContent}>
-        <ContactInfo info={contactInfo} />
-        <ContactForm labels={content} />
+      <div className={`container ${styles.page}`}>
+        <div className={styles.contactContent}>
+          <ContactInfo info={contactInfo} />
+          <ContactForm labels={content} />
+        </div>
       </div>
-    </div>
 
-    <Map mapUrl={contactInfo.map_url} />
-  </>
+      <Map
+        mapUrl={contactInfo.map_url}
+        mapTitle={content.map_title}
+      />
+    </>
   )
 }
+
+
+

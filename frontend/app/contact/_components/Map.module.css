@@ -1,8 +1,6 @@
-
 .map {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding-top: var(--space-xl);
 }
 
 .map iframe {
