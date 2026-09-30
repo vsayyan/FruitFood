@@ -1,31 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
+import { getProductPageLabels } from '../actions';
 import styles from './Breadcrumbs.module.css';
 
-export default function Breadcrumbs({ items = [] }) {
-  if (!items || items.length === 0) return null;
+export default async function Breadcrumbs() {
+  const pageLabels = await getProductPageLabels();
+
+  if (!pageLabels || Object.keys(pageLabels).length === 0) return null;
 
   return (
     <nav aria-label="Breadcrumb" className={styles.nav}>
       <ol className={styles.list}>
-        {items.map((item, index) => {
-          const isLast = index === items.length - 1;
-
-          return (
-            <li key={item.id || index} className={styles.item}>
-              {item.path && !isLast ? (
-                <Link href={item.path} className={styles.link}>
-                  {item.label}
-                </Link>
-              ) : (
-                <span className={styles.active} aria-current="page">
-                  {item.label}
-                </span>
-              )}
-              {!isLast && <span className={styles.separator}>/</span>}
-            </li>
-          );
-        })}
+        <li className={styles.item}>
+          <Link href="/" className={styles.link}>
+            {pageLabels.home_label}
+          </Link>
+          <span className={styles.separator}>/</span>
+        </li>
+        <li className={styles.item}>
+          <span className={styles.active} aria-current="page">
+            {pageLabels.all_products_label || pageLabels.catalog_label}
+          </span>
+        </li>
       </ol>
     </nav>
   );
