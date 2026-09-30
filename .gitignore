@@ -8,7 +8,7 @@
 # Local environment and database files
 .env*
 !.env.example
-# **/db.json
+**/db.json
 
 # OS, editor, and package-manager files
 .DS_Store
