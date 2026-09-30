@@ -1,0 +1,38 @@
+.description {
+  width: 860px;
+  max-width: 100%;
+  margin: var(--space-2xl) auto;
+}
+
+.text {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text + .text {
+  margin-top: var(--space-lg);
+}
+
+.highlight {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .description {
+    width: 100%;
+    margin: var(--space-xl) auto;
+  }
+
+  .text {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+  }
+
+  .text + .text {
+    margin-top: var(--space-md);
+  }
+}

@@ -1,0 +1,318 @@
+{"export_countries": [
+    {
+      "id": 1,
+      "lang": "am",
+      "code": "usa",
+      "region": "north-america",
+      "name": "ԱՄՆ"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "code": "usa",
+      "region": "north-america",
+      "name": "США"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "code": "usa",
+      "region": "north-america",
+      "name": "USA"
+    },
+    {
+      "id": 4,
+      "lang": "am",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Բելգիա"
+    },
+    {
+      "id": 5,
+      "lang": "ru",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Бельгия"
+    },
+    {
+      "id": 6,
+      "lang": "en",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Belgium"
+    },
+    {
+      "id": 7,
+      "lang": "am",
+      "code": "lebanon",
+      "region": "middle-east",
+      "name": "Լիբանան"
+    },
+    {
+      "id": 8,
+      "lang": "ru",
+      "code": "lebanon",
+      "region": "middle-east",
+      "name": "Ливан"
+    },
+    {
+      "id": 9,
+      "lang": "en",
+      "code": "lebanon",
+      "region": "middle-east",
+      "name": "Lebanon"
+    },
+    {
+      "id": 10,
+      "lang": "am",
+      "code": "france",
+      "region": "europe",
+      "name": "Ֆրանսիա"
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "code": "france",
+      "region": "europe",
+      "name": "Франция"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "code": "france",
+      "region": "europe",
+      "name": "France"
+    },
+    {
+      "id": 13,
+      "lang": "am",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "Արաբական Միացյալ Էմիրություններ"
+    },
+    {
+      "id": 14,
+      "lang": "ru",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "ОАЭ"
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "United Arab Emirates"
+    },
+    {
+      "id": 16,
+      "lang": "am",
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Ռուսաստան"
+    },
+    {
+      "id": 17,
+      "lang": "ru",
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Россия"
+    },
+    {
+      "id": 18,
+      "lang": "en",
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Russia"
+    },
+    {
+      "id": 19,
+      "lang": "am",
+      "code": "germany",
+      "region": "europe",
+      "name": "Գերմանիա"
+    },
+    {
+      "id": 20,
+      "lang": "ru",
+      "code": "germany",
+      "region": "europe",
+      "name": "Германия"
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "code": "germany",
+      "region": "europe",
+      "name": "Germany"
+    },
+    {
+      "id": 22,
+      "lang": "am",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Կատար"
+    },
+    {
+      "id": 23,
+      "lang": "ru",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Катар"
+    },
+    {
+      "id": 24,
+      "lang": "en",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Qatar"
+    },
+    {
+      "id": 25,
+      "lang": "am",
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Քուվեյթ"
+    },
+    {
+      "id": 26,
+      "lang": "ru",
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Кувейт"
+    },
+    {
+      "id": 27,
+      "lang": "en",
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Kuwait"
+    },
+    {
+      "id": 28,
+      "lang": "am",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Ավստրալիա"
+    },
+    {
+      "id": 29,
+      "lang": "ru",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Австралия"
+    },
+    {
+      "id": 30,
+      "lang": "en",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Australia"
+    },
+    {
+      "id": 31,
+      "lang": "am",
+      "code": "kazakhstan",
+      "region": "eurasia",
+      "name": "Ղազախստան"
+    },
+    {
+      "id": 32,
+      "lang": "ru",
+      "code": "kazakhstan",
+      "region": "eurasia",
+      "name": "Казахстан"
+    },
+    {
+      "id": 33,
+      "lang": "en",
+      "code": "kazakhstan",
+      "region": "eurasia",
+      "name": "Kazakhstan"
+    },
+    {
+      "id": 34,
+      "lang": "am",
+      "code": "china",
+      "region": "asia",
+      "name": "Չինաստան"
+    },
+    {
+      "id": 35,
+      "lang": "ru",
+      "code": "china",
+      "region": "asia",
+      "name": "Китай"
+    },
+    {
+      "id": 36,
+      "lang": "en",
+      "code": "china",
+      "region": "asia",
+      "name": "China"
+    },
+    {
+      "id": 37,
+      "lang": "am",
+      "code": "saudi-arabia",
+      "region": "middle-east",
+      "name": "Սաուդյան Արաբիա"
+    },
+    {
+      "id": 38,
+      "lang": "ru",
+      "code": "saudi-arabia",
+      "region": "middle-east",
+      "name": "Саудовская Аравия"
+    },
+    {
+      "id": 39,
+      "lang": "en",
+      "code": "saudi-arabia",
+      "region": "middle-east",
+      "name": "Saudi Arabia"
+    }
+  ],
+
+    "geography_contents": [
+    {
+      "id": 1,
+      "lang": "am",
+      "breadcrumb_home": "Գլխավոր",
+      "title": "Աշխարհագրություն",
+      "intro": "Fruit Food ընկերության արտադրած բնական մրգային արտադրատեսակները ներկայացված են միջազգային տարբեր շուկաներում՝ իրենց բարձր որակով և գեղեցիկ արտաքին տեսքով արժանանալով ամենախիստ և պահանջկոտ գնորդների գնահատականին ու հավանությանը։",
+      "description_1": "Մեր ապրանքատեսակների արտահանման համար որպես հիմք են հանդիսանում բացառապես Հայաստանում աճեցված մրգերը։ Հայաստանի անապակ արևի և քաղցրահամ լեռնային ջրերի շնորհիվ արտադրված ապրանքները ունեն յուրօրինակ համ և բուրմունք, որի պատճառով ունի շատ մեծ պահանջարկ աշխարհի տարբեր երկրներում, որտեղ այն գնահատվում է իր ",
+      "description_highlight": "բնական համի, բարձր որակի և հայկական մրգերի յուրահատկության համար։",
+      "description_2": "Ընկերությունը շարունակաբար ընդլայնում է համագործակցության աշխարհագրությունը՝ ստեղծելով ամուր գործընկերային կապեր և ներկայացնելով Հայաստանը միջազգային շուկաներում։",
+      "countries_title": "Մեր արտահանման աշխարհագրությունը ներառում է՝",
+      "bottom_text": "Մենք վստահ ենք, որ բնական, առողջարար և բարձրորակ հայկական արտադրանքը սահմաններ չի ճանաչում, և ամեն օր ընդլայնում ենք մեր ներկայությունը միջազգային շուկաներում։"
+    },
+
+    {
+      "id": 2,
+      "lang": "ru",
+      "breadcrumb_home": "Главная",
+      "title": "География",
+      "intro": "Натуральная фруктовая продукция, производимая компанией Fruit Food, представлена на различных международных рынках и благодаря высокому качеству и привлекательному внешнему виду заслужила признание и одобрение самых требовательных покупателей.",
+      "description_1": "Основой для производства нашей экспортной продукции служат исключительно фрукты, выращенные в Армении. Благодаря чистому армянскому солнцу и пресной горной воде производимая продукция обладает уникальным вкусом и ароматом, благодаря чему пользуется большим спросом в разных странах мира, где её ценят за ",
+      "description_highlight": "натуральный вкус, высокое качество и уникальность армянских фруктов.",
+      "description_2": "Компания постоянно расширяет географию сотрудничества, создавая прочные партнёрские связи и представляя Армению на международных рынках.",
+      "countries_title": "География нашего экспорта включает:",
+      "bottom_text": "Мы уверены, что натуральная, полезная и высококачественная армянская продукция не знает границ, и каждый день расширяем наше присутствие на международных рынках."
+    },
+
+    {
+      "id": 3,
+      "lang": "en",
+      "breadcrumb_home": "Home",
+      "title": "Geography",
+      "intro": "The natural fruit products produced by Fruit Food are represented in various international markets and, thanks to their high quality and attractive appearance, have earned the recognition and approval of the most demanding customers.",
+      "description_1": "Our export products are made exclusively from fruits grown in Armenia. Thanks to Armenia's pure sunshine and fresh mountain water, our products have a unique taste and aroma, which makes them highly sought after in different countries around the world, where they are valued for their ",
+      "description_highlight": "natural taste, high quality, and the unique character of Armenian fruits.",
+      "description_2": "The company continuously expands the geography of its cooperation by building strong partnerships and representing Armenia in international markets.",
+      "countries_title": "Our export geography includes:",
+      "bottom_text": "We believe that natural, healthy, and high-quality Armenian products know no borders, and every day we expand our presence in international markets."
+    }
+  ]
+
+}
