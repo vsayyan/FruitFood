@@ -26,7 +26,8 @@
   left: 0;
   width: 100%;
   height: 78.21%;
-  object-fit: cover;
+  /* contain՝ որ երկար/նեղ ապրանքները (ստիկներ, սիգար) չկտրվեն */
+  object-fit: contain;
 }
 
 .controls {
