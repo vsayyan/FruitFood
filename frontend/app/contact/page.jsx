@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { displayLang } from '@/lib/lang'
 import { getContactPageContent, getContactInfo } from './actions'
 import ContactForm from './_components/ContactForm'
@@ -18,7 +19,7 @@ export default async function ContactPage() {
         <div className={`container ${styles.page}`}>
           <div className={styles.intro}>
             <div className={styles.breadcrumb}>
-              <span>{content.breadcrumb_home}</span>
+              <Link href="/">{content.breadcrumb_home}</Link>
               <span>/</span>
               <span>{content.breadcrumb_contact}</span>
             </div>

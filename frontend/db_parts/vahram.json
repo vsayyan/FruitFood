@@ -1,5 +1,5 @@
 {
-   "contact_page_contents": [
+  "contact_page_contents": [
     {
       "id": "1",
       "lang": "am",
@@ -55,7 +55,6 @@
       "map_title": "Our location"
     }
   ],
-  "contact_messages": [],
   "contact_info": [
     {
       "id": "1",
@@ -70,13 +69,13 @@
         {
           "id": 1,
           "image": "/images/contact/facebook.svg",
-          "url": "https://www.facebook.com/",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
           "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/contact/instagram.svg",
-          "url": "https://www.instagram.com/",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
           "label": "Instagram"
         }
       ],
@@ -95,13 +94,13 @@
         {
           "id": 1,
           "image": "/images/contact/facebook.svg",
-          "url": "https://www.facebook.com/",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
           "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/contact/instagram.svg",
-          "url": "https://www.instagram.com/",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
           "label": "Instagram"
         }
       ],
@@ -120,13 +119,13 @@
         {
           "id": 1,
           "image": "/images/contact/facebook.svg",
-          "url": "https://www.facebook.com/",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
           "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/contact/instagram.svg",
-          "url": "https://www.instagram.com/",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
           "label": "Instagram"
         }
       ],

@@ -11,10 +11,6 @@ export async function getContactInfo(lang) {
 }
 
 
-export async function submitContact(data) {
-  const res = await axios.post('contact_messages', data)
-  return res.data
-}
 
 
 

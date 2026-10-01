@@ -38,19 +38,16 @@
 .field textarea {
   border: 1px solid var(--color-mint);
   border-radius: var(--radius-xs);
-  padding: 0 var(--space-sm);
+  padding: var(--space-sm);
   font-family: var(--font-family);
+  min-height: 120px;
+  resize: none;
 }
 
 .field input:focus,
 .field textarea:focus {
   outline: none;
   border: 1px solid var(--color-green);
-}
-
-.field textarea {
-  min-height: 120px;
-  resize: none;
 }
 
 .submit {
@@ -75,15 +72,12 @@
   color: var(--color-error);
 }
 
-
 .form .title {
   font-weight: 400;
   font-family: var(--font-family);
   font-size: var(--font-size-xl);
   color: var(--color-green);
 }
-
-
 
 .buttonContent {
   display: flex;
@@ -97,4 +91,10 @@
   font-weight: 600;
   font-size: var(--font-size-base);
   color: var(--color-light);
+}
+
+@media (max-width: 900px) {
+  .form {
+    padding: 20px;
+  }
 }

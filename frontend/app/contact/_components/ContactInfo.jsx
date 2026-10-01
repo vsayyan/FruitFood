@@ -14,7 +14,9 @@ export default function ContactInfo({ info }) {
 
       <div className={styles.item}>
         <span className={styles.label}>{info.email_label}</span>
-        <p className={styles.value}>{info.email}</p>
+        <a className={styles.value} href={`mailto:${info.email}`}>
+          {info.email}
+        </a>
       </div>
 
       <div className={styles.item}>
