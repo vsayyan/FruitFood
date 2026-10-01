@@ -1,18 +1,8 @@
 import Link from 'next/link'
 import { displayLang } from '@/lib/lang'
 import ProductCard from './_components/ProductCard'
-import { getProductPageLabels } from './[categorySlug]/actions'
-import axios from '@/lib/axios'
+import { getAllProducts, getProductPageLabels } from './actions'
 import styles from './page.module.css'
-
-async function getAllProducts(lang) {
-  try {
-    const res = await axios.get(`products`, { params: { lang } })
-    return res.data
-  } catch {
-    return []
-  }
-}
 
 export default async function CatalogPage() {
   const lang = await displayLang()
@@ -28,19 +18,19 @@ export default async function CatalogPage() {
           <ol className={styles.breadcrumbs}>
             <li>
               <Link className={styles.crumbLink} href="/">
-                {pageLabels?.home_label || 'Գլխավոր'}
+                {pageLabels?.home_label}
               </Link>
             </li>
             <li className={styles.separator} aria-hidden="true">/</li>
             <li>
               <Link className={styles.crumbLink} href="/catalog">
-                {pageLabels?.catalog_label || 'Տեսականի'}
+                {pageLabels?.catalog_label}
               </Link>
             </li>
             <li className={styles.separator} aria-hidden="true">/</li>
             <li>
               <span className={styles.crumbCurrent} aria-current="page">
-                {pageLabels?.all_products_label || 'Ամբողջ տեսականին'}
+                {pageLabels?.all_products_label}
               </span>
             </li>
           </ol>
@@ -48,7 +38,7 @@ export default async function CatalogPage() {
       </section>
 
       <section className={styles.catalogSection}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.grid}>
             {products?.map((product) => (
               <ProductCard 

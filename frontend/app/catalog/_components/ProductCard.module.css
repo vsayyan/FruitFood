@@ -10,7 +10,7 @@
   padding: var(--space-32);
   width: 100%;
   aspect-ratio: 1 / 1;
-  box-shadow:var(--shadow-card);
+  box-shadow: var(--shadow-card);
   background: #fff;
   display: flex;
   align-items: center;
@@ -35,11 +35,11 @@
 
 .title {
   font-family: var(--font-family);
-  font-weight: var(--color-text);
+  font-weight: 500;
   font-size: var(--font-size-lead);
   line-height: 125%;
   letter-spacing: -0.01em;
-  color: #1f1f1f;
+  color: var(--color-text);
 }
 
 .variantsCount {
@@ -49,11 +49,11 @@
   line-height: 160%;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color:var(--color-text-muted);
+  color: var(--color-text-muted);
   white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .card {
     border-radius: 12px;
   }

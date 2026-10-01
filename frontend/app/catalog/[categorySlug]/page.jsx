@@ -19,8 +19,8 @@ export async function generateMetadata({ params }) {
   ])
 
   return {
-    title: category?.name || pageLabels?.catalog_title || 'Տեսականի',
-    description: category?.description || pageLabels?.catalog_description || 'Բացահայտեք մեր տեսականին',
+    title: category?.name || pageLabels?.catalog_title,
+    description: category?.description || pageLabels?.catalog_description,
   }
 }
 
@@ -42,13 +42,13 @@ export default async function CategoryPage({ params }) {
           <ol className={styles.breadcrumbs}>
             <li>
               <Link className={styles.crumbLink} href="/">
-                {pageLabels?.home_label || 'Գլխավոր'}
+                {pageLabels?.home_label}
               </Link>
             </li>
             <li className={styles.separator} aria-hidden="true">/</li>
             <li>
               <Link className={styles.crumbLink} href="/catalog">
-                {pageLabels?.catalog_label || 'Տեսականի'}
+                {pageLabels?.catalog_label}
               </Link>
             </li>
             {category && (
