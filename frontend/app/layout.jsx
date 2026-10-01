@@ -48,7 +48,7 @@ export default async function RootLayout({ children }) {
         <MenubarProvider>
           <Header />
           <main className="main-content">{children}</main>
-          {/* <PartnerCtaWrapper /> */}
+          <PartnerCtaWrapper />
           <Footer />
         </MenubarProvider>
       </body>
