@@ -8,6 +8,8 @@
     gap: var(--space-xl);
     padding-top: var(--space-2xl);
     padding-bottom: var(--space-2xl);
+    padding-left: var(--space-2xl);
+    padding-right: var(--space-2xl);
 }
 
 .left_side {
