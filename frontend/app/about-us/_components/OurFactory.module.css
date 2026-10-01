@@ -1,0 +1,278 @@
+.section {
+  width: 1440px;
+  max-width: 100%;
+  padding: 120px 120px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: var(--space-sm);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 1.8px;
+  color: #6B6B6B;
+}
+
+.title {
+  width: 570px;
+  height: 88px;
+  margin: 0 0 var(--space-md);
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+.title span {
+  color: var(--color-green);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #6B6B6B;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 484.5px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.sliderImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  padding-bottom: 3px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrow:hover {
+  background: #ffffff;
+}
+
+.arrow:focus-visible,
+.dot:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
+
+.prev {
+  left: var(--space-sm);
+}
+
+.next {
+  right: var(--space-sm);
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-sm);
+  z-index: 2;
+  display: flex;
+  gap: var(--space-xs);
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.galleryItem {
+  width: 333.7px;
+  height: 444.95px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.galleryItem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.bottomContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.bottomContent p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 29.8px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #1F1F1F;
+}
+
+.bottomContent p:first-child {
+  max-width: 480px;
+  min-height: 149px;
+}
+
+.bottomContent p:last-child {
+  max-width: 480px;
+  min-height: 238px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    width: 100%;
+    padding: var(--space-xl) var(--container-padding);
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .title {
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .slider {
+    height: 330px;
+  }
+
+  .gallery {
+    gap: var(--space-sm);
+  }
+
+  .galleryItem {
+    width: 100%;
+    height: 180px;
+  }
+
+  .bottomContent {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .bottomContent p:first-child,
+  .bottomContent p:last-child {
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: var(--space-xl) var(--container-padding);
+  }
+
+  .title {
+    width: 100%;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .slider {
+    height: 280px;
+    border-radius: var(--radius-md);
+  }
+
+  .arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 26px;
+  }
+
+  .prev {
+    left: var(--space-xs);
+  }
+
+  .next {
+    right: var(--space-xs);
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    margin-top: var(--space-lg);
+  }
+
+  .galleryItem {
+    width: 100%;
+    height: 220px;
+  }
+
+  .bottomContent {
+    margin-top: var(--space-lg);
+  }
+}
