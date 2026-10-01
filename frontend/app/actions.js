@@ -1,5 +1,10 @@
 import axios from '@/lib/axios'
 
+export async function getHero(lang) {
+  const res = await axios.get(`/homepage_hero?lang=${lang}`)
+  return res?.data[0] || {}
+}
+
 export async function getFaqHeading(lang) {
   const res = await axios.get('/faq_heading', { params: { lang } })
   return res.data
