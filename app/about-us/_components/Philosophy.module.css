@@ -11,6 +11,7 @@
 }
 
 .left_side {
+    position: relative;
     flex: 1 1 50%;
     max-width: 579px;
     border-radius: var(--radius-lg);
@@ -27,6 +28,68 @@
     display: block;
     border-radius: var(--radius-lg);
     object-fit: cover;
+}
+
+/* .slider {
+    position: relative;
+    width: 100%;
+} */
+
+.sliderButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-white);
+    color: var(--color-text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    z-index: 2;
+    font-size: var(--font-size-xl);
+    text-align: center;
+}
+
+
+
+.previous {
+    left: var(--space-sm);
+}
+
+.next {
+    right: var(--space-sm);
+}
+
+.dots {
+    position: absolute;
+    bottom: var(--space-sm);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--space-xs);
+    z-index: 2;
+}
+
+.dot,
+.activeDot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-white);
+    cursor: pointer;
+}
+
+.activeDot {
+    width: 24px;
+    border-radius: var(--radius-sm);
 }
 
 .right_side {
