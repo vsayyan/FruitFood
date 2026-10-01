@@ -26,8 +26,7 @@ export default function OurFactory({ data }) {
 
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
-
+      <div className="container">
         <div className={styles.main}>
           <div className={styles.content}>
             <span className={styles.label}>
@@ -72,7 +71,11 @@ export default function OurFactory({ data }) {
                   ›
                 </button>
 
-                <div className={styles.dots} role="group" aria-label={data.slider_navigation_label}>
+                <div
+                  className={styles.dots}
+                  role="group"
+                  aria-label={data.slider_navigation_label}
+                >
                   {sliderImages.map((item, index) => (
                     <button
                       key={item.id}
@@ -82,7 +85,9 @@ export default function OurFactory({ data }) {
                       }`}
                       onClick={() => setCurrentIndex(index)}
                       aria-label={`${data.slider_image_label} ${index + 1}`}
-                      aria-current={index === currentIndex ? 'true' : undefined}
+                      aria-current={
+                        index === currentIndex ? 'true' : undefined
+                      }
                     />
                   ))}
                 </div>
@@ -109,7 +114,6 @@ export default function OurFactory({ data }) {
           <p>{data.bottom_left_text}</p>
           <p>{data.bottom_right_text}</p>
         </div>
-
       </div>
     </section>
   )
