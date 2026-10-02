@@ -1,0 +1,33 @@
+/* Figma: category1/2/3 → Section 144:1276 (desktop), 150:1668 (mobile) */
+.breadcrumbSection {
+  /* 120px-ի մեջ ա նաև fixed header-ը, ինչպես Figma-ում */
+  padding: var(--space-120) 0 var(--space-56);
+  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-mint);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px var(--space-xs);
+  list-style: none;
+  font-size: var(--font-size-caption);
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.crumbLink:hover {
+  color: var(--color-green-dark);
+}
+
+.crumbCurrent {
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+@media (max-width: 900px) {
+  .breadcrumbSection {
+    padding: 95px 0 var(--space-32);
+  }
+}
