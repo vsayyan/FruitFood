@@ -160,11 +160,13 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   text-align: left;
-  transition: border-color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Figma ui-kit → hover (161:4692). mint ֆոն, մուգ կանաչ եզր */
 .compositionButton:hover {
-  border-color: var(--color-green-dark);
+  background: var(--color-mint);
+  border-color: var(--color-green-hover);
 }
 
 .compositionIcon {
