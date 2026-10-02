@@ -2039,6 +2039,16 @@
           "id": 1,
           "image": "/images/home/philosophy-1.png",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         }
       ],
       "slider_previous_label": "Նախորդ նկարը",
@@ -2056,6 +2066,16 @@
           "id": 1,
           "image": "/images/home/philosophy-1.png",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         }
       ],
       "slider_previous_label": "Предыдущее фото",
@@ -2071,6 +2091,16 @@
       "images": [
         {
           "id": 1,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir fruit pastilles in dark glaze"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir fruit pastilles in dark glaze"
+        },
+        {
+          "id": 3,
           "image": "/images/home/philosophy-1.png",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         }
