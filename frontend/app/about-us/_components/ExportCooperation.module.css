@@ -1,61 +1,53 @@
+/* Figma: about 171:5424 (desktop), 185:7894 (mobile) */
 .section {
-  width: 100%;
   padding: var(--space-120) 0;
 }
 
 .title {
-  width: 100%;
   max-width: 610px;
   margin-bottom: var(--space-56);
-  color: var(--color-green);
-  font-size: 51.8px;
-  line-height: 54.4px;
-  letter-spacing: -0.93px;
+  font-size: 3.2375rem; /* 51.8px */
   font-weight: 700;
-  text-shadow:
-    1px 1px 0 var(--color-text),
-    -1px -1px 0 var(--color-text),
-    1px -1px 0 var(--color-text),
-    -1px 1px 0 var(--color-text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-wrap: break-word;
-  word-break: normal;
+  line-height: 1.05;
+  letter-spacing: -0.93px;
+  color: var(--color-green);
 }
 
 .content {
-  width: 100%;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-xl);
+  column-gap: 60px;
+  align-items: start;
 }
 
 .content p {
-  width: 100%;
-  margin: 0;
-  color: var(--color-text);
+  padding-bottom: 14px;
   font-size: var(--font-size-body);
   line-height: 1.7;
-  font-weight: 400;
+  color: var(--color-text);
 }
 
 @media (max-width: 900px) {
   .section {
-    padding: var(--space-xl) 0;
+    padding: 0 0 var(--space-32);
   }
 
   .title {
-    width: 100%;
     max-width: 100%;
-    margin-bottom: var(--space-md);
-    font-size: var(--font-size-xl);
-    line-height: 1.2;
-    letter-spacing: normal;
+    margin-bottom: 0;
+    font-size: var(--font-size-30);
+    line-height: 1.05;
   }
 
   .content {
     grid-template-columns: 1fr;
-    gap: var(--space-md);
+  }
+
+  .content p {
+    padding: var(--space-sm) 0 0;
+  }
+
+  .content p:first-child {
+    padding-top: 28px;
   }
 }

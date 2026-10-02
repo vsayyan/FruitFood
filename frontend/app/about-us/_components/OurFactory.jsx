@@ -96,6 +96,19 @@ export default function OurFactory({ data }) {
           </div>
         </div>
 
+        {/* Mobile-ում (Figma 185:8046) մեծ slider-ի փոխարեն նկարները
+            հորիզոնական scroll-ով քարտեր են */}
+        <div className={styles.strip} aria-label={data.slider_navigation_label}>
+          {sliderImages.map((item, index) => (
+            <div key={item.id} className={styles.stripItem}>
+              <img
+                src={item.image}
+                alt={`${data.slider_image_label} ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+
         <div className={styles.gallery}>
           {data.gallery?.map((item) => (
             <div

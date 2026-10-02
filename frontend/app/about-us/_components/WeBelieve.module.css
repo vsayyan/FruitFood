@@ -1,5 +1,6 @@
+/* Figma: about 192:1061 (desktop), 195:1235 (mobile) */
 .section {
-  padding: var(--space-2xl) 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -9,51 +10,41 @@
 }
 
 .box {
-  padding: var(--space-xl);
+  padding: var(--space-80);
+  border-radius: var(--radius-2xl);
   background: var(--color-green-dark);
-  border-radius: var(--radius-lg);
 }
 
 .description {
   max-width: 900px;
-  min-height: 79px;
-  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-body);
+  line-height: 1.75;
   color: rgba(255, 255, 255, 0.85);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 26.3px;
-  letter-spacing: 0px;
 }
 
 .title {
   max-width: 1040px;
-  min-height: 121px;
-  margin: 0;
-  color: #ffffff;
-  font-size: 37px;
-  font-weight: 700;          
+  padding-top: 48px;
+  font-size: 2.3125rem; /* 37px */
+  font-weight: 700;
   line-height: 60.5px;
   letter-spacing: -1.2px;
+  color: var(--color-white);
 }
 
-@media (max-width: 768px) {
-  .box {
-    padding: var(--space-lg);
+@media (max-width: 900px) {
+  .section {
+    margin-top: var(--space-md);
+    padding: 0 0 60px;
   }
 
-  .description {
-    max-width: 100%;
-    min-height: auto;
-    font-size: 13.5px;
-    line-height: 21px;
+  .box {
+    padding: 42px var(--space-md);
   }
 
   .title {
-    max-width: 100%;
-    min-height: auto;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    font-weight: 700;
+    padding-top: var(--space-32);
+    font-size: var(--font-size-lead);
+    line-height: 30.5px;
   }
 }

@@ -8,6 +8,7 @@ import {
 import ExportCooperation from './_components/ExportCooperation'
 import OurFactory from './_components/OurFactory'
 import WeBelieve from './_components/WeBelieve'
+import styles from './page.module.css'
 
 export default async function AboutUsPage() {
   const lang = await displayLang()
@@ -22,10 +23,10 @@ export default async function AboutUsPage() {
   ])
 
   return (
-    <>
+    <div className={styles.page}>
       <ExportCooperation data={exportCooperation[0]} />
       <OurFactory data={ourFactory[0]} />
       <WeBelieve data={weBelieve[0]} />
-    </>
+    </div>
   )
 }
