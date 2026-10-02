@@ -23,7 +23,7 @@ from rest_framework.routers import DefaultRouter
 from header.urls import header_router
 from footer.urls import footer_router
 
-router = DefaultRouter()
+router = DefaultRouter(trailing_slash=False)
 
 router.registry.extend(header_router.registry)
 router.registry.extend(footer_router.registry)
