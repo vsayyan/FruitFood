@@ -15,8 +15,10 @@
   --color-overlay: rgba(31, 31, 31, 0.55); /* modal-ի ետևի ֆոն */
 
   /* Spacing scale — բոլոր margin/padding սրանցից, ոչ պատահական թվեր */
+  --space-6: 6px;
   --space-xs: 8px;
   --space-sm: 16px;
+  --space-18: 18px;
   --space-md: 24px;
   --space-32: 32px;
   --space-lg: 40px;

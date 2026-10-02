@@ -1,14 +1,15 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import PartnerCta from './PartnerCta'
 
-export default function PartnerCtaWrapper() {
+// Client Component միայն pathname-ի համար. CTA-ն ինքը server-ում ա render
+// արվում ու գալիս ա children-ով, /contact էջում չի ցուցադրվում։
+export default function PartnerCtaWrapper({ children }) {
   const pathname = usePathname()
 
-  if (pathname.startsWith('/contact')) {
+  if (pathname?.startsWith('/contact')) {
     return null
   }
 
-  return <PartnerCta />
+  return children
 }
