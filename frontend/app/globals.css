@@ -5,6 +5,7 @@
   --color-green-accent: #45a14c; /* eyebrow/փոքր label-ներ */
   --color-green-deep: #003d20;   /* tag-երի տեքստ */
   --color-green-hover: #0d5030;  /* hover-ի եզր (Figma ui-kit, «Դիտել բաղադրությունը») */
+  --color-green-mobile: #0d5030; /* CTA-ի և footer-ի ֆոնը mobile-ում (Figma 375 frame-եր) */
   --color-mint: #e8f1ea;        /* բաց կանաչ ֆոներ, tag-եր, header-ի գիծ */
   --color-cream: #faf9f6;       /* բաժինների off-white ֆոն */
   --color-surface: #f5f5f5;     /* քարտեզի բլոկի ֆոն (Geography) */
