@@ -1,73 +1,70 @@
+/* Figma: Աշխարհագրություն (190:8370), mobile (190:8918) */
 .intro {
-  padding: var(--space-lg) 0 var(--space-xl);
-  background-color: var(--color-cream);
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: var(--space-xl);
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-lg);
+  /* 68px = fixed header-ի բարձրությունը, որ breadcrumb-ը header-ի տակ չմնա */
+  padding: calc(68px + var(--space-80)) 0 60px;
+  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
+  gap: 10px;
+  font-size: var(--font-size-caption);
+  line-height: 1.6;
   color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
-  line-height: 1.5;
 }
 
-.active {
-  color: var(--color-green);
+.crumbLink:hover {
+  color: var(--color-green-dark);
+}
+
+.current {
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 652fr 468fr;
+  column-gap: var(--space-80);
+  align-items: start;
+  margin-top: var(--space-md);
 }
 
 .title {
-  margin: 0;
+  padding-top: 20px;
+  font-size: var(--font-size-display);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
   color: var(--color-green);
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 1.1;
 }
 
 .introText {
-  width: 100%;
-  max-width: 500px;
-  margin: var(--space-lg) 0 0 auto;
-  color: var(--color-text);
   font-size: var(--font-size-base);
-  font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: var(--color-text);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .intro {
-    padding: var(--space-lg) 0;
+    padding: calc(65px + 30px) 0 var(--space-32);
+    border-bottom-color: var(--color-mint);
+  }
+
+  .breadcrumbs {
+    gap: var(--space-xs);
   }
 
   .content {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
-  }
-
-  .left {
-    gap: var(--space-md);
+    row-gap: var(--space-md);
+    margin-top: 0;
   }
 
   .title {
-    font-size: var(--font-size-2xl);
-  }
-
-  .introText {
-    max-width: 100%;
-    margin: 0;
+    font-size: var(--font-size-33);
+    line-height: 46px;
   }
 }

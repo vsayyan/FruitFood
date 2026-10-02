@@ -1,4 +1,5 @@
-{"export_countries": [
+{
+  "export_countries": [
     {
       "id": 1,
       "lang": "am",
@@ -23,233 +24,233 @@
     {
       "id": 4,
       "lang": "am",
-      "code": "belgium",
-      "region": "europe",
-      "name": "Բելգիա"
-    },
-    {
-      "id": 5,
-      "lang": "ru",
-      "code": "belgium",
-      "region": "europe",
-      "name": "Бельгия"
-    },
-    {
-      "id": 6,
-      "lang": "en",
-      "code": "belgium",
-      "region": "europe",
-      "name": "Belgium"
-    },
-    {
-      "id": 7,
-      "lang": "am",
-      "code": "lebanon",
-      "region": "middle-east",
-      "name": "Լիբանան"
-    },
-    {
-      "id": 8,
-      "lang": "ru",
-      "code": "lebanon",
-      "region": "middle-east",
-      "name": "Ливан"
-    },
-    {
-      "id": 9,
-      "lang": "en",
-      "code": "lebanon",
-      "region": "middle-east",
-      "name": "Lebanon"
-    },
-    {
-      "id": 10,
-      "lang": "am",
       "code": "france",
       "region": "europe",
       "name": "Ֆրանսիա"
     },
     {
-      "id": 11,
+      "id": 5,
       "lang": "ru",
       "code": "france",
       "region": "europe",
       "name": "Франция"
     },
     {
-      "id": 12,
+      "id": 6,
       "lang": "en",
       "code": "france",
       "region": "europe",
       "name": "France"
     },
     {
-      "id": 13,
-      "lang": "am",
-      "code": "uae",
-      "region": "middle-east",
-      "name": "Արաբական Միացյալ Էմիրություններ"
-    },
-    {
-      "id": 14,
-      "lang": "ru",
-      "code": "uae",
-      "region": "middle-east",
-      "name": "ОАЭ"
-    },
-    {
-      "id": 15,
-      "lang": "en",
-      "code": "uae",
-      "region": "middle-east",
-      "name": "United Arab Emirates"
-    },
-    {
-      "id": 16,
-      "lang": "am",
-      "code": "russia",
-      "region": "eurasia",
-      "name": "Ռուսաստան"
-    },
-    {
-      "id": 17,
-      "lang": "ru",
-      "code": "russia",
-      "region": "eurasia",
-      "name": "Россия"
-    },
-    {
-      "id": 18,
-      "lang": "en",
-      "code": "russia",
-      "region": "eurasia",
-      "name": "Russia"
-    },
-    {
-      "id": 19,
+      "id": 7,
       "lang": "am",
       "code": "germany",
       "region": "europe",
       "name": "Գերմանիա"
     },
     {
-      "id": 20,
+      "id": 8,
       "lang": "ru",
       "code": "germany",
       "region": "europe",
       "name": "Германия"
     },
     {
-      "id": 21,
+      "id": 9,
       "lang": "en",
       "code": "germany",
       "region": "europe",
       "name": "Germany"
     },
     {
+      "id": 10,
+      "lang": "am",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Բելգիա"
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Бельгия"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Belgium"
+    },
+    {
+      "id": 13,
+      "lang": "am",
+      "code": "netherlands",
+      "region": "europe",
+      "name": "Նիդերլանդներ"
+    },
+    {
+      "id": 14,
+      "lang": "ru",
+      "code": "netherlands",
+      "region": "europe",
+      "name": "Нидерланды"
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "code": "netherlands",
+      "region": "europe",
+      "name": "Netherlands"
+    },
+    {
+      "id": 16,
+      "lang": "am",
+      "code": "czechia",
+      "region": "europe",
+      "name": "Չեխիա"
+    },
+    {
+      "id": 17,
+      "lang": "ru",
+      "code": "czechia",
+      "region": "europe",
+      "name": "Чехия"
+    },
+    {
+      "id": 18,
+      "lang": "en",
+      "code": "czechia",
+      "region": "europe",
+      "name": "Czech Republic"
+    },
+    {
+      "id": 19,
+      "lang": "am",
+      "code": "poland",
+      "region": "europe",
+      "name": "Լեհաստան"
+    },
+    {
+      "id": 20,
+      "lang": "ru",
+      "code": "poland",
+      "region": "europe",
+      "name": "Польша"
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "code": "poland",
+      "region": "europe",
+      "name": "Poland"
+    },
+    {
       "id": 22,
       "lang": "am",
-      "code": "qatar",
-      "region": "middle-east",
-      "name": "Կատար"
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Ռուսաստան"
     },
     {
       "id": 23,
       "lang": "ru",
-      "code": "qatar",
-      "region": "middle-east",
-      "name": "Катар"
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Россия"
     },
     {
       "id": 24,
       "lang": "en",
-      "code": "qatar",
-      "region": "middle-east",
-      "name": "Qatar"
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Russia"
     },
     {
       "id": 25,
-      "lang": "am",
-      "code": "kuwait",
-      "region": "middle-east",
-      "name": "Քուվեյթ"
-    },
-    {
-      "id": 26,
-      "lang": "ru",
-      "code": "kuwait",
-      "region": "middle-east",
-      "name": "Кувейт"
-    },
-    {
-      "id": 27,
-      "lang": "en",
-      "code": "kuwait",
-      "region": "middle-east",
-      "name": "Kuwait"
-    },
-    {
-      "id": 28,
-      "lang": "am",
-      "code": "australia",
-      "region": "oceania",
-      "name": "Ավստրալիա"
-    },
-    {
-      "id": 29,
-      "lang": "ru",
-      "code": "australia",
-      "region": "oceania",
-      "name": "Австралия"
-    },
-    {
-      "id": 30,
-      "lang": "en",
-      "code": "australia",
-      "region": "oceania",
-      "name": "Australia"
-    },
-    {
-      "id": 31,
       "lang": "am",
       "code": "kazakhstan",
       "region": "eurasia",
       "name": "Ղազախստան"
     },
     {
-      "id": 32,
+      "id": 26,
       "lang": "ru",
       "code": "kazakhstan",
       "region": "eurasia",
       "name": "Казахстан"
     },
     {
-      "id": 33,
+      "id": 27,
       "lang": "en",
       "code": "kazakhstan",
       "region": "eurasia",
       "name": "Kazakhstan"
     },
     {
+      "id": 28,
+      "lang": "am",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "Արաբական Միացյալ Էմիրություններ"
+    },
+    {
+      "id": 29,
+      "lang": "ru",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "Объединённые Арабские Эмираты"
+    },
+    {
+      "id": 30,
+      "lang": "en",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "United Arab Emirates"
+    },
+    {
+      "id": 31,
+      "lang": "am",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Կատար"
+    },
+    {
+      "id": 32,
+      "lang": "ru",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Катар"
+    },
+    {
+      "id": 33,
+      "lang": "en",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Qatar"
+    },
+    {
       "id": 34,
       "lang": "am",
-      "code": "china",
-      "region": "asia",
-      "name": "Չինաստան"
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Քուվեյթ"
     },
     {
       "id": 35,
       "lang": "ru",
-      "code": "china",
-      "region": "asia",
-      "name": "Китай"
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Кувейт"
     },
     {
       "id": 36,
       "lang": "en",
-      "code": "china",
-      "region": "asia",
-      "name": "China"
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Kuwait"
     },
     {
       "id": 37,
@@ -271,23 +272,43 @@
       "code": "saudi-arabia",
       "region": "middle-east",
       "name": "Saudi Arabia"
+    },
+    {
+      "id": 40,
+      "lang": "am",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Ավստրալիա"
+    },
+    {
+      "id": 41,
+      "lang": "ru",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Австралия"
+    },
+    {
+      "id": 42,
+      "lang": "en",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Australia"
     }
   ],
-
-    "geography_contents": [
+  "geography_contents": [
     {
       "id": 1,
       "lang": "am",
       "breadcrumb_home": "Գլխավոր",
       "title": "Աշխարհագրություն",
-      "intro": "Fruit Food ընկերության արտադրած բնական մրգային արտադրատեսակները ներկայացված են միջազգային տարբեր շուկաներում՝ իրենց բարձր որակով և գեղեցիկ արտաքին տեսքով արժանանալով ամենախիստ և պահանջկոտ գնորդների գնահատականին ու հավանությանը։",
-      "description_1": "Մեր ապրանքատեսակների արտահանման համար որպես հիմք են հանդիսանում բացառապես Հայաստանում աճեցված մրգերը։ Հայաստանի անապակ արևի և քաղցրահամ լեռնային ջրերի շնորհիվ արտադրված ապրանքները ունեն յուրօրինակ համ և բուրմունք, որի պատճառով ունի շատ մեծ պահանջարկ աշխարհի տարբեր երկրներում, որտեղ այն գնահատվում է իր ",
+      "intro": "Fruit Food Ընկերության արտադրած բնական մրգային ապրանքատեսակները ներկայացված են միջազգային տարբեր շուկաներում՝ իրենց բարձր որակով և գեղեցիկ ապրանքային տեսքով արժանանալով ամենախիստ և պահանջկոտ գնորդների գնահատականին ու հավանությանը։",
+      "description_1": "Մեր ապրանքատեսակների արտադրման համար որպես հումք են հանդիսանում բացառապես Հայաստանում աճեցված մրգերը։ Հայաստանի անսպառ արևի և քաղցրորակ լեռնային ջրերի հաշվին արտադրված ապրանքները ունեն յուրօրինակ համ և բուրմունք, որի պատճառով ունի շատ մեծ պահանջարկ աշխարհի տարբեր երկրներում, որտեղ այն գնահատվում է իր ",
       "description_highlight": "բնական համի, բարձր որակի և հայկական մրգերի յուրահատկության համար։",
       "description_2": "Ընկերությունը շարունակաբար ընդլայնում է համագործակցության աշխարհագրությունը՝ ստեղծելով ամուր գործընկերային կապեր և ներկայացնելով Հայաստանը միջազգային շուկաներում։",
       "countries_title": "Մեր արտահանման աշխարհագրությունը ներառում է՝",
-      "bottom_text": "Մենք վստահ ենք, որ բնական, առողջարար և բարձրորակ հայկական արտադրանքը սահմաններ չի ճանաչում, և ամեն օր ընդլայնում ենք մեր ներկայությունը միջազգային շուկաներում։"
+      "bottom_text": "Մենք վստահ ենք, որ բնական, առողջարար և բարձրորակ հայկական արտադրանքը սահմաններ չի ճանաչում, և ամեն օր ընդլայնում ենք մեր ներկայությունը միջազգային շուկաներում։",
+      "countries_more": "և այլ երկրներ"
     },
-
     {
       "id": 2,
       "lang": "ru",
@@ -298,9 +319,9 @@
       "description_highlight": "натуральный вкус, высокое качество и уникальность армянских фруктов.",
       "description_2": "Компания постоянно расширяет географию сотрудничества, создавая прочные партнёрские связи и представляя Армению на международных рынках.",
       "countries_title": "География нашего экспорта включает:",
-      "bottom_text": "Мы уверены, что натуральная, полезная и высококачественная армянская продукция не знает границ, и каждый день расширяем наше присутствие на международных рынках."
+      "bottom_text": "Мы уверены, что натуральная, полезная и высококачественная армянская продукция не знает границ, и каждый день расширяем наше присутствие на международных рынках.",
+      "countries_more": "и другие страны"
     },
-
     {
       "id": 3,
       "lang": "en",
@@ -311,8 +332,8 @@
       "description_highlight": "natural taste, high quality, and the unique character of Armenian fruits.",
       "description_2": "The company continuously expands the geography of its cooperation by building strong partnerships and representing Armenia in international markets.",
       "countries_title": "Our export geography includes:",
-      "bottom_text": "We believe that natural, healthy, and high-quality Armenian products know no borders, and every day we expand our presence in international markets."
+      "bottom_text": "We believe that natural, healthy, and high-quality Armenian products know no borders, and every day we expand our presence in international markets.",
+      "countries_more": "and other countries"
     }
   ]
-
 }

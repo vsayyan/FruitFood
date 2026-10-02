@@ -1,38 +1,33 @@
+/* Figma: 190:8402 (desktop), 190:8936 (mobile) */
 .description {
-  width: 860px;
-  max-width: 100%;
-  margin: var(--space-2xl) auto;
+  padding: var(--space-80) var(--container-padding);
+}
+
+.inner {
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 .text {
-  margin: 0;
+  font-size: var(--font-size-lead);
+  line-height: 1.75;
   color: var(--color-text);
-  font-size: var(--font-size-base);
-  font-weight: 400;
-  line-height: 1.7;
 }
 
+/* Figma-ում երկու պարբերության արանքում մեկ դատարկ տող ա */
 .text + .text {
-  margin-top: var(--space-lg);
+  margin-top: 1lh;
 }
 
 .highlight {
-  color: var(--color-green);
   font-weight: 600;
+  color: var(--color-green);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .description {
-    width: 100%;
-    margin: var(--space-xl) auto;
-  }
-
-  .text {
-    font-size: var(--font-size-base);
-    line-height: 1.6;
-  }
-
-  .text + .text {
-    margin-top: var(--space-md);
+    margin-top: var(--space-sm);
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
   }
 }
