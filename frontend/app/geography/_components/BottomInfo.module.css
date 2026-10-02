@@ -1,0 +1,35 @@
+/* Figma: 192:1067 (desktop), 190:9323 (mobile) */
+.bottomInfo {
+  padding: 60px 0 100px;
+}
+
+.box {
+  padding: var(--space-80);
+  border-radius: var(--radius-2xl);
+  background: var(--color-green-dark);
+}
+
+.text {
+  font-size: var(--font-size-22);
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -1.2px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+@media (max-width: 900px) {
+  .bottomInfo {
+    margin-top: var(--space-md);
+    padding: 0 0 66px;
+  }
+
+  .box {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .text {
+    font-size: var(--font-size-sm);
+    line-height: 27px;
+  }
+}

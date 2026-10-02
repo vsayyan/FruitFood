@@ -1,0 +1,36 @@
+/* Figma: 190:8424 — 3 սյունակ × 200px, 100px / 14px արանք */
+.countryList {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  column-gap: 100px;
+  row-gap: 14px;
+  list-style: none;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-green);
+}
+
+.pin {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .countryList {
+    grid-template-columns: 200px;
+    row-gap: 0;
+  }
+
+  .country {
+    padding: var(--space-xs) 0;
+  }
+}

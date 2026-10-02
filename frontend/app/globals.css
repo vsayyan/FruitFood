@@ -6,11 +6,13 @@
   --color-green-deep: #003d20;   /* tag-երի տեքստ */
   --color-mint: #e8f1ea;        /* բաց կանաչ ֆոներ, tag-եր, header-ի գիծ */
   --color-cream: #faf9f6;       /* բաժինների off-white ֆոն */
+  --color-surface: #f5f5f5;     /* քարտեզի բլոկի ֆոն (Geography) */
   --color-light: #f5efe6;       /* տեքստ/գծեր կանաչ ֆոնի վրա (footer, CTA) */
   --color-light-soft: #fbf7f1;  /* երկրորդական տեքստ կանաչ ֆոնի վրա */
   --color-text: #1f1f1f;
   --color-text-muted: #6b6b6b;
   --color-border: #eaeaea;
+  --color-white: #ffffff;
   --color-error: #005b30;
   --color-overlay: rgba(31, 31, 31, 0.55); /* modal-ի ետևի ֆոն */
 
@@ -61,9 +63,12 @@
   --font-size-lead: 1.0625rem;  /* 17px — CTA/քարտերի տեքստ */
   --font-size-md: 1.125rem;     /* 18px */
   --font-size-lg: 1.25rem;      /* 20px */
+  --font-size-22: 1.375rem;     /* 22px — Geography-ի կանաչ բլոկ */
   --font-size-h3: 1.5rem;       /* 24px — form/modal վերնագրեր */
   --font-size-xl: 1.75rem;      /* 28px */
+  --font-size-30: 1.875rem;     /* 30px — mobile բաժնի վերնագիր */
   --font-size-title: 2rem;      /* 32px — բաժնի վերնագիր */
+  --font-size-33: 2.0625rem;    /* 33px — mobile էջի վերնագիր (Geography) */
   --font-size-h2: 2.25rem;      /* 36px — CTA-ի վերնագիր */
   --font-size-2xl: 2.5rem;      /* 40px */
   --font-size-display: 4rem;    /* 64px */
