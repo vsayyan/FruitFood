@@ -1,16 +1,12 @@
 from rest_framework.response import Response
-from .models import Logo,Languages,Navbar,headerlabels
-from .serializers import LogoSerializer,LanguagesSerializer,NavbarSerializer,headerlabelSerializer
+from .models import Logo,Languages,Navbar,Headerlabels,Categories,Tags
+from .serializers import LogoSerializer,LanguagesSerializer,NavbarSerializer,HeaderlabelSerializer,CategoriesSerializer,TagsSerializer
 from rest_framework import viewsets
+from base.views import FilteredReadOnlyViewSet
 
-
-class BaseArrayListViewSet(viewsets.ModelViewSet):
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get('data', {}), list):
-            kwargs['many'] = True
-        return super().get_serializer(*args, **kwargs)
 
 class LogoViewSet(viewsets.ModelViewSet):
+    filter_fields = ()
     queryset = Logo.objects.all()
     serializer_class = LogoSerializer
     def list(self, request, *args, **kwargs):
@@ -22,12 +18,28 @@ class LogoViewSet(viewsets.ModelViewSet):
         
         return Response({})
 
-class LanguagesViewSet(BaseArrayListViewSet):
+class LanguagesViewSet(FilteredReadOnlyViewSet):
     queryset = Languages.objects.all().order_by('id')
     serializer_class = LanguagesSerializer
-class NavbarViewSet(BaseArrayListViewSet):
+    filter_fields = ()  
+
+class NavbarViewSet(FilteredReadOnlyViewSet):
     queryset = Navbar.objects.all().order_by('id')
     serializer_class = NavbarSerializer
-class headerlabelsViewSet(BaseArrayListViewSet):
-    queryset = headerlabels.objects.all().order_by('id')
-    serializer_class = headerlabelSerializer
+    filter_fields = ("lang",)
+
+
+class HeaderlabelsViewSet(FilteredReadOnlyViewSet):
+    queryset = Headerlabels.objects.all().order_by('id')
+    serializer_class = HeaderlabelSerializer
+    filter_fields = ("lang",)
+
+class CategoriesViewSet(FilteredReadOnlyViewSet):
+    queryset = Categories.objects.all().order_by('id')
+    serializer_class = CategoriesSerializer
+    filter_fields = ("lang","slug")
+
+class TagsViewSet(FilteredReadOnlyViewSet):
+    queryset = Tags.objects.all().order_by('id')
+    serializer_class = TagsSerializer
+    filter_fields = ("lang",)

@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import FooterLabel
 
-# Register your models here.
+class FooterLabelAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+admin.site.register(FooterLabel, FooterLabelAdmin)

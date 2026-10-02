@@ -1,6 +1,6 @@
 from dataclasses import fields
 from rest_framework import serializers
-from .models import Logo,Languages,Navbar,headerlabels
+from .models import Logo,Languages,Navbar,Headerlabels,Categories,Tags
 
 class LogoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,7 +15,15 @@ class NavbarSerializer(serializers.ModelSerializer):
         model = Navbar
         fields = '__all__'
 
-class headerlabelSerializer(serializers.ModelSerializer):
+class HeaderlabelSerializer(serializers.ModelSerializer):
     class Meta:
-        model = headerlabels
+        model = Headerlabels
+        fields = '__all__'
+class CategoriesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Categories
+        fields = '__all__'
+class TagsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tags
         fields = '__all__'
