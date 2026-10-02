@@ -9,8 +9,12 @@ export default function WeBelieve({ data }) {
             {data.description}
           </p>
 
+          {/* Figma. նախադասության առաջին մասը 700, մնացածը 600 (semibold) */}
           <h2 className={styles.title}>
             {data.title}
+            {data.title_end && (
+              <span className={styles.titleEnd}>{data.title_end}</span>
+            )}
           </h2>
         </div>
       </div>

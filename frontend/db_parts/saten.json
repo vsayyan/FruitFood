@@ -4,7 +4,7 @@
             "id": 1,
             "lang": "am",
             "heading_1": "Մեր փիլիսոփայությունը",
-            "heading_2_before": "Բնությունն իր ",
+            "heading_2_before": "Բնությունն իր\n",
             "heading_2_highlight": "ամենամաքուր",
             "heading_2_after": " տեսքով։"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "lang": "ru",
             "heading_1": "Наша философия",
-            "heading_2_before": "Природа в своей ",
+            "heading_2_before": "Природа в своей\n",
             "heading_2_highlight": "чистейшей",
             "heading_2_after": " форме."
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "lang": "en",
             "heading_1": "Our philosophy",
-            "heading_2_before": "Nature in its ",
+            "heading_2_before": "Nature in its\n",
             "heading_2_highlight": "purest",
             "heading_2_after": " form."
         }
@@ -30,19 +30,82 @@
             "id": "1",
             "lang": "am",
             "text": "Մենք օգտագործում ենք բացառապես հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի, բուրավետիչների և կոնսերվանտների։ Յուրաքանչյուր արտադրանք ստեղծվում է այնպես, որպեսզի հնարավորինս պահպանվեն մրգի բնական համը, բույրը և օգտակար հատկությունները։",
-            "btn": "Կարդալ ավելին"
+            "btn": "Կարդալ ավելին",
+            "images": [
+                {
+                    "id": 1,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+                },
+                {
+                    "id": 2,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+                },
+                {
+                    "id": 3,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+                }
+            ],
+            "slider_previous_label": "Նախորդ նկարը",
+            "slider_next_label": "Հաջորդ նկարը",
+            "slider_image_label": "Նկար",
+            "slider_navigation_label": "Նկարների կառավարում"
         },
         {
             "id": "2",
             "lang": "ru",
             "text": "Мы используем исключительно отборные армянские фрукты, без добавления сахара, искусственных красителей, ароматизаторов и консервантов. Каждый продукт создается таким образом, чтобы максимально сохранить естественный вкус, аромат и полезные свойства фруктов.",
-            "btn": "Читать далее"
+            "btn": "Читать далее",
+            "images": [
+                {
+                    "id": 1,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+                },
+                {
+                    "id": 2,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+                },
+                {
+                    "id": 3,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+                }
+            ],
+            "slider_previous_label": "Предыдущее фото",
+            "slider_next_label": "Следующее фото",
+            "slider_image_label": "Фото",
+            "slider_navigation_label": "Управление фото"
         },
         {
             "id": "3",
             "lang": "en",
             "text": "We use exclusively select Armenian fruits, with no added sugar, artificial colorings, flavorings, or preservatives. Each product is crafted to preserve the fruit's natural taste, aroma, and beneficial properties as much as possible.",
-            "btn": "Read more"
+            "btn": "Read more",
+            "images": [
+                {
+                    "id": 1,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Choco Chir fruit pastilles in dark glaze"
+                },
+                {
+                    "id": 2,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Choco Chir fruit pastilles in dark glaze"
+                },
+                {
+                    "id": 3,
+                    "image": "/images/home/philosophy-1.png",
+                    "alt": "Choco Chir fruit pastilles in dark glaze"
+                }
+            ],
+            "slider_previous_label": "Previous image",
+            "slider_next_label": "Next image",
+            "slider_image_label": "Image",
+            "slider_navigation_label": "Image controls"
         }
     ],
     "faq_small": [

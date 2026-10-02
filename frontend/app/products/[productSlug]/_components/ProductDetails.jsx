@@ -8,8 +8,9 @@ import Info from './Info'
 // առաջին նկարը դառնում ա այդ համի տուփի նկարը (Figma-ի պես)
 export default function ProductDetails({ product, tags, labels }) {
   const variants = product.variants ?? []
-  // Figma-ում default ընտրված ա 2-րդ համը (եթե մեկից ավել կա)
-  const [selectedIndex, setSelectedIndex] = useState(variants.length > 1 ? 1 : 0)
+  // Սկզբում ընտրված ա db-ի default_variant-ը (օր. "v2"), եթե չկա՝ առաջին համը
+  const defaultIndex = Math.max(0, variants.findIndex((v) => v.id === product.default_variant))
+  const [selectedIndex, setSelectedIndex] = useState(defaultIndex)
   const boxImage = variants[selectedIndex]?.box_image
   const images = product.images ?? []
   const galleryImages = boxImage ? [boxImage, ...images.slice(1)] : images

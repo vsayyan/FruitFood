@@ -306,6 +306,27 @@
       "code": "cocoa_62",
       "icon": "cocoa",
       "label": "62% cocoa"
+    },
+    {
+      "id": 10,
+      "lang": "am",
+      "code": "no_added_sugar",
+      "icon": "sugar-free",
+      "label": "Առանց ավելացված շաքարի"
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "code": "no_added_sugar",
+      "icon": "sugar-free",
+      "label": "Без добавленного сахара"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "code": "no_added_sugar",
+      "icon": "sugar-free",
+      "label": "No added sugar"
     }
   ],
   "products": [
@@ -316,7 +337,7 @@
       "category_slug": "chocolate-covered",
       "sku": "230",
       "weight_value": 230,
-      "weight_unit": "g",
+      "weight_unit": "գ",
       "images": [
         "/images/products/choco-chir-230-assorted.webp",
         "/images/products/choco-chir-230-2.jpg",
@@ -362,7 +383,9 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2",
+      "tastes_count": 5
     },
     {
       "id": 2,
@@ -371,7 +394,7 @@
       "category_slug": "chocolate-covered",
       "sku": "230",
       "weight_value": 230,
-      "weight_unit": "g",
+      "weight_unit": "г",
       "images": [
         "/images/products/choco-chir-230-assorted.webp",
         "/images/products/choco-chir-230-2.jpg",
@@ -417,7 +440,9 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2",
+      "tastes_count": 5
     },
     {
       "id": 3,
@@ -472,18 +497,1183 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v2",
+      "tastes_count": 5
     },
     {
       "id": 4,
+      "lang": "am",
+      "slug": "shokoladapatat-chrer-200",
+      "category_slug": "chocolate-covered",
+      "sku": "200",
+      "weight_value": 200,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/chrer-200.png",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "cocoa_62"
+      ],
+      "name": "Շոկոլադապատ չրեր",
+      "composition": "Բնական չրեր, մուգ շոկոլադ (62% կակաոյի պարունակությամբ), շաքար, էմուլգատոր (սոյայի լեցիտին), վանիլին։",
+      "description": "Ընտիր չրերի տեսականի՝ պատված բարձրորակ մուգ շոկոլադով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 5,
+      "lang": "ru",
+      "slug": "shokoladapatat-chrer-200",
+      "category_slug": "chocolate-covered",
+      "sku": "200",
+      "weight_value": 200,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/chrer-200.png",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "cocoa_62"
+      ],
+      "name": "Сухофрукты в шоколаде",
+      "composition": "Натуральные сухофрукты, темный шоколад (62% какао), сахар, эмульгатор (соевый лецитин), ванилин.",
+      "description": "Ассорти отборных сухофруктов в высококачественном темном шоколаде.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 6,
+      "lang": "en",
+      "slug": "shokoladapatat-chrer-200",
+      "category_slug": "chocolate-covered",
+      "sku": "200",
+      "weight_value": 200,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/chrer-200.png",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "cocoa_62"
+      ],
+      "name": "Chocolate-covered dried fruits",
+      "composition": "Natural dried fruits, dark chocolate (62% cocoa), sugar, emulsifier (soy lecithin), vanillin.",
+      "description": "Assorted dried fruits coated in dark chocolate.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 7,
+      "lang": "am",
+      "slug": "znarakapat-pastether-mini-250",
+      "category_slug": "chocolate-covered",
+      "sku": "250",
+      "weight_value": 250,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/choco-chir-200.png",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Ջնարակապատ պաստեղներ մինի",
+      "composition": "Բնական մրգային պաստեղ, շոկոլադե զնարակ, շաքար։",
+      "description": "Փոքրիկ մրգային պաստեղներ՝ պատված նուրբ շոկոլադե զնարակով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 8,
+      "lang": "ru",
+      "slug": "znarakapat-pastether-mini-250",
+      "category_slug": "chocolate-covered",
+      "sku": "250",
+      "weight_value": 250,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/choco-chir-200.png",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Мини-пастила в глазури",
+      "composition": "Натуральная фруктовая пастила, шоколадная глазурь, сахар.",
+      "description": "Маленькие фруктовые пастилки, покрытые нежной шоколадной глазурью.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 9,
+      "lang": "en",
+      "slug": "znarakapat-pastether-mini-250",
+      "category_slug": "chocolate-covered",
+      "sku": "250",
+      "weight_value": 250,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-chir-200.png",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Glazed Mini Fruit Pastilles",
+      "composition": "Natural fruit pastille, chocolate glaze, sugar.",
+      "description": "Bite-sized fruit pastilles coated in smooth chocolate glaze.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 10,
+      "lang": "am",
+      "slug": "shokoladapatat-pastether-30",
+      "category_slug": "chocolate-covered",
+      "sku": "30-p",
+      "weight_value": 30,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/pastilles-mini-250.png",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Շոկոլադապատ պաստեղներ",
+      "composition": "Բնական մրգային պաստեղ (ծիրան, դեղձ), մուգ շոկոլադ։",
+      "description": "Մրգային պաստեղ՝ պատված մուգ շոկոլադի բարակ շերտով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Ծիրան",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Դեղձ",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "slug": "shokoladapatat-pastether-30",
+      "category_slug": "chocolate-covered",
+      "sku": "30-p",
+      "weight_value": 30,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/pastilles-mini-250.png",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Пастила в шоколаде",
+      "composition": "Натуральная фруктовая пастила (абрикос, персик), темный шоколад.",
+      "description": "Фруктовая пастила, покрытая тонким слоем темного шоколада.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Абрикос",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Персик",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "slug": "shokoladapatat-pastether-30",
+      "category_slug": "chocolate-covered",
+      "sku": "30-p",
+      "weight_value": 30,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/pastilles-mini-250.png",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Chocolate-covered Fruit Pastilles",
+      "composition": "Natural fruit pastille (apricot, peach), dark chocolate.",
+      "description": "Fruit pastille coated in a thin layer of dark chocolate.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Apricot",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Peach",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 13,
+      "lang": "am",
+      "slug": "shokoladapatat-salikner-170",
+      "category_slug": "chocolate-covered",
+      "sku": "170-b",
+      "weight_value": 170,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/choco-pastilles-30.png",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Շոկոլադապատ սալիկներ",
+      "composition": "Մրգային միջուկ (կեռաս/բալ), մուգ շոկոլադ։",
+      "description": "Շոկոլադապատ մրգային սալիկներ՝ հարուստ համով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Կեռաս",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 14,
+      "lang": "ru",
+      "slug": "shokoladapatat-salikner-170",
+      "category_slug": "chocolate-covered",
+      "sku": "170-b",
+      "weight_value": 170,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/choco-pastilles-30.png",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фруктовые батончики в шоколаде",
+      "composition": "Фруктовая начинка (черешня/вишня), темный шоколад.",
+      "description": "Фруктовые батончики в шоколаде с богатым вкусом.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Черешня",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "slug": "shokoladapatat-salikner-170",
+      "category_slug": "chocolate-covered",
+      "sku": "170-b",
+      "weight_value": 170,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-pastilles-30.png",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Chocolate-covered Fruit Bars",
+      "composition": "Fruit filling (cherry), dark chocolate.",
+      "description": "Chocolate-covered fruit bars with rich flavor.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Cherry",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 16,
+      "lang": "am",
+      "slug": "shokoladapatat-salikner-50",
+      "category_slug": "chocolate-covered",
+      "sku": "50-b",
+      "weight_value": 50,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/choco-bars-170.png",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Շոկոլադապատ սալիկներ",
+      "composition": "Մրգային միջուկ, մուգ շոկոլադ։",
+      "description": "Հարմար չափսի շոկոլադապատ մրգային սալիկ արագ սնվելու համար։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Բալ",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 4
+    },
+    {
+      "id": 17,
+      "lang": "ru",
+      "slug": "shokoladapatat-salikner-50",
+      "category_slug": "chocolate-covered",
+      "sku": "50-b",
+      "weight_value": 50,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/choco-bars-170.png",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фруктовый батончик в шоколаде",
+      "composition": "Фруктовая начинка, темный шоколад.",
+      "description": "Удобный фруктовый батончик в шоколаде для быстрого перекуса.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вишня",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 4
+    },
+    {
+      "id": 18,
+      "lang": "en",
+      "slug": "shokoladapatat-salikner-50",
+      "category_slug": "chocolate-covered",
+      "sku": "50-b",
+      "weight_value": 50,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-bars-170.png",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Chocolate-covered Fruit Bar",
+      "composition": "Fruit filling, dark chocolate.",
+      "description": "Conveniently sized chocolate-covered fruit bar for a quick snack.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Sour Cherry",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 4
+    },
+    {
+      "id": 19,
+      "lang": "am",
+      "slug": "shokoladapatat-chrer-120",
+      "category_slug": "chocolate-covered",
+      "sku": "120-c",
+      "weight_value": 120,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/choco-bars-50.png",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Շոկոլադապատ չրեր",
+      "composition": "Բնական չրեր, մուգ շոկոլադ։",
+      "description": "Շոկոլադապատ չրերի հավաքածու հարմար տուփով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 20,
+      "lang": "ru",
+      "slug": "shokoladapatat-chrer-120",
+      "category_slug": "chocolate-covered",
+      "sku": "120-c",
+      "weight_value": 120,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/choco-bars-50.png",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Сухофрукты в шоколаде",
+      "composition": "Натуральные сухофрукты, темный шоколад.",
+      "description": "Набор сухофруктов в шоколаде в удобной упаковке.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "slug": "shokoladapatat-chrer-120",
+      "category_slug": "chocolate-covered",
+      "sku": "120-c",
+      "weight_value": 120,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-bars-50.png",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Chocolate-covered dried fruits",
+      "composition": "Natural dried fruits, dark chocolate.",
+      "description": "Chocolate-covered dried fruits set in a convenient box.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 22,
+      "lang": "am",
+      "slug": "shokoladapatat-chrer-nuzhov-ynkuyqov-120",
+      "category_slug": "chocolate-covered",
+      "sku": "120-cn",
+      "weight_value": 120,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/choco-chir-120.png",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Շոկոլադապատ չրեր նուշով, ընկույզով և ծիրանի կտով",
+      "composition": "Ծիրանի չիր, նուշ, ընկույզ, ծիրանի կորիզ, մուգ շոկոլադ։",
+      "description": "Շոկոլադապատ չրեր՝ լցոնված ընկուզեղենով և ծիրանի կտով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Ծիրան նուշով և ընկույզով",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 23,
+      "lang": "ru",
+      "slug": "shokoladapatat-chrer-nuzhov-ynkuyqov-120",
+      "category_slug": "chocolate-covered",
+      "sku": "120-cn",
+      "weight_value": 120,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/choco-chir-120.png",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Сухофрукты в шоколаде с миндалем, грецким орехом и косточкой",
+      "composition": "Сушеный абрикос, миндаль, грецкий орех, абрикосовая косточка, темный шоколад.",
+      "description": "Сухофрукты в шоколаде с начинкой из орехов и абрикосовой косточки.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Абрикос с миндалем и грецким орехом",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 24,
+      "lang": "en",
+      "slug": "shokoladapatat-chrer-nuzhov-ynkuyqov-120",
+      "category_slug": "chocolate-covered",
+      "sku": "120-cn",
+      "weight_value": 120,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/choco-chir-120.png",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Chocolate-covered dried fruits with almond, walnut & kernel",
+      "composition": "Dried apricot, almond, walnut, apricot kernel, dark chocolate.",
+      "description": "Chocolate-covered dried fruits stuffed with nuts and apricot kernels.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Apricot with almond and walnut",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 25,
       "lang": "am",
       "slug": "chrer-200",
       "category_slug": "dried-fruits",
       "sku": "1042",
       "weight_value": 200,
-      "weight_unit": "g",
+      "weight_unit": "գ",
       "images": [
-        "/images/products/chrer-200-1.jpg"
+        "/images/products/choco-chir-nuts-120.png",
+        "/images/products/test/chrer-200-gallery-2.jpg",
+        "/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -496,26 +1686,62 @@
         {
           "id": "v1",
           "flavor": "Դեղձ",
-          "image": "/images/products/variant-default.jpg"
+          "image": "/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Խնձոր",
-          "image": "/images/products/variant-default.jpg"
+          "image": "/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/chrer-200-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Համ 6",
+          "image": "/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/images/products/test/chrer-200-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Համ 7",
+          "image": "/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 7
     },
     {
-      "id": 5,
+      "id": 26,
       "lang": "ru",
       "slug": "chrer-200",
       "category_slug": "dried-fruits",
       "sku": "1042",
       "weight_value": 200,
-      "weight_unit": "g",
+      "weight_unit": "г",
       "images": [
-        "/images/products/chrer-200-1.jpg"
+        "/images/products/choco-chir-nuts-120.png",
+        "/images/products/test/chrer-200-gallery-2.jpg",
+        "/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -528,18 +1754,52 @@
         {
           "id": "v1",
           "flavor": "Персик",
-          "image": "/images/products/variant-default.jpg"
+          "image": "/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Яблоко",
-          "image": "/images/products/variant-default.jpg"
+          "image": "/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/chrer-200-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Вкус 6",
+          "image": "/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/images/products/test/chrer-200-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Вкус 7",
+          "image": "/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 7
     },
     {
-      "id": 6,
+      "id": 27,
       "lang": "en",
       "slug": "chrer-200",
       "category_slug": "dried-fruits",
@@ -547,7 +1807,9 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/products/chrer-200-1.jpg"
+        "/images/products/choco-chir-nuts-120.png",
+        "/images/products/test/chrer-200-gallery-2.jpg",
+        "/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -560,15 +1822,1546 @@
         {
           "id": "v1",
           "flavor": "Peach",
-          "image": "/images/products/variant-default.jpg"
+          "image": "/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Apple",
-          "image": "/images/products/variant-default.jpg"
+          "image": "/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/chrer-200-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Taste 6",
+          "image": "/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/images/products/test/chrer-200-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Taste 7",
+          "image": "/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
-      "shelf_life_months": 5
+      "shelf_life_months": 5,
+      "default_variant": "v1",
+      "tastes_count": 7
+    },
+    {
+      "id": 28,
+      "lang": "am",
+      "slug": "khndzori-chir-100",
+      "category_slug": "dried-fruits",
+      "sku": "100-a",
+      "weight_value": 100,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/apple-dry-100.png",
+        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "no_added_sugar"
+      ],
+      "name": "Խնձորի չիր",
+      "composition": "100% բնական խնձոր, առանց շաքարի և հավելումների։",
+      "description": "Չորացրած բնական խնձորի օղակներ։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Խնձոր",
+          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1"
+    },
+    {
+      "id": 29,
+      "lang": "ru",
+      "slug": "khndzori-chir-100",
+      "category_slug": "dried-fruits",
+      "sku": "100-a",
+      "weight_value": 100,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/apple-dry-100.png",
+        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "no_added_sugar"
+      ],
+      "name": "Сушеное яблоко",
+      "composition": "100% натуральное яблоко, без сахара и добавок.",
+      "description": "Натуральные сушеные яблочные кольца.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Яблоко",
+          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1"
+    },
+    {
+      "id": 30,
+      "lang": "en",
+      "slug": "khndzori-chir-100",
+      "category_slug": "dried-fruits",
+      "sku": "100-a",
+      "weight_value": 100,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/apple-dry-100.png",
+        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "no_added_sugar"
+      ],
+      "name": "Dried Apple Rings",
+      "composition": "100% natural apple, no added sugar or additives.",
+      "description": "Naturally dried apple rings.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Apple",
+          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1"
+    },
+    {
+      "id": 31,
+      "lang": "am",
+      "slug": "frutamin-250",
+      "category_slug": "dried-fruits",
+      "sku": "250-f",
+      "weight_value": 250,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/frutamin-250.png",
+        "/images/products/test/frutamin-250-gallery-2.jpg",
+        "/images/products/test/frutamin-250-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Ֆրուտամին",
+      "composition": "Բնական մրգային խտանյութ, պաստեղ։",
+      "description": "Վիտամիններով հարուստ մրգային պաստեղների հավաքածու։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 2
+    },
+    {
+      "id": 32,
+      "lang": "ru",
+      "slug": "frutamin-250",
+      "category_slug": "dried-fruits",
+      "sku": "250-f",
+      "weight_value": 250,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/frutamin-250.png",
+        "/images/products/test/frutamin-250-gallery-2.jpg",
+        "/images/products/test/frutamin-250-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фрутамин",
+      "composition": "Натуральный фруктовый концентрат, пастила.",
+      "description": "Богатый витаминами набор фруктовой пастилы.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 2
+    },
+    {
+      "id": 33,
+      "lang": "en",
+      "slug": "frutamin-250",
+      "category_slug": "dried-fruits",
+      "sku": "250-f",
+      "weight_value": 250,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/frutamin-250.png",
+        "/images/products/test/frutamin-250-gallery-2.jpg",
+        "/images/products/test/frutamin-250-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Frutamin Fruit Pastilles",
+      "composition": "Natural fruit concentrate, pastille.",
+      "description": "Vitamin-rich assortment of fruit pastilles.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 2
+    },
+    {
+      "id": 34,
+      "lang": "am",
+      "slug": "frutini-mrgayin-lavashner-400",
+      "category_slug": "dried-fruits",
+      "sku": "400-fl",
+      "weight_value": 400,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/frutini-400.png",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Ֆրուտինի մրգային լավաշներ",
+      "composition": "Տարբեր մրգերի բնական պյուրե (խնձոր, ծիրան, սալոր, ելակ)։",
+      "description": "Փաթեթավորված մրգային լավաշների մեծ տեսականի։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 35,
+      "lang": "ru",
+      "slug": "frutini-mrgayin-lavashner-400",
+      "category_slug": "dried-fruits",
+      "sku": "400-fl",
+      "weight_value": 400,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/frutini-400.png",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фрутини фруктовый лаваш",
+      "composition": "Натуральное пюре различных фруктов (яблоко, абрикос, слива, клубника).",
+      "description": "Большое ассорти упакованного фруктового лаваша.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 36,
+      "lang": "en",
+      "slug": "frutini-mrgayin-lavashner-400",
+      "category_slug": "dried-fruits",
+      "sku": "400-fl",
+      "weight_value": 400,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/frutini-400.png",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Frutini Fruit Lavash",
+      "composition": "Natural fruit puree mix (apple, apricot, plum, strawberry).",
+      "description": "A large packaged assortment of traditional fruit lavash.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 37,
+      "lang": "am",
+      "slug": "mrgayin-lavashner-90",
+      "category_slug": "dried-fruits",
+      "sku": "90-fl",
+      "weight_value": 90,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/fruit-lavash-90.png",
+        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Մրգային լավաշներ",
+      "composition": "Բնական մրգային պյուրե (կեռաս/ելակ)։",
+      "description": "Տուփով փաթեթավորված բնական մրգային լավաշ։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Կեռաս",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Համ 6",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Համ 7",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Համ 8",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+        },
+        {
+          "id": "v9",
+          "flavor": "Համ 9",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 9
+    },
+    {
+      "id": 38,
+      "lang": "ru",
+      "slug": "mrgayin-lavashner-90",
+      "category_slug": "dried-fruits",
+      "sku": "90-fl",
+      "weight_value": 90,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/fruit-lavash-90.png",
+        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фруктовый лаваш",
+      "composition": "Натуральное фруктовое пюре (черешня/клубника).",
+      "description": "Натуральный фруктовый лаваш в коробке.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Черешня",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Вкус 6",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Вкус 7",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Вкус 8",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+        },
+        {
+          "id": "v9",
+          "flavor": "Вкус 9",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 9
+    },
+    {
+      "id": 39,
+      "lang": "en",
+      "slug": "mrgayin-lavashner-90",
+      "category_slug": "dried-fruits",
+      "sku": "90-fl",
+      "weight_value": 90,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/fruit-lavash-90.png",
+        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Fruit Lavash Box",
+      "composition": "Natural fruit puree (cherry/strawberry).",
+      "description": "Natural fruit lavash presented in a box.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Cherry",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Taste 6",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Taste 7",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Taste 8",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+        },
+        {
+          "id": "v9",
+          "flavor": "Taste 9",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 9
+    },
+    {
+      "id": 40,
+      "lang": "am",
+      "slug": "pastethner-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-pas",
+      "weight_value": 30,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/pastilles-box-30.png",
+        "/images/products/test/pastethner-30-gallery-2.jpg",
+        "/images/products/test/pastethner-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Պաստիլներ",
+      "composition": "100% բնական մրգային պյուրե։",
+      "description": "Տուփով մատուցվող մրգային պաստեղներ։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Ծիրան",
+          "image": "/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 41,
+      "lang": "ru",
+      "slug": "pastethner-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-pas",
+      "weight_value": 30,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/pastilles-box-30.png",
+        "/images/products/test/pastethner-30-gallery-2.jpg",
+        "/images/products/test/pastethner-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фруктовая пастила",
+      "composition": "100% натуральное фруктовое пюре.",
+      "description": "Фруктовая пастила в индивидуальной упаковке.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Абрикос",
+          "image": "/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 42,
+      "lang": "en",
+      "slug": "pastethner-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-pas",
+      "weight_value": 30,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/pastilles-box-30.png",
+        "/images/products/test/pastethner-30-gallery-2.jpg",
+        "/images/products/test/pastethner-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Fruit Pastilles",
+      "composition": "100% natural fruit puree.",
+      "description": "Fruit pastilles packaged in a small box.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Apricot",
+          "image": "/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 43,
+      "lang": "am",
+      "slug": "bnakan-lavash-50",
+      "category_slug": "dried-fruits",
+      "sku": "50-l",
+      "weight_value": 50,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/natural-lavash-50.png",
+        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Բնական լավաշ",
+      "composition": "Բնական ծիրանի պյուրե։",
+      "description": "Անհատական փաթեթավորմամբ բնական ծիրանի լավաշ։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Ծիրան",
+          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 44,
+      "lang": "ru",
+      "slug": "bnakan-lavash-50",
+      "category_slug": "dried-fruits",
+      "sku": "50-l",
+      "weight_value": 50,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/natural-lavash-50.png",
+        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Натуральный лаваш",
+      "composition": "Натуральное абрикосовое пюре.",
+      "description": "Натуральный абрикосовый лаваш в индивидуальной упаковке.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Абрикос",
+          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 45,
+      "lang": "en",
+      "slug": "bnakan-lavash-50",
+      "category_slug": "dried-fruits",
+      "sku": "50-l",
+      "weight_value": 50,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/natural-lavash-50.png",
+        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Natural Fruit Lavash",
+      "composition": "Natural apricot puree.",
+      "description": "Individually wrapped natural apricot fruit lavash.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Apricot",
+          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 46,
+      "lang": "am",
+      "slug": "mrgayin-stikner-20",
+      "category_slug": "dried-fruits",
+      "sku": "20-s",
+      "weight_value": 20,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/fruit-sticks-20.png",
+        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Մրգային ստիկներ",
+      "composition": "Բնական մրգային պյուրե, խտացված հյութ։",
+      "description": "Մրգային ստիկներ (Fruit Snack) հարմար փոքր փաթեթով։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Համ 6",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Համ 7",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Համ 8",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 8
+    },
+    {
+      "id": 47,
+      "lang": "ru",
+      "slug": "mrgayin-stikner-20",
+      "category_slug": "dried-fruits",
+      "sku": "20-s",
+      "weight_value": 20,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/fruit-sticks-20.png",
+        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фруктовые палочки (стики)",
+      "composition": "Натуральное фруктовое пюре, концентрированный сок.",
+      "description": "Фруктовые стики (Fruit Snack) в удобной маленькой упаковке.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Вкус 6",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Вкус 7",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Вкус 8",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 8
+    },
+    {
+      "id": 48,
+      "lang": "en",
+      "slug": "mrgayin-stikner-20",
+      "category_slug": "dried-fruits",
+      "sku": "20-s",
+      "weight_value": 20,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/fruit-sticks-20.png",
+        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Fruit Sticks",
+      "composition": "Natural fruit puree, concentrated juice.",
+      "description": "Fruit sticks snack in a convenient pocket-size package.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Taste 6",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Taste 7",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Taste 8",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 8
+    },
+    {
+      "id": 49,
+      "lang": "am",
+      "slug": "pastethner-sigari-tespov-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-cig",
+      "weight_value": 30,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/pastilles-cigar-30.png",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "no_added_sugar"
+      ],
+      "name": "Պաստիլներ սիգարի տեսքով",
+      "composition": "100% բնական ծիրանի պաստեղ, առանց շաքարի ավելացման։",
+      "description": "Սիգարի ձևով ոլորված բնական ծիրանի պաստեղներ։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Ծիրան",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 50,
+      "lang": "ru",
+      "slug": "pastethner-sigari-tespov-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-cig",
+      "weight_value": 30,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/pastilles-cigar-30.png",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "no_added_sugar"
+      ],
+      "name": "Пастила в форме сигар",
+      "composition": "100% натуральная абрикосовая пастила без добавления сахара.",
+      "description": "Натуральная абрикосовая пастила, свернутая в форме сигар.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Абрикос",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 51,
+      "lang": "en",
+      "slug": "pastethner-sigari-tespov-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-cig",
+      "weight_value": 30,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/pastilles-cigar-30.png",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia",
+        "no_added_sugar"
+      ],
+      "name": "Cigar-shaped Fruit Roll-ups",
+      "composition": "100% natural apricot pastille with no added sugar.",
+      "description": "Natural apricot pastilles rolled into a cigar shape.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Apricot",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 5
+    },
+    {
+      "id": 52,
+      "lang": "am",
+      "slug": "mrgayin-pastethner-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-pat",
+      "weight_value": 30,
+      "weight_unit": "գ",
+      "images": [
+        "/images/products/fruit-patety-30.png",
+        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Մրգային պաշտետներ",
+      "composition": "Սալորի և այլ մրգերի բնական զանգված, ընկուզեղեն։",
+      "description": "Օրիգինալ փաթեթավորմամբ մրգային պաստեղ (երշիկի տեսքով)։",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Սալոր",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 4
+    },
+    {
+      "id": 53,
+      "lang": "ru",
+      "slug": "mrgayin-pastethner-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-pat",
+      "weight_value": 30,
+      "weight_unit": "г",
+      "images": [
+        "/images/products/fruit-patety-30.png",
+        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Фруктовая пастила батончик",
+      "composition": "Натуральная масса из сливы и других фруктов, орехи.",
+      "description": "Фруктовая пастила в оригинальной упаковке в форме батончика.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Слива",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 4
+    },
+    {
+      "id": 54,
+      "lang": "en",
+      "slug": "mrgayin-pastethner-30",
+      "category_slug": "dried-fruits",
+      "sku": "30-pat",
+      "weight_value": 30,
+      "weight_unit": "g",
+      "images": [
+        "/images/products/fruit-patety-30.png",
+        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
+      ],
+      "tags": [
+        "100_natural",
+        "made_in_armenia"
+      ],
+      "name": "Fruit Roll Pastille Roll",
+      "composition": "Natural plum and mixed fruit paste, nuts.",
+      "description": "Fruit pastille in original roll-shaped packaging.",
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Plum",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
+        }
+      ],
+      "shelf_life_months": 6,
+      "default_variant": "v1",
+      "tastes_count": 4
     }
   ],
   "product_page_labels": [
@@ -588,7 +3381,8 @@
       "composition_button": "Դիտել բաղադրությունը",
       "weight_unit": "գ",
       "taste_unit": "համ",
-      "breadcrumb_label": "Նավիգացիոն ուղի"
+      "breadcrumb_label": "Նավիգացիոն ուղի",
+      "all_products_label": "Ամբողջ տեսականին"
     },
     {
       "id": 2,
@@ -606,7 +3400,8 @@
       "composition_button": "Состав продукта",
       "weight_unit": "г",
       "taste_unit": "вкусов",
-      "breadcrumb_label": "Навигационная цепочка"
+      "breadcrumb_label": "Навигационная цепочка",
+      "all_products_label": "Весь ассортимент"
     },
     {
       "id": 3,
@@ -624,7 +3419,8 @@
       "composition_button": "View ingredients",
       "weight_unit": "g",
       "taste_unit": "tastes",
-      "breadcrumb_label": "Breadcrumb"
+      "breadcrumb_label": "Breadcrumb",
+      "all_products_label": "All products"
     }
   ],
   "tag_icons": [
@@ -647,6 +3443,11 @@
       "id": 4,
       "code": "cocoa_62",
       "icon": "🍫"
+    },
+    {
+      "id": 5,
+      "code": "no_added_sugar",
+      "icon": "🍃"
     }
   ],
   "philosophy_headings": [
@@ -654,19 +3455,25 @@
       "id": 1,
       "lang": "am",
       "heading_1": "Մեր փիլիսոփայությունը",
-      "heading_2": "Բնությունն իր ամենամաքուր տեսքով։"
+      "heading_2_before": "Բնությունն իր\n",
+      "heading_2_highlight": "ամենամաքուր",
+      "heading_2_after": " տեսքով։"
     },
     {
       "id": 2,
       "lang": "ru",
       "heading_1": "Наша философия",
-      "heading_2": "Природа в своей чистейшей форме."
+      "heading_2_before": "Природа в своей\n",
+      "heading_2_highlight": "чистейшей",
+      "heading_2_after": " форме."
     },
     {
       "id": 3,
       "lang": "en",
       "heading_1": "Our philosophy",
-      "heading_2": "Nature in its purest form."
+      "heading_2_before": "Nature in its\n",
+      "heading_2_highlight": "purest",
+      "heading_2_after": " form."
     }
   ],
   "philosophy_text": [
@@ -674,19 +3481,82 @@
       "id": "1",
       "lang": "am",
       "text": "Մենք օգտագործում ենք բացառապես հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի, բուրավետիչների և կոնսերվանտների։ Յուրաքանչյուր արտադրանք ստեղծվում է այնպես, որպեսզի հնարավորինս պահպանվեն մրգի բնական համը, բույրը և օգտակար հատկությունները։",
-      "btn": "Կարդալ ավելին →"
+      "btn": "Կարդալ ավելին",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
+        }
+      ],
+      "slider_previous_label": "Նախորդ նկարը",
+      "slider_next_label": "Հաջորդ նկարը",
+      "slider_image_label": "Նկար",
+      "slider_navigation_label": "Նկարների կառավարում"
     },
     {
       "id": "2",
       "lang": "ru",
       "text": "Мы используем исключительно отборные армянские фрукты, без добавления сахара, искусственных красителей, ароматизаторов и консервантов. Каждый продукт создается таким образом, чтобы максимально сохранить естественный вкус, аромат и полезные свойства фруктов.",
-      "btn": "Читать далее →"
+      "btn": "Читать далее",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
+        }
+      ],
+      "slider_previous_label": "Предыдущее фото",
+      "slider_next_label": "Следующее фото",
+      "slider_image_label": "Фото",
+      "slider_navigation_label": "Управление фото"
     },
     {
       "id": "3",
       "lang": "en",
       "text": "We use exclusively select Armenian fruits, with no added sugar, artificial colorings, flavorings, or preservatives. Each product is crafted to preserve the fruit's natural taste, aroma, and beneficial properties as much as possible.",
-      "btn": "Read more →"
+      "btn": "Read more",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir fruit pastilles in dark glaze"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir fruit pastilles in dark glaze"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/philosophy-1.png",
+          "alt": "Choco Chir fruit pastilles in dark glaze"
+        }
+      ],
+      "slider_previous_label": "Previous image",
+      "slider_next_label": "Next image",
+      "slider_image_label": "Image",
+      "slider_navigation_label": "Image controls"
     }
   ],
   "faq_small": [
@@ -837,233 +3707,233 @@
     {
       "id": 4,
       "lang": "am",
-      "code": "belgium",
-      "region": "europe",
-      "name": "Բելգիա"
-    },
-    {
-      "id": 5,
-      "lang": "ru",
-      "code": "belgium",
-      "region": "europe",
-      "name": "Бельгия"
-    },
-    {
-      "id": 6,
-      "lang": "en",
-      "code": "belgium",
-      "region": "europe",
-      "name": "Belgium"
-    },
-    {
-      "id": 7,
-      "lang": "am",
-      "code": "lebanon",
-      "region": "middle-east",
-      "name": "Լիբանան"
-    },
-    {
-      "id": 8,
-      "lang": "ru",
-      "code": "lebanon",
-      "region": "middle-east",
-      "name": "Ливан"
-    },
-    {
-      "id": 9,
-      "lang": "en",
-      "code": "lebanon",
-      "region": "middle-east",
-      "name": "Lebanon"
-    },
-    {
-      "id": 10,
-      "lang": "am",
       "code": "france",
       "region": "europe",
       "name": "Ֆրանսիա"
     },
     {
-      "id": 11,
+      "id": 5,
       "lang": "ru",
       "code": "france",
       "region": "europe",
       "name": "Франция"
     },
     {
-      "id": 12,
+      "id": 6,
       "lang": "en",
       "code": "france",
       "region": "europe",
       "name": "France"
     },
     {
-      "id": 13,
-      "lang": "am",
-      "code": "uae",
-      "region": "middle-east",
-      "name": "Արաբական Միացյալ Էմիրություններ"
-    },
-    {
-      "id": 14,
-      "lang": "ru",
-      "code": "uae",
-      "region": "middle-east",
-      "name": "ОАЭ"
-    },
-    {
-      "id": 15,
-      "lang": "en",
-      "code": "uae",
-      "region": "middle-east",
-      "name": "United Arab Emirates"
-    },
-    {
-      "id": 16,
-      "lang": "am",
-      "code": "russia",
-      "region": "eurasia",
-      "name": "Ռուսաստան"
-    },
-    {
-      "id": 17,
-      "lang": "ru",
-      "code": "russia",
-      "region": "eurasia",
-      "name": "Россия"
-    },
-    {
-      "id": 18,
-      "lang": "en",
-      "code": "russia",
-      "region": "eurasia",
-      "name": "Russia"
-    },
-    {
-      "id": 19,
+      "id": 7,
       "lang": "am",
       "code": "germany",
       "region": "europe",
       "name": "Գերմանիա"
     },
     {
-      "id": 20,
+      "id": 8,
       "lang": "ru",
       "code": "germany",
       "region": "europe",
       "name": "Германия"
     },
     {
-      "id": 21,
+      "id": 9,
       "lang": "en",
       "code": "germany",
       "region": "europe",
       "name": "Germany"
     },
     {
+      "id": 10,
+      "lang": "am",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Բելգիա"
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Бельгия"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "code": "belgium",
+      "region": "europe",
+      "name": "Belgium"
+    },
+    {
+      "id": 13,
+      "lang": "am",
+      "code": "netherlands",
+      "region": "europe",
+      "name": "Նիդերլանդներ"
+    },
+    {
+      "id": 14,
+      "lang": "ru",
+      "code": "netherlands",
+      "region": "europe",
+      "name": "Нидерланды"
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "code": "netherlands",
+      "region": "europe",
+      "name": "Netherlands"
+    },
+    {
+      "id": 16,
+      "lang": "am",
+      "code": "czechia",
+      "region": "europe",
+      "name": "Չեխիա"
+    },
+    {
+      "id": 17,
+      "lang": "ru",
+      "code": "czechia",
+      "region": "europe",
+      "name": "Чехия"
+    },
+    {
+      "id": 18,
+      "lang": "en",
+      "code": "czechia",
+      "region": "europe",
+      "name": "Czech Republic"
+    },
+    {
+      "id": 19,
+      "lang": "am",
+      "code": "poland",
+      "region": "europe",
+      "name": "Լեհաստան"
+    },
+    {
+      "id": 20,
+      "lang": "ru",
+      "code": "poland",
+      "region": "europe",
+      "name": "Польша"
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "code": "poland",
+      "region": "europe",
+      "name": "Poland"
+    },
+    {
       "id": 22,
       "lang": "am",
-      "code": "qatar",
-      "region": "middle-east",
-      "name": "Կատար"
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Ռուսաստան"
     },
     {
       "id": 23,
       "lang": "ru",
-      "code": "qatar",
-      "region": "middle-east",
-      "name": "Катар"
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Россия"
     },
     {
       "id": 24,
       "lang": "en",
-      "code": "qatar",
-      "region": "middle-east",
-      "name": "Qatar"
+      "code": "russia",
+      "region": "eurasia",
+      "name": "Russia"
     },
     {
       "id": 25,
-      "lang": "am",
-      "code": "kuwait",
-      "region": "middle-east",
-      "name": "Քուվեյթ"
-    },
-    {
-      "id": 26,
-      "lang": "ru",
-      "code": "kuwait",
-      "region": "middle-east",
-      "name": "Кувейт"
-    },
-    {
-      "id": 27,
-      "lang": "en",
-      "code": "kuwait",
-      "region": "middle-east",
-      "name": "Kuwait"
-    },
-    {
-      "id": 28,
-      "lang": "am",
-      "code": "australia",
-      "region": "oceania",
-      "name": "Ավստրալիա"
-    },
-    {
-      "id": 29,
-      "lang": "ru",
-      "code": "australia",
-      "region": "oceania",
-      "name": "Австралия"
-    },
-    {
-      "id": 30,
-      "lang": "en",
-      "code": "australia",
-      "region": "oceania",
-      "name": "Australia"
-    },
-    {
-      "id": 31,
       "lang": "am",
       "code": "kazakhstan",
       "region": "eurasia",
       "name": "Ղազախստան"
     },
     {
-      "id": 32,
+      "id": 26,
       "lang": "ru",
       "code": "kazakhstan",
       "region": "eurasia",
       "name": "Казахстан"
     },
     {
-      "id": 33,
+      "id": 27,
       "lang": "en",
       "code": "kazakhstan",
       "region": "eurasia",
       "name": "Kazakhstan"
     },
     {
+      "id": 28,
+      "lang": "am",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "Արաբական Միացյալ Էմիրություններ"
+    },
+    {
+      "id": 29,
+      "lang": "ru",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "Объединённые Арабские Эмираты"
+    },
+    {
+      "id": 30,
+      "lang": "en",
+      "code": "uae",
+      "region": "middle-east",
+      "name": "United Arab Emirates"
+    },
+    {
+      "id": 31,
+      "lang": "am",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Կատար"
+    },
+    {
+      "id": 32,
+      "lang": "ru",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Катар"
+    },
+    {
+      "id": 33,
+      "lang": "en",
+      "code": "qatar",
+      "region": "middle-east",
+      "name": "Qatar"
+    },
+    {
       "id": 34,
       "lang": "am",
-      "code": "china",
-      "region": "asia",
-      "name": "Չինաստան"
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Քուվեյթ"
     },
     {
       "id": 35,
       "lang": "ru",
-      "code": "china",
-      "region": "asia",
-      "name": "Китай"
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Кувейт"
     },
     {
       "id": 36,
       "lang": "en",
-      "code": "china",
-      "region": "asia",
-      "name": "China"
+      "code": "kuwait",
+      "region": "middle-east",
+      "name": "Kuwait"
     },
     {
       "id": 37,
@@ -1085,6 +3955,27 @@
       "code": "saudi-arabia",
       "region": "middle-east",
       "name": "Saudi Arabia"
+    },
+    {
+      "id": 40,
+      "lang": "am",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Ավստրալիա"
+    },
+    {
+      "id": 41,
+      "lang": "ru",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Австралия"
+    },
+    {
+      "id": 42,
+      "lang": "en",
+      "code": "australia",
+      "region": "oceania",
+      "name": "Australia"
     }
   ],
   "brands": [
@@ -1216,37 +4107,58 @@
   ],
   "contact_page_contents": [
     {
-      "id": 1,
+      "id": "1",
       "lang": "am",
       "title": "Կապ",
       "description": "Գրեք մեզ՝ համագործակցության, պատվերների կամ ցանկացած այլ հարցի համար:",
+      "breadcrumb_home": "Գլխավոր",
+      "breadcrumb_contact": "Կապ",
+      "form_title": "Ուղարկեք հաղորդագրություն",
       "name_label": "Անուն",
       "email_label": "Էլ. փոստ",
-      "subject_label": "Թեմա",
+      "phone_label": "Հեռախոսահամար",
       "message_label": "Հաղորդագրություն",
-      "submit_label": "Ուղարկել"
+      "submit_label": "Ուղարկել",
+      "sending_label": "Ուղարկվում է...",
+      "success_message": "Հաղորդագրությունը հաջողությամբ ուղարկվել է։",
+      "error_message": "Չհաջողվեց ուղարկել հաղորդագրությունը։",
+      "map_title": "Մեր գտնվելու վայրը"
     },
     {
-      "id": 2,
+      "id": "2",
       "lang": "ru",
       "title": "Контакты",
       "description": "Напишите нам по вопросам сотрудничества, заказов или любым другим вопросам.",
+      "breadcrumb_home": "Главная",
+      "breadcrumb_contact": "Контакты",
+      "form_title": "Отправьте сообщение",
       "name_label": "Имя",
       "email_label": "Эл. почта",
-      "subject_label": "Тема",
+      "phone_label": "Номер телефона",
       "message_label": "Сообщение",
-      "submit_label": "Отправить"
+      "submit_label": "Отправить",
+      "sending_label": "Отправка...",
+      "success_message": "Сообщение успешно отправлено.",
+      "error_message": "Не удалось отправить сообщение.",
+      "map_title": "Наше местоположение"
     },
     {
-      "id": 3,
+      "id": "3",
       "lang": "en",
       "title": "Contact",
       "description": "Write to us about partnership, orders, or any other question.",
+      "breadcrumb_home": "Home",
+      "breadcrumb_contact": "Contact",
+      "form_title": "Send a message",
       "name_label": "Name",
       "email_label": "Email",
-      "subject_label": "Subject",
+      "phone_label": "Phone number",
       "message_label": "Message",
-      "submit_label": "Send"
+      "submit_label": "Send",
+      "sending_label": "Sending...",
+      "success_message": "Message sent successfully.",
+      "error_message": "Failed to send the message.",
+      "map_title": "Our location"
     }
   ],
   "contact_messages": [],
@@ -1412,19 +4324,22 @@
       "id": "1",
       "lang": "am",
       "description": "Մեր հաջողության հիմքում հենց սկզբից եղել է անփոփոխ սկզբունքը՝ օգտագործել բացառապես հայկական բարձրորակ մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի և կոնսերվանտների։ Այս արժեքները մինչև այսօր մնում են Fruit Food-ի արտադրության ռազմավարության և զարգացման գլխավոր ուղղությունները։",
-      "title": "Fruit Food-ում մենք հավատում ենք, որ բնական սնունդը պարզապես ընտրություն չէ. այն ապրելակերպ է:"
+      "title": "Fruit Food-ում մենք հավատում ենք, որ բնական սնունդը ",
+      "title_end": "պարզապես ընտրություն չէ. այն ապրելակերպ է:"
     },
     {
       "id": "2",
       "lang": "ru",
       "description": "С самого начала в основе нашего успеха лежал неизменный принцип — использовать исключительно высококачественные армянские фрукты, без добавленного сахара, искусственных красителей и консервантов. Эти ценности и сегодня остаются главными направлениями стратегии производства и развития Fruit Food.",
-      "title": "В Fruit Food мы верим, что натуральная еда — это не просто выбор, а образ жизни."
+      "title": "В Fruit Food мы верим, что натуральная еда — ",
+      "title_end": "это не просто выбор, а образ жизни."
     },
     {
       "id": "3",
       "lang": "en",
       "description": "From the very beginning, our success has been based on an unchanged principle: using exclusively high-quality Armenian fruits, without added sugar, artificial colorants or preservatives. These values remain the main directions of Fruit Food's production strategy and development to this day.",
-      "title": "At Fruit Food, we believe that natural food is not simply a choice; it is a way of life."
+      "title": "At Fruit Food, we believe that natural food ",
+      "title_end": "is not simply a choice; it is a way of life."
     }
   ],
   "faq": [
@@ -1594,6 +4509,147 @@
       "all_products": "All products",
       "products_toggle_label": "Toggle products list",
       "menu_label": "Menu"
+    }
+  ],
+  "contact_info": [
+    {
+      "id": "1",
+      "lang": "am",
+      "address_label": "Հասցե",
+      "address_line_1": "Մ․Գալշոյան 6-8",
+      "address_line_2": "գ․Սուրենավան, Արարատի մարզ Հայաստան",
+      "email_label": "Էլ․ փոստ",
+      "email": "chocochir@mail.ru",
+      "social_label": "Սոց․ ցանցեր",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/contact/facebook.svg",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
+          "label": "Facebook"
+        },
+        {
+          "id": 2,
+          "image": "/images/contact/instagram.svg",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
+          "label": "Instagram"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+    },
+    {
+      "id": "2",
+      "lang": "ru",
+      "address_label": "Адрес",
+      "address_line_1": "М․Галшоян 6-8",
+      "address_line_2": "с․Суренаван, Араратская область, Армения",
+      "email_label": "Эл․ почта",
+      "email": "chocochir@mail.ru",
+      "social_label": "Соц․ сети",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/contact/facebook.svg",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
+          "label": "Facebook"
+        },
+        {
+          "id": 2,
+          "image": "/images/contact/instagram.svg",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
+          "label": "Instagram"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+    },
+    {
+      "id": "3",
+      "lang": "en",
+      "address_label": "Address",
+      "address_line_1": "M.Galshoyan 6-8",
+      "address_line_2": "Surenavan village, Ararat Province, Armenia",
+      "email_label": "Email",
+      "email": "chocochir@mail.ru",
+      "social_label": "Social media",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/contact/facebook.svg",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
+          "label": "Facebook"
+        },
+        {
+          "id": 2,
+          "image": "/images/contact/instagram.svg",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
+          "label": "Instagram"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+    }
+  ],
+  "partner_cta": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Հետաքրքրվու՞մ եք\nհամագործակցությամբ",
+      "description": "Աշխատում ենք դիստրիբյուտորների և մանրածախ ցանցերի հետ։\nՀնարավոր է արտադրել ձեր ապրանքանիշի ներքո։",
+      "button_text": "Կապվել մեզ հետ"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Заинтересованы в сотрудничестве?",
+      "description": "Мы работаем с дистрибьюторами и розничными сетями. Возможно производство под вашей торговой маркой.",
+      "button_text": "Свяжитесь с нами"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Interested in cooperation?",
+      "description": "We work with distributors and retail chains. Private label production is available.",
+      "button_text": "Contact us"
+    }
+  ],
+  "geography_contents": [
+    {
+      "id": 1,
+      "lang": "am",
+      "breadcrumb_home": "Գլխավոր",
+      "title": "Աշխարհագրություն",
+      "intro": "Fruit Food Ընկերության արտադրած բնական մրգային ապրանքատեսակները ներկայացված են միջազգային տարբեր շուկաներում՝ իրենց բարձր որակով և գեղեցիկ ապրանքային տեսքով արժանանալով ամենախիստ և պահանջկոտ գնորդների գնահատականին ու հավանությանը։",
+      "description_1": "Մեր ապրանքատեսակների արտադրման համար որպես հումք են հանդիսանում բացառապես Հայաստանում աճեցված մրգերը։ Հայաստանի անսպառ արևի և քաղցրորակ լեռնային ջրերի հաշվին արտադրված ապրանքները ունեն յուրօրինակ համ և բուրմունք, որի պատճառով ունի շատ մեծ պահանջարկ աշխարհի տարբեր երկրներում, որտեղ այն գնահատվում է իր ",
+      "description_highlight": "բնական համի, բարձր որակի և հայկական մրգերի յուրահատկության համար։",
+      "description_2": "Ընկերությունը շարունակաբար ընդլայնում է համագործակցության աշխարհագրությունը՝ ստեղծելով ամուր գործընկերային կապեր և ներկայացնելով Հայաստանը միջազգային շուկաներում։",
+      "countries_title": "Մեր արտահանման աշխարհագրությունը ներառում է՝",
+      "bottom_text": "Մենք վստահ ենք, որ բնական, առողջարար և բարձրորակ հայկական արտադրանքը սահմաններ չի ճանաչում, և ամեն օր ընդլայնում ենք մեր ներկայությունը միջազգային շուկաներում։",
+      "countries_more": "և այլ երկրներ"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "breadcrumb_home": "Главная",
+      "title": "География",
+      "intro": "Натуральная фруктовая продукция, производимая компанией Fruit Food, представлена на различных международных рынках и благодаря высокому качеству и привлекательному внешнему виду заслужила признание и одобрение самых требовательных покупателей.",
+      "description_1": "Основой для производства нашей экспортной продукции служат исключительно фрукты, выращенные в Армении. Благодаря чистому армянскому солнцу и пресной горной воде производимая продукция обладает уникальным вкусом и ароматом, благодаря чему пользуется большим спросом в разных странах мира, где её ценят за ",
+      "description_highlight": "натуральный вкус, высокое качество и уникальность армянских фруктов.",
+      "description_2": "Компания постоянно расширяет географию сотрудничества, создавая прочные партнёрские связи и представляя Армению на международных рынках.",
+      "countries_title": "География нашего экспорта включает:",
+      "bottom_text": "Мы уверены, что натуральная, полезная и высококачественная армянская продукция не знает границ, и каждый день расширяем наше присутствие на международных рынках.",
+      "countries_more": "и другие страны"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "breadcrumb_home": "Home",
+      "title": "Geography",
+      "intro": "The natural fruit products produced by Fruit Food are represented in various international markets and, thanks to their high quality and attractive appearance, have earned the recognition and approval of the most demanding customers.",
+      "description_1": "Our export products are made exclusively from fruits grown in Armenia. Thanks to Armenia's pure sunshine and fresh mountain water, our products have a unique taste and aroma, which makes them highly sought after in different countries around the world, where they are valued for their ",
+      "description_highlight": "natural taste, high quality, and the unique character of Armenian fruits.",
+      "description_2": "The company continuously expands the geography of its cooperation by building strong partnerships and representing Armenia in international markets.",
+      "countries_title": "Our export geography includes:",
+      "bottom_text": "We believe that natural, healthy, and high-quality Armenian products know no borders, and every day we expand our presence in international markets.",
+      "countries_more": "and other countries"
     }
   ]
 }

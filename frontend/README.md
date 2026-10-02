@@ -60,25 +60,30 @@ db_orinak_example              Ընդհանուր օրինակ DB (ՉԵՍ ՓՈԽ
 db.json                        Քո լոկալ DB-ն (copy օրինակից, git-ում չկա)
 db_parts/<անուն>.json          Քո նոր collection-ները՝ ուղարկելու համար (§5)
 .env.example                   copy → .env.local
+proxy.js                       /products/<slug>, /catalog/<slug>. slug-ը API-ում չկա → իրական 404 status (loading.jsx-ի պատճառով notFound()-ը 200 էր տալիս)
 
 app/
   layout.jsx + actions.js      Root layout. logo / navbar / langs / footer-ի տվյալը այստեղ ա fetch արվում
   globals.css                  Գույներ, spacing, radius, font-size (CSS variables), .container
   page.jsx + page.module.css   Home
+  fonts.js                     Noto Sans Armenian + Noto Sans (cyrillic). layout.jsx-ն ու global-error.jsx-ը սրանից են վերցնում
   loading.jsx / error.jsx / not-found.jsx   Ընդհանուր loading, error, 404
+  global-error.jsx             Երբ սխալը հենց layout-ում ա (օր.՝ json-server-ը միացած չի). նույն error.jsx-ն ա՝ սեփական <html>-ով
   sitemap.js / robots.js       SEO
   catalog/
-    actions.js                 getCategories(), getProducts()
-    page.jsx                   Ամբողջ արտադրանքը
-    _components/ProductCard.jsx + .module.css
+    actions.js                 getAllProducts(), getProductPageLabels()
+    page.jsx                   Ամբողջ տեսականին
+    _components/               Breadcrumbs, ProductGrid, ProductCard (+ .module.css)
     [categorySlug]/
-      actions.js               getCategory(), getProductsByCategory()
-      page.jsx                 Կատեգորիայի էջ
+      actions.js               getProductsByCategory(), getProductCategory(), getProductPageLabels()
+      page.jsx                 Կատեգորիայի էջ (անհայտ կատեգորիա → 404)
   products/
     [productSlug]/
-      actions.js               getProduct(id), getTags()
-      page.jsx + page.module.css   Մեկ ապրանքի էջ (Arnak + Vahag, §6)
-      _components/Gallery.jsx, Info.jsx, CompositionModal.jsx + .module.css
+      actions.js               getProduct(slug), getProductCategory(), getProductTags(), getProductPageLabels()
+      page.jsx + page.module.css   Մեկ ապրանքի էջ (Vahe, §6)
+      _components/ProductDetails.jsx, Gallery.jsx, Info.jsx, CompositionModal.jsx + .module.css
+  about-us/                    Section 7–9 պատրաստ են (ExportCooperation, OurFactory, WeBelieve)
+  geography/                   Պատրաստ ա (Intro, Description, Map, CountryList, BottomInfo)
 
   contact/
     actions.js                 getContactPageContent(), submitContact() (POST)
@@ -88,19 +93,21 @@ app/
 components/                    Global component-ներ (ամեն էջում են)
   header/  index.jsx, Logo.jsx, Navbar.jsx, Langs.jsx, Header.module.css
   footer/  index.jsx, Footer.module.css
-  partner-cta/  PartnerCta.jsx, PartnerCtaWrapper.jsx ('use client', pathname-ով
-                ստուգում ա /contact-ը), PartnerCta.module.css   (Vahram, §6)
+  partner-cta/  PartnerCta.jsx (Server Component, տվյալը՝ action.js-ով),
+                PartnerCtaWrapper.jsx ('use client', միայն pathname-ով թաքցնում ա /contact-ում),
+                PartnerCta.module.css   (Vahram, §6)
 
 lib/
   axios.js                     axios instance (ՉԵՍ ՓՈԽՈՒՄ)
   lang.js                      displayLang() — լեզուն cookie-ից (ՉԵՍ ՓՈԽՈՒՄ)
 
 public/images/<բաժին>/         Նկարներ (db-ում գրվում ա `/images/...`)
+public/images/products/test/   Ժամանակավոր test նկարներ ապրանքների համար (§9.1)
 ```
 
 ## 4. Կոդի կանոններ
 
-1. **Ամեն route-ն ունի իր `actions.js`-ը.** Ընդհանուր `api.js` չկա — 11 հոգի ենք, ընդհանուր ֆայլը = անընդհատ conflict։
+1. **Ամեն route-ն ունի իր `actions.js`-ը.** Ընդհանուր `api.js` չկա — շատ ենք, ընդհանուր ֆայլը = անընդհատ conflict։
 2. **Տվյալը միայն axios-ով**, `actions.js`-ից։ Component-ում `import data from '...json'` **չկա**։
 3. **Page-ի component-ները՝ `_components/`**-ում (underscore-ով, որ Next.js-ը route չհամարի)։ Global-ները՝ `components/`-ում։
 4. **Ամեն component-ն ունի իր `.module.css`-ը**, class-երը camelCase։ Tailwind / inline style չկա։
@@ -109,6 +116,26 @@ public/images/<բաժին>/         Նկարներ (db-ում գրվում ա `/
 7. **Տեքստ կոդի մեջ hardcode չկա.** Ամեն տեքստ, որ էջում երևում ա, գալիս ա db-ից՝ ճիշտ լեզվով։
 8. Code style (ESLint). առանց `;`, single quotes `'...'`, `const`/`let` (ոչ `var`), `===`։
 9. **Ուրիշի ֆայլերին չես դիպչում** (տես §6 աղյուսակը)։ Եթե պետք ա ընդհանուր ֆայլ փոխել (`layout.jsx`, `globals.css`, `lib/*`, `package.json`)՝ նախ գրիր Vahe-ին։
+10. **Լեզուն միշտ `displayLang()`-ով** (`lib/lang.js`), ոչ թե `document.cookie`-ից։ Տվյալը, եթե հնարավոր ա, բեր server-ում (page.jsx / Server Component), ոչ թե `useEffect`-ով։
+11. **Նկար, alt, aria-label՝ նույնպես db-ից**, երեք լեզվով (օրինակ slider-ի «Նախորդ նկարը» / «Предыдущее фото» / «Previous image»)։
+12. **Figma-ն նայիր ամբողջությամբ.** desktop (1440) + mobile (375) frame-երը և **ui-kit** բաժինը, որտեղ կոճակների default/hover վիճակներն են։ Մեկ տեքստի մեջ կարող են լինել տարբեր weight/գույներ, ստուգիր տեքստի տարբեր մասերը։
+13. **Header-ը fixed ա (~67px).** Էջի առաջին բաժինը պետք ա ունենա իր վերևի padding-ը, որ բովանդակությունը header-ի տակ չմնա (տես `geography/_components/Intro.module.css`)։
+14. **actions-ը չպետք ա «գցեն» էջը.** API-ն չաշխատելու դեպքում վերադարձրու `null` / `[]` (`try/catch`), իսկ component-ը այդ դեպքում պարզապես ոչինչ չի ցույց տալիս։
+
+### CSS token-ներ (`app/globals.css`)
+
+Բոլոր արժեքները Figma-ից են։ Վերջերս ավելացածները.
+
+| Token | Արժեք | Ինչի համար |
+|---|---|---|
+| `--space-6` | 6px | կոճակի տեքստի ու սլաքի արանք |
+| `--space-18` | 18px | Partner CTA-ի արանքներ |
+| `--color-white` | #ffffff | սպիտակ տեքստ/ֆոն |
+| `--color-surface` | #f5f5f5 | Geography-ի քարտեզի ֆոն |
+| `--color-green-hover` | #0d5030 | hover-ի մուգ կանաչ եզր |
+| `--font-size-22` / `-30` / `-33` | 22 / 30 / 33px | Figma-ի չափեր, որոնց համար token չկար |
+
+Կոճակների hover-ը (Figma ui-kit). լցված կանաչ կոճակ՝ `--color-green-dark` → hover `--color-green`, սլաքը 7px աջ։ Եզրով կոճակ (CTA)՝ hover-ին սպիտակ ֆոն, կանաչ տեքստ։ «Դիտել բաղադրությունը»՝ hover-ին `--color-mint` ֆոն, `--color-green-hover` եզր։
 
 ### Նոր էջի template
 
@@ -161,12 +188,13 @@ export default async function AboutPage() {
 | `db.json` | Քո լոկալը | ❌ (`.gitignore`) | Ազատ փոխում ես, ավելացնում, փորձարկում |
 | `db_parts/<անուն>.json` | Քոնը | ✅ | Միայն **քո նոր** collection-ները, Vahe-ին ուղարկելու համար |
 
-Ինչու այսպես. եթե 11 հոգի նույն `db.json`-ը փոխեն ու push անեն, ամեն PR-ում conflict կլինի։ Այս ձևով ամեն մեկը գրում ա միայն իր ֆայլը, իսկ Vahe-ն ինտեգրման ժամանակ դրանք միացնում ա `db_orinak_example`-ի մեջ։
+Ինչու այսպես. եթե ամբողջ թիմը նույն `db.json`-ը փոխեն ու push անեն, ամեն PR-ում conflict կլինի։ Այս ձևով ամեն մեկը գրում ա միայն իր ֆայլը, իսկ Vahe-ն ինտեգրման ժամանակ դրանք միացնում ա `db_orinak_example`-ի մեջ։
 
 ### 5.2 Քայլերով
 
 1. `cp db_orinak_example db.json` (եթե դեռ չես արել)
-2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում (`faq`, `stats`, `export_countries`, `brands`, `about_intro` արդեն կան)։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը։
+2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
+   Նոր տողեր ավելացնելիս `id`-ները **չպետք ա կրկնվեն** արդեն եղածների հետ։
 3. Նոր collection-ը / նոր տողերը ավելացրու **քո `db.json`**-ում ու աշխատիր դրանով (`npm run dev` ավտոմատ կտեսնի փոփոխությունը)
 4. Երբ պատրաստ ես՝ **միայն քո նոր/փոխված collection-ները** copy արա `db_parts/<անուն>.json`-ի մեջ, օրինակ `db_parts/saten.json`.
 
@@ -206,10 +234,10 @@ export default async function AboutPage() {
 | Header + Footer | Vahag | `components/header/*`, `components/footer/*` | ընդհանուր |
 | Home · Section 1 (Hero) | Vahag | `app/_components/Hero.jsx` | `/` |
 | Home · Section 2 («Մեր տեսականին») | Ashot | `app/_components/Assortment.jsx` | `/` |
-| Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` (→ `/about-us#philosophy`) |
+| Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` («Կարդալ ավելին» → `/about-us`) |
 | Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
-| Ապրանքի մանրամասն էջ | Arnak + Vahag | `app/products/[productSlug]/*` | `/products/[slug]` |
+| Ապրանքի մանրամասն էջ | Vahe | `app/products/[productSlug]/*` | `/products/[slug]` |
 | About Us · Section 1–3 (Բնական որակ, Փիլիսոփայություն, Ապրանքանիշեր) | Milena | `app/about-us/_components/NaturalQuality.jsx`, `Philosophy.jsx`, `Brands.jsx` | `/about-us` |
 | About Us · Section 4–6 (Արտադրություն, Վստահություն, Որակ ու բնականություն) | Hamlet | `app/about-us/_components/Production.jsx`, `WhyTrustUs.jsx`, `QualityNaturalness.jsx` | `/about-us` |
 | About Us · Section 7–9 (Արտահանում, Գործարան, «Մենք հավատում ենք») | Jor | `app/about-us/_components/ExportCooperation.jsx`, `OurFactory.jsx`, `WeBelieve.jsx` | `/about-us` |
@@ -218,46 +246,45 @@ export default async function AboutPage() {
 
 Եթե 2+ հոգի նույն folder-ում են (օրինակ `app/about-us` կամ Home page-ը)՝ ամեն մեկը գրում ա **իր առանձին component-ը** `_components/`-ում, իսկ `page.jsx`-ում ընդհամենը import ա անում։ `page.jsx`-ում conflict-ը Vahe-ն ա լուծում ինտեգրման ժամանակ։ Ամեն մեկն իր section-ի համար db collection(-ներ)ը ինքն ա որոշում ու ավելացնում իր `db.json`-ում, §5-ի կանոններով։
 
-**Catalog → Product-ի կապը (Elina ↔ Arnak+Vahag).** Elina-ի catalog-ի ProductCard-ը (`Link href="/products/..."`) պիտի տանի Arnak+Vahag-ի էջին, բայց կարևոր ա, թե **ինչո՞վ** է link-ը կառուցվում.
+**Catalog → Product-ի կապը (Elina ↔ Vahe).** Elina-ի catalog-ի ProductCard-ը (`Link href="/products/..."`) տանում ա ապրանքի էջին, բայց կարևոր ա, թե **ինչո՞վ** է link-ը կառուցվում.
 - `db_orinak_example`-ում ապրանքի `id`-ն **լեզվով ա տարբերվում** (նույն ապրանքը am-ում ունի, ասենք, `id: 1`, ru-ում՝ `id: 2`), մինչդեռ `slug`-ը (`shokoladapatat-chrer-230`) **նույնն ա բոլոր լեզուներում**։
 - Ուրեմն Elina-ի Link-ը պիտի կառուցվի **`slug`-ով, ոչ թե `id`-ով** (`/products/${product.slug}`), հակառակ դեպքում լեզուն փոխելիս (cookie) նույն ապրանքի URL-ը կփոխվի ու կխափանվի (նույն սկզբունքով, ինչով `/catalog/[categorySlug]`-ն ա category_slug-ով, ոչ թե id-ով)։
-- `app/products/[productSlug]`-ի Arnak+Vahag-ը իրենց `actions.js`-ում `getProduct()`-ը պետք ա փնտրի db-ում **`slug`-ով** (զտելով `lang`-ով), ոչ թե numeric `id`-ով. `params.productSlug`-ը ուղղակի string ա, որով db-ում `.slug === params.productSlug` ես անում։
+- `app/products/[productSlug]/actions.js`-ում `getProduct()`-ը փնտրում ա db-ում **`slug`-ով** (զտելով `lang`-ով), ոչ թե numeric `id`-ով (`products?slug=...&lang=...`)։
 
-**PartnerCta-ի մասին (Vahram).** Սա այլևս Home-ի section չի՝ պետք ա երևա **բոլոր էջերում, բացի `/contact`**-ից, ուրեմն `page.jsx`-երից յուրաքանչյուրում առանձին import անելու փոխարեն դրվում ա մեկ տեղում՝ `app/layout.jsx`-ում (որ բոլոր էջերը wrap ա անում)։ Դրա համար.
-- Component-ը գնում ա `components/` (global, ոչ թե `app/_components/`, քանի որ home-ին հատուկ չի)՝ `components/partner-cta/PartnerCta.jsx` + `.module.css`։
-- Քանի որ `layout.jsx`-ը Server Component ա, իսկ ուր ես գտնվում (pathname) իմանալու համար պետք ա client-side ստուգում՝ ավելացրու `components/partner-cta/PartnerCtaWrapper.jsx` (`'use client'`), որը `usePathname()`-ով ստուգում ա, եթե `pathname.startsWith('/contact')` ա՝ վերադարձնում `null`, հակառակ դեպքում՝ `<PartnerCta />`։
-- `layout.jsx`-ը **ընդհանուր ֆայլ ա** (§4, կանոն 9) — Vahram ինքը չի փոխում, այլ իր branch-ում գրում ա `components/partner-cta/*`-ը, PR-ի description-ում գրում ա, թե որ մեկ տողը (`<PartnerCtaWrapper />`) ու որտեղ (`{children}`-ից հետո/առաջ) պետք ա ավելացվի `layout.jsx`-ում, ու Vahe-ն ինտեգրման ժամանակ ինքն ա ավելացնում։
-- Նոր folder ա (`components/partner-cta/`), ուրիշ տեղ ոչինչ avelacնելու պետք չի (`app/_components/PartnerCta.jsx`-ի հին տեղը հանվում ա)։
+**PartnerCta-ի մասին (Vahram) — պատրաստ ա։** Երևում ա **բոլոր էջերում, բացի `/contact`**-ից, դրա համար դրված ա մեկ տեղում՝ `app/layout.jsx`-ում.
+- `components/partner-cta/PartnerCta.jsx`-ը **Server Component** ա. լեզուն վերցնում ա `displayLang()`-ով, տվյալը՝ `action.js`-ի `getPartnerCta(lang)`-ով (`partner_cta` collection)։ Այդպես CTA-ն էջի հետ միասին ա երևում, ոչ թե բեռնվելուց հետո։
+- `PartnerCtaWrapper.jsx`-ը `'use client'` ա միայն `usePathname()`-ի համար. `/contact`-ում վերադարձնում ա `null`, մնացած էջերում՝ իր `children`-ը։
+- `layout.jsx`-ում.
 
-**Vahram-ի task-ը կոնկրետ.**
-1. Գրիր `components/partner-cta/PartnerCta.jsx` — ինքը CTA-ի content-ը (տեքստը՝ db-ից, §4 կանոն 7)։
-2. Գրիր `components/partner-cta/PartnerCtaWrapper.jsx` (սա wrapper-ն ա, պատրաստ կոդ, ուղղակի copy արա).
+```jsx
+import PartnerCta from '@/components/partner-cta/PartnerCta'
+import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
+// ...
+<main className="main-content">{children}</main>
+<PartnerCtaWrapper>
+  <PartnerCta />
+</PartnerCtaWrapper>
+<Footer />
+```
 
 ```jsx
 // components/partner-cta/PartnerCtaWrapper.jsx
 'use client'
 
 import { usePathname } from 'next/navigation'
-import PartnerCta from './PartnerCta'
 
-export default function PartnerCtaWrapper() {
+export default function PartnerCtaWrapper({ children }) {
   const pathname = usePathname()
 
-  if (pathname.startsWith('/contact')) {
+  if (pathname?.startsWith('/contact')) {
     return null
   }
 
-  return <PartnerCta />
+  return children
 }
 ```
 
-3. `layout.jsx`-ին **ինքդ չես դիպչում** (ընդհանուր ֆայլ ա)։ PR-ի description-ում գրիր հստակ, թե Vahe-ն ինչ պիտի ավելացնի `layout.jsx`-ում.
-```jsx
-import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
-// ...
-<PartnerCtaWrapper />   // {children}-ից հետո, footer-ից առաջ
-```
-4. Եթե հին `app/_components/PartnerCta.jsx` արդեն ստեղծած ես եղել՝ ջնջիր, տեղափոխված ա `components/partner-cta/`-ի մեջ։
+(Server Component-ը client component-ի մեջ կարելի ա դնել միայն `children`-ով, ոչ թե client ֆայլի ներսում import անելով։)
 
 ## 7. Git — ինչպես աշխատել ու ուղարկել
 
@@ -349,7 +376,8 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 
 - ❌ `git push origin main`
 - ❌ `git push --force`
-- ❌ commit անել `db.json`, `.env.local`, `node_modules`
+- ❌ commit անել `db.json`, `.env.local`, `node_modules` (ու **երբեք** `git add -f`)
+- ❌ commit անել փորձնական ֆայլեր (test նկարներ, screenshot-ներ) կամ `package-lock.json`, եթե package չես ավելացրել
 - ❌ փոխել `db_orinak_example`, `lib/*`, `package.json`, `layout.jsx`, `globals.css`՝ առանց Vahe-ին հարցնելու
 - ❌ `npm install <package>` առանց հարցնելու (`package-lock.json`-ի conflict)
 
@@ -362,13 +390,25 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 
 ## 9. Ինչ դեռ չկա
 
-- `about-us` / `geography` էջերի բովանդակությունը. folder/skeleton-ը (page.jsx, actions.js, `_components/`) արդեն կա, բայց բոլոր ֆայլերը դատարկ են — ամեն մեկն իր section-ը գրելու ա §6-ի աղյուսակի համաձայն
-- Single product page (`app/products/[productSlug]`)-ի բովանդակությունը՝ նույն կերպ, դատարկ skeleton (Arnak + Vahag, §6)
-- `public/images/`-ում նկարները (db-ում path-երը գրված են, ֆայլերը՝ դեռ ոչ)
-- Language switcher-ը պարզ dropdown ա, design-ը դեռ չկա
-- `next/image` (հիմա `<img>`)
+- About Us · Section 1–6 (Milena, Hamlet). մինչ այդ `about-us/page.module.css`-ում ժամանակավոր padding կա header-ի համար
+- Home · Hero (Vahag) և «Մեր տեսականին» (Ashot). մինչ այդ Philosophy-ն ունի header-ի padding-ը
+- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`)
+- Ապրանքների իրական համերն ու նկարները (տես §9.1)
+- Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language
 
+### 9.1 Ապրանքների test համերն ու նկարները
+
+Բոլոր 18 ապրանքի էջերը կառուցված են `products/shokoladapatat-chrer-230`-ի պես. 3 նկարով gallery, համեր, tag-եր, նկարագրություն, բաղադրություն։ 230գ-ն ունի իրական համեր ու նկարներ, մնացածը՝ **test**.
+
+| Ինչ | Որտեղ | Չափ |
+|---|---|---|
+| Համի փոքր նկար | `variants[].image` → `/images/products/test/<slug>-taste-N.jpg` | 400×400 |
+| Համի մեծ (տուփի) նկար | `variants[].box_image` → `/images/products/test/<slug>-box-N.webp` | 1200×1200 |
+| Gallery-ի 2-րդ, 3-րդ նկար | `images[1..2]` → `/images/products/test/<slug>-gallery-2/3.jpg` | 1600×1067 |
+| Համի անուն | `variants[].flavor` | «Համ N» / «Вкус N» / «Taste N», որտեղ իրականը հայտնի չէր |
+
+Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո (կամ admin-ից) փոխում ես միայն `flavor`, `image`, `box_image`, `images` դաշտերը, իսկ `public/images/products/test/` folder-ը կարելի ա ջնջել։
 
 ## 10. `db.json`-ի կարճ օրինակ
 
