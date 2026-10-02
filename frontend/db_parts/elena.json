@@ -180,7 +180,9 @@
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
-        "/images/products/chrer-200.png"
+        "/images/products/chrer-200.png",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -190,9 +192,40 @@
       "name": "Շոկոլադապատ չրեր",
       "composition": "Բնական չրեր, մուգ շոկոլադ (62% կակաոյի պարունակությամբ), շաքար, էմուլգատոր (սոյայի լեցիտին), վանիլին։",
       "description": "Ընտիր չրերի տեսականի՝ պատված բարձրորակ մուգ շոկոլադով։",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+        }
+      ],
       "shelf_life_months": 5,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 5
     },
     {
@@ -204,7 +237,9 @@
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
-        "/images/products/chrer-200.png"
+        "/images/products/chrer-200.png",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -214,9 +249,40 @@
       "name": "Сухофрукты в шоколаде",
       "composition": "Натуральные сухофрукты, темный шоколад (62% какао), сахар, эмульгатор (соевый лецитин), ванилин.",
       "description": "Ассорти отборных сухофруктов в высококачественном темном шоколаде.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+        }
+      ],
       "shelf_life_months": 5,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 5
     },
     {
@@ -228,7 +294,9 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/products/chrer-200.png"
+        "/images/products/chrer-200.png",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -238,9 +306,40 @@
       "name": "Chocolate-covered dried fruits",
       "composition": "Natural dried fruits, dark chocolate (62% cocoa), sugar, emulsifier (soy lecithin), vanillin.",
       "description": "Assorted dried fruits coated in dark chocolate.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+        }
+      ],
       "shelf_life_months": 5,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 5
     },
     {
@@ -252,7 +351,9 @@
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-200.png"
+        "/images/products/choco-chir-200.png",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -274,7 +375,9 @@
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-200.png"
+        "/images/products/choco-chir-200.png",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -296,7 +399,9 @@
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-200.png"
+        "/images/products/choco-chir-200.png",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -318,7 +423,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/pastilles-mini-250.png"
+        "/images/products/pastilles-mini-250.png",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -331,14 +438,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Դեղձ",
-          "image": "/images/products/taste-peach-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -354,7 +479,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/pastilles-mini-250.png"
+        "/images/products/pastilles-mini-250.png",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -367,14 +494,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Персик",
-          "image": "/images/products/taste-peach-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -390,7 +535,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/pastilles-mini-250.png"
+        "/images/products/pastilles-mini-250.png",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -403,14 +550,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Peach",
-          "image": "/images/products/taste-peach-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -426,7 +591,9 @@
       "weight_value": 170,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-pastilles-30.png"
+        "/images/products/choco-pastilles-30.png",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -439,8 +606,32 @@
         {
           "id": "v1",
           "flavor": "Կեռաս",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -456,7 +647,9 @@
       "weight_value": 170,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-pastilles-30.png"
+        "/images/products/choco-pastilles-30.png",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -469,8 +662,32 @@
         {
           "id": "v1",
           "flavor": "Черешня",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -486,7 +703,9 @@
       "weight_value": 170,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-pastilles-30.png"
+        "/images/products/choco-pastilles-30.png",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -499,8 +718,32 @@
         {
           "id": "v1",
           "flavor": "Cherry",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -516,7 +759,9 @@
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-bars-170.png"
+        "/images/products/choco-bars-170.png",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -529,8 +774,26 @@
         {
           "id": "v1",
           "flavor": "Բալ",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -546,7 +809,9 @@
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-bars-170.png"
+        "/images/products/choco-bars-170.png",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -559,8 +824,26 @@
         {
           "id": "v1",
           "flavor": "Вишня",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -576,7 +859,9 @@
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-bars-170.png"
+        "/images/products/choco-bars-170.png",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -589,8 +874,26 @@
         {
           "id": "v1",
           "flavor": "Sour Cherry",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -606,7 +909,9 @@
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-bars-50.png"
+        "/images/products/choco-bars-50.png",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -615,9 +920,40 @@
       "name": "Շոկոլադապատ չրեր",
       "composition": "Բնական չրեր, մուգ շոկոլադ։",
       "description": "Շոկոլադապատ չրերի հավաքածու հարմար տուփով։",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+        }
+      ],
       "shelf_life_months": 5,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 5
     },
     {
@@ -629,7 +965,9 @@
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-bars-50.png"
+        "/images/products/choco-bars-50.png",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -638,9 +976,40 @@
       "name": "Сухофрукты в шоколаде",
       "composition": "Натуральные сухофрукты, темный шоколад.",
       "description": "Набор сухофруктов в шоколаде в удобной упаковке.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+        }
+      ],
       "shelf_life_months": 5,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 5
     },
     {
@@ -652,7 +1021,9 @@
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-bars-50.png"
+        "/images/products/choco-bars-50.png",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -661,9 +1032,40 @@
       "name": "Chocolate-covered dried fruits",
       "composition": "Natural dried fruits, dark chocolate.",
       "description": "Chocolate-covered dried fruits set in a convenient box.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+        }
+      ],
       "shelf_life_months": 5,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 5
     },
     {
@@ -675,7 +1077,9 @@
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-120.png"
+        "/images/products/choco-chir-120.png",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -688,8 +1092,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան նուշով և ընկույզով",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
       "shelf_life_months": 5,
@@ -705,7 +1133,9 @@
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-120.png"
+        "/images/products/choco-chir-120.png",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -718,8 +1148,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос с миндалем и грецким орехом",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
       "shelf_life_months": 5,
@@ -735,7 +1189,9 @@
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-120.png"
+        "/images/products/choco-chir-120.png",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -748,8 +1204,32 @@
         {
           "id": "v1",
           "flavor": "Apricot with almond and walnut",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
       "shelf_life_months": 5,
@@ -765,7 +1245,9 @@
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-nuts-120.png"
+        "/images/products/choco-chir-nuts-120.png",
+        "/images/products/test/chrer-200-gallery-2.jpg",
+        "/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -778,14 +1260,44 @@
         {
           "id": "v1",
           "flavor": "Դեղձ",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Խնձոր",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/chrer-200-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Համ 6",
+          "image": "/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/images/products/test/chrer-200-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Համ 7",
+          "image": "/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
       "shelf_life_months": 5,
@@ -801,7 +1313,9 @@
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-nuts-120.png"
+        "/images/products/choco-chir-nuts-120.png",
+        "/images/products/test/chrer-200-gallery-2.jpg",
+        "/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -814,14 +1328,44 @@
         {
           "id": "v1",
           "flavor": "Персик",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Яблоко",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/chrer-200-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Вкус 6",
+          "image": "/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/images/products/test/chrer-200-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Вкус 7",
+          "image": "/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
       "shelf_life_months": 5,
@@ -837,7 +1381,9 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-nuts-120.png"
+        "/images/products/choco-chir-nuts-120.png",
+        "/images/products/test/chrer-200-gallery-2.jpg",
+        "/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -850,14 +1396,44 @@
         {
           "id": "v1",
           "flavor": "Peach",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Apple",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/images/products/test/chrer-200-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/images/products/test/chrer-200-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/images/products/test/chrer-200-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/images/products/test/chrer-200-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Taste 6",
+          "image": "/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/images/products/test/chrer-200-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Taste 7",
+          "image": "/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
       "shelf_life_months": 5,
@@ -873,7 +1449,9 @@
       "weight_value": 100,
       "weight_unit": "գ",
       "images": [
-        "/images/products/apple-dry-100.png"
+        "/images/products/apple-dry-100.png",
+        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -887,8 +1465,8 @@
         {
           "id": "v1",
           "flavor": "Խնձոր",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -903,7 +1481,9 @@
       "weight_value": 100,
       "weight_unit": "г",
       "images": [
-        "/images/products/apple-dry-100.png"
+        "/images/products/apple-dry-100.png",
+        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -917,8 +1497,8 @@
         {
           "id": "v1",
           "flavor": "Яблоко",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -933,7 +1513,9 @@
       "weight_value": 100,
       "weight_unit": "g",
       "images": [
-        "/images/products/apple-dry-100.png"
+        "/images/products/apple-dry-100.png",
+        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -947,8 +1529,8 @@
         {
           "id": "v1",
           "flavor": "Apple",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -963,7 +1545,9 @@
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
-        "/images/products/frutamin-250.png"
+        "/images/products/frutamin-250.png",
+        "/images/products/test/frutamin-250-gallery-2.jpg",
+        "/images/products/test/frutamin-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -972,9 +1556,22 @@
       "name": "Ֆրուտամին",
       "composition": "Բնական մրգային խտանյութ, պաստեղ։",
       "description": "Վիտամիններով հարուստ մրգային պաստեղների հավաքածու։",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 2
     },
     {
@@ -986,7 +1583,9 @@
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
-        "/images/products/frutamin-250.png"
+        "/images/products/frutamin-250.png",
+        "/images/products/test/frutamin-250-gallery-2.jpg",
+        "/images/products/test/frutamin-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -995,9 +1594,22 @@
       "name": "Фрутамин",
       "composition": "Натуральный фруктовый концентрат, пастила.",
       "description": "Богатый витаминами набор фруктовой пастилы.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 2
     },
     {
@@ -1009,7 +1621,9 @@
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
-        "/images/products/frutamin-250.png"
+        "/images/products/frutamin-250.png",
+        "/images/products/test/frutamin-250-gallery-2.jpg",
+        "/images/products/test/frutamin-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1018,9 +1632,22 @@
       "name": "Frutamin Fruit Pastilles",
       "composition": "Natural fruit concentrate, pastille.",
       "description": "Vitamin-rich assortment of fruit pastilles.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 2
     },
     {
@@ -1032,7 +1659,9 @@
       "weight_value": 400,
       "weight_unit": "գ",
       "images": [
-        "/images/products/frutini-400.png"
+        "/images/products/frutini-400.png",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1054,7 +1683,9 @@
       "weight_value": 400,
       "weight_unit": "г",
       "images": [
-        "/images/products/frutini-400.png"
+        "/images/products/frutini-400.png",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1076,7 +1707,9 @@
       "weight_value": 400,
       "weight_unit": "g",
       "images": [
-        "/images/products/frutini-400.png"
+        "/images/products/frutini-400.png",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1098,7 +1731,9 @@
       "weight_value": 90,
       "weight_unit": "գ",
       "images": [
-        "/images/products/fruit-lavash-90.png"
+        "/images/products/fruit-lavash-90.png",
+        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1111,8 +1746,56 @@
         {
           "id": "v1",
           "flavor": "Կեռաս",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Համ 6",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Համ 7",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Համ 8",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+        },
+        {
+          "id": "v9",
+          "flavor": "Համ 9",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1128,7 +1811,9 @@
       "weight_value": 90,
       "weight_unit": "г",
       "images": [
-        "/images/products/fruit-lavash-90.png"
+        "/images/products/fruit-lavash-90.png",
+        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1141,8 +1826,56 @@
         {
           "id": "v1",
           "flavor": "Черешня",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Вкус 6",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Вкус 7",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Вкус 8",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+        },
+        {
+          "id": "v9",
+          "flavor": "Вкус 9",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1158,7 +1891,9 @@
       "weight_value": 90,
       "weight_unit": "g",
       "images": [
-        "/images/products/fruit-lavash-90.png"
+        "/images/products/fruit-lavash-90.png",
+        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1171,8 +1906,56 @@
         {
           "id": "v1",
           "flavor": "Cherry",
-          "image": "",
-          "box_image": ""
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Taste 6",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Taste 7",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Taste 8",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+        },
+        {
+          "id": "v9",
+          "flavor": "Taste 9",
+          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1188,7 +1971,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/pastilles-box-30.png"
+        "/images/products/pastilles-box-30.png",
+        "/images/products/test/pastethner-30-gallery-2.jpg",
+        "/images/products/test/pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1201,8 +1986,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1218,7 +2027,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/pastilles-box-30.png"
+        "/images/products/pastilles-box-30.png",
+        "/images/products/test/pastethner-30-gallery-2.jpg",
+        "/images/products/test/pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1231,8 +2042,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1248,7 +2083,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/pastilles-box-30.png"
+        "/images/products/pastilles-box-30.png",
+        "/images/products/test/pastethner-30-gallery-2.jpg",
+        "/images/products/test/pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1261,8 +2098,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1278,7 +2139,9 @@
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
-        "/images/products/natural-lavash-50.png"
+        "/images/products/natural-lavash-50.png",
+        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1291,8 +2154,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1308,7 +2195,9 @@
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
-        "/images/products/natural-lavash-50.png"
+        "/images/products/natural-lavash-50.png",
+        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1321,8 +2210,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1338,7 +2251,9 @@
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
-        "/images/products/natural-lavash-50.png"
+        "/images/products/natural-lavash-50.png",
+        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1351,8 +2266,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1368,7 +2307,9 @@
       "weight_value": 20,
       "weight_unit": "գ",
       "images": [
-        "/images/products/fruit-sticks-20.png"
+        "/images/products/fruit-sticks-20.png",
+        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1377,9 +2318,58 @@
       "name": "Մրգային ստիկներ",
       "composition": "Բնական մրգային պյուրե, խտացված հյութ։",
       "description": "Մրգային ստիկներ (Fruit Snack) հարմար փոքր փաթեթով։",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Համ 6",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Համ 7",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Համ 8",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 8
     },
     {
@@ -1391,7 +2381,9 @@
       "weight_value": 20,
       "weight_unit": "г",
       "images": [
-        "/images/products/fruit-sticks-20.png"
+        "/images/products/fruit-sticks-20.png",
+        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1400,9 +2392,58 @@
       "name": "Фруктовые палочки (стики)",
       "composition": "Натуральное фруктовое пюре, концентрированный сок.",
       "description": "Фруктовые стики (Fruit Snack) в удобной маленькой упаковке.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Вкус 6",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Вкус 7",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Вкус 8",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 8
     },
     {
@@ -1414,7 +2455,9 @@
       "weight_value": 20,
       "weight_unit": "g",
       "images": [
-        "/images/products/fruit-sticks-20.png"
+        "/images/products/fruit-sticks-20.png",
+        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1423,9 +2466,58 @@
       "name": "Fruit Sticks",
       "composition": "Natural fruit puree, concentrated juice.",
       "description": "Fruit sticks snack in a convenient pocket-size package.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+        },
+        {
+          "id": "v6",
+          "flavor": "Taste 6",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+        },
+        {
+          "id": "v7",
+          "flavor": "Taste 7",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+        },
+        {
+          "id": "v8",
+          "flavor": "Taste 8",
+          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": "",
+      "default_variant": "v1",
       "tastes_count": 8
     },
     {
@@ -1437,7 +2529,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/pastilles-cigar-30.png"
+        "/images/products/pastilles-cigar-30.png",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1451,8 +2545,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1468,7 +2586,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/pastilles-cigar-30.png"
+        "/images/products/pastilles-cigar-30.png",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1482,8 +2602,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1499,7 +2643,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/pastilles-cigar-30.png"
+        "/images/products/pastilles-cigar-30.png",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1513,8 +2659,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": ""
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1530,7 +2700,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/fruit-patety-30.png"
+        "/images/products/fruit-patety-30.png",
+        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1543,8 +2715,26 @@
         {
           "id": "v1",
           "flavor": "Սալոր",
-          "image": "/images/products/taste-plum-almond.jpg",
-          "box_image": ""
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1560,7 +2750,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/fruit-patety-30.png"
+        "/images/products/fruit-patety-30.png",
+        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1573,8 +2765,26 @@
         {
           "id": "v1",
           "flavor": "Слива",
-          "image": "/images/products/taste-plum-almond.jpg",
-          "box_image": ""
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
       "shelf_life_months": 6,
@@ -1590,7 +2800,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/fruit-patety-30.png"
+        "/images/products/fruit-patety-30.png",
+        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1603,8 +2815,26 @@
         {
           "id": "v1",
           "flavor": "Plum",
-          "image": "/images/products/taste-plum-almond.jpg",
-          "box_image": ""
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
       "shelf_life_months": 6,
