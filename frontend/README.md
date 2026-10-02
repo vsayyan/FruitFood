@@ -231,7 +231,7 @@ export default async function AboutPage() {
 | Header + Footer | Vahag | `components/header/*`, `components/footer/*` | ընդհանուր |
 | Home · Section 1 (Hero) | Vahag | `app/_components/Hero.jsx` | `/` |
 | Home · Section 2 («Մեր տեսականին») | Ashot | `app/_components/Assortment.jsx` | `/` |
-| Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` («Կարդալ ավելին» → `/#faq`) |
+| Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` («Կարդալ ավելին» → `/about-us`) |
 | Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
 | Ապրանքի մանրամասն էջ | Vahe | `app/products/[productSlug]/*` | `/products/[slug]` |
