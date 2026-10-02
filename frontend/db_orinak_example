@@ -692,9 +692,41 @@
       "name": "Ջնարակապատ պաստեղներ մինի",
       "composition": "Բնական մրգային պաստեղ, շոկոլադե զնարակ, շաքար։",
       "description": "Փոքրիկ մրգային պաստեղներ՝ պատված նուրբ շոկոլադե զնարակով։",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": ""
+      "default_variant": "v1",
+      "tastes_count": 5
     },
     {
       "id": 8,
@@ -716,9 +748,41 @@
       "name": "Мини-пастила в глазури",
       "composition": "Натуральная фруктовая пастила, шоколадная глазурь, сахар.",
       "description": "Маленькие фруктовые пастилки, покрытые нежной шоколадной глазурью.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": ""
+      "default_variant": "v1",
+      "tastes_count": 5
     },
     {
       "id": 9,
@@ -740,9 +804,41 @@
       "name": "Glazed Mini Fruit Pastilles",
       "composition": "Natural fruit pastille, chocolate glaze, sugar.",
       "description": "Bite-sized fruit pastilles coated in smooth chocolate glaze.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": ""
+      "default_variant": "v1",
+      "tastes_count": 5
     },
     {
       "id": 10,
@@ -2000,9 +2096,41 @@
       "name": "Ֆրուտինի մրգային լավաշներ",
       "composition": "Տարբեր մրգերի բնական պյուրե (խնձոր, ծիրան, սալոր, ելակ)։",
       "description": "Փաթեթավորված մրգային լավաշների մեծ տեսականի։",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Համ 1",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Համ 2",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Համ 3",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Համ 4",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Համ 5",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": ""
+      "default_variant": "v1",
+      "tastes_count": 5
     },
     {
       "id": 35,
@@ -2024,9 +2152,41 @@
       "name": "Фрутини фруктовый лаваш",
       "composition": "Натуральное пюре различных фруктов (яблоко, абрикос, слива, клубника).",
       "description": "Большое ассорти упакованного фруктового лаваша.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Вкус 1",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Вкус 2",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Вкус 3",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Вкус 4",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Вкус 5",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": ""
+      "default_variant": "v1",
+      "tastes_count": 5
     },
     {
       "id": 36,
@@ -2048,9 +2208,41 @@
       "name": "Frutini Fruit Lavash",
       "composition": "Natural fruit puree mix (apple, apricot, plum, strawberry).",
       "description": "A large packaged assortment of traditional fruit lavash.",
-      "variants": [],
+      "variants": [
+        {
+          "id": "v1",
+          "flavor": "Taste 1",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+        },
+        {
+          "id": "v2",
+          "flavor": "Taste 2",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+        },
+        {
+          "id": "v3",
+          "flavor": "Taste 3",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+        },
+        {
+          "id": "v4",
+          "flavor": "Taste 4",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+        },
+        {
+          "id": "v5",
+          "flavor": "Taste 5",
+          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+        }
+      ],
       "shelf_life_months": 6,
-      "default_variant": ""
+      "default_variant": "v1",
+      "tastes_count": 5
     },
     {
       "id": 37,
