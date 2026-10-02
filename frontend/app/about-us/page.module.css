@@ -1,0 +1,11 @@
+/* Fixed header-ի տեղը։ Երբ էջի վերևի Section 1-ը (Milena) ավելանա՝
+   իր մեջ ունենալու ա այս offset-ը (ինչպես Geography-ի intro-ն), ու սա կհանվի */
+.page {
+  padding-top: 68px;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding-top: calc(65px + var(--space-32));
+  }
+}
