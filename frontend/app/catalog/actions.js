@@ -4,39 +4,19 @@ import axios from '@/lib/axios'
 export async function getAllProducts(lang) {
   try {
     const currentLang = lang || (await displayLang())
-    const res = await axios.get(`products?lang=${currentLang}`)
+    const res = await axios.get('products', { params: { lang: currentLang } })
     return res.data
   } catch {
     return []
-  }
-}
-
-export async function getProductsByCategory(categorySlug, lang) {
-  try {
-    const currentLang = lang || (await displayLang())
-    const res = await axios.get(`products?category_slug=${categorySlug}&lang=${currentLang}`)
-    return res.data
-  } catch {
-    return []
-  }
-}
-
-export async function getProductCategory(categorySlug, lang) {
-  try {
-    const currentLang = lang || (await displayLang())
-    const res = await axios.get(`categories/${categorySlug}?lang=${currentLang}`)
-    return res.data ?? null
-  } catch {
-    return null
   }
 }
 
 export async function getProductPageLabels(lang) {
   try {
-    const res = await axios.get('product_page_labels', { params: { lang } })
+    const currentLang = lang || (await displayLang())
+    const res = await axios.get('product_page_labels', { params: { lang: currentLang } })
     return res.data[0] ?? null
-  } catch (error) {
-    console.error('Error fetching product page labels:', error)
+  } catch {
     return null
   }
 }

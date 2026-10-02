@@ -1,83 +1,41 @@
-import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import { displayLang } from '@/lib/lang'
-import ProductCard from '../_components/ProductCard'
-import { 
-  getProductsByCategory, 
+import {
+  getProductsByCategory,
   getProductCategory,
-  getProductPageLabels 
+  getProductPageLabels,
 } from './actions'
-import styles from '../page.module.css'
+import Breadcrumbs from '../_components/Breadcrumbs'
+import ProductGrid from '../_components/ProductGrid'
 
 export async function generateMetadata({ params }) {
-  const resolvedParams = await params
-  const categorySlug = resolvedParams?.categorySlug
-  const lang = await displayLang()
-  
-  const [category, pageLabels] = await Promise.all([
-    getProductCategory(categorySlug, lang),
-    getProductPageLabels(lang),
-  ])
+  const { categorySlug } = await params
+  const category = await getProductCategory(categorySlug, await displayLang())
 
   return {
-    title: category?.name || pageLabels?.catalog_title,
-    description: category?.description || pageLabels?.catalog_description,
+    title: category?.name,
+    description: category?.description,
   }
 }
 
 export default async function CategoryPage({ params }) {
-  const resolvedParams = await params
-  const categorySlug = resolvedParams?.categorySlug
+  const { categorySlug } = await params
   const lang = await displayLang()
 
-  const [products, category, pageLabels] = await Promise.all([
+  const [products, category, labels] = await Promise.all([
     getProductsByCategory(categorySlug, lang),
     getProductCategory(categorySlug, lang),
     getProductPageLabels(lang),
   ])
 
+  if (!category) {
+    notFound()
+  }
+
   return (
     <>
-      <section className={styles.breadcrumbSection}>
-        <nav className="container" aria-label={pageLabels?.breadcrumb_label}>
-          <ol className={styles.breadcrumbs}>
-            <li>
-              <Link className={styles.crumbLink} href="/">
-                {pageLabels?.home_label}
-              </Link>
-            </li>
-            <li className={styles.separator} aria-hidden="true">/</li>
-            <li>
-              <Link className={styles.crumbLink} href="/catalog">
-                {pageLabels?.catalog_label}
-              </Link>
-            </li>
-            {category && (
-              <>
-                <li className={styles.separator} aria-hidden="true">/</li>
-                <li>
-                  <span className={styles.crumbCurrent} aria-current="page">
-                    {category.name}
-                  </span>
-                </li>
-              </>
-            )}
-          </ol>
-        </nav>
-      </section>
-
-      <section className={styles.catalogSection}>
-        <div className={styles.container}>
-          <div className={styles.grid}>
-            {products?.map((product) => (
-              <ProductCard 
-                key={product.id} 
-                product={product} 
-                labels={pageLabels} 
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Breadcrumbs labels={labels} current={category.name} />
+      <ProductGrid products={products} labels={labels} />
     </>
   )
 }
