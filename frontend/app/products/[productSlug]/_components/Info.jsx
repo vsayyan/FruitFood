@@ -42,7 +42,11 @@ export default function Info({ product, tags, labels, selectedIndex, onSelect })
                   aria-label={variant.flavor}
                   title={variant.flavor}
                 >
-                  <img className={styles.variantImage} src={variant.image} alt="" />
+                  {variant.image ? (
+                    <img className={styles.variantImage} src={variant.image} alt="" />
+                  ) : (
+                    <span className={styles.variantName}>{variant.flavor}</span>
+                  )}
                   {isSelected && (
                     <span className={styles.check} aria-hidden="true">
                       <img src="/images/products/icons/check.svg" alt="" />

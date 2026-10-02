@@ -1,20 +1,14 @@
+/* Figma: about 171:5470 + 171:5493 + 171:5517 (desktop),
+   185:7998 + 185:8054 (mobile) */
 .section {
-  width: 1440px;
-  max-width: 100%;
-  padding: 120px 120px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: var(--space-120) 0 0;
 }
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 60px;
+  align-items: center;
 }
 
 .content {
@@ -23,49 +17,54 @@
 }
 
 .label {
-  margin-bottom: var(--space-sm);
-  font-size: 12px;
+  font-size: var(--font-size-xs);
   font-weight: 500;
-  line-height: 19.2px;
+  line-height: 1.6;
   letter-spacing: 1.8px;
-  color: #6B6B6B;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
 }
 
 .title {
-  width: 570px;
-  height: 88px;
-  margin: 0 0 var(--space-md);
-  font-size: 40px;
-  line-height: 44px;
-  font-weight: 600;
+  padding-top: 20px;
+  font-size: var(--font-size-2xl);
+  font-weight: 300;
+  line-height: 1.1;
   letter-spacing: -0.6px;
+  color: var(--color-text);
 }
 
 .title span {
+  font-weight: 700;
   color: var(--color-green);
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
+.text p {
+  padding-top: var(--space-md);
+  font-size: var(--font-size-base);
+  line-height: 1.75;
+  color: var(--color-text-muted);
 }
 
-.text p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  color: #6B6B6B;
+.text p + p {
+  padding: var(--space-32) 0;
 }
 
 .slider {
   position: relative;
-  width: 100%;
   height: 484.5px;
   overflow: hidden;
-  border-radius: 32px;
+  border-radius: var(--radius-2xl);
+  background: linear-gradient(135deg, var(--color-mint), var(--color-light-soft));
+}
+
+/* Figma-ում նկարի վրա 20% սև շերտ կա */
+.slider::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 
 .sliderImage {
@@ -87,7 +86,7 @@
   padding: 0;
   padding-bottom: 3px;
   border: none;
-  border-radius: 50%;
+  border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.85);
   color: var(--color-text);
   font-size: 24px;
@@ -97,7 +96,7 @@
 }
 
 .arrow:hover {
-  background: #ffffff;
+  background: var(--color-white);
 }
 
 .arrow:focus-visible,
@@ -129,150 +128,129 @@
   height: 9px;
   padding: 0;
   border: none;
-  border-radius: 50%;
+  border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
 
 .dot.active {
-  background: #ffffff;
+  background: var(--color-white);
   transform: scale(1.2);
+}
+
+.strip {
+  display: none;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
-  margin-top: var(--space-2xl);
+  grid-template-columns: repeat(3, 333.7px);
+  justify-content: space-between;
+  padding: 160px 0 var(--space-80);
 }
 
 .galleryItem {
-  width: 333.7px;
-  height: 444.95px;
+  height: 445px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--color-mint), var(--color-light-soft));
 }
 
-.galleryItem img {
+.galleryItem img,
+.stripItem img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.9;
 }
 
 .bottomContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
-  margin-top: var(--space-2xl);
+  grid-template-columns: repeat(2, 480px);
+  justify-content: center;
+  column-gap: 60px;
+  padding: var(--space-80) 0;
 }
 
 .bottomContent p {
-  margin: 0;
-  font-size: 17px;
-  line-height: 29.8px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  color: #1F1F1F;
+  font-size: var(--font-size-lead);
+  line-height: 1.75;
+  color: var(--color-text);
 }
 
-.bottomContent p:first-child {
-  max-width: 480px;
-  min-height: 149px;
-}
+@media (max-width: 1100px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-md);
+  }
 
-.bottomContent p:last-child {
-  max-width: 480px;
-  min-height: 238px;
+  .bottomContent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 900px) {
   .section {
-    width: 100%;
-    padding: var(--space-xl) var(--container-padding);
+    margin-top: var(--space-md);
+    padding-top: 42px;
   }
 
   .main {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
   }
 
   .title {
-    width: 100%;
-    max-width: 570px;
-    height: auto;
-    font-size: 34px;
-    line-height: 1.2;
+    font-size: var(--font-size-title);
+    line-height: 39px;
   }
 
-  .slider {
-    height: 330px;
+  .text p + p {
+    padding-bottom: var(--space-32);
+    padding-top: var(--space-md);
   }
 
+  .slider,
   .gallery {
-    gap: var(--space-sm);
+    display: none;
   }
 
-  .galleryItem {
-    width: 100%;
-    height: 180px;
+  .strip {
+    display: flex;
+    gap: var(--space-xs);
+    margin: var(--space-md) calc(var(--container-padding) * -1) 0;
+    padding: 0 var(--container-padding);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--container-padding);
+    scrollbar-width: none;
+  }
+
+  .strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stripItem {
+    flex: 0 0 100%;
+    height: 253px;
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
+    background: linear-gradient(135deg, var(--color-mint), var(--color-light-soft));
+    scroll-snap-align: start;
   }
 
   .bottomContent {
     grid-template-columns: 1fr;
-    gap: var(--space-md);
+    /* Figma: strip-ից հետո 12px + բաժինների արանքի 24px */
+    margin-top: calc(12px + var(--space-md));
+    padding: 0 0 42px;
   }
 
-  .bottomContent p:first-child,
-  .bottomContent p:last-child {
-    max-width: 100%;
-    min-height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  .section {
-    padding: var(--space-xl) var(--container-padding);
+  .bottomContent p {
+    font-size: var(--font-size-body);
+    line-height: 1.7;
   }
 
-  .title {
-    width: 100%;
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .slider {
-    height: 280px;
-    border-radius: var(--radius-md);
-  }
-
-  .arrow {
-    width: 38px;
-    height: 38px;
-    font-size: 26px;
-  }
-
-  .prev {
-    left: var(--space-xs);
-  }
-
-  .next {
-    right: var(--space-xs);
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: var(--space-sm);
-    margin-top: var(--space-lg);
-  }
-
-  .galleryItem {
-    width: 100%;
-    height: 220px;
-  }
-
-  .bottomContent {
-    margin-top: var(--space-lg);
+  .bottomContent p + p {
+    padding-top: var(--space-sm);
   }
 }
