@@ -1,5 +1,6 @@
 import { Noto_Sans_Armenian } from 'next/font/google'
 import { displayLang } from '@/lib/lang'
+import PartnerCta from '@/components/partner-cta/PartnerCta'
 import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
 import './globals.css'
 import { MenubarProvider } from '@/context/menubarContext'
@@ -48,7 +49,9 @@ export default async function RootLayout({ children }) {
         <MenubarProvider>
           <Header />
           <main className="main-content">{children}</main>
-          {/* <PartnerCtaWrapper /> */}
+          <PartnerCtaWrapper>
+            <PartnerCta />
+          </PartnerCtaWrapper>
           <Footer />
         </MenubarProvider>
       </body>
