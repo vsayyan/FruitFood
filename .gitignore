@@ -20,3 +20,7 @@ yarn-error.log*
 .vscode/
 *.swp
 *.swo
+
+# Next.js 16-ը npm install-ի ժամանակ ինքն ա ստեղծում (AI agent-ների հուշումներ)
+frontend/AGENTS.md
+frontend/CLAUDE.md
