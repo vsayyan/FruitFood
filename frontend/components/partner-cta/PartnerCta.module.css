@@ -46,15 +46,22 @@
   font-weight: 600;
   line-height: 1.6;
   color: var(--color-light);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* Figma ui-kit → hover (134:675). սպիտակ ֆոն, կանաչ տեքստ, սլաքը 7px աջ */
 .button:hover {
-  background: var(--color-green-deep);
+  background: var(--color-white);
+  color: var(--color-green-dark);
 }
 
 .arrow {
   flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.button:hover .arrow {
+  transform: translateX(7px);
 }
 
 @media (max-width: 900px) {
