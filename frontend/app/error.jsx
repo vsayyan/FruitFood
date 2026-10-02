@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useSyncExternalStore } from 'react'
 import styles from './error.module.css'
 
 /*
@@ -26,6 +26,9 @@ const messages = {
   },
 }
 
+// <html lang>-ը էջի ընթացքում չի փոխվում, ուստի subscribe-ը ոչինչ չի անում
+const subscribeNoop = () => () => {}
+
 export default function Error({ error, reset }) {
   /*
     error.jsx-ը պարտադիր Client Component ա (Next.js-ի պահանջ), ուրեմն
@@ -33,11 +36,11 @@ export default function Error({ error, reset }) {
     վերցնում ենք <html lang>-ից, որը layout.jsx-ն արդեն դնում ա նույն
     cookie-ի հիման վրա — ոչ մի լրացուցիչ request։
   */
-  const [lang, setLang] = useState('am')
-
-  useEffect(() => {
-    setLang(document.documentElement.lang || 'am')
-  }, [])
+  const lang = useSyncExternalStore(
+    subscribeNoop,
+    () => document.documentElement.lang || 'am',
+    () => 'am',
+  )
 
   useEffect(() => {
     console.error(error)
