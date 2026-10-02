@@ -1,5 +1,5 @@
-import { Noto_Sans_Armenian, Noto_Sans } from 'next/font/google'
 import { displayLang } from '@/lib/lang'
+import { fontVariables } from './fonts'
 import PartnerCta from '@/components/partner-cta/PartnerCta'
 import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
 import './globals.css'
@@ -8,25 +8,6 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { getLogo } from '@/components/header/action'
 import { getFooterLabel } from '@/components/footer/action'
-
-const notoSansArmenian = Noto_Sans_Armenian({
-  subsets: ['armenian', 'latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-main',
-  // Fallback-ը (Arial) չենք ուզում. այն կբռներ ռուսերեն տառերը Noto Sans-ից առաջ
-  adjustFontFallback: false,
-  fallback: [],
-})
-
-// Noto Sans Armenian-ը կիրիլյան տառեր չունի, դրա համար ռուսերենը
-// գալիս ա Noto Sans-ից (նույն ընտանիքը, նույն տեսքը)
-const notoSansCyrillic = Noto_Sans({
-  subsets: ['cyrillic'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-cyrillic',
-  adjustFontFallback: false,
-  fallback: [],
-})
 
 // Site-ի անունը և նկարագրությունը գալիս են db-ից՝ ըստ լեզվի։ Եթե API-ն
 // հասանելի չի, metadata-ն պարզապես մնում ա անունով, էջը չի ընկնում։
@@ -57,7 +38,7 @@ export default async function RootLayout({ children }) {
   const lang = await displayLang()
 
   return (
-    <html lang={lang} className={`${notoSansArmenian.variable} ${notoSansCyrillic.variable}`}>
+    <html lang={lang} className={fontVariables}>
       <body className="layout">
         <MenubarProvider>
           <Header />
