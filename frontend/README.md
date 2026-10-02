@@ -60,12 +60,15 @@ db_orinak_example              Ընդհանուր օրինակ DB (ՉԵՍ ՓՈԽ
 db.json                        Քո լոկալ DB-ն (copy օրինակից, git-ում չկա)
 db_parts/<անուն>.json          Քո նոր collection-ները՝ ուղարկելու համար (§5)
 .env.example                   copy → .env.local
+proxy.js                       /products/<slug>, /catalog/<slug>. slug-ը API-ում չկա → իրական 404 status (loading.jsx-ի պատճառով notFound()-ը 200 էր տալիս)
 
 app/
   layout.jsx + actions.js      Root layout. logo / navbar / langs / footer-ի տվյալը այստեղ ա fetch արվում
   globals.css                  Գույներ, spacing, radius, font-size (CSS variables), .container
   page.jsx + page.module.css   Home
+  fonts.js                     Noto Sans Armenian + Noto Sans (cyrillic). layout.jsx-ն ու global-error.jsx-ը սրանից են վերցնում
   loading.jsx / error.jsx / not-found.jsx   Ընդհանուր loading, error, 404
+  global-error.jsx             Երբ սխալը հենց layout-ում ա (օր.՝ json-server-ը միացած չի). նույն error.jsx-ն ա՝ սեփական <html>-ով
   sitemap.js / robots.js       SEO
   catalog/
     actions.js                 getAllProducts(), getProductPageLabels()
@@ -391,7 +394,6 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 - Home · Hero (Vahag) և «Մեր տեսականին» (Ashot). մինչ այդ Philosophy-ն ունի header-ի padding-ը
 - Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`)
 - Ապրանքների իրական համերն ու նկարները (տես §9.1)
-- Ռուսերենի տառատեսակ. Noto Sans Armenian-ը կիրիլյան տառեր չունի, ռուսերեն տեքստը հիմա serif ա երևում (պետք ա ավելացնել Noto Sans cyrillic `layout.jsx`-ում)
 - Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language
 

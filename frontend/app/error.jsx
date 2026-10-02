@@ -26,8 +26,15 @@ const messages = {
   },
 }
 
-// <html lang>-ը էջի ընթացքում չի փոխվում, ուստի subscribe-ը ոչինչ չի անում
+// Լեզուն էջի ընթացքում չի փոխվում, ուստի subscribe-ը ոչինչ չի անում
 const subscribeNoop = () => () => {}
+
+// Նախ՝ նույն lang cookie-ն, ինչ displayLang()-ը (global-error.jsx-ի դեպքում
+// <html lang>-ը մենք չենք կարող իմանալ), հետո՝ <html lang>
+const readLang = () =>
+  document.cookie.match(/(?:^|; )lang=([^;]+)/)?.[1] ||
+  document.documentElement.lang ||
+  'am'
 
 export default function Error({ error, reset }) {
   /*
@@ -38,7 +45,7 @@ export default function Error({ error, reset }) {
   */
   const lang = useSyncExternalStore(
     subscribeNoop,
-    () => document.documentElement.lang || 'am',
+    readLang,
     () => 'am',
   )
 
