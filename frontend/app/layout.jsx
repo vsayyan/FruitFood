@@ -1,4 +1,4 @@
-import { Noto_Sans_Armenian } from 'next/font/google'
+import { Noto_Sans_Armenian, Noto_Sans } from 'next/font/google'
 import { displayLang } from '@/lib/lang'
 import PartnerCta from '@/components/partner-cta/PartnerCta'
 import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
@@ -13,6 +13,19 @@ const notoSansArmenian = Noto_Sans_Armenian({
   subsets: ['armenian', 'latin'],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-main',
+  // Fallback-ը (Arial) չենք ուզում. այն կբռներ ռուսերեն տառերը Noto Sans-ից առաջ
+  adjustFontFallback: false,
+  fallback: [],
+})
+
+// Noto Sans Armenian-ը կիրիլյան տառեր չունի, դրա համար ռուսերենը
+// գալիս ա Noto Sans-ից (նույն ընտանիքը, նույն տեսքը)
+const notoSansCyrillic = Noto_Sans({
+  subsets: ['cyrillic'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-cyrillic',
+  adjustFontFallback: false,
+  fallback: [],
 })
 
 // Site-ի անունը և նկարագրությունը գալիս են db-ից՝ ըստ լեզվի։ Եթե API-ն
@@ -44,7 +57,7 @@ export default async function RootLayout({ children }) {
   const lang = await displayLang()
 
   return (
-    <html lang={lang} className={notoSansArmenian.variable}>
+    <html lang={lang} className={`${notoSansArmenian.variable} ${notoSansCyrillic.variable}`}>
       <body className="layout">
         <MenubarProvider>
           <Header />

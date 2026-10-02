@@ -18,7 +18,7 @@ export default async function CatalogPage() {
   return (
     <>
       <Breadcrumbs labels={labels} current={labels?.all_products_label} />
-      <ProductGrid products={products} labels={labels} />
+      <ProductGrid products={products} labels={labels} title={labels?.all_products_label} />
     </>
   )
 }
