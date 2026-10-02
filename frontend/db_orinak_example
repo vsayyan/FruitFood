@@ -4324,19 +4324,22 @@
       "id": "1",
       "lang": "am",
       "description": "Մեր հաջողության հիմքում հենց սկզբից եղել է անփոփոխ սկզբունքը՝ օգտագործել բացառապես հայկական բարձրորակ մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի և կոնսերվանտների։ Այս արժեքները մինչև այսօր մնում են Fruit Food-ի արտադրության ռազմավարության և զարգացման գլխավոր ուղղությունները։",
-      "title": "Fruit Food-ում մենք հավատում ենք, որ բնական սնունդը պարզապես ընտրություն չէ. այն ապրելակերպ է:"
+      "title": "Fruit Food-ում մենք հավատում ենք, որ բնական սնունդը ",
+      "title_end": "պարզապես ընտրություն չէ. այն ապրելակերպ է:"
     },
     {
       "id": "2",
       "lang": "ru",
       "description": "С самого начала в основе нашего успеха лежал неизменный принцип — использовать исключительно высококачественные армянские фрукты, без добавленного сахара, искусственных красителей и консервантов. Эти ценности и сегодня остаются главными направлениями стратегии производства и развития Fruit Food.",
-      "title": "В Fruit Food мы верим, что натуральная еда — это не просто выбор, а образ жизни."
+      "title": "В Fruit Food мы верим, что натуральная еда — ",
+      "title_end": "это не просто выбор, а образ жизни."
     },
     {
       "id": "3",
       "lang": "en",
       "description": "From the very beginning, our success has been based on an unchanged principle: using exclusively high-quality Armenian fruits, without added sugar, artificial colorants or preservatives. These values remain the main directions of Fruit Food's production strategy and development to this day.",
-      "title": "At Fruit Food, we believe that natural food is not simply a choice; it is a way of life."
+      "title": "At Fruit Food, we believe that natural food ",
+      "title_end": "is not simply a choice; it is a way of life."
     }
   ],
   "faq": [

@@ -32,6 +32,10 @@
   color: var(--color-white);
 }
 
+.titleEnd {
+  font-weight: 600;
+}
+
 @media (max-width: 900px) {
   .section {
     margin-top: var(--space-md);
