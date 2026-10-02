@@ -1,200 +1,163 @@
+/* Figma: main → Section 1:136 (desktop), main_mobile → 171:5932 (mobile) */
 .philosophy {
-    width: 100%;
-    max-width: var(--container-width);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-xl);
-    padding-top: var(--space-2xl);
-    padding-bottom: var(--space-2xl);
-    padding-left: var(--space-2xl);
-    padding-right: var(--space-2xl);
+  display: flex;
+  align-items: stretch;
+  gap: 42px;
+  /* 68px = fixed header, մինչև Hero-ն (Vahag) ավելանա էջի վերևում */
+  padding-top: calc(68px + var(--space-2xl));
+  padding-bottom: 118px;
 }
 
-.left_side {
-    position: relative;
-    flex: 1 1 50%;
-    max-width: 579px;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slider {
+  position: relative;
+  flex: 0 0 579px;
+  height: 510px;
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  background: var(--color-cream);
 }
 
-.left_side img,
 .image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--radius-lg);
-    object-fit: cover;
+  object-fit: cover;
 }
 
-/* .slider {
-    position: relative;
-    width: 100%;
-} */
-
-.sliderButton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: var(--color-white);
-    color: var(--color-text);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    z-index: 2;
-    font-size: var(--font-size-xl);
-    text-align: center;
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding-bottom: 3px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-text);
+  font-size: var(--font-size-h3);
+  line-height: 1;
+  transform: translateY(-50%);
 }
 
+.arrow:hover {
+  background: var(--color-white);
+}
 
+.arrow:focus-visible,
+.dot:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
 
-.previous {
-    left: var(--space-sm);
+.prev {
+  left: var(--space-sm);
 }
 
 .next {
-    right: var(--space-sm);
+  right: var(--space-sm);
 }
 
 .dots {
-    position: absolute;
-    bottom: var(--space-sm);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: var(--space-xs);
-    z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-sm);
+  z-index: 2;
+  display: flex;
+  gap: var(--space-xs);
+  transform: translateX(-50%);
 }
 
-.dot,
-.activeDot {
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: var(--color-white);
-    cursor: pointer;
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.6);
 }
 
-.activeDot {
-    width: 24px;
-    border-radius: var(--radius-sm);
+.dot.active {
+  background: var(--color-white);
+  transform: scale(1.2);
 }
 
-.right_side {
-    flex: 1 1 50%;
-    max-width: 540px;
+.content {
+  flex: 1 1 auto;
+  padding-top: 60px;
 }
 
-.right_side h4 {
-    font-weight: 500;
-    font-size: var(--font-size-sm);
-    line-height: 160%;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin-bottom: var(--space-sm);
+.label {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
 }
 
-.right_side h2 {
-    font-weight: 700;
-    font-size: var(--font-size-2xl);
-    line-height: 110%;
-    color: var(--color-green);
-    margin-bottom: var(--space-md);
+.title {
+  margin-top: 15px;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+  color: var(--color-green);
+  white-space: pre-line;
 }
 
-.right_side h2 span {
-    color: var(--color-text);
-    font-weight: 300;
+.title span {
+  font-weight: 300;
+  color: var(--color-text);
 }
 
-.right_side p {
-    font-weight: 400;
-    font-size: var(--font-size-base);
-    line-height: 175%;
-    color: var(--color-text-muted);
-    margin-bottom: var(--space-lg);
+.text {
+  max-width: 516px;
+  margin-top: 36px;
+  font-size: var(--font-size-base);
+  line-height: 1.75;
+  color: var(--color-text-muted);
 }
 
-.right_side a {
-    font-weight: 500;
-    font-size: var(--font-size-sm);
-    line-height: 160%;
-    color: var(--color-text);
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: 0;
-    cursor: pointer;
-    background: transparent;
-    border: none;
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: 38px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-text);
 }
 
-.right_side a:hover {
-    color: var(--color-green);
+.link:hover {
+  color: var(--color-green);
 }
 
-.right_side a span {
-    display: inline-block;
-    padding-left: var(--space-xs);
-}
+@media (max-width: 900px) {
+  .philosophy {
+    flex-direction: column-reverse;
+    gap: 42px;
+    padding-top: calc(65px + var(--space-xl));
+    padding-bottom: var(--space-xl);
+  }
 
+  .slider {
+    flex: 0 0 277px;
+    height: 277px;
+  }
 
-@media (max-width: 992px) {
-    .philosophy {
-        flex-direction: column-reverse;
-        gap: var(--space-lg);
-        padding-top: var(--space-xl);
-        padding-bottom: var(--space-xl);
-        align-items: flex-start;
-    }
+  .content {
+    padding-top: 0;
+  }
 
-    .left_side,
-    .right_side {
-        max-width: 100%;
-        width: 100%;
-    }
+  .title {
+    font-size: var(--font-size-title);
+    line-height: 1.25;
+  }
 
-    .right_side h2 {
-        font-size: var(--font-size-xl);
-        line-height: 115%;
-    }
+  .text {
+    margin-top: var(--space-md);
+  }
 
-    .left_side img,
-    .image {
-        border-radius: var(--radius-md);
-    }
-}
-
-@media (max-width: 480px) {
-    .philosophy {
-        padding-top: var(--space-lg);
-        padding-bottom: var(--space-lg);
-        gap: var(--space-md);
-    }
-
-    .right_side h2 {
-        font-size: var(--font-size-lg);
-        line-height: 120%;
-    }
-
-    .right_side p {
-        font-size: var(--font-size-sm);
-        line-height: 165%;
-        margin-bottom: var(--space-md);
-    }
+  .link {
+    margin-top: 27px;
+  }
 }
