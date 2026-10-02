@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './Philosophy.module.css'
 
 export default function Philosophy({ headings, text }) {
@@ -81,10 +82,10 @@ export default function Philosophy({ headings, text }) {
           {heading.heading_2_after}
         </h2>
         <p className={styles.text}>{content.text}</p>
-        <a href='/#faq' className={styles.link}>
+        <Link href='/about-us' className={styles.link}>
           {content.btn}
           <span aria-hidden='true'>→</span>
-        </a>
+        </Link>
       </div>
     </section>
   )
