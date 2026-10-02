@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 900px) {
+  .partnerCta {
+    background: var(--color-green-mobile);
+  }
+
   .title {
     font-size: var(--font-size-h3);
     line-height: 1.34;
