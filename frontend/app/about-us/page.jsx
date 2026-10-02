@@ -2,13 +2,19 @@ import { displayLang } from '@/lib/lang'
 import {
   getExportCooperation,
   getOurFactory,
-  getWeBelieve
+  getWeBelieve,
+  getPageTitle,
 } from './actions'
 
 import ExportCooperation from './_components/ExportCooperation'
 import OurFactory from './_components/OurFactory'
 import WeBelieve from './_components/WeBelieve'
 import styles from './page.module.css'
+
+export async function generateMetadata() {
+  const title = await getPageTitle(await displayLang())
+  return title ? { title } : {}
+}
 
 export default async function AboutUsPage() {
   const lang = await displayLang()

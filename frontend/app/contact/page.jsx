@@ -6,6 +6,11 @@ import ContactInfo from './_components/ContactInfo'
 import Map from './_components/Map'
 import styles from './page.module.css'
 
+export async function generateMetadata() {
+  const content = await getContactPageContent(await displayLang()).catch(() => null)
+  return content ? { title: content.title, description: content.description } : {}
+}
+
 export default async function ContactPage() {
   const lang = await displayLang()
   const content = await getContactPageContent(lang)

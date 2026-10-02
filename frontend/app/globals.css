@@ -52,7 +52,8 @@
 
   /* Typography */
   /* --font-main-ը գալիս ա layout.jsx-ի next/font-ից, --font-family-ն նրա alias-ն ա */
-  --font-family: var(--font-main), 'Noto Sans Armenian', sans-serif;
+  /* Հայերեն ու լատիներեն տառերը՝ Noto Sans Armenian-ից, ռուսերենը (որ այնտեղ չկա)՝ Noto Sans-ից */
+  --font-family: var(--font-main), var(--font-cyrillic), sans-serif;
   --tracking-label: 0.18em;     /* փոքր uppercase label-ներ (ՀԱՍՑԵ, ԿԱՊՎԵՔ ՄԵԶ ՀԵՏ) */
 
   --font-size-2xs: 0.6875rem;   /* 11px — uppercase label-ներ */
@@ -94,7 +95,7 @@ html {
 }
 
 body {
-  font-family: var(--font-main, 'Noto Sans Armenian', sans-serif);
+  font-family: var(--font-family);
   color: var(--color-text);
   background: #ffffff;
   font-size: var(--font-size-base);

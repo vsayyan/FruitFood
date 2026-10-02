@@ -12,10 +12,11 @@ export async function generateMetadata({ params }) {
   const { categorySlug } = await params
   const category = await getProductCategory(categorySlug, await displayLang())
 
-  return {
-    title: category?.name,
-    description: category?.description,
-  }
+  if (!category) return {}
+  // description չկա՝ մնում ա layout-ի ընդհանուր նկարագրությունը
+  return category.description
+    ? { title: category.name, description: category.description }
+    : { title: category.name }
 }
 
 export default async function CategoryPage({ params }) {
@@ -35,7 +36,7 @@ export default async function CategoryPage({ params }) {
   return (
     <>
       <Breadcrumbs labels={labels} current={category.name} />
-      <ProductGrid products={products} labels={labels} />
+      <ProductGrid products={products} labels={labels} title={category.name} />
     </>
   )
 }
