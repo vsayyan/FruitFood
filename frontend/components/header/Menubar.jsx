@@ -10,17 +10,25 @@ const Menubar = ({ label }) => {
 
     return (
         <div className={styles.menubar_div}>
-            <Image
-                src={
-                    isMenuOpen  ? '/images/header/x_mark.svg'
-                                : '/images/header/menubar.svg'
-                }
-                className={styles.menubar}
-                alt={label ?? ''}
-                width={30}
-                height={30}
+            {/* button, որ keyboard-ով ու screen reader-ով էլ բացվի */}
+            <button
+                type='button'
+                className={styles.menubarButton}
                 onClick={() => setIsMenuOpen(prev => !prev)}
-            />
+                aria-label={label ?? ''}
+                aria-expanded={isMenuOpen}
+            >
+                <Image
+                    src={
+                        isMenuOpen  ? '/images/header/x_mark.svg'
+                                    : '/images/header/menubar.svg'
+                    }
+                    className={styles.menubar}
+                    alt=''
+                    width={30}
+                    height={30}
+                />
+            </button>
         </div>
     )
 }

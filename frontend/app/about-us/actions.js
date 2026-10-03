@@ -71,3 +71,14 @@ export async function getAboutPageLabels(lang) {
   })
   return res.data[0]
 }
+
+export async function getPageTitle(lang) {
+  try {
+    const res = await axios.get('/navbars', {
+      params: { lang, url: '/about-us' },
+    })
+    return res.data[0]?.title ?? null
+  } catch {
+    return null
+  }
+}

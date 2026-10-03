@@ -1,0 +1,53 @@
+/* Figma: 190:8404 (desktop), 190:9243 (mobile) */
+.mapSection {
+  padding: var(--space-lg) 0 100px;
+}
+
+.title {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: var(--color-green);
+}
+
+.map {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  margin-top: var(--space-32);
+  border-radius: var(--radius-2xl);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+/* Figma-ում քարտեզի նկարը 6px ներքև ա իջած */
+.mapImage {
+  top: 6px !important;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .mapSection {
+    margin-top: var(--space-md);
+    padding: 42px 0;
+  }
+
+  .title {
+    font-size: var(--font-size-30);
+    line-height: 38.4px;
+  }
+
+  .map {
+    min-height: 650px;
+    margin-top: var(--space-md);
+  }
+
+  .mapImage {
+    top: 0 !important;
+    object-position: 41% center;
+  }
+}

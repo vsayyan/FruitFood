@@ -1,0 +1,307 @@
+/* Figma: main → Section + Background+Border, main_mobile → Frame 33,
+   կոճակների վիճակները՝ ui-kit (default / hover) */
+
+.heroBlock {
+  width: 100%;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+/*
+  Ձախ սյունը (վերնագիր, նկարագրություն, կոճակներ) ուղղահայաց կենտրոնում ա
+  նկարի նկատմամբ. վերևի և ներքևի դատարկ տողերը (1fr) բաժանում են ազատ տեղը։
+  Mobile-ում նույն area-ները դասավորվում են մեկ սյունով, նկարը վերնագրից հետո։
+*/
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 517px;
+  grid-template-rows: 1fr auto auto auto 1fr;
+  grid-template-areas:
+    ".           image"
+    "title       image"
+    "description image"
+    "actions     image"
+    ".           image";
+  column-gap: var(--space-32);
+  /* 142px = նկարի վերևը էջի վերևից (fixed header-ը ներառված), 107px = նկարից մինչև marquee */
+  padding-top: 142px;
+  padding-bottom: 107px;
+}
+
+.title {
+  grid-area: title;
+  max-width: 608px;
+  font-size: 66.61px;
+  font-weight: 700;
+  line-height: 74.6px;
+  letter-spacing: -1.86px;
+  color: var(--color-green);
+}
+
+.marked {
+  font-weight: 400;
+  color: #000;
+}
+
+.description {
+  grid-area: description;
+  max-width: 481px;
+  margin-top: var(--space-32);
+  padding-left: 21px;
+  border-left: 1px solid var(--color-green-accent);
+  font-size: var(--font-size-lead);
+  line-height: 26.4px;
+  color: #000;
+}
+
+/* =========================
+   BUTTONS (ui-kit)
+========================= */
+
+.actions {
+  grid-area: actions;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  border-radius: 30px;
+  font-size: var(--font-size-base);
+  line-height: 25.6px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton {
+  gap: var(--space-6);
+  padding: 0 32px 0 28px;
+  font-weight: 600;
+  background: var(--color-green-dark);
+  color: var(--color-light);
+}
+
+.primaryButton:hover {
+  background: var(--color-green);
+}
+
+.arrow {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.primaryButton:hover .arrow {
+  transform: translateX(7px);
+}
+
+.secondaryButton {
+  padding: 0 27px;
+  font-weight: 400;
+  background: var(--color-mint);
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+}
+
+.secondaryButton:hover {
+  background: #fafcfa;
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.imageWrapper {
+  grid-area: image;
+  width: 517px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   ADVANTAGES MARQUEE
+========================= */
+
+.marquee {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background: var(--color-green-dark);
+  border-top: 1px solid rgba(245, 239, 230, 0.08);
+  border-bottom: 1px solid rgba(245, 239, 230, 0.08);
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  /* 4 կրկնություն, -50% → մեկ պտույտը 2 կրկնություն ա (տես Hero.jsx) */
+  animation: marquee 56s linear infinite;
+}
+
+.advantage {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--space-56);
+  padding-right: var(--space-56);
+  white-space: nowrap;
+}
+
+.advantage span {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-light-soft);
+}
+
+.advantage img {
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   SMALL DESKTOP
+========================= */
+
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) 430px;
+  }
+
+  .imageWrapper {
+    width: 430px;
+    height: 400px;
+  }
+
+  .title {
+    font-size: 46px;
+    line-height: 52px;
+    letter-spacing: -1.2px;
+  }
+}
+
+/* =========================
+   TABLET / MOBILE (Figma main_mobile)
+========================= */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-template-areas:
+      "title"
+      "image"
+      "description"
+      "actions";
+    /* 107px = վերնագրի վերևը էջի վերևից (fixed header-ը ներառված) */
+    padding-top: 107px;
+    padding-bottom: 76px;
+  }
+
+  .title {
+    max-width: 600px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 517px;
+    height: 320px;
+    margin-top: 31px;
+  }
+
+  .description {
+    max-width: 600px;
+    margin-top: var(--space-md);
+    padding-block: 10px;
+  }
+
+  .actions {
+    margin-top: var(--space-32);
+  }
+
+  .marquee {
+    background: var(--color-green-mobile);
+  }
+
+  .marqueeTrack {
+    animation-duration: 48s;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 37.61px;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 450px) {
+  .imageWrapper {
+    height: 233px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack {
+    animation: none;
+  }
+
+  .button,
+  .arrow {
+    transition: none;
+  }
+}

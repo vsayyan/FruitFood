@@ -1,5 +1,6 @@
-import { Noto_Sans_Armenian } from 'next/font/google'
 import { displayLang } from '@/lib/lang'
+import { fontVariables } from './fonts'
+import PartnerCta from '@/components/partner-cta/PartnerCta'
 import PartnerCtaWrapper from '@/components/partner-cta/PartnerCtaWrapper'
 import './globals.css'
 import { MenubarProvider } from '@/context/menubarContext'
@@ -7,12 +8,6 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { getLogo } from '@/components/header/action'
 import { getFooterLabel } from '@/components/footer/action'
-
-const notoSansArmenian = Noto_Sans_Armenian({
-  subsets: ['armenian', 'latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-main',
-})
 
 // Site-ի անունը և նկարագրությունը գալիս են db-ից՝ ըստ լեզվի։ Եթե API-ն
 // հասանելի չի, metadata-ն պարզապես մնում ա անունով, էջը չի ընկնում։
@@ -43,12 +38,14 @@ export default async function RootLayout({ children }) {
   const lang = await displayLang()
 
   return (
-    <html lang={lang} className={notoSansArmenian.variable}>
+    <html lang={lang} className={fontVariables}>
       <body className="layout">
         <MenubarProvider>
           <Header />
           <main className="main-content">{children}</main>
-          {/* <PartnerCtaWrapper /> */}
+          <PartnerCtaWrapper>
+            <PartnerCta />
+          </PartnerCtaWrapper>
           <Footer />
         </MenubarProvider>
       </body>

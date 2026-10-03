@@ -1,11 +1,5 @@
-/* Չափերը՝ Figma «product card» (desktop 1440 / mobile 375) frame-երից */
-
-.inner {
-  width: 100%;
-  max-width: calc(1200px + 2 * var(--space-sm));
-  margin: 0 auto;
-  padding: 0 var(--space-sm);
-}
+/* Չափերը՝ Figma «product card» (desktop 1440 / mobile 375) frame-երից.
+   Լայնությունը գալիս ա ընդհանուր .container-ից (1200px բովանդակություն) */
 
 /* Header-ը fixed ա (65px), ուստի վերևի 120px-ը ներառում ա header-ի տեղը */
 .breadcrumbSection {

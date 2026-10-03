@@ -5,13 +5,14 @@ import {
   getWeBelieve,
   getPhilosophyHeadings,
   getPhilosophyText,
-  getPhilosophyFacts,      // ← ավելացրու
+  getPhilosophyFacts,
   getFaqHeading,
   getFaq,
   getFaqSmall,
   getBrands,
   getAboutIntro,
   getAboutPageLabels,
+  getPageTitle,
 } from './actions'
 
 import ExportCooperation from './_components/ExportCooperation'
@@ -26,6 +27,11 @@ import styles from './page.module.css'
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
+export async function generateMetadata() {
+  const title = await getPageTitle(await displayLang())
+  return title ? { title } : {}
+}
+
 export default async function AboutUsPage() {
   const lang = await displayLang()
 
@@ -35,7 +41,7 @@ export default async function AboutUsPage() {
     weBelieve,
     philosophyHeadings,
     philosophyText,
-    philosophyFacts,         // ← ավելացրու
+    philosophyFacts,
     faqHeading,
     faq,
     faqSmall,
@@ -48,7 +54,7 @@ export default async function AboutUsPage() {
     getWeBelieve(lang),
     getPhilosophyHeadings(lang),
     getPhilosophyText(lang),
-    getPhilosophyFacts(lang),    // ← ավելացրու
+    getPhilosophyFacts(lang),
     getFaqHeading(lang),
     getFaq(lang),
     getFaqSmall(lang),
@@ -59,7 +65,11 @@ export default async function AboutUsPage() {
 
   return (
     <div className={`container ${styles.page}`}>
-      <Philosophy headings={philosophyHeadings} text={philosophyText} facts={philosophyFacts} />    {/* ← facts ավելացրու */}
+      <Philosophy
+        headings={philosophyHeadings}
+        text={philosophyText}
+        facts={philosophyFacts}
+      />
       <NaturalQuality data={aboutIntro} />
       <ExportCooperation data={exportCooperation[0]} />
       <OurFactory data={ourFactory[0]} />
