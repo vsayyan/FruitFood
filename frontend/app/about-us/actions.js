@@ -20,6 +20,36 @@ export async function getOurFactory(lang) {
   return res.data
 }
 
+export async function getAboutProduction(lang) {
+  const res = await axios.get('/about_production', {
+    params: {
+      lang: lang,
+    },
+  })
+
+  return res.data
+}
+
+export async function getAboutWhyTrustUs(lang) {
+  const res = await axios.get('/about_why_trust_us', {
+    params: {
+      lang: lang,
+    },
+  })
+
+  return res.data
+}
+
+export async function getAboutQualityNaturalness(lang) {
+  const res = await axios.get('/about_quality_naturalness', {
+    params: {
+      lang: lang,
+    },
+  })
+
+  return res.data
+}
+
 export async function getWeBelieve(lang) {
   const res = await axios.get('/we_believe', {
     params: {
