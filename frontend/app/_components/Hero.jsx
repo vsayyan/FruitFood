@@ -40,7 +40,8 @@ export default function Hero({ data }) {
               width={517}
               height={480}
               className={styles.heroImage}
-              priority
+              // էջի գլխավոր (LCP) նկարն ա. Next 16-ում priority-ն փոխարինվել ա preload-ով
+              preload
             />
           </div>
         )}

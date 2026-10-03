@@ -30,7 +30,6 @@ export default function Philosophy({ headings, text }) {
             fill
             sizes='(max-width: 900px) 100vw, 579px'
             className={styles.image}
-            priority
           />
 
           {images.length > 1 && (
