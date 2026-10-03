@@ -1,6 +1,14 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
-  padding-block: var(--space-lg);
+  gap: var(--space-56);
+  padding-block: var(--space-32);
 }
+ 
+@media (min-width: 768px) {
+  .page {
+    gap: var(--space-80);
+    padding-block: var(--space-56);
+  }
+}
+ 

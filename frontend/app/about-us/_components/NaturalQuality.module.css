@@ -1,13 +1,13 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+  gap: var(--space-56);
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-md);
+  gap: var(--space-lg);
 }
 
 @media (min-width: 768px) {
@@ -18,18 +18,18 @@
 }
 
 .title {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-h2);
   color: var(--color-green);
 }
 
 .intro {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-body);
   color: var(--color-text-muted);
 }
 
 .imageWrapper {
   width: 100%;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-2xl);
   overflow: hidden;
 }
 
@@ -43,7 +43,7 @@
 .columns {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-md);
+  gap: var(--space-32);
 }
 
 @media (min-width: 768px) {
@@ -53,6 +53,6 @@
 }
 
 .text {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-body);
   color: var(--color-text-muted);
 }

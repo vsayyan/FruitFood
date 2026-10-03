@@ -9,7 +9,7 @@ export default function NaturalQuality({ data }) {
       </div>
 
       <div className={styles.imageWrapper}>
-        <img className={styles.image} src={data.image} alt={data.title} />
+        <img className={styles.image} src={data.image} alt="" />
       </div>
 
       <div className={styles.columns}>
