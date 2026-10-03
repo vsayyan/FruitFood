@@ -3,14 +3,16 @@
   display: flex;
   align-items: stretch;
   gap: 42px;
-  /* 68px = fixed header, մինչև Hero-ն (Vahag) ավելանա էջի վերևում */
-  padding-top: calc(68px + var(--space-2xl));
+  padding-top: var(--space-2xl);
   padding-bottom: 118px;
 }
 
 .slider {
   position: relative;
-  flex: 0 0 579px;
+  /* 579px ըստ Figma-ի. 901–1280px լայնություններում slider-ն ու տեքստը
+     հավասար փոքրանում են (առաջ slider-ը չէր փոքրանում, ու 901px-ում
+     տեքստը էկրանից դուրս էր գալիս) */
+  flex: 0 1 579px;
   height: 510px;
   overflow: hidden;
   border-radius: var(--radius-2xl);
@@ -80,7 +82,7 @@
 }
 
 .content {
-  flex: 1 1 auto;
+  flex: 1 1 579px;
   padding-top: 60px;
 }
 
@@ -135,7 +137,7 @@
   .philosophy {
     flex-direction: column-reverse;
     gap: 42px;
-    padding-top: calc(65px + var(--space-xl));
+    padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
   }
 
@@ -145,6 +147,7 @@
   }
 
   .content {
+    flex: 1 1 auto;
     padding-top: 0;
   }
 

@@ -131,13 +131,13 @@
         {
           "id": 1,
           "image": "/images/footer/facebook.svg",
-          "url": "https://www.facebook.com/",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/",
           "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/footer/instagram.svg",
-          "url": "https://www.instagram.com/",
+          "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
       ]
@@ -156,13 +156,13 @@
         {
           "id": 1,
           "image": "/images/footer/facebook.svg",
-          "url": "https://www.facebook.com/",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/",
           "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/footer/instagram.svg",
-          "url": "https://www.instagram.com/",
+          "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
       ]
@@ -181,13 +181,13 @@
         {
           "id": 1,
           "image": "/images/footer/facebook.svg",
-          "url": "https://www.facebook.com/",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/",
           "label": "Facebook"
         },
         {
           "id": 2,
           "image": "/images/footer/instagram.svg",
-          "url": "https://www.instagram.com/",
+          "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
       ]
@@ -4650,6 +4650,68 @@
       "countries_title": "Our export geography includes:",
       "bottom_text": "We believe that natural, healthy, and high-quality Armenian products know no borders, and every day we expand our presence in international markets.",
       "countries_more": "and other countries"
+    }
+  ],
+  "homepage_hero": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Բնական որակ՝ ստեղծված Հայաստանում",
+      "marked": "ստեղծված",
+      "description": "Հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի և կոնսերվանտների։",
+      "catalog_btn": "Դիտել կատալոգը",
+      "url_catalog": "/catalog",
+      "history_btn": "Մեր պատմությունը",
+      "url_history": "/about-us",
+      "image": "/images/homepage/hero.png",
+      "image_alt": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
+      "advantages": [
+        "Արարատյան դաշտից",
+        "Առանց շաքարի",
+        "Առանց ներկանյութերի",
+        "60% մուգ շոկոլադ",
+        "Ընտանեկան բաղադրատոմս"
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Натуральное качество, созданное в Армении",
+      "marked": "созданное",
+      "description": "Отборные армянские фрукты, без добавления сахара, искусственных красителей и консервантов.",
+      "catalog_btn": "Просмотреть каталог",
+      "url_catalog": "/catalog",
+      "history_btn": "Наша история",
+      "url_history": "/about-us",
+      "image": "/images/homepage/hero.png",
+      "image_alt": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
+      "advantages": [
+        "Из Араратской долины",
+        "Без сахара",
+        "Без красителей",
+        "60% темного шоколада",
+        "Семейный рецепт"
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Natural quality, created in Armenia",
+      "marked": "created",
+      "description": "Selected Armenian fruits — without added sugar, artificial colors, and preservatives.",
+      "catalog_btn": "View the catalog",
+      "url_catalog": "/catalog",
+      "history_btn": "Our history",
+      "url_history": "/about-us",
+      "image": "/images/homepage/hero.png",
+      "image_alt": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
+      "advantages": [
+        "From the Ararat Valley",
+        "Sugar-free",
+        "Without colorants",
+        "60% dark chocolate",
+        "Family recipe"
+      ]
     }
   ]
 }

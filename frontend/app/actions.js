@@ -1,5 +1,15 @@
 import axios from '@/lib/axios'
 
+// Եթե ինչ-որ մեկի db.json-ում homepage_hero դեռ չկա, էջը չի ընկնում՝ Hero-ն պարզապես չի երևում
+export async function getHero(lang) {
+  try {
+    const res = await axios.get('homepage_hero', { params: { lang } })
+    return res.data[0] ?? null
+  } catch {
+    return null
+  }
+}
+
 export async function getFaqHeading(lang) {
   const res = await axios.get('/faq_heading', { params: { lang } })
   return res.data
