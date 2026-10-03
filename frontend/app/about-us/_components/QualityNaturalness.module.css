@@ -1,0 +1,126 @@
+.section {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 60px 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Figma: two equal cards, 24px gap */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+  align-items: stretch;
+}
+
+.leftCard,
+.rightCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  min-height: 380px;
+  padding: var(--space-56) 48px;
+  border-radius: var(--radius-2xl);
+}
+
+/* Figma: white card with soft shadow, no border */
+.leftCard {
+  background-color: var(--color-white);
+  box-shadow: 0 4px 20px rgba(31, 31, 31, 0.08);
+}
+
+.rightCard {
+  background-color: var(--color-green-dark);
+}
+
+.eyebrowLeft,
+.eyebrowRight {
+  font-size: var(--font-size-xs);
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.eyebrowLeft {
+  color: var(--color-green-accent);
+}
+
+.eyebrowRight {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Figma: 40px / 44px, left title is green (#00681c), right is white */
+.titleLeft,
+.titleRight {
+  margin: 0;
+  font-size: var(--font-size-2xl);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+.titleLeft {
+  color: var(--color-green);
+}
+
+.titleRight {
+  color: var(--color-white);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 14px;
+}
+
+.paragraphLeft,
+.paragraphRight {
+  margin: 0;
+  font-size: var(--font-size-body);
+  line-height: 1.7;
+}
+
+.paragraphLeft {
+  color: var(--color-text-muted);
+}
+
+.paragraphRight {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Figma mobile: cards stacked, 24px gap, 42px / 24px padding,
+   titles 30px (left) and 32px (right). No top padding (slider above provides it). */
+@media (max-width: 900px) {
+  .section {
+    padding: 0 0 60px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leftCard,
+  .rightCard {
+    padding: 42px var(--space-md);
+  }
+
+  .titleLeft {
+    font-size: var(--font-size-30);
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
+
+  .titleRight {
+    font-size: var(--font-size-title);
+    line-height: 44px;
+    letter-spacing: -0.019em;
+  }
+}

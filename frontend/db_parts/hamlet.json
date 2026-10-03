@@ -1,0 +1,281 @@
+{
+  "about_production": [
+    {
+      "id": 1,
+      "lang": "am",
+      "subtitle": "ԱՐՏԱԴՐՈՒԹՅՈՒՆ",
+      "title": "Արարատյան դաշտավայրում` գարնանից մինչև ուշ աշուն",
+      "paragraphs": [
+        "Մեր արտադրությունը գտնվում է Հայաստանի Արարատյան դաշտավայրում` տարածաշրջանում, որը հայտնի է իր արևահամ և բարձրորակ մրգերով:",
+        "Ամեն տարի վաղ գարնանից մինչև ուշ աշուն մենք մթերում ենք 10-12 տեսակի հատընտիր հայկական մրգեր, որոնցից ժամանակակից տեխնոլոգիաների և հայկական ավանդական փորձի համադրությամբ յուրաքանչյուր տարի ապրանքացանկը ավելանում է 10-15 նոր ապրանքատեսակներով:",
+        "Արտադրությունն իրականացվում է երկու հիմնական ուղղությամբ."
+      ],
+      "directions": [
+        {
+          "number": "01",
+          "text": "Բնական չորացված մրգեր, մրգային պաստեղներ և մրգային բատոններ:"
+        },
+        {
+          "number": "02",
+          "text": "Շոկոլադապատ և ջնարակապատ մրգային արտադրանք՝ համակցված ընտրված ընդեղենի հետ:"
+        }
+      ],
+      "image": "/images/about-us/factory-1.jpg"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "subtitle": "ПРОИЗВОДСТВО",
+      "title": "В Араратской долине: с весны до поздней осени",
+      "paragraphs": [
+        "Наше производство находится в Араратской долине Армении — регионе, известном своими солнечными и высококачественными фруктами.",
+        "Каждый год с ранней весны до поздней осени мы заготавливаем 10-12 видов отборных армянских фруктов, из которых благодаря сочетанию современных технологий и традиционного армянского опыта ассортимент ежегодно пополняется 10-15 новыми видами продукции.",
+        "Производство осуществляется по двум основным направлениям:"
+      ],
+      "directions": [
+        {
+          "number": "01",
+          "text": "Натуральные сухофрукты, фруктовая пастила и фруктовые батончики."
+        },
+        {
+          "number": "02",
+          "text": "Фруктовая продукция в шоколаде и глазури в сочетании с отборными орехами."
+        }
+      ],
+      "image": "/images/about-us/factory-1.jpg"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "subtitle": "PRODUCTION",
+      "title": "In the Ararat Valley: from spring to late autumn",
+      "paragraphs": [
+        "Our production is located in the Ararat valley of Armenia, a region known for its sun-kissed and high-quality fruits.",
+        "Every year, from early spring to late autumn, we procure 10-12 types of selected Armenian fruits, from which, thanks to a combination of modern technologies and traditional Armenian experience, our product range is expanded with 10-15 new products annually.",
+        "Production is carried out in two main directions:"
+      ],
+      "directions": [
+        {
+          "number": "01",
+          "text": "Natural dried fruits, fruit leathers, and fruit bars."
+        },
+        {
+          "number": "02",
+          "text": "Chocolate and glaze-covered fruit products combined with selected nuts."
+        }
+      ],
+      "image": "/images/about-us/factory-1.jpg"
+    }
+  ],
+  "about_why_trust_us": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Ինչո՞ւ են մեզ վստահում",
+      "stats": [
+        {
+          "value": "18+",
+          "label": "տարվա փորձ բնական մրգային արտադրանքի ոլորտում:",
+          "isHighlighted": false
+        },
+        {
+          "value": "5500 քմ",
+          "label": "ժամանակակից արտադրական համալիր:",
+          "isHighlighted": true
+        },
+        {
+          "value": "150–250 տ",
+          "label": "տարեկան արտադրական հզորություն:",
+          "isHighlighted": false
+        },
+        {
+          "value": "",
+          "label": "Արհեստավարժ աշխատակիցներ, որոնք ամեն օր ապահովում են արտադրության անընդհատ աշխատանքը:",
+          "isHighlighted": false
+        },
+        {
+          "value": "150+",
+          "label": "տեսակի արտադրանք տարբեր համերով և փաթեթավորումներով:",
+          "isHighlighted": true
+        },
+        {
+          "value": "6+",
+          "label": "արտահանման երկիր ամբողջ աշխարհում:",
+          "isHighlighted": false
+        },
+        {
+          "value": "25+",
+          "label": "միջազգային և տեղական գործընկեր:",
+          "isHighlighted": false
+        },
+        {
+          "value": "ISO 22000, HACCP",
+          "label": "որակի և սննդի անվտանգության միջազգային հավաստագրեր:",
+          "isHighlighted": true
+        },
+        {
+          "value": "",
+          "label": "Ժամանակակից արտադրական տեխնոլոգիաներ և որակի վերահսկողության բազմաստիճան համակարգ:",
+          "isHighlighted": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Почему нам доверяют",
+      "stats": [
+        {
+          "value": "18+",
+          "label": "лет опыта в производстве натуральной фруктовой продукции.",
+          "isHighlighted": false
+        },
+        {
+          "value": "5500 кв.м",
+          "label": "современный производственный комплекс.",
+          "isHighlighted": true
+        },
+        {
+          "value": "150–250 т",
+          "label": "годовая производственная мощность.",
+          "isHighlighted": false
+        },
+        {
+          "value": "",
+          "label": "Профессиональные сотрудники, ежедневно обеспечивающие бесперебойную работу производства.",
+          "isHighlighted": false
+        },
+        {
+          "value": "150+",
+          "label": "видов продукции с различными вкусами и упаковкой.",
+          "isHighlighted": true
+        },
+        {
+          "value": "6+",
+          "label": "стран-импортеров по всему миру.",
+          "isHighlighted": false
+        },
+        {
+          "value": "25+",
+          "label": "международных и местных партнеров.",
+          "isHighlighted": false
+        },
+        {
+          "value": "ISO 22000, HACCP",
+          "label": "международные сертификаты качества и безопасности пищевых продуктов.",
+          "isHighlighted": true
+        },
+        {
+          "value": "",
+          "label": "Современные производственные технологии и многоступенчатая система контроля качества.",
+          "isHighlighted": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Why trust us",
+      "stats": [
+        {
+          "value": "18+",
+          "label": "years of experience in natural fruit production.",
+          "isHighlighted": false
+        },
+        {
+          "value": "5500 sq.m",
+          "label": "modern production complex.",
+          "isHighlighted": true
+        },
+        {
+          "value": "150–250 t",
+          "label": "annual production capacity.",
+          "isHighlighted": false
+        },
+        {
+          "value": "",
+          "label": "Professional staff ensuring continuous production.",
+          "isHighlighted": false
+        },
+        {
+          "value": "150+",
+          "label": "types of products with different flavors and packaging.",
+          "isHighlighted": true
+        },
+        {
+          "value": "6+",
+          "label": "export countries worldwide.",
+          "isHighlighted": false
+        },
+        {
+          "value": "25+",
+          "label": "international and local partners.",
+          "isHighlighted": false
+        },
+        {
+          "value": "ISO 22000, HACCP",
+          "label": "international certificates for quality and food safety.",
+          "isHighlighted": true
+        },
+        {
+          "value": "",
+          "label": "Modern production technologies and multi-stage quality control system.",
+          "isHighlighted": false
+        }
+      ]
+    }
+  ],
+  "about_quality_naturalness": [
+    {
+      "id": 1,
+      "lang": "am",
+      "card1": {
+        "eyebrow": "ՈՐԱԿ ԵՎ ԲՆԱԿԱՆՈՒԹՅՈՒՆ",
+        "title": "Մեր բոլոր արտադրանքները 100% բնական են",
+        "paragraphs": [
+          "Մենք չենք օգտագործում հավելյալ շաքար, արհեստական ներկանյութեր կամ կոնսերվանտներ: Արտադրանքը հասանելի է տարբեր փաթեթավորումներով, իսկ պահպանման ժամկետը կազմում է 12-14 ամիս՝ կախված արտադրանքի տեսակից:",
+          "Տարիների ընթացքում Fruit Food-ի արտադրանքը բազմիցս արժանացել է մրցանակների, պատվոգրերի և սպառողների բարձր գնահատականին՝ հաստատելով մեր արտադրանքի որակն ու վստահելիությունը:"
+        ]
+      },
+      "card2": {
+        "eyebrow": "ՆՈՐԱՐԱՐՈՒԹՅՈՒՆ",
+        "title": "Նոր տեխնոլոգիաներ, նոր լուծումներ",
+        "paragraph": "Մենք մշտապես ներդրումներ ենք կատարում նոր տեխնոլոգիաների, արտադրանքի զարգացման և միջազգային շուկաների պահանջներին համապատասխան լուծումների ստեղծման ուղղությամբ:"
+      }
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "card1": {
+        "eyebrow": "КАЧЕСТВО И НАТУРАЛЬНОСТЬ",
+        "title": "Вся наша продукция 100% натуральная",
+        "paragraphs": [
+          "Мы не используем добавленный сахар, искусственные красители и консерванты. Продукция доступна в различных упаковках, а срок годности составляет 12-14 месяцев в зависимости от вида продукции.",
+          "За годы работы продукция Fruit Food неоднократно удостаивалась наград, дипломов и высокой оценки потребителей, подтверждая качество и надежность нашей продукции."
+        ]
+      },
+      "card2": {
+        "eyebrow": "ИННОВАЦИИ",
+        "title": "Новые технологии, новые решения",
+        "paragraph": "Мы постоянно инвестируем в новые технологии, развитие продукции и создание решений, соответствующих требованиям международных рынков."
+      }
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "card1": {
+        "eyebrow": "QUALITY AND NATURALNESS",
+        "title": "All our products are 100% natural",
+        "paragraphs": [
+          "We do not use added sugar, artificial colors, or preservatives. The product is available in various packaging, and the shelf life is 12-14 months depending on the type of product.",
+          "Over the years, Fruit Food products have repeatedly received awards, diplomas, and high consumer appreciation, confirming the quality and reliability of our production."
+        ]
+      },
+      "card2": {
+        "eyebrow": "INNOVATION",
+        "title": "New technologies, new solutions",
+        "paragraph": "We constantly invest in new technologies, product development, and creating solutions that meet the requirements of international markets."
+      }
+    }
+  ]
+}

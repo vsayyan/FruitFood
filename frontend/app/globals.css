@@ -156,9 +156,10 @@ textarea:focus-visible {
   Օրինակ՝ <main className={`${styles.main} container`}>...</main>
 */
 .container {
-  max-width: var(--container-width);
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding: 0 20px;
 }
 
 /* Screen-reader-only text — ally label-երի համար, որ տեսանելի չեն,
