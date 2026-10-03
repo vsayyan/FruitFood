@@ -3,8 +3,7 @@
   display: flex;
   align-items: stretch;
   gap: 42px;
-  /* 68px = fixed header, մինչև Hero-ն (Vahag) ավելանա էջի վերևում */
-  padding-top: calc(68px + var(--space-2xl));
+  padding-top: var(--space-2xl);
   padding-bottom: 118px;
 }
 
@@ -135,7 +134,7 @@
   .philosophy {
     flex-direction: column-reverse;
     gap: 42px;
-    padding-top: calc(65px + var(--space-xl));
+    padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
   }
 

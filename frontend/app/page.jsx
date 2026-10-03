@@ -24,7 +24,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <Hero data={hero} />
+      {hero && <Hero data={hero} />}
       <Philosophy headings={philosophyHeadings} text={philosophyText} />
       <Faq small={faqSmall} heading={faqHeading} data={faq} />
     </>

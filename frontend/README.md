@@ -193,7 +193,7 @@ export default async function AboutPage() {
 ### 5.2 Քայլերով
 
 1. `cp db_orinak_example db.json` (եթե դեռ չես արել)
-2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
+2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
    Նոր տողեր ավելացնելիս `id`-ները **չպետք ա կրկնվեն** արդեն եղածների հետ։
 3. Նոր collection-ը / նոր տողերը ավելացրու **քո `db.json`**-ում ու աշխատիր դրանով (`npm run dev` ավտոմատ կտեսնի փոփոխությունը)
 4. Երբ պատրաստ ես՝ **միայն քո նոր/փոխված collection-ները** copy արա `db_parts/<անուն>.json`-ի մեջ, օրինակ `db_parts/saten.json`.
@@ -391,8 +391,8 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 ## 9. Ինչ դեռ չկա
 
 - About Us · Section 1–6 (Milena, Hamlet). մինչ այդ `about-us/page.module.css`-ում ժամանակավոր padding կա header-ի համար
-- Home · Hero (Vahag) և «Մեր տեսականին» (Ashot). մինչ այդ Philosophy-ն ունի header-ի padding-ը
-- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`)
+- Home · «Մեր տեսականին» (Ashot)
+- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), Hero-ի նկարը (`homepage/hero.png`)
 - Ապրանքների իրական համերն ու նկարները (տես §9.1)
 - Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language

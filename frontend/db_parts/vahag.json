@@ -226,8 +226,9 @@
       "catalog_btn": "Դիտել կատալոգը",
       "url_catalog": "/catalog",
       "history_btn": "Մեր պատմությունը",
-      "url_history": "/geography",
+      "url_history": "/about-us",
       "image": "/images/homepage/hero.png",
+      "image_alt": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
       "advantages": ["Արարատյան դաշտից", "Առանց շաքարի", "Առանց ներկանյութերի", "60% մուգ շոկոլադ", "Ընտանեկան բաղադրատոմս"]
     },
      {
@@ -239,12 +240,13 @@
       "catalog_btn": "Просмотреть каталог",
       "url_catalog": "/catalog",
       "history_btn": "Наша история",
-      "url_history": "/geography",
+      "url_history": "/about-us",
       "image": "/images/homepage/hero.png",
+      "image_alt": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
       "advantages": ["Из Араратской долины", "Без сахара", "Без красителей", "60% темного шоколада", "Семейный рецепт"]
     },
      {
-      "id": 1,
+      "id": 3,
       "lang":"en",
       "title": "Natural quality, created in Armenia",
       "marked": "created",
@@ -252,8 +254,9 @@
       "catalog_btn": "View the catalog",
       "url_catalog": "/catalog",
       "history_btn": "Our history",
-      "url_history": "/geography",
+      "url_history": "/about-us",
       "image": "/images/homepage/hero.png",
+      "image_alt": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
       "advantages": ["From the Ararat Valley", "Sugar-free", "Without colorants", "60% dark chocolate", "Family recipe"]
     }
   ]
