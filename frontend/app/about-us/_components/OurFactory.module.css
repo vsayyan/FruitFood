@@ -254,3 +254,12 @@
     padding-top: var(--space-sm);
   }
 }
+
+/* Շատ նեղ էկրաններ (320px). ռուսերեն «Производственный» բառը 32px-ով
+   չէր տեղավորվում, ու էջը հորիզոնական scroll էր ստանում։ Slider-ին չի դիպչում */
+@media (max-width: 360px) {
+  .title {
+    font-size: var(--font-size-xl);
+    overflow-wrap: break-word;
+  }
+}

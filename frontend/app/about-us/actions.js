@@ -20,6 +20,42 @@ export async function getOurFactory(lang) {
   return res.data
 }
 
+
+export async function getAboutProduction(lang) {
+  try {
+    const res = await axios.get('about_production', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export async function getAboutWhyTrustUs(lang) {
+  try {
+    const res = await axios.get('about_why_trust_us', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+export async function getAboutShowcase(lang) {
+  try {
+    const res = await axios.get('about_showcase', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export async function getAboutQualityNaturalness(lang) {
+  try {
+    const res = await axios.get('about_quality_naturalness', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
 export async function getWeBelieve(lang) {
   const res = await axios.get('/we_believe', {
     params: {

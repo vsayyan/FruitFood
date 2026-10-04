@@ -1,0 +1,137 @@
+.section {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 60px 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+  align-items: stretch;
+}
+
+.leftCard,
+.rightCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  min-height: 380px;
+  padding: var(--space-56) 48px;
+  border-radius: var(--radius-2xl);
+}
+
+.leftCard {
+  background-color: var(--color-white);
+  box-shadow: 0 4px 40px rgba(31, 31, 31, 0.08);
+}
+
+.rightCard {
+  background-color: var(--color-green-dark);
+}
+
+.eyebrowLeft,
+.eyebrowRight {
+  font-size: var(--font-size-xs);
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.eyebrowLeft {
+  color: var(--color-green-accent);
+}
+
+.eyebrowRight {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.titleLeft,
+.titleRight {
+  margin: 0;
+  font-size: var(--font-size-2xl);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+.titleLeft {
+  color: var(--color-green);
+}
+
+.titleRight {
+  color: var(--color-white);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 14px;
+}
+
+.paragraphLeft,
+.paragraphRight {
+  margin: 0;
+  font-size: var(--font-size-body);
+  line-height: 1.7;
+}
+
+.paragraphLeft {
+  color: var(--color-text-muted);
+}
+
+.paragraphRight {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 0 0 60px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leftCard,
+  .rightCard {
+    padding: 42px var(--space-md);
+  }
+
+  .titleLeft {
+    font-size: var(--font-size-30);
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
+
+  .titleRight {
+    font-size: var(--font-size-title);
+    line-height: 44px;
+    letter-spacing: -0.019em;
+  }
+}
+
+/* Շատ նեղ էկրաններ (320px). «արտադրանքները» երկար բառը 30px-ով
+   քարտի մեջ չէր տեղավորվում, ու էջը հորիզոնական scroll էր ստանում */
+@media (max-width: 360px) {
+  .leftCard,
+  .rightCard {
+    padding: 42px 20px;
+  }
+
+  .titleLeft,
+  .titleRight {
+    font-size: var(--font-size-h3);
+    line-height: 32px;
+    overflow-wrap: break-word;
+  }
+}
