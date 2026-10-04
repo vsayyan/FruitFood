@@ -2,15 +2,21 @@ import { displayLang } from '@/lib/lang'
 import axios from '@/lib/axios'
 import { getNavbar } from '../header/action'
 
+const DEFAULT_FOOTER = { title: 'Fruit Food', image: '/images/footer/logo.svg', social_links: [] }
+
 export async function getFooterLabel(lang) {
-    const res = await axios.get(`footer_labels?lang=${lang}`)
-    return res.data[0]
+  try {
+    const res = await axios.get('footer_labels', { params: { lang } })
+    const label = res.data[0]
+    return label ? { ...DEFAULT_FOOTER, ...label } : DEFAULT_FOOTER
+  } catch {
+    return DEFAULT_FOOTER
+  }
 }
 
 export async function getFooterData() {
-    const lang = await displayLang()
-    const links = await getNavbar(lang)
-    const footerLabel = await getFooterLabel(lang)
+  const lang = await displayLang()
+  const [links, footerLabel] = await Promise.all([getNavbar(lang), getFooterLabel(lang)])
 
-    return {data: footerLabel, links}
+  return { data: footerLabel, links }
 }

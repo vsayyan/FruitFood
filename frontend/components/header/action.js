@@ -1,24 +1,42 @@
 import { displayLang } from '@/lib/lang'
 import axios from '@/lib/axios'
 
+const DEFAULT_LOGO = { title: 'Fruit Food', image: '/images/header/logo.svg' }
+
 export async function getLogo() {
-  const res = await axios.get('logos')
-  return res.data
+  try {
+    const res = await axios.get('logos')
+    return res.data?.image ? res.data : DEFAULT_LOGO
+  } catch {
+    return DEFAULT_LOGO
+  }
 }
 
 export async function getNavbar(lang) {
-  const res = await axios.get(`navbars?lang=${lang}`)
-  return res.data
+  try {
+    const res = await axios.get('navbars', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
 export async function getLangs() {
-  const res = await axios.get('languages')
-  return res.data
+  try {
+    const res = await axios.get('languages')
+    return res.data
+  } catch {
+    return []
+  }
 }
 
-export async function getCategories(lang)  {
-  const res = await axios.get(`categories?lang=${lang}`)
-  return res.data
+export async function getCategories(lang) {
+  try {
+    const res = await axios.get('categories', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
 export async function getHeaderLabels(lang) {
@@ -31,13 +49,14 @@ export async function getHeaderLabels(lang) {
 }
 
 export async function getHeaderData() {
-    const lang = await displayLang()
-    const logo = await getLogo()
-    const navbar = await getNavbar(lang)
-    const langs = await getLangs()
-    const categories = await getCategories(lang)
-    const labels = await getHeaderLabels(lang)
+  const lang = await displayLang()
+  const [logo, navbar, langs, categories, labels] = await Promise.all([
+    getLogo(),
+    getNavbar(lang),
+    getLangs(),
+    getCategories(lang),
+    getHeaderLabels(lang),
+  ])
 
-    return {logo, navbar, langs, lang, categories, labels}
+  return { logo, navbar, langs, lang, categories, labels }
 }
-
