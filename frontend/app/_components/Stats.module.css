@@ -24,6 +24,11 @@
   letter-spacing: -1.86px;
 }
 
+.number {
+  display: inline-block;
+  text-align: right;
+}
+
 .suffix {
   margin-top: 9px;
   margin-left: 1px;
