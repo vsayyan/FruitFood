@@ -51,3 +51,11 @@
     object-position: 41% center;
   }
 }
+
+/* Շատ նեղ էկրաններ (320px). «աշխարհագրությունը» բառը 30px-ով չէր տեղավորվում */
+@media (max-width: 360px) {
+  .title {
+    font-size: var(--font-size-h3);
+    overflow-wrap: break-word;
+  }
+}

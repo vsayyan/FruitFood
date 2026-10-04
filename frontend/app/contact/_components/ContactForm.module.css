@@ -114,3 +114,11 @@
     padding: 20px;
   }
 }
+
+/* Շատ նեղ էկրաններ (320px). «հաղորդագրություն» բառը form-ի մեջ չէր տեղավորվում */
+@media (max-width: 360px) {
+  .form .title {
+    font-size: var(--font-size-h3);
+    overflow-wrap: break-word;
+  }
+}
