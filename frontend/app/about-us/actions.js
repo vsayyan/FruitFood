@@ -2,83 +2,94 @@ import axios from '@/lib/axios'
 
 export async function getExportCooperation(lang) {
   const res = await axios.get('/export_cooperation', {
-    params: { lang },
+    params: {
+      lang: lang,
+    },
   })
+
   return res.data
 }
 
 export async function getOurFactory(lang) {
   const res = await axios.get('/our_factory', {
-    params: { lang },
+    params: {
+      lang: lang,
+    },
   })
+
   return res.data
+}
+
+
+export async function getAboutProduction(lang) {
+  try {
+    const res = await axios.get('about_production', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export async function getAboutWhyTrustUs(lang) {
+  try {
+    const res = await axios.get('about_why_trust_us', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+export async function getAboutShowcase(lang) {
+  try {
+    const res = await axios.get('about_showcase', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export async function getAboutQualityNaturalness(lang) {
+  try {
+    const res = await axios.get('about_quality_naturalness', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
 export async function getWeBelieve(lang) {
   const res = await axios.get('/we_believe', {
-    params: { lang },
+    params: {
+      lang: lang,
+    },
   })
+
   return res.data
 }
 
-export async function getPhilosophyHeadings(lang) {
-  const res = await axios.get(`philosophy_headings?lang=${lang}`)
-  return res.data
-}
-
-export async function getPhilosophyText(lang) {
-  const res = await axios.get(`philosophy_text?lang=${lang}`)
-  return res.data
-}
-
-export async function getPhilosophyFacts(lang) {
-  const res = await axios.get(`philosophy_facts?lang=${lang}`)
-  return res.data
-}
-
-export async function getFaqHeading(lang) {
-  const res = await axios.get(`faq_heading?lang=${lang}`)
-  return res.data
-}
-
-export async function getFaq(lang) {
-  const res = await axios.get(`faq?lang=${lang}`)
-  return res.data
-}
-
-export async function getFaqSmall(lang) {
-  const res = await axios.get(`faq_small?lang=${lang}`)
-  return res.data
-}
-
-export async function getBrands(lang) {
-  const res = await axios.get('/brands', {
-    params: { lang },
-  })
-  return res.data
-}
-
-export async function getAboutIntro(lang) {
-  const res = await axios.get('/about_intro', {
-    params: { lang },
-  })
-  return res.data[0]
-}
-
-export async function getAboutPageLabels(lang) {
-  const res = await axios.get('/about_page_labels', {
-    params: { lang },
-  })
-  return res.data[0]
-}
+// Էջի վերնագիրը (title)՝ navbar-ի նույն տեքստից
 export async function getPageTitle(lang) {
   try {
-    const res = await axios.get('/navbars', {
-      params: { lang, url: '/about-us' },
-    })
+    const res = await axios.get('/navbars', { params: { lang, url: '/about-us' } })
     return res.data[0]?.title ?? null
   } catch {
     return null
   }
-  
 }
+
+// ── Section 1–3 (Milena) ──
+// Եթե ինչ-որ մեկի db.json-ում այս collection-ները դեռ չկան, էջը չի ընկնում՝
+// բաժինը պարզապես չի երևում (component-ները data չլինելու դեպքում null են վերադարձնում)
+async function getCollection(name, lang) {
+  try {
+    const res = await axios.get(name, { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export const getAboutIntro = (lang) => getCollection('about_intro', lang)
+export const getAboutPhilosophy = (lang) => getCollection('about_philosophy', lang)
+export const getAboutPhilosophyFacts = (lang) => getCollection('about_philosophy_facts', lang)
+export const getBrands = (lang) => getCollection('brands', lang)
+export const getAboutPageLabels = (lang) => getCollection('about_page_labels', lang)
