@@ -3,8 +3,6 @@ import { displayLang } from '@/lib/lang'
 import { getPartnerCta } from './action'
 import styles from './PartnerCta.module.css'
 
-// Server Component. տվյալը գալիս ա server-ում, ուրեմն CTA-ն էջի հետ միասին
-// ա երևում (ոչ թե բեռնվելուց հետո)։ /contact-ում թաքցնում ա PartnerCtaWrapper-ը։
 export default async function PartnerCta() {
   const lang = await displayLang()
   const content = await getPartnerCta(lang)
@@ -22,7 +20,6 @@ export default async function PartnerCta() {
 
         <Link href='/contact' className={styles.button}>
           {content.button_text}
-          {/* inline SVG, որ hover-ին գույնը փոխվի (currentColor) */}
           <svg
             className={styles.arrow}
             width='18'

@@ -2,7 +2,6 @@
 
 import { createContext, useContext, useState } from 'react'
 
-
 const MenubarContext = createContext(undefined, undefined)
 
 export const MenubarProvider = ({ children }) => {

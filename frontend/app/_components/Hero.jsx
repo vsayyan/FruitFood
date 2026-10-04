@@ -3,9 +3,6 @@ import Link from 'next/link'
 import Slider from './Slider'
 import styles from './Hero.module.css'
 
-// Մեկ կրկնության լայնությունը (~1500px) մեծ էկրաններից փոքր ա, դրա համար
-// ցուցակը 4 անգամ ենք կրկնում. անիմացիան -50%-ով ա, այսինքն 2 կրկնություն
-// միշտ էկրանը ամբողջությամբ ծածկում ա (մինչև ~3000px լայնություն)
 const MARQUEE_COPIES = 4
 
 export default function Hero({ data }) {
@@ -68,7 +65,6 @@ export default function Hero({ data }) {
               <div
                 className={styles.advantage}
                 key={`${item}-${index}`}
-                // screen reader-ը կարդում ա միայն առաջին կրկնությունը
                 aria-hidden={index >= items.length || undefined}
               >
                 <span>{item}</span>

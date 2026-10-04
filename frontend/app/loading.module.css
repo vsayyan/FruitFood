@@ -20,7 +20,6 @@
   }
 }
 
-/* Եթե user-ի system-ը reduced motion ա ուզում՝ դանդաղեցնում ենք */
 @media (prefers-reduced-motion: reduce) {
   .spinner {
     animation-duration: 2.4s;

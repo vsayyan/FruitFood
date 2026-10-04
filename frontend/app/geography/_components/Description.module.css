@@ -1,4 +1,3 @@
-/* Figma: 190:8402 (desktop), 190:8936 (mobile) */
 .description {
   padding: var(--space-80) var(--container-padding);
 }
@@ -14,7 +13,6 @@
   color: var(--color-text);
 }
 
-/* Figma-ում երկու պարբերության արանքում մեկ դատարկ տող ա */
 .text + .text {
   margin-top: 1lh;
 }

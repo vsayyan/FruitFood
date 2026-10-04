@@ -1,6 +1,5 @@
 import axios from '@/lib/axios'
 
-// Ապրանքը փնտրում ենք slug-ով (նույնն ա բոլոր լեզուներում), ոչ թե id-ով
 export async function getProduct(slug, lang) {
   const res = await axios.get('products', { params: { slug, lang } })
   return res.data[0] ?? null
@@ -11,7 +10,6 @@ export async function getProductCategory(slug, lang) {
   return res.data[0] ?? null
 }
 
-// tags-ը լեզվով ա, իսկ icon-ները (emoji) ընդհանուր են tag_icons-ում
 export async function getProductTags(codes, lang) {
   if (!codes?.length) return []
 

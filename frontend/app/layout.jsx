@@ -9,8 +9,6 @@ import Footer from '@/components/footer'
 import { getLogo } from '@/components/header/action'
 import { getFooterLabel } from '@/components/footer/action'
 
-// Site-ի անունը և նկարագրությունը գալիս են db-ից՝ ըստ լեզվի։ Եթե API-ն
-// հասանելի չի, metadata-ն պարզապես մնում ա անունով, էջը չի ընկնում։
 export async function generateMetadata() {
   const lang = await displayLang()
   let siteName = 'Fruit Food'
@@ -21,7 +19,6 @@ export async function generateMetadata() {
     siteName = logo?.title || siteName
     description = footer?.description
   } catch {
-    // API-ն հասանելի չի՝ թողնում ենք default-ը
   }
 
   return {
@@ -31,10 +28,6 @@ export async function generateMetadata() {
 }
 
 export default async function RootLayout({ children }) {
-  // displayLang()-ը միայն cookie ա կարդում՝ ոչ մի API request,
-  // ուրեմն layout-ը աշխատում ա նաև առանց json-server-ի։
-  // <html lang>-ը կարևոր ա. error.jsx-ը (Client Component) հենց այդտեղից
-  // ա լեզուն վերցնում։
   const lang = await displayLang()
 
   return (

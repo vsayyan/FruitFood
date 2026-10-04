@@ -1,8 +1,4 @@
-/* Figma: about 171:5173 / 171:5200 / 171:5215 (desktop), 181:6933 (mobile) */
-
-/* ── Breadcrumb + վերնագիր ── */
 .intro {
-  /* 148px = 68px fixed header + 80px (Figma-ում breadcrumb-ը բաժնի վերևից 80px ա) */
   padding: 148px 0 var(--space-80);
   background: var(--color-cream);
   border-bottom: 1px solid var(--color-border);
@@ -50,7 +46,6 @@
   color: var(--color-text);
 }
 
-/* ── Նկար / slider ── */
 .media {
   padding: var(--space-lg) 0;
 }
@@ -129,7 +124,6 @@
   transform: scale(1.2);
 }
 
-/* ── Երկու սյունակ տեքստ ── */
 .story {
   padding: var(--space-80) 0;
 }
@@ -147,9 +141,7 @@
   color: var(--color-text);
 }
 
-/* ── Mobile (Figma main_mobile 181:6933) ── */
 @media (max-width: 900px) {
-  /* 95px = header + 30px, ինչպես Figma-ում */
   .intro {
     padding: 95px 0 33px;
   }
@@ -183,7 +175,6 @@
   }
 }
 
-/* Շատ նեղ էկրաններ (320px). երկար բառերը չդուրս գան էկրանից */
 @media (max-width: 360px) {
   .title {
     font-size: 36px;

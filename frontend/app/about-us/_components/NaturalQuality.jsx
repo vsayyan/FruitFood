@@ -4,13 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import styles from './NaturalQuality.module.css'
 
-/*
-  About us · Section 1 (Figma about: 171:5173 + 171:5200 + 171:5215,
-  main_mobile: 181:6933)։ Breadcrumb + վերնագիր, նկար (slider), երկու սյունակ տեքստ։
-  Fixed header-ի տեղը այս բաժնի padding-ի մեջ ա (ինչպես Catalog-ի breadcrumb-ում)։
-*/
 export default function NaturalQuality({ data, labels, current }) {
-  // hook-երը պետք ա լինեն ամեն return-ից առաջ
   const [currentIndex, setCurrentIndex] = useState(0)
 
   if (!data) return null

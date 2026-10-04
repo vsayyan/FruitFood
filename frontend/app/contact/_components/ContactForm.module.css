@@ -9,13 +9,11 @@
   padding: var(--space-lg);
 }
 
-
 .fields {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
-
 
 .field {
   display: flex;
@@ -33,7 +31,6 @@
   border-radius: var(--radius-xs);
   padding: 0 var(--space-sm);
 }
-
 
 .field textarea {
   border: 1px solid var(--color-mint);
@@ -61,7 +58,6 @@
   transition: background-color 0.2s ease;
 }
 
-/* Figma ui-kit → hover (133:659). ավելի բաց կանաչ, սլաքը 7px աջ */
 .submit:hover:not(:disabled) {
   background: var(--color-green);
 }
@@ -101,7 +97,6 @@
   gap: var(--space-6);
 }
 
-
 .buttonContent .buttonText {
   font-family: var(--font-family);
   font-weight: 600;
@@ -115,7 +110,6 @@
   }
 }
 
-/* Շատ նեղ էկրաններ (320px). «հաղորդագրություն» բառը form-ի մեջ չէր տեղավորվում */
 @media (max-width: 360px) {
   .form .title {
     font-size: var(--font-size-h3);

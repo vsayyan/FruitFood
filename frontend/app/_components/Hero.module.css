@@ -1,21 +1,9 @@
-/* Figma: main → Section + Background+Border, main_mobile → Frame 33,
-   կոճակների վիճակները՝ ui-kit (default / hover) */
-
 .heroBlock {
   width: 100%;
   background: var(--color-white);
   overflow: hidden;
 }
 
-/* =========================
-   HERO
-========================= */
-
-/*
-  Ձախ սյունը (վերնագիր, նկարագրություն, կոճակներ) ուղղահայաց կենտրոնում ա
-  նկարի նկատմամբ. վերևի և ներքևի դատարկ տողերը (1fr) բաժանում են ազատ տեղը։
-  Mobile-ում նույն area-ները դասավորվում են մեկ սյունով, նկարը վերնագրից հետո։
-*/
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 517px;
@@ -27,7 +15,6 @@
     "actions     image"
     ".           image";
   column-gap: var(--space-32);
-  /* 142px = նկարի վերևը էջի վերևից (fixed header-ը ներառված), 107px = նկարից մինչև marquee */
   padding-top: 142px;
   padding-bottom: 107px;
 }
@@ -57,10 +44,6 @@
   line-height: 26.4px;
   color: #000;
 }
-
-/* =========================
-   BUTTONS (ui-kit)
-========================= */
 
 .actions {
   grid-area: actions;
@@ -125,10 +108,6 @@
   outline-offset: 3px;
 }
 
-/* =========================
-   IMAGE
-========================= */
-
 .imageWrapper {
   grid-area: image;
   width: 517px;
@@ -136,10 +115,6 @@
   overflow: hidden;
   border-radius: var(--radius-2xl);
 }
-
-/* =========================
-   ADVANTAGES MARQUEE
-========================= */
 
 .marquee {
   display: flex;
@@ -156,7 +131,6 @@
   display: flex;
   align-items: center;
   width: max-content;
-  /* 4 կրկնություն, -50% → մեկ պտույտը 2 կրկնություն ա (տես Hero.jsx) */
   animation: marquee 56s linear infinite;
 }
 
@@ -192,16 +166,11 @@
   }
 }
 
-/* =========================
-   SMALL DESKTOP
-========================= */
-
 @media (max-width: 1100px) {
   .hero {
     grid-template-columns: minmax(0, 1fr) 460px;
   }
 
-  /* սյունակի լայնությամբ, Figma-ի համամասնությամբ (517 × 480) */
   .imageWrapper {
     width: 100%;
     height: auto;
@@ -215,10 +184,6 @@
   }
 }
 
-/* =========================
-   TABLET / MOBILE (Figma main_mobile)
-========================= */
-
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: minmax(0, 1fr);
@@ -228,7 +193,6 @@
       "image"
       "description"
       "actions";
-    /* 107px = վերնագրի վերևը էջի վերևից (fixed header-ը ներառված) */
     padding-top: 107px;
     padding-bottom: 76px;
   }
@@ -262,10 +226,6 @@
   }
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
-
 @media (max-width: 600px) {
   .title {
     font-size: 37.61px;
@@ -288,10 +248,6 @@
     height: 233px;
   }
 }
-
-/* =========================
-   REDUCED MOTION
-========================= */
 
 @media (prefers-reduced-motion: reduce) {
   .marqueeTrack {

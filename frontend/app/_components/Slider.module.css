@@ -11,10 +11,6 @@
   object-fit: cover;
 }
 
-/* =========================
-    arrow
-============================*/
-
 .arrow {
   position: absolute;
   top: 50%;
@@ -53,9 +49,6 @@
   right: var(--space-sm);
 }
 
-/* =========================
-    dot
-============================*/
 .dots {
   position: absolute;
   left: 50%;
@@ -80,6 +73,4 @@
   background: var(--color-white);
   transform: scale(1.2);
 }
-
-
 

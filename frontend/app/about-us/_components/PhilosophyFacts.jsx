@@ -1,10 +1,5 @@
 import styles from './PhilosophyFacts.module.css'
 
-/*
-  About us · Section 2 «Մեր փիլիսոփայությունը» (Figma about 171:5216,
-  main_mobile 181:7256)։ Գլխավոր էջի Philosophy-ից (Saten) տարբեր բաժին ա,
-  ունի իր collection-ները՝ about_philosophy և about_philosophy_facts։
-*/
 export default function PhilosophyFacts({ data, facts = [] }) {
   if (!data) return null
 

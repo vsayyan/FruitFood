@@ -10,7 +10,6 @@
   padding: 0 var(--container-padding);
 }
 
-/* Figma desktop: 52px, colour #00681c (--color-green, not green-dark) */
 .title {
   max-width: 610px;
   margin: 0 0 var(--space-56);
@@ -43,7 +42,6 @@
   border-color: transparent;
 }
 
-/* Cards without a number: dashed outline, text centred vertically */
 .cardNote {
   justify-content: center;
   background-color: transparent;
@@ -73,8 +71,6 @@
   line-height: 1.55;
 }
 
-/* Figma mobile: 60px top, title 32px / 255px wide, one column, 16px gaps,
-   text 197px wide. No bottom padding: the slider below continues this section. */
 @media (max-width: 900px) {
   .section {
     padding: 60px 0 0;

@@ -44,7 +44,7 @@
 }
 
 .contacts {
-  gap: var(--space-sm); 
+  gap: var(--space-sm);
 }
 
 .contact_us {
@@ -64,7 +64,7 @@
 .social {
   display: flex;
   gap: var(--space-xs);
-  
+
   a:hover {
     opacity: .7;
   }
@@ -80,10 +80,6 @@
   line-height: 160%;
   color: #fbf7f1;
 }
-
-/* =================================
-   Media queries
-================================= */
 
 @media (max-width: 900px) {
 
@@ -115,9 +111,6 @@
   }
 }
 
-/* =================================
-   MOBILE
-================================= */
 @media (max-width: 600px) {
   .footer {
     padding: var(--space-sm);
@@ -129,7 +122,7 @@
 }
 
 @media (max-width: 380px) {
-  
+
   .row {
     margin-bottom: var(--space-md);
     gap: var(--space-lg);

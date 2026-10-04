@@ -20,7 +20,6 @@ export async function getOurFactory(lang) {
   return res.data
 }
 
-
 export async function getAboutProduction(lang) {
   try {
     const res = await axios.get('about_production', { params: { lang } })
@@ -66,7 +65,6 @@ export async function getWeBelieve(lang) {
   return res.data
 }
 
-// Էջի վերնագիրը (title)՝ navbar-ի նույն տեքստից
 export async function getPageTitle(lang) {
   try {
     const res = await axios.get('/navbars', { params: { lang, url: '/about-us' } })
@@ -76,9 +74,6 @@ export async function getPageTitle(lang) {
   }
 }
 
-// ── Section 1–3 (Milena) ──
-// Եթե ինչ-որ մեկի db.json-ում այս collection-ները դեռ չկան, էջը չի ընկնում՝
-// բաժինը պարզապես չի երևում (component-ները data չլինելու դեպքում null են վերադարձնում)
 async function getCollection(name, lang) {
   try {
     const res = await axios.get(name, { params: { lang } })

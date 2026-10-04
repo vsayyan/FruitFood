@@ -6,7 +6,6 @@ import styles from './ProductShowcaseSlider.module.css'
 const SWIPE_THRESHOLD = 50
 
 export default function ProductShowcaseSlider({ data }) {
-  // hooks must run before any early return
   const [currentIndex, setCurrentIndex] = useState(0)
   const [touchStartX, setTouchStartX] = useState(null)
 
