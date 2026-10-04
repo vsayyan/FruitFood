@@ -51,3 +51,12 @@
     padding-top: 28px;
   }
 }
+
+/* Շատ նեղ էկրաններ (320px). «համագործակցություն» երկար բառը 30px-ով
+   չէր տեղավորվում, ու էջը հորիզոնական scroll էր ստանում */
+@media (max-width: 360px) {
+  .title {
+    font-size: var(--font-size-xl);
+    overflow-wrap: break-word;
+  }
+}

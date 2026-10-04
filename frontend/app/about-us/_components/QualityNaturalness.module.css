@@ -119,3 +119,19 @@
     letter-spacing: -0.019em;
   }
 }
+
+/* Շատ նեղ էկրաններ (320px). «արտադրանքները» երկար բառը 30px-ով
+   քարտի մեջ չէր տեղավորվում, ու էջը հորիզոնական scroll էր ստանում */
+@media (max-width: 360px) {
+  .leftCard,
+  .rightCard {
+    padding: 42px 20px;
+  }
+
+  .titleLeft,
+  .titleRight {
+    font-size: var(--font-size-h3);
+    line-height: 32px;
+    overflow-wrap: break-word;
+  }
+}
