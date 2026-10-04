@@ -68,7 +68,7 @@ export default async function AboutUsPage() {
       <Philosophy
         headings={philosophyHeadings}
         text={philosophyText}
-        facts={philosophyFacts}
+        facts={philosophyFacts[0]} 
       />
       <NaturalQuality data={aboutIntro} />
       <ExportCooperation data={exportCooperation[0]} />
