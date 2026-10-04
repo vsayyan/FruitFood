@@ -26,7 +26,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: 652fr 468fr;
+  grid-template-columns: minmax(0, 652fr) minmax(0, 468fr);
   column-gap: var(--space-80);
   align-items: start;
   margin-top: var(--space-md);
@@ -66,5 +66,27 @@
   .title {
     font-size: var(--font-size-33);
     line-height: 46px;
+  }
+}
+
+/* 901–1279px. «Աշխարհագրություն» բառը 64px-ով սյունակի մեջ չէր տեղավորվում,
+   ու էջը կողքի վրա scroll էր ստանում։ 1280px-ից լայն էկրաններում Figma-ի 64px-ն ա */
+@media (min-width: 901px) and (max-width: 1279px) {
+  .title {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* Շատ նեղ էկրաններ (320px). «Աշխարհագրություն» բառը 33px-ով չէր տեղավորվում */
+@media (max-width: 360px) {
+  .title {
+    font-size: var(--font-size-xl);
+    overflow-wrap: break-word;
   }
 }
