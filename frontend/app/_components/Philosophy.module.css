@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   gap: 42px;
-  padding-top: var(--space-2xl);
+  padding-top: 112px;
   padding-bottom: 118px;
 }
 
@@ -133,7 +133,7 @@
   .philosophy {
     flex-direction: column-reverse;
     gap: 42px;
-    padding-top: var(--space-xl);
+    padding-top: 72px;
     padding-bottom: var(--space-xl);
   }
 
