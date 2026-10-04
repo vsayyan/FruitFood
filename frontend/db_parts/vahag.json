@@ -1,5 +1,5 @@
 {
- "logos": {
+  "logos": {
     "id": 1,
     "title": "Fruit Food",
     "image": "/images/header/logo.svg"
@@ -9,19 +9,19 @@
       "id": 1,
       "code": "am",
       "label": "Հայ",
-      "image" : "/images/header/am.svg"
+      "image": "/images/header/am.svg"
     },
     {
       "id": 2,
       "code": "ru",
       "label": "Рус",
-      "image" : "/images/header/ru.svg"
+      "image": "/images/header/ru.svg"
     },
     {
       "id": 3,
       "code": "en",
       "label": "Eng",
-      "image" : "/images/header/en.svg"
+      "image": "/images/header/en.svg"
     }
   ],
   "navbars": [
@@ -219,7 +219,7 @@
   "homepage_hero": [
     {
       "id": 1,
-      "lang":"am",
+      "lang": "am",
       "title": "Բնական որակ՝ ստեղծված Հայաստանում",
       "marked": "ստեղծված",
       "description": "Հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի և կոնսերվանտների։",
@@ -227,13 +227,36 @@
       "url_catalog": "/catalog",
       "history_btn": "Մեր պատմությունը",
       "url_history": "/about-us",
-      "image": "/images/homepage/hero.png",
-      "image_alt": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
-      "advantages": ["Արարատյան դաշտից", "Առանց շաքարի", "Առանց ներկանյութերի", "60% մուգ շոկոլադ", "Ընտանեկան բաղադրատոմս"]
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/homepage/hero-1.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/homepage/hero-1.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/homepage/hero-1.png"
+        }
+      ],
+      "slider_image_label": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
+      "slider_previous_label": "Նախորդ նկարը",
+      "slider_next_label": "Հաջորդ նկարը",
+      "slider_navigation_label": "Նկարների կառավարում",
+      "slider_dot_label": "Նկար",
+      "advantages": [
+        "Արարատյան դաշտից",
+        "Առանց շաքարի",
+        "Առանց ներկանյութերի",
+        "60% մուգ շոկոլադ",
+        "Ընտանեկան բաղադրատոմս"
+      ]
     },
-     {
-      "id": 2, 
-      "lang":"ru",
+    {
+      "id": 2,
+      "lang": "ru",
       "title": "Натуральное качество, созданное в Армении",
       "marked": "созданное",
       "description": "Отборные армянские фрукты, без добавления сахара, искусственных красителей и консервантов.",
@@ -241,13 +264,36 @@
       "url_catalog": "/catalog",
       "history_btn": "Наша история",
       "url_history": "/about-us",
-      "image": "/images/homepage/hero.png",
-      "image_alt": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
-      "advantages": ["Из Араратской долины", "Без сахара", "Без красителей", "60% темного шоколада", "Семейный рецепт"]
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/homepage/hero-1.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/homepage/hero-1.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/homepage/hero-1.png"
+        }
+      ],
+      "slider_image_label": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
+      "slider_previous_label": "Предыдущее фото",
+      "slider_next_label": "Следующее фото",
+      "slider_navigation_label": "Управление фото",
+      "slider_dot_label": "Фото",
+      "advantages": [
+        "Из Араратской долины",
+        "Без сахара",
+        "Без красителей",
+        "60% темного шоколада",
+        "Семейный рецепт"
+      ]
     },
-     {
+    {
       "id": 3,
-      "lang":"en",
+      "lang": "en",
       "title": "Natural quality, created in Armenia",
       "marked": "created",
       "description": "Selected Armenian fruits — without added sugar, artificial colors, and preservatives.",
@@ -255,9 +301,32 @@
       "url_catalog": "/catalog",
       "history_btn": "Our history",
       "url_history": "/about-us",
-      "image": "/images/homepage/hero.png",
-      "image_alt": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
-      "advantages": ["From the Ararat Valley", "Sugar-free", "Without colorants", "60% dark chocolate", "Family recipe"]
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/homepage/hero-1.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/homepage/hero-1.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/homepage/hero-1.png"
+        }
+      ],
+      "slider_image_label": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
+      "slider_previous_label": "Previous image",
+      "slider_next_label": "Next image",
+      "slider_navigation_label": "Image controls",
+      "slider_dot_label": "Photo",
+      "advantages": [
+        "From the Ararat Valley",
+        "Sugar-free",
+        "Without colorants",
+        "60% dark chocolate",
+        "Family recipe"
+      ]
     }
   ]
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Slider from './Slider'
 import styles from './Hero.module.css'
 
 // Մեկ կրկնության լայնությունը (~1500px) մեծ էկրաններից փոքր ա, դրա համար
@@ -8,6 +9,8 @@ import styles from './Hero.module.css'
 const MARQUEE_COPIES = 4
 
 export default function Hero({ data }) {
+  const slides = data.slider ?? []
+
   const renderTitle = () => {
     if (!data.marked || !data.title.includes(data.marked)) {
       return data.title
@@ -32,17 +35,9 @@ export default function Hero({ data }) {
       <div className={`${styles.hero} container`}>
         <h1 className={styles.title}>{renderTitle()}</h1>
 
-        {data.image && (
+        {slides.length > 0 && (
           <div className={styles.imageWrapper}>
-            <Image
-              src={data.image}
-              alt={data.image_alt ?? ''}
-              width={517}
-              height={480}
-              className={styles.heroImage}
-              // էջի գլխավոր (LCP) նկարն ա. Next 16-ում priority-ն փոխարինվել ա preload-ով
-              preload
-            />
+            <Slider data={data} />
           </div>
         )}
 
