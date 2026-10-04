@@ -65,11 +65,6 @@
   padding: var(--space-32);
   border-radius: var(--radius-2xl);
   background: var(--color-mint);
-  transition: background-color 0.2s ease;
-}
-
-.card:hover {
-  background: #dfece2;
 }
 
 .card:focus-visible {
@@ -102,11 +97,6 @@
 
 .image {
   object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.card:hover .image {
-  transform: scale(1.03);
 }
 
 .footer {
@@ -139,8 +129,25 @@
   transition: background-color 0.2s ease;
 }
 
-.card:hover .arrow {
-  background: var(--color-green-hover);
+.arrow svg {
+  transition: transform 0.25s ease;
+}
+
+.card:hover .arrow,
+.card:focus-visible .arrow {
+  background: var(--color-green);
+}
+
+.card:hover .arrow svg,
+.card:focus-visible .arrow svg {
+  transform: rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow,
+  .arrow svg {
+    transition: none;
+  }
 }
 
 @media (max-width: 900px) {
