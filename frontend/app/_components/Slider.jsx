@@ -70,7 +70,7 @@ function Slider({ data}) {
                             index === currentIndex ? styles.active : ''
                         }`}
                         onClick={() => setCurrentIndex(index)}
-                        aria-label={`${data.slider_image_label} ${index + 1}`}
+                        aria-label={`${data.slider_dot_label ?? ''} ${index + 1}`}
                         aria-current={
                             index === currentIndex ? 'true' : undefined
                         }

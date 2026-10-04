@@ -9,7 +9,7 @@ import styles from './Hero.module.css'
 const MARQUEE_COPIES = 4
 
 export default function Hero({ data }) {
-  const {slider, slider_image_label, slider_previous_label, slider_next_label, slider_navigation_label} = data || {}
+  const slides = data.slider ?? []
 
   const renderTitle = () => {
     if (!data.marked || !data.title.includes(data.marked)) {
@@ -35,9 +35,11 @@ export default function Hero({ data }) {
       <div className={`${styles.hero} container`}>
         <h1 className={styles.title}>{renderTitle()}</h1>
 
-        <div className={styles.imageWrapper}>
-          <Slider  data={{slider, slider_image_label, slider_previous_label, slider_next_label, slider_navigation_label}} />
-        </div>
+        {slides.length > 0 && (
+          <div className={styles.imageWrapper}>
+            <Slider data={data} />
+          </div>
+        )}
 
         <p className={styles.description}>{data.description}</p>
 
@@ -73,7 +75,7 @@ export default function Hero({ data }) {
 
                 <Image
                   src="/images/homepage/star.svg"
-                  alt="asterisk symbol"
+                  alt=""
                   width={9}
                   height={9}
                 />
