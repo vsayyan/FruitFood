@@ -1,5 +1,3 @@
-/* Figma: about 171:5216 (desktop), main_mobile 181:7256 (mobile) */
-
 .section {
   padding: var(--space-120) 0;
   background: var(--color-cream);
@@ -90,7 +88,6 @@
   }
 }
 
-/* Mobile (Figma main_mobile) */
 @media (max-width: 900px) {
   .section {
     padding: 42px 0;

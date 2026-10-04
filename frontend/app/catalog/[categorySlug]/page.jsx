@@ -13,7 +13,6 @@ export async function generateMetadata({ params }) {
   const category = await getProductCategory(categorySlug, await displayLang())
 
   if (!category) return {}
-  // description չկա՝ մնում ա layout-ի ընդհանուր նկարագրությունը
   return category.description
     ? { title: category.name, description: category.description }
     : { title: category.name }

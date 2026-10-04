@@ -1,4 +1,3 @@
-/* Figma: main → Section (1:154), main_mobile → Section (31:913) */
 .partnerCta {
   background: var(--color-green-dark);
   padding: var(--space-80) var(--container-padding);
@@ -28,7 +27,6 @@
   line-height: 1.6;
   color: var(--color-light-soft);
   white-space: pre-line;
-  /* Figma-ում տեքստի container-ը ներքևից ունի 18px padding → 36px մինչև կոճակ */
   padding-bottom: var(--space-18);
 }
 
@@ -49,7 +47,6 @@
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Figma ui-kit → hover (134:675). սպիտակ ֆոն, կանաչ տեքստ, սլաքը 7px աջ */
 .button:hover {
   background: var(--color-white);
   color: var(--color-green-dark);

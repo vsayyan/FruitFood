@@ -63,10 +63,6 @@
     user-select: none;
 }
 
-/* .right_side details summary::-webkit-details-marker {
- display: none;
-} */
-
 .question_text {
     font-size: var(--font-size-base);
     line-height: 140%;

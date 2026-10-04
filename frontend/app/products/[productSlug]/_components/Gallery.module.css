@@ -1,5 +1,3 @@
-/* Figma՝ 560×562 նկարի դաշտ, նկարը 558×438 (վերևից/ներքևից 61px), սլաքները ներքևում */
-
 .gallery {
   display: flex;
   flex-direction: column;
@@ -26,7 +24,6 @@
   left: 0;
   width: 100%;
   height: 78.21%;
-  /* contain՝ որ երկար/նեղ ապրանքները (ստիկներ, սիգար) չկտրվեն */
   object-fit: contain;
 }
 
@@ -92,7 +89,6 @@
   object-fit: contain;
 }
 
-/* Mobile (Figma 375)՝ նկարը ամբողջ դաշտով, սլաքները դաշտից ներքև, ձախ */
 @media (max-width: 900px) {
   .gallery {
     gap: var(--space-sm);

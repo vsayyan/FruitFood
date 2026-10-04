@@ -1,6 +1,4 @@
-/* Figma: category1/2/3 → Section 144:1276 (desktop), 150:1668 (mobile) */
 .breadcrumbSection {
-  /* 120px-ի մեջ ա նաև fixed header-ը, ինչպես Figma-ում */
   padding: var(--space-120) 0 var(--space-56);
   background: var(--color-cream);
   border-bottom: 1px solid var(--color-mint);

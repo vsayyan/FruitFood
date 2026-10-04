@@ -1,4 +1,3 @@
-/* Figma: main → Section 1:136 (desktop), main_mobile → 171:5932 (mobile) */
 .philosophy {
   display: flex;
   align-items: stretch;
@@ -9,9 +8,6 @@
 
 .slider {
   position: relative;
-  /* 579px ըստ Figma-ի. 901–1280px լայնություններում slider-ն ու տեքստը
-     հավասար փոքրանում են (առաջ slider-ը չէր փոքրանում, ու 901px-ում
-     տեքստը էկրանից դուրս էր գալիս) */
   flex: 0 1 579px;
   height: 510px;
   overflow: hidden;

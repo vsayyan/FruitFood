@@ -23,10 +23,6 @@
     gap: var(--space-lg);
 }
 
-/* =========================================================================
-                                  languages CSS                                */
-
-
 .langDropdown {
   position: relative;
   border: 0.68px solid #e8f1ea;
@@ -63,7 +59,7 @@
   align-items: center;
   justify-content: center;
   gap: 13px;
-  width: 84px; 
+  width: 84px;
   height: var(--space-lg);
 }
 
@@ -89,8 +85,6 @@
     padding: 0;
 }
 
-/* ========================= menubar CSS ======================= */
-
 .menubar_div {
     display: flex;
     align-items: center;
@@ -109,13 +103,6 @@
     cursor: pointer;
 }
 
-
-/* =============================== media queries ========================= */
-
-/* ==========================================================
-   MOBILE: 900px and below
-   ========================================================== */
-
 @media (max-width: 900px) {
 
   .header {
@@ -133,13 +120,11 @@
     position: relative;
     padding: 0 var(--space-sm);
 
-  }   
+  }
 
   .row {
     padding: var(--space-sm) 0;
   }
-
-  /* Hamburger button */
 
   .menubar_div {
     display: flex;
@@ -152,8 +137,6 @@
     width: var(--space-md);
     height: var(--space-md);
   }
-
-  /* Right side */
 
   .right_side {
     display: none;
@@ -173,14 +156,12 @@
     display: flex;
   }
 
-  /* Language dropdown */
-
   .langDropdown:hover .langMenu {
     top: -390%;
     right: -90%;
   }
 
   .langOption {
-    width: 100px; 
+    width: 100px;
   }
 }

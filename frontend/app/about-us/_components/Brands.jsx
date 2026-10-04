@@ -1,9 +1,5 @@
 import styles from './Brands.module.css'
 
-/*
-  About us · Section 3 «Մեր ապրանքանիշերը» (Figma about 171:5235,
-  main_mobile 181:7256)։ Ամեն լեզվի համար 2 քարտ (brands collection)։
-*/
 export default function Brands({ data = [], labels }) {
   if (!data.length) return null
 

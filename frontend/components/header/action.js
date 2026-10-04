@@ -21,9 +21,6 @@ export async function getCategories(lang)  {
   return res.data
 }
 
-// header-ի մանր տեքստերը (dropdown, aria-label, alt) — լեզվով, db-ից
-// Եթե ինչ-որ մեկի db.json-ում header_labels դեռ չկա, header-ը չի կոտրվում,
-// պարզապես այդ տեքստերը դատարկ են մնում (cp db_orinak_example db.json-ը լուծում ա)
 export async function getHeaderLabels(lang) {
   try {
     const res = await axios.get('header_labels', { params: { lang } })
@@ -34,7 +31,7 @@ export async function getHeaderLabels(lang) {
 }
 
 export async function getHeaderData() {
-    const lang = await displayLang()  
+    const lang = await displayLang()
     const logo = await getLogo()
     const navbar = await getNavbar(lang)
     const langs = await getLangs()
@@ -43,5 +40,4 @@ export async function getHeaderData() {
 
     return {logo, navbar, langs, lang, categories, labels}
 }
-
 

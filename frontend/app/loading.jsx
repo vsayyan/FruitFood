@@ -1,12 +1,6 @@
 import { displayLang } from '@/lib/lang'
 import styles from './loading.module.css'
 
-/*
-  Այս էջի տեքստը db-ից չի գալիս (§4 կանոն 7-ի գիտակցված բացառություն).
-  loading-ը պիտի երևա ակնթարթորեն՝ առանց API request-ի սպասելու։
-  Տեսանելի տեքստ չկա — միայն spinner։ Ներքևի թարգմանությունը միայն
-  screen reader-ի համար ա (տեսողականորեն թաքնված ա)։
-*/
 const messages = {
   am: { loading: 'Բեռնվում է…' },
   ru: { loading: 'Загрузка…' },

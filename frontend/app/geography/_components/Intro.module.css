@@ -1,6 +1,4 @@
-/* Figma: Աշխարհագրություն (190:8370), mobile (190:8918) */
 .intro {
-  /* 68px = fixed header-ի բարձրությունը, որ breadcrumb-ը header-ի տակ չմնա */
   padding: calc(68px + var(--space-80)) 0 60px;
   background: var(--color-cream);
   border-bottom: 1px solid var(--color-border);
@@ -69,8 +67,6 @@
   }
 }
 
-/* 901–1279px. «Աշխարհագրություն» բառը 64px-ով սյունակի մեջ չէր տեղավորվում,
-   ու էջը կողքի վրա scroll էր ստանում։ 1280px-ից լայն էկրաններում Figma-ի 64px-ն ա */
 @media (min-width: 901px) and (max-width: 1279px) {
   .title {
     font-size: 52px;
@@ -83,7 +79,6 @@
   }
 }
 
-/* Շատ նեղ էկրաններ (320px). «Աշխարհագրություն» բառը 33px-ով չէր տեղավորվում */
 @media (max-width: 360px) {
   .title {
     font-size: var(--font-size-xl);

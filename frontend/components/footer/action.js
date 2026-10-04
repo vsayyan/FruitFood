@@ -8,8 +8,8 @@ export async function getFooterLabel(lang) {
 }
 
 export async function getFooterData() {
-    const lang = await displayLang() 
-    const links = await getNavbar(lang) 
+    const lang = await displayLang()
+    const links = await getNavbar(lang)
     const footerLabel = await getFooterLabel(lang)
 
     return {data: footerLabel, links}

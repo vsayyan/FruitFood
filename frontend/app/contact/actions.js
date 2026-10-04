@@ -10,7 +10,3 @@ export async function getContactInfo(lang) {
   return res.data[0]
 }
 
-
-
-
-

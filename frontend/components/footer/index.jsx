@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { getFooterData } from './action'
 import styles from './Footer.module.css'
 
-export default async function Footer() { 
-  const { data, links } = await getFooterData()  
+export default async function Footer() {
+  const { data, links } = await getFooterData()
 
   return (
     <footer className={styles.footer}>

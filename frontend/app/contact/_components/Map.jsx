@@ -1,7 +1,7 @@
 import styles from './Map.module.css'
 
 export default function Map({ mapUrl, mapTitle }) {
-   
+
   return (
     <div className={styles.map}>
       <iframe

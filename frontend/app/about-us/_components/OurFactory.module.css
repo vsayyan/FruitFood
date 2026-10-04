@@ -1,5 +1,3 @@
-/* Figma: about 171:5470 + 171:5493 + 171:5517 (desktop),
-   185:7998 + 185:8054 (mobile) */
 .section {
   padding: var(--space-120) 0 0;
 }
@@ -58,7 +56,6 @@
   background: linear-gradient(135deg, var(--color-mint), var(--color-light-soft));
 }
 
-/* Figma-ում նկարի վրա 20% սև շերտ կա */
 .slider::after {
   content: '';
   position: absolute;
@@ -240,7 +237,6 @@
 
   .bottomContent {
     grid-template-columns: 1fr;
-    /* Figma: strip-ից հետո 12px + բաժինների արանքի 24px */
     margin-top: calc(12px + var(--space-md));
     padding: 0 0 42px;
   }
@@ -255,8 +251,6 @@
   }
 }
 
-/* Շատ նեղ էկրաններ (320px). ռուսերեն «Производственный» բառը 32px-ով
-   չէր տեղավորվում, ու էջը հորիզոնական scroll էր ստանում։ Slider-ին չի դիպչում */
 @media (max-width: 360px) {
   .title {
     font-size: var(--font-size-xl);

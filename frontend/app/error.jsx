@@ -3,11 +3,6 @@
 import { useEffect, useSyncExternalStore } from 'react'
 import styles from './error.module.css'
 
-/*
-  Այս էջի տեքստը db-ից չի գալիս (§4 կանոն 7-ի գիտակցված բացառություն).
-  ամենահաճախ հանդիպող error-ը հենց այն ա, որ json-server-ը միացած չի (§2) —
-  եթե error էջն իր տեքստը API-ից բերեր, այդ դեպքում ինքն էլ կընկներ։
-*/
 const messages = {
   am: {
     title: 'Ինչ-որ բան այն չէ',
@@ -26,23 +21,14 @@ const messages = {
   },
 }
 
-// Լեզուն էջի ընթացքում չի փոխվում, ուստի subscribe-ը ոչինչ չի անում
 const subscribeNoop = () => () => {}
 
-// Նախ՝ նույն lang cookie-ն, ինչ displayLang()-ը (global-error.jsx-ի դեպքում
-// <html lang>-ը մենք չենք կարող իմանալ), հետո՝ <html lang>
 const readLang = () =>
   document.cookie.match(/(?:^|; )lang=([^;]+)/)?.[1] ||
   document.documentElement.lang ||
   'am'
 
 export default function Error({ error, reset }) {
-  /*
-    error.jsx-ը պարտադիր Client Component ա (Next.js-ի պահանջ), ուրեմն
-    displayLang()-ը (next/headers → cookies) այստեղ չի աշխատի։ Լեզուն
-    վերցնում ենք <html lang>-ից, որը layout.jsx-ն արդեն դնում ա նույն
-    cookie-ի հիման վրա — ոչ մի լրացուցիչ request։
-  */
   const lang = useSyncExternalStore(
     subscribeNoop,
     readLang,

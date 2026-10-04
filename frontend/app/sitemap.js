@@ -1,12 +1,5 @@
 import axios from '@/lib/axios'
 
-/*
-  Լեզուն cookie-ում ա, ոչ URL-ում (§1) — ուրեմն ամեն էջն ունի **մեկ** URL
-  բոլոր 3 լեզուների համար, ու hreflang alternate-ներ պետք չեն։
-  Կատեգորիաներն ու ապրանքները db-ից են գալիս, որ նոր ապրանք ավելացնելիս
-  sitemap-ը ինքնաբերաբար թարմանա։
-*/
-
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
 
 const STATIC_ROUTES = ['', '/catalog', '/about-us', '/geography', '/contact']
@@ -20,7 +13,6 @@ export default async function sitemap() {
   }))
 
   try {
-    // մեկ լեզվով ա բավական՝ slug-ը/URL-ը բոլոր լեզուների համար նույնն ա
     const [categories, products] = await Promise.all([
       axios.get('categories?lang=am'),
       axios.get('products?lang=am'),
@@ -40,8 +32,6 @@ export default async function sitemap() {
       })
     })
   } catch (error) {
-    // json-server-ը միացած չի (կամ Django-ն հասանելի չի)՝ build-ը չենք կոտրում,
-    // sitemap-ում մնում են միայն static route-երը
     console.error('sitemap: API-ն հասանելի չի —', error.message)
   }
 

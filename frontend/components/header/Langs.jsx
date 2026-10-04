@@ -3,8 +3,6 @@
 import Image from 'next/image'
 import styles from './Header.module.css'
 
-// Լեզուն փոխելը = cookie գրել + reload անել, որ Server Component-երը
-// (page.jsx, layout.js) նոր lang-ով նորից fetch անեն json-server-ից։
 export default function Langs({ data, lang }) {
 
   const changeLang = (code) => {
@@ -39,7 +37,7 @@ export default function Langs({ data, lang }) {
                         <p className={styles.language}>
                             {item.label}
                         </p>
-            
+
           </button>
         ))}
       </div>

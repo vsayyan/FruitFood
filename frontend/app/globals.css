@@ -1,24 +1,22 @@
 :root {
-  /* Գույներ — ճշգրիտ ըստ Figma-ի */
-  --color-green: #00681c;       /* վերնագրեր, հղումներ, ընտրված վիճակներ */
-  --color-green-dark: #005b30;  /* լցված ֆոներ — կոճակներ, footer, կանաչ բլոկներ */
-  --color-green-accent: #45a14c; /* eyebrow/փոքր label-ներ */
-  --color-green-deep: #003d20;   /* tag-երի տեքստ */
-  --color-green-hover: #0d5030;  /* hover-ի եզր (Figma ui-kit, «Դիտել բաղադրությունը») */
-  --color-green-mobile: #0d5030; /* CTA-ի և footer-ի ֆոնը mobile-ում (Figma 375 frame-եր) */
-  --color-mint: #e8f1ea;        /* բաց կանաչ ֆոներ, tag-եր, header-ի գիծ */
-  --color-cream: #faf9f6;       /* բաժինների off-white ֆոն */
-  --color-surface: #f5f5f5;     /* քարտեզի բլոկի ֆոն (Geography) */
-  --color-light: #f5efe6;       /* տեքստ/գծեր կանաչ ֆոնի վրա (footer, CTA) */
-  --color-light-soft: #fbf7f1;  /* երկրորդական տեքստ կանաչ ֆոնի վրա */
+  --color-green: #00681c;
+  --color-green-dark: #005b30;
+  --color-green-accent: #45a14c;
+  --color-green-deep: #003d20;
+  --color-green-hover: #0d5030;
+  --color-green-mobile: #0d5030;
+  --color-mint: #e8f1ea;
+  --color-cream: #faf9f6;
+  --color-surface: #f5f5f5;
+  --color-light: #f5efe6;
+  --color-light-soft: #fbf7f1;
   --color-text: #1f1f1f;
   --color-text-muted: #6b6b6b;
   --color-border: #eaeaea;
   --color-white: #ffffff;
   --color-error: #005b30;
-  --color-overlay: rgba(31, 31, 31, 0.55); /* modal-ի ետևի ֆոն */
+  --color-overlay: rgba(31, 31, 31, 0.55);
 
-  /* Spacing scale — բոլոր margin/padding սրանցից, ոչ պատահական թվեր */
   --space-6: 6px;
   --space-xs: 8px;
   --space-sm: 16px;
@@ -32,52 +30,45 @@
   --space-2xl: 96px;
   --space-120: 120px;
 
-  /* Border radius scale */
   --radius-sm: 6px;
-  --radius-xs: 8px;             /* input-ներ, thumbnail-ներ, լեզվի կոճակ */
+  --radius-xs: 8px;
   --radius-md: 12px;
-  --radius-card: 16px;         /* form-ի քարտ (Contact) */
+  --radius-card: 16px;
   --radius-lg: 20px;
   --radius-xl: 24px;
   --radius-2xl: 32px;
   --radius-pill: 999px;
 
-  /* Ստվերներ (Figma) */
-  --shadow-card: 0 2px 10px 0 rgba(0, 0, 0, 0.1);         /* catalog-ի քարտեր */
-  --shadow-soft: 0 4px 13px 0 rgba(0, 0, 0, 0.03);        /* Contact form-ի քարտ */
-  --shadow-modal: 0 32px 80px -20px rgba(31, 31, 31, 0.3); /* modal-ներ */
+  --shadow-card: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  --shadow-soft: 0 4px 13px 0 rgba(0, 0, 0, 0.03);
+  --shadow-modal: 0 32px 80px -20px rgba(31, 31, 31, 0.3);
 
-  /* Layout — Figma՝ 1280 container, 40px padding → 1200px բովանդակություն */
   --container-width: 1280px;
   --container-padding: var(--space-lg);
 
-  /* Typography */
-  /* --font-main-ը գալիս ա layout.jsx-ի next/font-ից, --font-family-ն նրա alias-ն ա */
-  /* Հայերեն ու լատիներեն տառերը՝ Noto Sans Armenian-ից, ռուսերենը (որ այնտեղ չկա)՝ Noto Sans-ից */
   --font-family: var(--font-main), var(--font-cyrillic), sans-serif;
-  --tracking-label: 0.18em;     /* փոքր uppercase label-ներ (ՀԱՍՑԵ, ԿԱՊՎԵՔ ՄԵԶ ՀԵՏ) */
+  --tracking-label: 0.18em;
 
-  --font-size-2xs: 0.6875rem;   /* 11px — uppercase label-ներ */
-  --font-size-xs: 0.75rem;      /* 12px */
-  --font-size-caption: 0.8125rem; /* 13px */
-  --font-size-sm: 0.875rem;     /* 14px */
-  --font-size-body: 0.9375rem;  /* 15px — Figma-ի հիմնական տեքստը */
-  --font-size-base: 1rem;       /* 16px */
-  --font-size-lead: 1.0625rem;  /* 17px — CTA/քարտերի տեքստ */
-  --font-size-md: 1.125rem;     /* 18px */
-  --font-size-lg: 1.25rem;      /* 20px */
-  --font-size-22: 1.375rem;     /* 22px — Geography-ի կանաչ բլոկ */
-  --font-size-h3: 1.5rem;       /* 24px — form/modal վերնագրեր */
-  --font-size-xl: 1.75rem;      /* 28px */
-  --font-size-30: 1.875rem;     /* 30px — mobile բաժնի վերնագիր */
-  --font-size-title: 2rem;      /* 32px — բաժնի վերնագիր */
-  --font-size-33: 2.0625rem;    /* 33px — mobile էջի վերնագիր (Geography) */
-  --font-size-h2: 2.25rem;      /* 36px — CTA-ի վերնագիր */
-  --font-size-2xl: 2.5rem;      /* 40px */
-  --font-size-display: 4rem;    /* 64px */
+  --font-size-2xs: 0.6875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-caption: 0.8125rem;
+  --font-size-sm: 0.875rem;
+  --font-size-body: 0.9375rem;
+  --font-size-base: 1rem;
+  --font-size-lead: 1.0625rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-22: 1.375rem;
+  --font-size-h3: 1.5rem;
+  --font-size-xl: 1.75rem;
+  --font-size-30: 1.875rem;
+  --font-size-title: 2rem;
+  --font-size-33: 2.0625rem;
+  --font-size-h2: 2.25rem;
+  --font-size-2xl: 2.5rem;
+  --font-size-display: 4rem;
 }
 
-/* Mobile-ում container-ի կողային padding-ը 16px ա (Figma 375) */
 @media (max-width: 900px) {
   :root {
     --container-padding: var(--space-sm);
@@ -138,8 +129,6 @@ img {
   display: block;
 }
 
-/* Focus-ը երևում ա ամեն interactive element-ի համար
-   (all-ի համար պետք ա, չպետք ա փոխարինել outline: none-ով) */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -148,21 +137,12 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/*
-  Ամբողջ site-ում կիրառվող page wrapper։ Այլևս `.main`-ի մեջ չի կրկնվում
-  "max-width + margin auto + padding" ամեն page-ում, այլ օգտագործվում ա
-  ուղղակի այս մեկ class-ից։
-
-  Օրինակ՝ <main className={`${styles.main} container`}>...</main>
-*/
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
 
-/* Screen-reader-only text — ally label-երի համար, որ տեսանելի չեն,
-   բայց screen reader-ը կարդում ա (օր. Header-ի "Հիմնական նավիգացիա" label) */
 .visuallyHidden {
   position: absolute;
   width: 1px;

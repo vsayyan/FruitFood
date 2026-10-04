@@ -104,12 +104,10 @@
 }
 
 @media (max-width: 900px) {
-  /* Figma main_mobile 195:1148. վերևում 42px, ներքևում 61px */
   .section {
     padding: 42px 0 61px;
   }
 
-  /* տեքստի և 01/02 քարտերի արանքը՝ 11px */
   .container {
     grid-template-columns: 1fr;
     gap: 11px;

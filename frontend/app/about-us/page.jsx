@@ -31,8 +31,6 @@ export async function generateMetadata() {
   return title ? { title } : {}
 }
 
-// Բաժինների հերթականությունը՝ ըստ Figma-ի (about).
-// 1–3 Milena, 4–6 Hamlet, 7–9 Jora
 export default async function AboutUsPage() {
   const lang = await displayLang()
   const [

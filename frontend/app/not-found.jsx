@@ -2,10 +2,6 @@ import Link from 'next/link'
 import { displayLang } from '@/lib/lang'
 import styles from './not-found.module.css'
 
-/*
-  Այս էջի տեքստը db-ից չի գալիս (§4 կանոն 7-ի գիտակցված բացառություն).
-  404-ը պիտի աշխատի նաև այն ժամանակ, երբ API-ն հասանելի չի։
-*/
 const messages = {
   am: {
     title: 'Էջը չի գտնվել',

@@ -16,8 +16,6 @@ export default async function ContactPage() {
   const content = await getContactPageContent(lang)
   const contactInfo = await getContactInfo(lang)
 
-
-
   return (
     <>
       <div className={styles.introSection}>
@@ -49,6 +47,4 @@ export default async function ContactPage() {
     </>
   )
 }
-
-
 

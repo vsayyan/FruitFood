@@ -8,7 +8,6 @@ export default function CompositionModal({ title, composition, labels, onClose }
 
   useEffect(() => {
     closeButton.current?.focus()
-    // Modal-ը բաց ա՝ էջը ետևում չի scroll լինում
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
 
