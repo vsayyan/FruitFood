@@ -33,3 +33,30 @@ export async function getPhilosophyText(lang) {
   const res = await axios.get(`philosophy_text?lang=${lang}`)
   return res.data
 }
+
+export async function getAssortment(lang) {
+  try {
+    const res = await axios.get('home_assortment', { params: { lang } })
+    return res.data[0] ?? null
+  } catch {
+    return null
+  }
+}
+
+export async function getCategories(lang) {
+  try {
+    const res = await axios.get('categories', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export async function getStats(lang) {
+  try {
+    const res = await axios.get('stats', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}

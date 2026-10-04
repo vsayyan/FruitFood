@@ -193,7 +193,7 @@ export default async function AboutPage() {
 ### 5.2 Քայլերով
 
 1. `cp db_orinak_example db.json` (եթե դեռ չես արել)
-2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `about_philosophy`, `about_philosophy_facts`, `about_page_labels`, `about_production`, `about_why_trust_us`, `about_showcase`, `about_quality_naturalness`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
+2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `home_assortment`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `about_philosophy`, `about_philosophy_facts`, `about_page_labels`, `about_production`, `about_why_trust_us`, `about_showcase`, `about_quality_naturalness`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
    Նոր տողեր ավելացնելիս `id`-ները **չպետք ա կրկնվեն** արդեն եղածների հետ։
 3. Նոր collection-ը / նոր տողերը ավելացրու **քո `db.json`**-ում ու աշխատիր դրանով (`npm run dev` ավտոմատ կտեսնի փոփոխությունը)
 4. Երբ պատրաստ ես՝ **միայն քո նոր/փոխված collection-ները** copy արա `db_parts/<անուն>.json`-ի մեջ, օրինակ `db_parts/saten.json`.
@@ -233,7 +233,7 @@ export default async function AboutPage() {
 | Backend (Django, հետագայում) | Narek | `../backend/` | — |
 | Header + Footer | Vahag | `components/header/*`, `components/footer/*` | ընդհանուր |
 | Home · Section 1 (Hero) | Vahag | `app/_components/Hero.jsx` | `/` |
-| Home · Section 2 («Մեր տեսականին») | Ashot | `app/_components/Assortment.jsx` | `/` |
+| Home · Section 2 («Մեր տեսականին») + Stats | Ashot | `app/_components/Assortment.jsx`, `app/_components/Stats.jsx` | `/` (քարտերը → `/catalog/<slug>`) |
 | Home · Section 3 (Փիլիսոփայություն) + Section 4 (FAQ) | Saten | `app/_components/Philosophy.jsx`, `app/_components/Faq.jsx` | `/` («Կարդալ ավելին» → `/about-us`) |
 | Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
@@ -391,7 +391,7 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 ## 9. Ինչ դեռ չկա
 
 - Home · «Մեր տեսականին» (Ashot)
-- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero-1.png`, slider-ի 3 slide-ը նույն նկարն են (`homepage_hero.slider`)), About us-ի Section 1-ի և ապրանքանիշերի նկարները (`about-us/natural-quality.jpg`, `brands/brand-placeholder.png`)
+- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero-1.png`, slider-ի 3 slide-ը նույն նկարն են (`homepage_hero.slider`)), «Մեր տեսականին»-ի 2 քարտի նկարը (`homepage/assortment-1.jpg`, `home_assortment.cards`), About us-ի Section 1-ի և ապրանքանիշերի նկարները (`about-us/natural-quality.jpg`, `brands/brand-placeholder.png`)
 - Ապրանքների իրական համերն ու նկարները (տես §9.1)
 - Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language

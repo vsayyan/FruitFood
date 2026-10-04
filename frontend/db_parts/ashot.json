@@ -1,0 +1,171 @@
+{
+  "home_assortment": [
+    {
+      "id": 1,
+      "lang": "am",
+      "eyebrow": "Մեր տեսականին",
+      "title": "Արտադրանք",
+      "description": "150+ ապրանքատեսակ, խմբավորված ըստ երկու հիմնական ուղղությունների։",
+      "link_label": "Ամբողջ կատալոգը",
+      "url_catalog": "/catalog",
+      "cards": [
+        {
+          "id": 1,
+          "category_slug": "dried-fruits",
+          "badge": "Առանց ավելացված շաքարի",
+          "image": "/images/homepage/assortment-1.jpg"
+        },
+        {
+          "id": 2,
+          "category_slug": "chocolate-covered",
+          "badge": "62% կակաո",
+          "image": "/images/homepage/assortment-1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "eyebrow": "Наш ассортимент",
+      "title": "Продукция",
+      "description": "150+ наименований, сгруппированных по двум основным направлениям.",
+      "link_label": "Весь каталог",
+      "url_catalog": "/catalog",
+      "cards": [
+        {
+          "id": 1,
+          "category_slug": "dried-fruits",
+          "badge": "Без добавленного сахара",
+          "image": "/images/homepage/assortment-1.jpg"
+        },
+        {
+          "id": 2,
+          "category_slug": "chocolate-covered",
+          "badge": "62% какао",
+          "image": "/images/homepage/assortment-1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "eyebrow": "Our range",
+      "title": "Products",
+      "description": "150+ product types, grouped into two main lines.",
+      "link_label": "Full catalog",
+      "url_catalog": "/catalog",
+      "cards": [
+        {
+          "id": 1,
+          "category_slug": "dried-fruits",
+          "badge": "No added sugar",
+          "image": "/images/homepage/assortment-1.jpg"
+        },
+        {
+          "id": 2,
+          "category_slug": "chocolate-covered",
+          "badge": "62% cocoa",
+          "image": "/images/homepage/assortment-1.jpg"
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "lang": "am",
+      "value": 18,
+      "suffix": "+",
+      "unit": "",
+      "label": "Տարվա փորձ"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "value": 18,
+      "suffix": "+",
+      "unit": "",
+      "label": "Лет опыта"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "value": 18,
+      "suffix": "+",
+      "unit": "",
+      "label": "Years of experience"
+    },
+    {
+      "id": 4,
+      "lang": "am",
+      "value": 150,
+      "suffix": "+",
+      "unit": "",
+      "label": "Ապրանքատեսակ"
+    },
+    {
+      "id": 5,
+      "lang": "ru",
+      "value": 150,
+      "suffix": "+",
+      "unit": "",
+      "label": "Видов продукции"
+    },
+    {
+      "id": 6,
+      "lang": "en",
+      "value": 150,
+      "suffix": "+",
+      "unit": "",
+      "label": "Product types"
+    },
+    {
+      "id": 7,
+      "lang": "am",
+      "value": 15,
+      "suffix": "+",
+      "unit": "",
+      "label": "Արտահանման երկիր"
+    },
+    {
+      "id": 8,
+      "lang": "ru",
+      "value": 15,
+      "suffix": "+",
+      "unit": "",
+      "label": "Стран экспорта"
+    },
+    {
+      "id": 9,
+      "lang": "en",
+      "value": 15,
+      "suffix": "+",
+      "unit": "",
+      "label": "Export countries"
+    },
+    {
+      "id": 10,
+      "lang": "am",
+      "value": 5500,
+      "suffix": "",
+      "unit": "քմ",
+      "label": "Արտադրական համալիր"
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "value": 5500,
+      "suffix": "",
+      "unit": "м²",
+      "label": "Производственный комплекс"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "value": 5500,
+      "suffix": "",
+      "unit": "m²",
+      "label": "Production facility"
+    }
+  ]
+}
