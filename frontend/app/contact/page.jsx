@@ -21,11 +21,19 @@ export default async function ContactPage() {
         <div className={styles.introSection}>
           <div className={`container ${styles.page}`}>
             <div className={styles.intro}>
-              <div className={styles.breadcrumb}>
-                <Link href="/">{content.breadcrumb_home}</Link>
-                <span>/</span>
-                <span>{content.breadcrumb_contact}</span>
-              </div>
+              <nav aria-label={content.breadcrumb_label}>
+                <ol className={styles.breadcrumb}>
+                  <li>
+                    <Link className={styles.crumbLink} href='/'>
+                      {content.breadcrumb_home}
+                    </Link>
+                  </li>
+                  <li aria-hidden='true'>/</li>
+                  <li className={styles.crumbCurrent} aria-current='page'>
+                    {content.breadcrumb_contact}
+                  </li>
+                </ol>
+              </nav>
 
               <h1 className={styles.title}>{content.title}</h1>
               <p className={styles.description}>{content.description}</p>

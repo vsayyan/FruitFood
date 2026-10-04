@@ -11,13 +11,23 @@
 }
 
 .intro .breadcrumb {
-  color: var(--color-text-muted);
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: var(--font-size-caption);
   display: flex;
-  gap: var(--space-xs);
-  line-height: 160%
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px var(--space-xs);
+  list-style: none;
+  font-size: var(--font-size-caption);
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.crumbLink:hover {
+  color: var(--color-green-dark);
+}
+
+.crumbCurrent {
+  font-weight: 500;
+  color: var(--color-green-dark);
 }
 
 .intro .title {
