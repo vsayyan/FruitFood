@@ -134,7 +134,7 @@
     flex-direction: column-reverse;
     gap: 42px;
     padding-top: 72px;
-    padding-bottom: var(--space-xl);
+    padding-bottom: 77px;
   }
 
   .slider {

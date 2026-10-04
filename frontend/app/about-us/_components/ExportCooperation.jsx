@@ -1,6 +1,8 @@
 import styles from './ExportCooperation.module.css'
 
 export default function ExportCooperation({ data }) {
+  if (!data) return null
+
   return (
     <section className={styles.section}>
       <div className="container">

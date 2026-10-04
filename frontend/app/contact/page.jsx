@@ -7,44 +7,41 @@ import Map from './_components/Map'
 import styles from './page.module.css'
 
 export async function generateMetadata() {
-  const content = await getContactPageContent(await displayLang()).catch(() => null)
+  const content = await getContactPageContent(await displayLang())
   return content ? { title: content.title, description: content.description } : {}
 }
 
 export default async function ContactPage() {
   const lang = await displayLang()
-  const content = await getContactPageContent(lang)
-  const contactInfo = await getContactInfo(lang)
+  const [content, contactInfo] = await Promise.all([getContactPageContent(lang), getContactInfo(lang)])
 
   return (
     <>
-      <div className={styles.introSection}>
-        <div className={`container ${styles.page}`}>
-          <div className={styles.intro}>
-            <div className={styles.breadcrumb}>
-              <Link href="/">{content.breadcrumb_home}</Link>
-              <span>/</span>
-              <span>{content.breadcrumb_contact}</span>
-            </div>
+      {content && (
+        <div className={styles.introSection}>
+          <div className={`container ${styles.page}`}>
+            <div className={styles.intro}>
+              <div className={styles.breadcrumb}>
+                <Link href="/">{content.breadcrumb_home}</Link>
+                <span>/</span>
+                <span>{content.breadcrumb_contact}</span>
+              </div>
 
-            <h1 className={styles.title}>{content.title}</h1>
-            <p className={styles.description}>{content.description}</p>
+              <h1 className={styles.title}>{content.title}</h1>
+              <p className={styles.description}>{content.description}</p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div className={`container ${styles.page}`}>
         <div className={styles.contactContent}>
-          <ContactInfo info={contactInfo} />
-          <ContactForm labels={content} />
+          {contactInfo && <ContactInfo info={contactInfo} />}
+          {content && <ContactForm labels={content} />}
         </div>
       </div>
 
-      <Map
-        mapUrl={contactInfo.map_url}
-        mapTitle={content.map_title}
-      />
+      {contactInfo?.map_url && <Map mapUrl={contactInfo.map_url} mapTitle={content?.map_title} />}
     </>
   )
 }
-

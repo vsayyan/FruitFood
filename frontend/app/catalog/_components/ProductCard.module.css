@@ -30,6 +30,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-sm);
+  min-height: 68px;
   padding: 18px 4px var(--space-xs);
 }
 

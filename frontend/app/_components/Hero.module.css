@@ -14,9 +14,15 @@
     "description image"
     "actions     image"
     ".           image";
-  column-gap: var(--space-32);
+  column-gap: 23px;
   padding-top: 142px;
   padding-bottom: 107px;
+}
+
+@media (min-width: 1101px) {
+  .hero {
+    padding-left: calc(var(--container-padding) + 51px);
+  }
 }
 
 .title {

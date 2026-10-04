@@ -122,10 +122,10 @@
       "lang": "am",
       "title": "Fruit Food",
       "image": "/images/footer/logo.svg",
-      "description": "Հայաստանյան բնական չրագործեր և միրգային քաղցրավենիք 1995 թվականից:",
-      "copyright": "© 2026 Fruit Food: Բոլոր իրավունքները պաշտպանված են:",
+      "description": "Հայաստանյան բնական չորամրգեր և մրգային քաղցրավենիք 1995 թվականից։",
+      "copyright": "© 2026 Fruit Food. Բոլոր իրավունքները պաշտպանված են։",
       "subtitle": "Կապվեք մեզ հետ",
-      "address": "Մ. Գալշոյան 6-8  գ.Սուրենավան, Արարատի մարզ Հայաստան",
+      "address": "Մ․ Գալշոյան 6–8\nգ․ Սուրենավան, Արարատի մարզ\nՀայաստան",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -140,7 +140,8 @@
           "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
-      ]
+      ],
+      "links_label": "Կայքի բաժիններ"
     },
     {
       "id": 2,
@@ -150,7 +151,7 @@
       "description": "Армянские натуральные сухофрукты и фруктовые сладости с 1995 года.",
       "copyright": "© 2026 Fruit Food. Все права защищены.",
       "subtitle": "Свяжитесь с нами",
-      "address": "М. Галшоян 6-8  с.Суренаван, Араратская область  Армения",
+      "address": "М. Галшоян 6–8\nс. Суренаван, Араратская область\nАрмения",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -165,7 +166,8 @@
           "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
-      ]
+      ],
+      "links_label": "Разделы сайта"
     },
     {
       "id": 3,
@@ -175,7 +177,7 @@
       "description": "Armenian natural dried fruit and fruit sweets since 1995.",
       "copyright": "© 2026 Fruit Food. All rights reserved.",
       "subtitle": "Contact us",
-      "address": "M. Galshoyan 6-8  Surenavan, Ararat region  Armenia",
+      "address": "M. Galshoyan 6–8\nSurenavan, Ararat region\nArmenia",
       "email": "chocochir@mail.ru",
       "social_links": [
         {
@@ -190,7 +192,8 @@
           "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
-      ]
+      ],
+      "links_label": "Site sections"
     }
   ],
   "categories": [
@@ -199,48 +202,42 @@
       "lang": "am",
       "slug": "dried-fruits",
       "name": "Չրեր և չրային պաստեղներ",
-      "image": "/images/categories/dried-fruits.jpg",
-      "product_count": 12
+      "image": "/images/categories/dried-fruits.jpg"
     },
     {
       "id": 2,
       "lang": "ru",
       "slug": "dried-fruits",
       "name": "Сухофрукты и фруктовая пастила",
-      "image": "/images/categories/dried-fruits.jpg",
-      "product_count": 12
+      "image": "/images/categories/dried-fruits.jpg"
     },
     {
       "id": 3,
       "lang": "en",
       "slug": "dried-fruits",
       "name": "Dried fruits & fruit leathers",
-      "image": "/images/categories/dried-fruits.jpg",
-      "product_count": 12
+      "image": "/images/categories/dried-fruits.jpg"
     },
     {
       "id": 4,
       "lang": "am",
       "slug": "chocolate-covered",
       "name": "Շոկոլադապատ չրեր և պաստեղներ",
-      "image": "/images/categories/chocolate-covered.jpg",
-      "product_count": 8
+      "image": "/images/categories/chocolate-covered.jpg"
     },
     {
       "id": 5,
       "lang": "ru",
       "slug": "chocolate-covered",
       "name": "Сухофрукты и пастила в шоколаде",
-      "image": "/images/categories/chocolate-covered.jpg",
-      "product_count": 8
+      "image": "/images/categories/chocolate-covered.jpg"
     },
     {
       "id": 6,
       "lang": "en",
       "slug": "chocolate-covered",
       "name": "Chocolate-covered dried fruits & leathers",
-      "image": "/images/categories/chocolate-covered.jpg",
-      "product_count": 8
+      "image": "/images/categories/chocolate-covered.jpg"
     }
   ],
   "tags": [
@@ -335,7 +332,6 @@
       "lang": "am",
       "slug": "shokoladapatat-chrer-230",
       "category_slug": "chocolate-covered",
-      "sku": "230",
       "weight_value": 230,
       "weight_unit": "գ",
       "images": [
@@ -383,7 +379,6 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v2",
       "tastes_count": 5
     },
@@ -392,7 +387,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-chrer-230",
       "category_slug": "chocolate-covered",
-      "sku": "230",
       "weight_value": 230,
       "weight_unit": "г",
       "images": [
@@ -440,7 +434,6 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v2",
       "tastes_count": 5
     },
@@ -449,7 +442,6 @@
       "lang": "en",
       "slug": "shokoladapatat-chrer-230",
       "category_slug": "chocolate-covered",
-      "sku": "230",
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
@@ -497,7 +489,6 @@
           "box_image": "/images/products/choco-chir-230-fig.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v2",
       "tastes_count": 5
     },
@@ -506,7 +497,6 @@
       "lang": "am",
       "slug": "shokoladapatat-chrer-200",
       "category_slug": "chocolate-covered",
-      "sku": "200",
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
@@ -554,7 +544,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -563,7 +552,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-chrer-200",
       "category_slug": "chocolate-covered",
-      "sku": "200",
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
@@ -611,7 +599,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -620,7 +607,6 @@
       "lang": "en",
       "slug": "shokoladapatat-chrer-200",
       "category_slug": "chocolate-covered",
-      "sku": "200",
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
@@ -668,7 +654,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -677,7 +662,6 @@
       "lang": "am",
       "slug": "znarakapat-pastether-mini-250",
       "category_slug": "chocolate-covered",
-      "sku": "250",
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
@@ -724,7 +708,6 @@
           "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -733,7 +716,6 @@
       "lang": "ru",
       "slug": "znarakapat-pastether-mini-250",
       "category_slug": "chocolate-covered",
-      "sku": "250",
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
@@ -780,7 +762,6 @@
           "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -789,7 +770,6 @@
       "lang": "en",
       "slug": "znarakapat-pastether-mini-250",
       "category_slug": "chocolate-covered",
-      "sku": "250",
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
@@ -836,7 +816,6 @@
           "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -845,7 +824,6 @@
       "lang": "am",
       "slug": "shokoladapatat-pastether-30",
       "category_slug": "chocolate-covered",
-      "sku": "30-p",
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
@@ -892,7 +870,6 @@
           "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -901,7 +878,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-pastether-30",
       "category_slug": "chocolate-covered",
-      "sku": "30-p",
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
@@ -948,7 +924,6 @@
           "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -957,7 +932,6 @@
       "lang": "en",
       "slug": "shokoladapatat-pastether-30",
       "category_slug": "chocolate-covered",
-      "sku": "30-p",
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
@@ -1004,7 +978,6 @@
           "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1013,7 +986,6 @@
       "lang": "am",
       "slug": "shokoladapatat-salikner-170",
       "category_slug": "chocolate-covered",
-      "sku": "170-b",
       "weight_value": 170,
       "weight_unit": "գ",
       "images": [
@@ -1060,7 +1032,6 @@
           "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1069,7 +1040,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-salikner-170",
       "category_slug": "chocolate-covered",
-      "sku": "170-b",
       "weight_value": 170,
       "weight_unit": "г",
       "images": [
@@ -1116,7 +1086,6 @@
           "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1125,7 +1094,6 @@
       "lang": "en",
       "slug": "shokoladapatat-salikner-170",
       "category_slug": "chocolate-covered",
-      "sku": "170-b",
       "weight_value": 170,
       "weight_unit": "g",
       "images": [
@@ -1172,7 +1140,6 @@
           "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1181,7 +1148,6 @@
       "lang": "am",
       "slug": "shokoladapatat-salikner-50",
       "category_slug": "chocolate-covered",
-      "sku": "50-b",
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
@@ -1222,7 +1188,6 @@
           "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 4
     },
@@ -1231,7 +1196,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-salikner-50",
       "category_slug": "chocolate-covered",
-      "sku": "50-b",
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
@@ -1272,7 +1236,6 @@
           "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 4
     },
@@ -1281,7 +1244,6 @@
       "lang": "en",
       "slug": "shokoladapatat-salikner-50",
       "category_slug": "chocolate-covered",
-      "sku": "50-b",
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
@@ -1322,7 +1284,6 @@
           "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 4
     },
@@ -1331,7 +1292,6 @@
       "lang": "am",
       "slug": "shokoladapatat-chrer-120",
       "category_slug": "chocolate-covered",
-      "sku": "120-c",
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
@@ -1378,7 +1338,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1387,7 +1346,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-chrer-120",
       "category_slug": "chocolate-covered",
-      "sku": "120-c",
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
@@ -1434,7 +1392,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1443,7 +1400,6 @@
       "lang": "en",
       "slug": "shokoladapatat-chrer-120",
       "category_slug": "chocolate-covered",
-      "sku": "120-c",
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
@@ -1490,7 +1446,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1499,7 +1454,6 @@
       "lang": "am",
       "slug": "shokoladapatat-chrer-nuzhov-ynkuyqov-120",
       "category_slug": "chocolate-covered",
-      "sku": "120-cn",
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
@@ -1546,7 +1500,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1555,7 +1508,6 @@
       "lang": "ru",
       "slug": "shokoladapatat-chrer-nuzhov-ynkuyqov-120",
       "category_slug": "chocolate-covered",
-      "sku": "120-cn",
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
@@ -1602,7 +1554,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1611,7 +1562,6 @@
       "lang": "en",
       "slug": "shokoladapatat-chrer-nuzhov-ynkuyqov-120",
       "category_slug": "chocolate-covered",
-      "sku": "120-cn",
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
@@ -1658,7 +1608,6 @@
           "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -1667,7 +1616,6 @@
       "lang": "am",
       "slug": "chrer-200",
       "category_slug": "dried-fruits",
-      "sku": "1042",
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
@@ -1726,7 +1674,6 @@
           "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 7
     },
@@ -1735,7 +1682,6 @@
       "lang": "ru",
       "slug": "chrer-200",
       "category_slug": "dried-fruits",
-      "sku": "1042",
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
@@ -1794,7 +1740,6 @@
           "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 7
     },
@@ -1803,7 +1748,6 @@
       "lang": "en",
       "slug": "chrer-200",
       "category_slug": "dried-fruits",
-      "sku": "1042",
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
@@ -1862,7 +1806,6 @@
           "box_image": "/images/products/test/chrer-200-box-7.webp"
         }
       ],
-      "shelf_life_months": 5,
       "default_variant": "v1",
       "tastes_count": 7
     },
@@ -1871,7 +1814,6 @@
       "lang": "am",
       "slug": "khndzori-chir-100",
       "category_slug": "dried-fruits",
-      "sku": "100-a",
       "weight_value": 100,
       "weight_unit": "գ",
       "images": [
@@ -1895,7 +1837,6 @@
           "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1"
     },
     {
@@ -1903,7 +1844,6 @@
       "lang": "ru",
       "slug": "khndzori-chir-100",
       "category_slug": "dried-fruits",
-      "sku": "100-a",
       "weight_value": 100,
       "weight_unit": "г",
       "images": [
@@ -1927,7 +1867,6 @@
           "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1"
     },
     {
@@ -1935,7 +1874,6 @@
       "lang": "en",
       "slug": "khndzori-chir-100",
       "category_slug": "dried-fruits",
-      "sku": "100-a",
       "weight_value": 100,
       "weight_unit": "g",
       "images": [
@@ -1959,7 +1897,6 @@
           "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1"
     },
     {
@@ -1967,7 +1904,6 @@
       "lang": "am",
       "slug": "frutamin-250",
       "category_slug": "dried-fruits",
-      "sku": "250-f",
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
@@ -1996,7 +1932,6 @@
           "box_image": "/images/products/test/frutamin-250-box-2.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 2
     },
@@ -2005,7 +1940,6 @@
       "lang": "ru",
       "slug": "frutamin-250",
       "category_slug": "dried-fruits",
-      "sku": "250-f",
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
@@ -2034,7 +1968,6 @@
           "box_image": "/images/products/test/frutamin-250-box-2.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 2
     },
@@ -2043,7 +1976,6 @@
       "lang": "en",
       "slug": "frutamin-250",
       "category_slug": "dried-fruits",
-      "sku": "250-f",
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
@@ -2072,7 +2004,6 @@
           "box_image": "/images/products/test/frutamin-250-box-2.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 2
     },
@@ -2081,7 +2012,6 @@
       "lang": "am",
       "slug": "frutini-mrgayin-lavashner-400",
       "category_slug": "dried-fruits",
-      "sku": "400-fl",
       "weight_value": 400,
       "weight_unit": "գ",
       "images": [
@@ -2128,7 +2058,6 @@
           "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2137,7 +2066,6 @@
       "lang": "ru",
       "slug": "frutini-mrgayin-lavashner-400",
       "category_slug": "dried-fruits",
-      "sku": "400-fl",
       "weight_value": 400,
       "weight_unit": "г",
       "images": [
@@ -2184,7 +2112,6 @@
           "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2193,7 +2120,6 @@
       "lang": "en",
       "slug": "frutini-mrgayin-lavashner-400",
       "category_slug": "dried-fruits",
-      "sku": "400-fl",
       "weight_value": 400,
       "weight_unit": "g",
       "images": [
@@ -2240,7 +2166,6 @@
           "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2249,7 +2174,6 @@
       "lang": "am",
       "slug": "mrgayin-lavashner-90",
       "category_slug": "dried-fruits",
-      "sku": "90-fl",
       "weight_value": 90,
       "weight_unit": "գ",
       "images": [
@@ -2320,7 +2244,6 @@
           "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 9
     },
@@ -2329,7 +2252,6 @@
       "lang": "ru",
       "slug": "mrgayin-lavashner-90",
       "category_slug": "dried-fruits",
-      "sku": "90-fl",
       "weight_value": 90,
       "weight_unit": "г",
       "images": [
@@ -2400,7 +2322,6 @@
           "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 9
     },
@@ -2409,7 +2330,6 @@
       "lang": "en",
       "slug": "mrgayin-lavashner-90",
       "category_slug": "dried-fruits",
-      "sku": "90-fl",
       "weight_value": 90,
       "weight_unit": "g",
       "images": [
@@ -2480,7 +2400,6 @@
           "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 9
     },
@@ -2489,7 +2408,6 @@
       "lang": "am",
       "slug": "pastethner-30",
       "category_slug": "dried-fruits",
-      "sku": "30-pas",
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
@@ -2536,7 +2454,6 @@
           "box_image": "/images/products/test/pastethner-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2545,7 +2462,6 @@
       "lang": "ru",
       "slug": "pastethner-30",
       "category_slug": "dried-fruits",
-      "sku": "30-pas",
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
@@ -2592,7 +2508,6 @@
           "box_image": "/images/products/test/pastethner-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2601,7 +2516,6 @@
       "lang": "en",
       "slug": "pastethner-30",
       "category_slug": "dried-fruits",
-      "sku": "30-pas",
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
@@ -2648,7 +2562,6 @@
           "box_image": "/images/products/test/pastethner-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2657,7 +2570,6 @@
       "lang": "am",
       "slug": "bnakan-lavash-50",
       "category_slug": "dried-fruits",
-      "sku": "50-l",
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
@@ -2704,7 +2616,6 @@
           "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2713,7 +2624,6 @@
       "lang": "ru",
       "slug": "bnakan-lavash-50",
       "category_slug": "dried-fruits",
-      "sku": "50-l",
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
@@ -2760,7 +2670,6 @@
           "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2769,7 +2678,6 @@
       "lang": "en",
       "slug": "bnakan-lavash-50",
       "category_slug": "dried-fruits",
-      "sku": "50-l",
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
@@ -2816,7 +2724,6 @@
           "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -2825,7 +2732,6 @@
       "lang": "am",
       "slug": "mrgayin-stikner-20",
       "category_slug": "dried-fruits",
-      "sku": "20-s",
       "weight_value": 20,
       "weight_unit": "գ",
       "images": [
@@ -2890,7 +2796,6 @@
           "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 8
     },
@@ -2899,7 +2804,6 @@
       "lang": "ru",
       "slug": "mrgayin-stikner-20",
       "category_slug": "dried-fruits",
-      "sku": "20-s",
       "weight_value": 20,
       "weight_unit": "г",
       "images": [
@@ -2964,7 +2868,6 @@
           "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 8
     },
@@ -2973,7 +2876,6 @@
       "lang": "en",
       "slug": "mrgayin-stikner-20",
       "category_slug": "dried-fruits",
-      "sku": "20-s",
       "weight_value": 20,
       "weight_unit": "g",
       "images": [
@@ -3038,7 +2940,6 @@
           "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 8
     },
@@ -3047,7 +2948,6 @@
       "lang": "am",
       "slug": "pastethner-sigari-tespov-30",
       "category_slug": "dried-fruits",
-      "sku": "30-cig",
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
@@ -3095,7 +2995,6 @@
           "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -3104,7 +3003,6 @@
       "lang": "ru",
       "slug": "pastethner-sigari-tespov-30",
       "category_slug": "dried-fruits",
-      "sku": "30-cig",
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
@@ -3152,7 +3050,6 @@
           "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -3161,7 +3058,6 @@
       "lang": "en",
       "slug": "pastethner-sigari-tespov-30",
       "category_slug": "dried-fruits",
-      "sku": "30-cig",
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
@@ -3209,7 +3105,6 @@
           "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 5
     },
@@ -3218,7 +3113,6 @@
       "lang": "am",
       "slug": "mrgayin-pastethner-30",
       "category_slug": "dried-fruits",
-      "sku": "30-pat",
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
@@ -3259,7 +3153,6 @@
           "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 4
     },
@@ -3268,7 +3161,6 @@
       "lang": "ru",
       "slug": "mrgayin-pastethner-30",
       "category_slug": "dried-fruits",
-      "sku": "30-pat",
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
@@ -3309,7 +3201,6 @@
           "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 4
     },
@@ -3318,7 +3209,6 @@
       "lang": "en",
       "slug": "mrgayin-pastethner-30",
       "category_slug": "dried-fruits",
-      "sku": "30-pat",
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
@@ -3359,7 +3249,6 @@
           "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
-      "shelf_life_months": 6,
       "default_variant": "v1",
       "tastes_count": 4
     }
@@ -3375,9 +3264,7 @@
       "previous_image": "Նախորդ նկարը",
       "next_image": "Հաջորդ նկարը",
       "image_label": "Նկար",
-      "sku_label": "Կոդ",
       "variants_label": "Համեր",
-      "selected_label": "Ընտրված է",
       "composition_button": "Դիտել բաղադրությունը",
       "weight_unit": "գ",
       "taste_unit": "համ",
@@ -3394,9 +3281,7 @@
       "previous_image": "Предыдущее фото",
       "next_image": "Следующее фото",
       "image_label": "Фото",
-      "sku_label": "Артикул",
       "variants_label": "Вкусы",
-      "selected_label": "Выбрано",
       "composition_button": "Состав продукта",
       "weight_unit": "г",
       "taste_unit": "вкусов",
@@ -3413,9 +3298,7 @@
       "previous_image": "Previous image",
       "next_image": "Next image",
       "image_label": "Image",
-      "sku_label": "SKU",
       "variants_label": "Tastes",
-      "selected_label": "Selected",
       "composition_button": "View ingredients",
       "weight_unit": "g",
       "taste_unit": "tastes",
@@ -3478,7 +3361,7 @@
   ],
   "philosophy_text": [
     {
-      "id": "1",
+      "id": 1,
       "lang": "am",
       "text": "Մենք օգտագործում ենք բացառապես հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի, բուրավետիչների և կոնսերվանտների։ Յուրաքանչյուր արտադրանք ստեղծվում է այնպես, որպեսզի հնարավորինս պահպանվեն մրգի բնական համը, բույրը և օգտակար հատկությունները։",
       "btn": "Կարդալ ավելին",
@@ -3505,7 +3388,7 @@
       "slider_navigation_label": "Նկարների կառավարում"
     },
     {
-      "id": "2",
+      "id": 2,
       "lang": "ru",
       "text": "Мы используем исключительно отборные армянские фрукты, без добавления сахара, искусственных красителей, ароматизаторов и консервантов. Каждый продукт создается таким образом, чтобы максимально сохранить естественный вкус, аромат и полезные свойства фруктов.",
       "btn": "Читать далее",
@@ -3532,7 +3415,7 @@
       "slider_navigation_label": "Управление фото"
     },
     {
-      "id": "3",
+      "id": 3,
       "lang": "en",
       "text": "We use exclusively select Armenian fruits, with no added sugar, artificial colorings, flavorings, or preservatives. Each product is crafted to preserve the fruit's natural taste, aroma, and beneficial properties as much as possible.",
       "btn": "Read more",
@@ -3699,294 +3582,252 @@
       "id": 1,
       "lang": "am",
       "code": "usa",
-      "region": "north-america",
       "name": "ԱՄՆ"
     },
     {
       "id": 2,
       "lang": "ru",
       "code": "usa",
-      "region": "north-america",
       "name": "США"
     },
     {
       "id": 3,
       "lang": "en",
       "code": "usa",
-      "region": "north-america",
       "name": "USA"
     },
     {
       "id": 4,
       "lang": "am",
       "code": "france",
-      "region": "europe",
       "name": "Ֆրանսիա"
     },
     {
       "id": 5,
       "lang": "ru",
       "code": "france",
-      "region": "europe",
       "name": "Франция"
     },
     {
       "id": 6,
       "lang": "en",
       "code": "france",
-      "region": "europe",
       "name": "France"
     },
     {
       "id": 7,
       "lang": "am",
       "code": "germany",
-      "region": "europe",
       "name": "Գերմանիա"
     },
     {
       "id": 8,
       "lang": "ru",
       "code": "germany",
-      "region": "europe",
       "name": "Германия"
     },
     {
       "id": 9,
       "lang": "en",
       "code": "germany",
-      "region": "europe",
       "name": "Germany"
     },
     {
       "id": 10,
       "lang": "am",
       "code": "belgium",
-      "region": "europe",
       "name": "Բելգիա"
     },
     {
       "id": 11,
       "lang": "ru",
       "code": "belgium",
-      "region": "europe",
       "name": "Бельгия"
     },
     {
       "id": 12,
       "lang": "en",
       "code": "belgium",
-      "region": "europe",
       "name": "Belgium"
     },
     {
       "id": 13,
       "lang": "am",
       "code": "netherlands",
-      "region": "europe",
       "name": "Նիդերլանդներ"
     },
     {
       "id": 14,
       "lang": "ru",
       "code": "netherlands",
-      "region": "europe",
       "name": "Нидерланды"
     },
     {
       "id": 15,
       "lang": "en",
       "code": "netherlands",
-      "region": "europe",
       "name": "Netherlands"
     },
     {
       "id": 16,
       "lang": "am",
       "code": "czechia",
-      "region": "europe",
       "name": "Չեխիա"
     },
     {
       "id": 17,
       "lang": "ru",
       "code": "czechia",
-      "region": "europe",
       "name": "Чехия"
     },
     {
       "id": 18,
       "lang": "en",
       "code": "czechia",
-      "region": "europe",
       "name": "Czech Republic"
     },
     {
       "id": 19,
       "lang": "am",
       "code": "poland",
-      "region": "europe",
       "name": "Լեհաստան"
     },
     {
       "id": 20,
       "lang": "ru",
       "code": "poland",
-      "region": "europe",
       "name": "Польша"
     },
     {
       "id": 21,
       "lang": "en",
       "code": "poland",
-      "region": "europe",
       "name": "Poland"
     },
     {
       "id": 22,
       "lang": "am",
       "code": "russia",
-      "region": "eurasia",
       "name": "Ռուսաստան"
     },
     {
       "id": 23,
       "lang": "ru",
       "code": "russia",
-      "region": "eurasia",
       "name": "Россия"
     },
     {
       "id": 24,
       "lang": "en",
       "code": "russia",
-      "region": "eurasia",
       "name": "Russia"
     },
     {
       "id": 25,
       "lang": "am",
       "code": "kazakhstan",
-      "region": "eurasia",
       "name": "Ղազախստան"
     },
     {
       "id": 26,
       "lang": "ru",
       "code": "kazakhstan",
-      "region": "eurasia",
       "name": "Казахстан"
     },
     {
       "id": 27,
       "lang": "en",
       "code": "kazakhstan",
-      "region": "eurasia",
       "name": "Kazakhstan"
     },
     {
       "id": 28,
       "lang": "am",
       "code": "uae",
-      "region": "middle-east",
       "name": "Արաբական Միացյալ Էմիրություններ"
     },
     {
       "id": 29,
       "lang": "ru",
       "code": "uae",
-      "region": "middle-east",
       "name": "Объединённые Арабские Эмираты"
     },
     {
       "id": 30,
       "lang": "en",
       "code": "uae",
-      "region": "middle-east",
       "name": "United Arab Emirates"
     },
     {
       "id": 31,
       "lang": "am",
       "code": "qatar",
-      "region": "middle-east",
       "name": "Կատար"
     },
     {
       "id": 32,
       "lang": "ru",
       "code": "qatar",
-      "region": "middle-east",
       "name": "Катар"
     },
     {
       "id": 33,
       "lang": "en",
       "code": "qatar",
-      "region": "middle-east",
       "name": "Qatar"
     },
     {
       "id": 34,
       "lang": "am",
       "code": "kuwait",
-      "region": "middle-east",
       "name": "Քուվեյթ"
     },
     {
       "id": 35,
       "lang": "ru",
       "code": "kuwait",
-      "region": "middle-east",
       "name": "Кувейт"
     },
     {
       "id": 36,
       "lang": "en",
       "code": "kuwait",
-      "region": "middle-east",
       "name": "Kuwait"
     },
     {
       "id": 37,
       "lang": "am",
       "code": "saudi-arabia",
-      "region": "middle-east",
       "name": "Սաուդյան Արաբիա"
     },
     {
       "id": 38,
       "lang": "ru",
       "code": "saudi-arabia",
-      "region": "middle-east",
       "name": "Саудовская Аравия"
     },
     {
       "id": 39,
       "lang": "en",
       "code": "saudi-arabia",
-      "region": "middle-east",
       "name": "Saudi Arabia"
     },
     {
       "id": 40,
       "lang": "am",
       "code": "australia",
-      "region": "oceania",
       "name": "Ավստրալիա"
     },
     {
       "id": 41,
       "lang": "ru",
       "code": "australia",
-      "region": "oceania",
       "name": "Австралия"
     },
     {
       "id": 42,
       "lang": "en",
       "code": "australia",
-      "region": "oceania",
       "name": "Australia"
     }
   ],
@@ -4125,7 +3966,7 @@
   ],
   "contact_page_contents": [
     {
-      "id": "1",
+      "id": 1,
       "lang": "am",
       "title": "Կապ",
       "description": "Գրեք մեզ՝ համագործակցության, պատվերների կամ ցանկացած այլ հարցի համար:",
@@ -4134,7 +3975,7 @@
       "form_title": "Ուղարկեք հաղորդագրություն",
       "name_label": "Անուն",
       "email_label": "Էլ. փոստ",
-      "phone_label": "Հեռախոսահամար",
+      "phone_label": "Հեռախոս",
       "message_label": "Հաղորդագրություն",
       "submit_label": "Ուղարկել",
       "sending_label": "Ուղարկվում է...",
@@ -4143,7 +3984,7 @@
       "map_title": "Մեր գտնվելու վայրը"
     },
     {
-      "id": "2",
+      "id": 2,
       "lang": "ru",
       "title": "Контакты",
       "description": "Напишите нам по вопросам сотрудничества, заказов или любым другим вопросам.",
@@ -4161,7 +4002,7 @@
       "map_title": "Наше местоположение"
     },
     {
-      "id": "3",
+      "id": 3,
       "lang": "en",
       "title": "Contact",
       "description": "Write to us about partnership, orders, or any other question.",
@@ -4179,24 +4020,23 @@
       "map_title": "Our location"
     }
   ],
-  "contact_messages": [],
   "export_cooperation": [
     {
-      "id": "1",
+      "id": 1,
       "lang": "am",
       "title": "Արտահանում և համագործակցություն",
       "left_text": "Այսօր Fruit Food-ի արտադրանքն արտահանվում է աշխարհի բազմաթիվ երկրներ՝ դիստրիբյուտորների և միջազգային գործընկերների միջոցով։",
       "right_text": "Մենք համագործակցում ենք սուպերմարկետների ցանցերի, դիստրիբյուտորների, ներմուծողների և մեծածախ գործընկերների հետ՝ առաջարկելով ինչպես մեր սեփական ապրանքանիշերը, այնպես էլ Private Label (արտադրություն պատվիրատուի ապրանքանիշով) ծառայությունը՝ անհատական փաթեթավորմամբ և անհրաժեշտ քաշային տարբերակներով։"
     },
     {
-      "id": "2",
+      "id": 2,
       "lang": "ru",
       "title": "Экспорт и сотрудничество",
       "left_text": "Сегодня продукция Fruit Food экспортируется во многие страны мира через дистрибьюторов и международных партнёров.",
       "right_text": "Мы сотрудничаем с сетями супермаркетов, дистрибьюторами, импортёрами и оптовыми партнёрами, предлагая как наши собственные бренды, так и услугу Private Label (производство под брендом заказчика) с индивидуальной упаковкой и необходимыми вариантами веса."
     },
     {
-      "id": "3",
+      "id": 3,
       "lang": "en",
       "title": "Export and Cooperation",
       "left_text": "Today, Fruit Food products are exported to many countries around the world through distributors and international partners.",
@@ -4205,14 +4045,13 @@
   ],
   "our_factory": [
     {
-      "id": "1",
+      "id": 1,
       "lang": "am",
       "label": "ՄԵՐ ԳՈՐԾԱՐԱՆԸ",
       "title_green": "Fruit Food-ի արտադրական համալիրը",
       "title_black": "Սուրենավանում",
       "first_text": "Fruit Food-ի արտադրական համալիրը գտնվում է Հայաստանի Արարատի մարզի Սուրենավան գյուղում՝ տարածաշրջանում, որը հայտնի է իր արևահամ մրգերով, հարուստ բնությամբ և գյուղատնտեսական ավանդույթներով։",
       "second_text": "Գործարանի տեղակայումը պատահական չէ․ արևմուտքում այն հսկում է վեհաշուք Արարատ լեռը, իսկ ընդամենը մի քանի կիլոմետր հեռավորության վրա գտնվում է պատմական Խոր Վիրապ վանական համալիրը։ Այս յուրահատուկ միջավայրը մեր արտադրանքին հաղորդում է հայկական բնության և մշակույթի առանձնահատուկ շունչը։",
-      "main_image": "/images/about-us/factory-1.jpg",
       "slider": [
         {
           "id": 1,
@@ -4249,14 +4088,13 @@
       "slider_navigation_label": "Նկարների կառավարում"
     },
     {
-      "id": "2",
+      "id": 2,
       "lang": "ru",
       "label": "НАША ФАБРИКА",
       "title_green": "Производственный комплекс Fruit Food",
       "title_black": "в Суренаване",
       "first_text": "Производственный комплекс Fruit Food находится в селе Суренаван Араратской области Армении — регионе, известном своими солнечными фруктами, богатой природой и сельскохозяйственными традициями.",
       "second_text": "Расположение фабрики не случайно: с запада её возвышенно охраняет гора Арарат, а всего в нескольких километрах находится исторический монастырский комплекс Хор Вирап. Эта уникальная среда придаёт нашей продукции особый дух армянской природы и культуры.",
-      "main_image": "/images/about-us/factory-1.jpg",
       "slider": [
         {
           "id": 1,
@@ -4293,14 +4131,13 @@
       "slider_navigation_label": "Управление изображениями"
     },
     {
-      "id": "3",
+      "id": 3,
       "lang": "en",
       "label": "OUR FACTORY",
       "title_green": "Fruit Food production complex",
       "title_black": "in Surenavan",
       "first_text": "Fruit Food's production complex is located in the village of Surenavan, Ararat region of Armenia, an area known for its sun-ripened fruits, rich nature and agricultural traditions.",
       "second_text": "The location of the factory is not accidental: Mount Ararat majestically overlooks it from the west, while the historic Khor Virap monastery complex is located just a few kilometers away. This unique environment gives our products a special spirit of Armenian nature and culture.",
-      "main_image": "/images/about-us/factory-1.jpg",
       "slider": [
         {
           "id": 1,
@@ -4339,21 +4176,21 @@
   ],
   "we_believe": [
     {
-      "id": "1",
+      "id": 1,
       "lang": "am",
       "description": "Մեր հաջողության հիմքում հենց սկզբից եղել է անփոփոխ սկզբունքը՝ օգտագործել բացառապես հայկական բարձրորակ մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի և կոնսերվանտների։ Այս արժեքները մինչև այսօր մնում են Fruit Food-ի արտադրության ռազմավարության և զարգացման գլխավոր ուղղությունները։",
       "title": "Fruit Food-ում մենք հավատում ենք, որ բնական սնունդը ",
       "title_end": "պարզապես ընտրություն չէ. այն ապրելակերպ է:"
     },
     {
-      "id": "2",
+      "id": 2,
       "lang": "ru",
       "description": "С самого начала в основе нашего успеха лежал неизменный принцип — использовать исключительно высококачественные армянские фрукты, без добавленного сахара, искусственных красителей и консервантов. Эти ценности и сегодня остаются главными направлениями стратегии производства и развития Fruit Food.",
       "title": "В Fruit Food мы верим, что натуральная еда — ",
       "title_end": "это не просто выбор, а образ жизни."
     },
     {
-      "id": "3",
+      "id": 3,
       "lang": "en",
       "description": "From the very beginning, our success has been based on an unchanged principle: using exclusively high-quality Armenian fruits, without added sugar, artificial colorants or preservatives. These values remain the main directions of Fruit Food's production strategy and development to this day.",
       "title": "At Fruit Food, we believe that natural food ",
@@ -4531,11 +4368,11 @@
   ],
   "contact_info": [
     {
-      "id": "1",
+      "id": 1,
       "lang": "am",
       "address_label": "Հասցե",
-      "address_line_1": "Մ․Գալշոյան 6-8",
-      "address_line_2": "գ․Սուրենավան, Արարատի մարզ Հայաստան",
+      "address_line_1": "Մ․ Գալշոյան 6–8",
+      "address_line_2": "գ․ Սուրենավան, Արարատի մարզ\nՀայաստան",
       "email_label": "Էլ․ փոստ",
       "email": "chocochir@mail.ru",
       "social_label": "Սոց․ ցանցեր",
@@ -4556,11 +4393,11 @@
       "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
     },
     {
-      "id": "2",
+      "id": 2,
       "lang": "ru",
       "address_label": "Адрес",
-      "address_line_1": "М․Галшоян 6-8",
-      "address_line_2": "с․Суренаван, Араратская область, Армения",
+      "address_line_1": "М. Галшоян 6–8",
+      "address_line_2": "с. Суренаван, Араратская область\nАрмения",
       "email_label": "Эл․ почта",
       "email": "chocochir@mail.ru",
       "social_label": "Соц․ сети",
@@ -4581,11 +4418,11 @@
       "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
     },
     {
-      "id": "3",
+      "id": 3,
       "lang": "en",
       "address_label": "Address",
-      "address_line_1": "M.Galshoyan 6-8",
-      "address_line_2": "Surenavan village, Ararat Province, Armenia",
+      "address_line_1": "M. Galshoyan 6–8",
+      "address_line_2": "Surenavan village, Ararat Province\nArmenia",
       "email_label": "Email",
       "email": "chocochir@mail.ru",
       "social_label": "Social media",

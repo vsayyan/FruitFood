@@ -77,7 +77,7 @@ export default async function AboutUsPage() {
       <ProductShowcaseSlider data={aboutShowcase[0]} />
       <QualityNaturalness data={aboutQualityNaturalness[0]} />
       <ExportCooperation data={exportCooperation[0]} />
-      <OurFactory data={ourFactory[0]} />
+      {ourFactory[0] && <OurFactory data={ourFactory[0]} />}
       <WeBelieve data={weBelieve[0]} />
     </>
   )

@@ -6,6 +6,7 @@ export default function Faq({ small, heading, data = [] }) {
 
     return (
         <section id="faq" className={styles.faq}>
+          <div className={`container ${styles.inner}`}>
             <div className={styles.left_side}>
                 <span>{smallTitle.text || 'FAQ'}</span>
                 <h2>{title.heading}</h2>
@@ -24,6 +25,7 @@ export default function Faq({ small, heading, data = [] }) {
                     </details>
                 ))}
             </div>
+          </div>
         </section>
     )
 }
