@@ -6,6 +6,8 @@
 
 .title {
   font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: 1.2;
   color: var(--color-green);
 }
 
@@ -17,30 +19,33 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 .card {
+  width: 588px;
+  height: 553px;
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
-  border-radius: var(--radius-2xl);
   overflow: hidden;
+  border-radius: var(--radius-2xl);
   background: var(--color-mint);
 }
-
 .imageWrapper {
-  width: 100%;
-  aspect-ratio: 16 / 10;
+  width: calc(100% - 40px);        /* 20px ձախ + 20px աջ */
+  max-width: 585px;
+  height: 342.5px;
+  margin: 20px auto 0;              /* 20px վերևից, կենտրոնում */
   overflow: hidden;
+  border-radius: var(--radius-lg);  /* ← կլորացված անկյուններ (ըստ ցանկության) */
 }
 
 .image {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;                /* ← կամ contain */
+  object-position: center;
 }
 
 .body {
@@ -52,10 +57,36 @@
 
 .name {
   font-size: var(--font-size-md);
+  font-weight: 600;
+  line-height: 1.4;
   color: var(--color-green);
 }
 
 .description {
   font-size: var(--font-size-body);
+  line-height: 1.6;
   color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+  .section {
+    gap: var(--space-lg);
+  }
+
+  .title {
+    font-size: var(--font-size-title);
+  }
+
+  .grid {
+    gap: var(--space-md);
+  }
+
+  .card {
+    border-radius: var(--radius-xl);
+    gap: var(--space-md);
+  }
+
+  .body {
+    padding: var(--space-md);
+  }
 }

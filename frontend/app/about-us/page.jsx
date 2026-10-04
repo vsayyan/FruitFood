@@ -1,4 +1,4 @@
-import { displayLang } from '@/lib/lang'
+import { displayLang } from "@/lib/lang";
 import {
   getExportCooperation,
   getOurFactory,
@@ -13,27 +13,29 @@ import {
   getAboutIntro,
   getAboutPageLabels,
   getPageTitle,
-} from './actions'
+} from "./actions";
 
-import ExportCooperation from './_components/ExportCooperation'
-import OurFactory from './_components/OurFactory'
-import WeBelieve from './_components/WeBelieve'
-import Philosophy from '../_components/Philosophy'
-import Faq from '../_components/Faq'
-import Brands from './_components/Brands'
-import NaturalQuality from './_components/NaturalQuality'
-import styles from './page.module.css'
+import ExportCooperation from "./_components/ExportCooperation";
+import OurFactory from "./_components/OurFactory";
+import WeBelieve from "./_components/WeBelieve";
+import Philosophy from "../_components/Philosophy";
+import Faq from "../_components/Faq";
+import Brands from "./_components/Brands";
+import NaturalQuality from "./_components/NaturalQuality";
+import styles from "./page.module.css";
+import PhilosophyFacts from './_components/PhilosophyFacts';
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function generateMetadata() {
-  const title = await getPageTitle(await displayLang())
-  return title ? { title } : {}
+  const title = await getPageTitle(await displayLang());
+
+  return title ? { title } : {};
 }
 
 export default async function AboutUsPage() {
-  const lang = await displayLang()
+  const lang = await displayLang();
 
   const [
     exportCooperation,
@@ -61,21 +63,21 @@ export default async function AboutUsPage() {
     getBrands(lang),
     getAboutIntro(lang),
     getAboutPageLabels(lang),
-  ])
+  ]);
 
   return (
     <div className={`container ${styles.page}`}>
       <Philosophy
         headings={philosophyHeadings}
         text={philosophyText}
-        facts={philosophyFacts[0]} 
       />
       <NaturalQuality data={aboutIntro} />
+      <PhilosophyFacts data={philosophyFacts} />
+      <Brands data={brands} labels={aboutPageLabels} />
       <ExportCooperation data={exportCooperation[0]} />
       <OurFactory data={ourFactory[0]} />
       <WeBelieve data={weBelieve[0]} />
-      <Brands data={brands} labels={aboutPageLabels} />
       <Faq small={faqSmall} heading={faqHeading} data={faq} />
     </div>
-  )
+  );
 }

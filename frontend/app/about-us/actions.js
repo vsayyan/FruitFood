@@ -71,7 +71,6 @@ export async function getAboutPageLabels(lang) {
   })
   return res.data[0]
 }
-
 export async function getPageTitle(lang) {
   try {
     const res = await axios.get('/navbars', {
@@ -81,4 +80,5 @@ export async function getPageTitle(lang) {
   } catch {
     return null
   }
+  
 }
