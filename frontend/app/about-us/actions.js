@@ -75,3 +75,21 @@ export async function getPageTitle(lang) {
     return null
   }
 }
+
+// ── Section 1–3 (Milena) ──
+// Եթե ինչ-որ մեկի db.json-ում այս collection-ները դեռ չկան, էջը չի ընկնում՝
+// բաժինը պարզապես չի երևում (component-ները data չլինելու դեպքում null են վերադարձնում)
+async function getCollection(name, lang) {
+  try {
+    const res = await axios.get(name, { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+
+export const getAboutIntro = (lang) => getCollection('about_intro', lang)
+export const getAboutPhilosophy = (lang) => getCollection('about_philosophy', lang)
+export const getAboutPhilosophyFacts = (lang) => getCollection('about_philosophy_facts', lang)
+export const getBrands = (lang) => getCollection('brands', lang)
+export const getAboutPageLabels = (lang) => getCollection('about_page_labels', lang)

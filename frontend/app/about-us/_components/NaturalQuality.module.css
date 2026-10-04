@@ -1,0 +1,193 @@
+/* Figma: about 171:5173 / 171:5200 / 171:5215 (desktop), 181:6933 (mobile) */
+
+/* ── Breadcrumb + վերնագիր ── */
+.intro {
+  /* 148px = 68px fixed header + 80px (Figma-ում breadcrumb-ը բաժնի վերևից 80px ա) */
+  padding: 148px 0 var(--space-80);
+  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  list-style: none;
+  font-size: var(--font-size-caption);
+  line-height: 20.8px;
+  color: var(--color-text-muted);
+}
+
+.crumbLink:hover {
+  color: var(--color-green-dark);
+}
+
+.crumbCurrent {
+  font-weight: 500;
+  color: var(--color-green-dark);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: minmax(0, 510px) minmax(0, 611px);
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 44px;
+}
+
+.title {
+  font-size: var(--font-size-display);
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -1.5px;
+  color: var(--color-green);
+}
+
+.body {
+  font-size: var(--font-size-base);
+  line-height: 27.2px;
+  color: var(--color-text);
+}
+
+/* ── Նկար / slider ── */
+.media {
+  padding: var(--space-lg) 0;
+}
+
+.slider {
+  position: relative;
+  height: 457px;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(159deg, var(--color-mint) 0%, #f5f9f6 100%);
+}
+
+.sliderImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding-bottom: 3px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-text);
+  font-size: var(--font-size-h3);
+  line-height: 1;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease;
+}
+
+.arrow:hover {
+  background: var(--color-white);
+}
+
+.arrow:focus-visible,
+.dot:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
+
+.prev {
+  left: var(--space-sm);
+}
+
+.next {
+  right: var(--space-sm);
+}
+
+.dots {
+  position: absolute;
+  bottom: var(--space-sm);
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  gap: var(--space-xs);
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.dot.active {
+  background: var(--color-white);
+  transform: scale(1.2);
+}
+
+/* ── Երկու սյունակ տեքստ ── */
+.story {
+  padding: var(--space-80) 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 480px));
+  justify-content: center;
+  gap: 60px;
+}
+
+.text {
+  font-size: var(--font-size-lead);
+  line-height: 29.8px;
+  color: var(--color-text);
+}
+
+/* ── Mobile (Figma main_mobile 181:6933) ── */
+@media (max-width: 900px) {
+  /* 95px = header + 30px, ինչպես Figma-ում */
+  .intro {
+    padding: 95px 0 33px;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .media {
+    padding: 56px 0 var(--space-lg);
+  }
+
+  .slider {
+    height: 264px;
+  }
+
+  .story {
+    padding: var(--space-lg) 0 48px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+/* Շատ նեղ էկրաններ (320px). երկար բառերը չդուրս գան էկրանից */
+@media (max-width: 360px) {
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    overflow-wrap: break-word;
+  }
+}
