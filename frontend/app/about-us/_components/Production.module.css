@@ -1,7 +1,7 @@
 .section {
   width: 100%;
   background-color: var(--color-green-dark);
-  padding: var(--space-2xl) 0;
+  padding: 100px 0;
 }
 
 .container {
@@ -30,7 +30,6 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* Figma desktop: 52px / 56px. Bold + light parts flow inline and wrap at 480px */
 .title {
   max-width: 480px;
   margin: 28px 0 var(--space-32);
@@ -96,7 +95,6 @@
   overflow: hidden;
 }
 
-/* left center: keeps the left edge of the box ("OPEN") visible instead of cropping it */
 .image {
   width: 100%;
   height: 100%;
@@ -105,7 +103,6 @@
   display: block;
 }
 
-/* Figma mobile (375): 16px sides, 42px top/bottom, title 30px, image 241px */
 @media (max-width: 900px) {
   .section {
     padding: 42px 0;
@@ -129,8 +126,8 @@
 
   .direction {
     grid-template-columns: auto 1fr;
-    gap: var(--space-18);
-    padding: 28px var(--space-md);
+    gap: 12px;
+    padding: 29px 21px;
   }
 
   .imageWrapper {

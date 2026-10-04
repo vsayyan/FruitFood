@@ -20,34 +20,40 @@ export async function getOurFactory(lang) {
   return res.data
 }
 
-export async function getAboutProduction(lang) {
-  const res = await axios.get('/about_production', {
-    params: {
-      lang: lang,
-    },
-  })
 
-  return res.data
+export async function getAboutProduction(lang) {
+  try {
+    const res = await axios.get('about_production', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
 export async function getAboutWhyTrustUs(lang) {
-  const res = await axios.get('/about_why_trust_us', {
-    params: {
-      lang: lang,
-    },
-  })
-
-  return res.data
+  try {
+    const res = await axios.get('about_why_trust_us', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
+}
+export async function getAboutShowcase(lang) {
+  try {
+    const res = await axios.get('about_showcase', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
 export async function getAboutQualityNaturalness(lang) {
-  const res = await axios.get('/about_quality_naturalness', {
-    params: {
-      lang: lang,
-    },
-  })
-
-  return res.data
+  try {
+    const res = await axios.get('about_quality_naturalness', { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
 export async function getWeBelieve(lang) {

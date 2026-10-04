@@ -22,7 +22,7 @@ export default function WhyTrustUs({ data }) {
 
               return (
                 <div key={`${stat.value || 'note'}-${index}`} className={cardClass}>
-                  {hasValue && <h3 className={styles.statValue}>{stat.value}</h3>}
+                  {hasValue && <p className={styles.statValue}>{stat.value}</p>}
                   <p className={styles.statLabel}>{stat.label}</p>
                 </div>
               )

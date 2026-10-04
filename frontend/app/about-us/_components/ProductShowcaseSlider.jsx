@@ -3,20 +3,18 @@
 import { useState } from 'react'
 import styles from './ProductShowcaseSlider.module.css'
 
-// TODO: check these files exist in public/images/products/test/ (or swap in the real photos)
-const productSlides = [
-  '/images/about-us/factory-1.jpg',
-  '/images/about-us/factory-1.jpg',
-  '/images/about-us/factory-1.jpg',
-]
-
 const SWIPE_THRESHOLD = 50
 
-export default function ProductShowcaseSlider() {
+export default function ProductShowcaseSlider({ data }) {
+  // hooks must run before any early return
   const [currentIndex, setCurrentIndex] = useState(0)
   const [touchStartX, setTouchStartX] = useState(null)
 
-  const lastIndex = productSlides.length - 1
+  const images = data?.images ?? []
+
+  if (!images.length) return null
+
+  const lastIndex = images.length - 1
 
   const nextSlide = () => {
     setCurrentIndex((prev) => Math.min(prev + 1, lastIndex))
@@ -53,15 +51,15 @@ export default function ProductShowcaseSlider() {
             className={styles.track}
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            {productSlides.map((src, index) => (
+            {images.map((item, index) => (
               <div
-                key={src}
+                key={index}
                 className={styles.slide}
                 aria-hidden={index === currentIndex ? undefined : 'true'}
               >
                 <img
-                  src={src}
-                  alt="Choco Chir product showcase"
+                  src={item.image}
+                  alt={item.alt ?? ''}
                   className={styles.image}
                   draggable="false"
                 />
@@ -74,7 +72,7 @@ export default function ProductShowcaseSlider() {
               type="button"
               className={`${styles.navButton} ${styles.prev}`}
               onClick={prevSlide}
-              aria-label="Previous product image"
+              aria-label={data.prev_label}
             >
               ‹
             </button>
@@ -85,7 +83,7 @@ export default function ProductShowcaseSlider() {
               type="button"
               className={`${styles.navButton} ${styles.next}`}
               onClick={nextSlide}
-              aria-label="Next product image"
+              aria-label={data.next_label}
             >
               ›
             </button>
