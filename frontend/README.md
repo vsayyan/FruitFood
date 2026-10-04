@@ -391,7 +391,7 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 ## 9. Ինչ դեռ չկա
 
 - Home · «Մեր տեսականին» (Ashot)
-- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero.png`), About us-ի Section 1-ի և ապրանքանիշերի նկարները (`about-us/natural-quality.jpg`, `brands/brand-placeholder.png`)
+- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero-1.png`, slider-ի 3 slide-ը նույն նկարն են (`homepage_hero.slider`)), About us-ի Section 1-ի և ապրանքանիշերի նկարները (`about-us/natural-quality.jpg`, `brands/brand-placeholder.png`)
 - Ապրանքների իրական համերն ու նկարները (տես §9.1)
 - Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language
