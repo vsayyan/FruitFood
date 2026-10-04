@@ -9,30 +9,20 @@ export async function getHero(lang) {
   }
 }
 
-export async function getFaqHeading(lang) {
-  const res = await axios.get('/faq_heading', { params: { lang } })
-  return res.data
+async function getList(collection, lang) {
+  try {
+    const res = await axios.get(collection, { params: { lang } })
+    return res.data
+  } catch {
+    return []
+  }
 }
 
-export async function getFaq(lang) {
-  const res = await axios.get('/faq', { params: { lang } })
-  return res.data
-}
-
-export async function getFaqSmall(lang) {
-  const res = await axios.get('/faq_small', { params: { lang } })
-  return res.data
-}
-
-export async function getPhilosophyHeadings(lang) {
-  const res = await axios.get(`philosophy_headings?lang=${lang}`)
-  return res.data
-}
-
-export async function getPhilosophyText(lang) {
-  const res = await axios.get(`philosophy_text?lang=${lang}`)
-  return res.data
-}
+export const getFaqHeading = (lang) => getList('faq_heading', lang)
+export const getFaq = (lang) => getList('faq', lang)
+export const getFaqSmall = (lang) => getList('faq_small', lang)
+export const getPhilosophyHeadings = (lang) => getList('philosophy_headings', lang)
+export const getPhilosophyText = (lang) => getList('philosophy_text', lang)
 
 export async function getAssortment(lang) {
   try {

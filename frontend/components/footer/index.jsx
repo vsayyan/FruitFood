@@ -10,50 +10,42 @@ export default async function Footer() {
     <footer className={styles.footer}>
       <div className='container'>
         <div className={styles.row}>
-          <div className={`${styles.title} ${styles.boxes}`}>
-              <Image
-                src={data.image}
-                alt={data.title}
-                width={101}
-                height={37}
-                loading='eager'
-              />
-            <p className={styles.description}>{data.description}</p>
+          <div className={styles.brand}>
+            <Image src={data.image} alt={data.title} width={101} height={37} loading='eager' />
+            {data.description && <p className={styles.description}>{data.description}</p>}
           </div>
 
-          <div className={styles.rightSide}>
-            <div className={`${styles.links} ${styles.boxes}`}>
-              {links.map((item) => (
-                <Link key={item.id} href={item.url}>
-                  {item.title}
-                </Link>
-              ))}
-            </div>
+          <nav className={styles.links} aria-label={data.links_label}>
+            {links.map((item) => (
+              <Link key={item.id} href={item.url}>
+                {item.title}
+              </Link>
+            ))}
+          </nav>
 
-            <div className={`${styles.contacts} ${styles.boxes}`}>
-              <p className={styles.contact_us}>{data.subtitle}</p>
-              <div className={styles.address}>
-                <p>{data.address}</p>
-                <p>{data.email}</p>
-              </div>
+          <div className={styles.contacts}>
+            {data.subtitle && <h2 className={styles.subtitle}>{data.subtitle}</h2>}
+            <address className={styles.address}>
+              {data.address && <p>{data.address}</p>}
+              {data.email && (
+                <a href={`mailto:${data.email}`} className={styles.email}>
+                  {data.email}
+                </a>
+              )}
+            </address>
+            {data.social_links.length > 0 && (
               <div className={styles.social}>
                 {data.social_links.map((link) => (
-                  <a key={link.id} href={link.url} target='_blank' rel='noreferrer'>
-                    <Image
-                      src={link.image}
-                      alt={link.label ?? ''}
-                      width={38}
-                      height={38}
-                      loading='eager'
-                    />
+                  <a key={link.id} href={link.url} target='_blank' rel='noreferrer' aria-label={link.label}>
+                    <Image src={link.image} alt='' width={38} height={38} loading='eager' />
                   </a>
                 ))}
               </div>
-            </div>
+            )}
           </div>
         </div>
 
-        <p className={styles.copyright}>{data.copyright}</p>
+        {data.copyright && <p className={styles.copyright}>{data.copyright}</p>}
       </div>
     </footer>
   )

@@ -1,6 +1,8 @@
 import styles from './WeBelieve.module.css'
 
 export default function WeBelieve({ data }) {
+  if (!data) return null
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>

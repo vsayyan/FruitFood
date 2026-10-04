@@ -1,12 +1,14 @@
 import axios from '@/lib/axios'
 
-export async function getContactPageContent(lang) {
-  const res = await axios.get(`contact_page_contents?lang=${lang}`)
-  return res.data[0]
+async function getFirst(collection, lang) {
+  try {
+    const res = await axios.get(collection, { params: { lang } })
+    return res.data[0] ?? null
+  } catch {
+    return null
+  }
 }
 
-export async function getContactInfo(lang) {
-  const res = await axios.get(`contact_info?lang=${lang}`)
-  return res.data[0]
-}
+export const getContactPageContent = (lang) => getFirst('contact_page_contents', lang)
+export const getContactInfo = (lang) => getFirst('contact_info', lang)
 

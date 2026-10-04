@@ -1,6 +1,6 @@
 .map {
   width: 100%;
-  padding-top: var(--space-xl);
+  padding-top: 70px;
 }
 
 .map iframe {
@@ -11,3 +11,14 @@
   margin: 0;
 }
 
+
+@media (max-width: 900px) {
+  .map {
+    padding-top: 10px;
+  }
+
+  .map iframe {
+    min-height: 250px;
+    height: 250px;
+  }
+}

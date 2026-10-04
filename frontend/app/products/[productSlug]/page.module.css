@@ -35,7 +35,7 @@
   column-gap: var(--space-lg);
   align-items: start;
   padding-top: 56px;
-  padding-bottom: 56px;
+  padding-bottom: 92px;
 }
 
 @media (max-width: 900px) {

@@ -16,9 +16,9 @@
 
 .navLink {
   color: var(--color-text);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-body);
   font-weight: 500;
-  line-height: 160%;
+  line-height: 24px;
   cursor: pointer;
 }
 
@@ -84,7 +84,7 @@
 
   transition:
     opacity 0.2s ease,
-    visibility 0.2s ease,
+    visibility 0.2s ease;
 }
 
 @media (min-width: 901px) {
@@ -117,8 +117,8 @@
 
 .category span {
   font-weight: 600;
-  font-size: var(--font-size-base);
-  line-height: 130%;
+  font-size: var(--font-size-sm);
+  line-height: 18.2px;
 
   color: var(--color-text);
 }

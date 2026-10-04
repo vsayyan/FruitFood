@@ -45,8 +45,8 @@ export default async function HomePage() {
       {hero && <Hero data={hero} />}
       {assortment && <Assortment data={assortment} categories={categories} />}
       {stats.length > 0 && <Stats data={stats} />}
-      <Philosophy headings={philosophyHeadings} text={philosophyText} />
-      <Faq small={faqSmall} heading={faqHeading} data={faq} />
+      {philosophyText.length > 0 && <Philosophy headings={philosophyHeadings} text={philosophyText} />}
+      {faq.length > 0 && <Faq small={faqSmall} heading={faqHeading} data={faq} />}
     </>
   )
 }
