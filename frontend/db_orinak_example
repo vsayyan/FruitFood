@@ -3983,126 +3983,132 @@
       "id": 1,
       "lang": "am",
       "code": "fruit-food",
-      "logo": "/images/brands/fruit-food.png",
-      "name": "Ֆրութ Ֆուդ"
+      "name": "Ֆրութ Ֆուդ",
+      "card_title": "Fruit Food, Frutamin, Frutini, Frutik",
+      "description": "Բնական չրեր, մրգային լավաշներ, մրգային բատոնչիկներ և մրգային ձողիկներ։",
+      "image": "/images/brands/brand-placeholder.png",
+      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik"
     },
     {
       "id": 2,
       "lang": "ru",
       "code": "fruit-food",
-      "logo": "/images/brands/fruit-food.png",
-      "name": "Фрут Фуд"
+      "name": "Фрут Фуд",
+      "card_title": "Fruit Food, Frutamin, Frutini, Frutik",
+      "description": "Натуральные сухофрукты, фруктовый лаваш, фруктовые батончики и фруктовые палочки.",
+      "image": "/images/brands/brand-placeholder.png",
+      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik"
     },
     {
       "id": 3,
       "lang": "en",
       "code": "fruit-food",
-      "logo": "/images/brands/fruit-food.png",
-      "name": "Fruit Food"
+      "name": "Fruit Food",
+      "card_title": "Fruit Food, Frutamin, Frutini, Frutik",
+      "description": "Natural dried fruits, fruit lavash, fruit bars and fruit sticks.",
+      "image": "/images/brands/brand-placeholder.png",
+      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik"
     },
     {
       "id": 4,
       "lang": "am",
       "code": "choco-chir",
-      "logo": "/images/brands/choco-chir.png",
-      "name": "Չոկո Չիր"
+      "name": "Չոկո Չիր",
+      "card_title": "Choco Chir",
+      "description": "Բարձրորակ (62% կակաոյի պարունակությամբ) շոկոլադով պատված բնական մրգային պաստեղներ, ինչպես նաև ջնարակապատ չրեր ընկույզով, նուշով և ծիրանի կորիզով։",
+      "image": "/images/brands/brand-placeholder.png",
+      "image_alt": "Choco Chir"
     },
     {
       "id": 5,
       "lang": "ru",
       "code": "choco-chir",
-      "logo": "/images/brands/choco-chir.png",
-      "name": "Чоко Чир"
+      "name": "Чоко Чир",
+      "card_title": "Choco Chir",
+      "description": "Натуральная фруктовая пастила в высококачественном шоколаде (62% какао), а также сухофрукты в глазури с грецким орехом, миндалём и ядром абрикосовой косточки.",
+      "image": "/images/brands/brand-placeholder.png",
+      "image_alt": "Choco Chir"
     },
     {
       "id": 6,
       "lang": "en",
       "code": "choco-chir",
-      "logo": "/images/brands/choco-chir.png",
-      "name": "Choco Chir"
-    },
-    {
-      "id": 7,
-      "lang": "am",
-      "code": "frutastik",
-      "logo": "/images/brands/frutastik.png",
-      "name": "Ֆրուտաստիկ"
-    },
-    {
-      "id": 8,
-      "lang": "ru",
-      "code": "frutastik",
-      "logo": "/images/brands/frutastik.png",
-      "name": "Фрутастик"
-    },
-    {
-      "id": 9,
-      "lang": "en",
-      "code": "frutastik",
-      "logo": "/images/brands/frutastik.png",
-      "name": "Frutastik"
-    },
-    {
-      "id": 10,
-      "lang": "am",
-      "code": "frulini",
-      "logo": "/images/brands/frulini.png",
-      "name": "Ֆրուլինի"
-    },
-    {
-      "id": 11,
-      "lang": "ru",
-      "code": "frulini",
-      "logo": "/images/brands/frulini.png",
-      "name": "Фрулини"
-    },
-    {
-      "id": 12,
-      "lang": "en",
-      "code": "frulini",
-      "logo": "/images/brands/frulini.png",
-      "name": "Frulini"
-    },
-    {
-      "id": 13,
-      "lang": "am",
-      "code": "fruita",
-      "logo": "/images/brands/fruita.png",
-      "name": "Ֆրուիտա"
-    },
-    {
-      "id": 14,
-      "lang": "ru",
-      "code": "fruita",
-      "logo": "/images/brands/fruita.png",
-      "name": "Фруита"
-    },
-    {
-      "id": 15,
-      "lang": "en",
-      "code": "fruita",
-      "logo": "/images/brands/fruita.png",
-      "name": "Fruita"
+      "name": "Choco Chir",
+      "card_title": "Choco Chir",
+      "description": "Natural fruit pastilles in premium chocolate (62% cocoa), as well as glazed dried fruits with walnut, almond and apricot kernel.",
+      "image": "/images/brands/brand-placeholder.png",
+      "image_alt": "Choco Chir"
     }
   ],
   "about_intro": [
     {
       "id": 1,
       "lang": "am",
-      "title": "Բնական որակ, ստեղծված Հայաստանում",
-      "body": "Fruit Food ընկերությունը արտադրում է բնական չրագործեր և միրգային քաղցրավենիք 1995 թվականից, Արարատյան դաշտավայրի հումքից:"
+      "title": "Բնական որակ՝ ստեղծված Հայաստանում",
+      "body": "Fruit Food ընկերությունը հիմնադրվել է 2007 թվականին՝ մեկ պարզ գաղափարի շուրջ՝ ստեղծել առողջարար, բնական և բարձրորակ մրգային արտադրանք՝ օգտագործելով բացառապես հայկական մրգեր։",
+      "text_left": "Մեր ճանապարհը սկսվել է ընտանեկան փոքր արտադրությունից, որտեղ յուրաքանչյուր գործընթաց իրականացվում էր մեծ նվիրումով և պատասխանատվությամբ։ Առաջին իսկ տարիներից մեր արտադրանքը մեծ հետաքրքրություն առաջացրեց տեղական շուկայում՝ շնորհիվ իր բնական բաղադրության, իսկական մրգային համի և անփոփոխ որակի։",
+      "text_right": "Այսօր, տարիների փորձի, շարունակական զարգացման և նորարարության շնորհիվ, Fruit Food-ը դարձել է Հայաստանի առաջատար բնական մրգային ապրանքներ արտադրողներից մեկը՝ ներկայացնելով հայկական արտադրանքը միջազգային շուկաներում։",
+      "image_alt": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/natural-quality.jpg"
+        }
+      ]
     },
     {
       "id": 2,
       "lang": "ru",
       "title": "Натуральное качество, созданное в Армении",
-      "body": "Компания Fruit Food производит натуральные сухофрукты и фруктовые сладости с 1995 года, из сырья Араратской долины."
+      "body": "Компания Fruit Food была основана в 2007 году вокруг одной простой идеи — создавать полезную, натуральную и высококачественную фруктовую продукцию, используя исключительно армянские фрукты.",
+      "text_left": "Наш путь начался с небольшого семейного производства, где каждый процесс выполнялся с большой самоотдачей и ответственностью. Уже в первые годы наша продукция вызвала большой интерес на местном рынке благодаря натуральному составу, настоящему фруктовому вкусу и неизменному качеству.",
+      "text_right": "Сегодня, благодаря многолетнему опыту, постоянному развитию и инновациям, Fruit Food стала одним из ведущих производителей натуральной фруктовой продукции в Армении, представляя армянскую продукцию на международных рынках.",
+      "image_alt": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/natural-quality.jpg"
+        }
+      ]
     },
     {
       "id": 3,
       "lang": "en",
       "title": "Natural quality, made in Armenia",
-      "body": "Fruit Food has been producing natural dried fruit and fruit sweets since 1995, from raw materials of the Ararat valley."
+      "body": "Fruit Food was founded in 2007 around one simple idea: to create healthy, natural and high-quality fruit products using only Armenian fruit.",
+      "text_left": "Our journey began as a small family business where every process was carried out with great dedication and responsibility. From the very first years, our products drew strong interest in the local market thanks to their natural composition, genuine fruit taste and consistent quality.",
+      "text_right": "Today, thanks to years of experience, continuous development and innovation, Fruit Food has become one of Armenia's leading producers of natural fruit products, presenting Armenian products on international markets.",
+      "image_alt": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/natural-quality.jpg"
+        }
+      ]
     }
   ],
   "contact_page_contents": [
@@ -5056,6 +5062,132 @@
         "title": "New technologies, new solutions",
         "paragraph": "We constantly invest in new technologies, product development, and creating solutions that meet the requirements of international markets."
       }
+    }
+  ],
+  "about_philosophy": [
+    {
+      "id": 1,
+      "lang": "am",
+      "label": "Մեր փիլիսոփայությունը",
+      "title": "Մեր աշխատանքի հիմքում՝",
+      "title_light": "բնությունն իր ամենամաքուր տեսքով",
+      "text": "Մենք օգտագործում ենք բացառապես հայկական հատընտիր մրգեր՝ առանց ավելացված շաքարի, արհեստական ներկանյութերի, բուրավետիչների և կոնսերվանտների։ Յուրաքանչյուր արտադրանք ստեղծվում է այնպես, որպեսզի հնարավորինս պահպանվեն մրգի բնական համը, բույրը և օգտակար հատկությունները։"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "label": "Наша философия",
+      "title": "В основе нашей работы —",
+      "title_light": "природа в своём самом чистом виде",
+      "text": "Мы используем исключительно отборные армянские фрукты — без добавленного сахара, искусственных красителей, ароматизаторов и консервантов. Каждый продукт создаётся так, чтобы максимально сохранить натуральный вкус, аромат и полезные свойства фруктов."
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "label": "Our philosophy",
+      "title": "At the heart of our work:",
+      "title_light": "nature in its purest form",
+      "text": "We use only selected Armenian fruit — with no added sugar, artificial colors, flavorings or preservatives. Every product is made to preserve the natural taste, aroma and beneficial properties of the fruit as much as possible."
+    }
+  ],
+  "about_philosophy_facts": [
+    {
+      "id": 1,
+      "lang": "am",
+      "value": "100",
+      "suffix": "%",
+      "label": "բնական են մեր բոլոր արտադրանքները"
+    },
+    {
+      "id": 2,
+      "lang": "am",
+      "value": "0",
+      "suffix": "",
+      "label": "ավելացված շաքար, ներկանյութեր և կոնսերվանտներ"
+    },
+    {
+      "id": 3,
+      "lang": "am",
+      "value": "10–12",
+      "suffix": "",
+      "label": "տեսակի հատընտիր հայկական մրգեր"
+    },
+    {
+      "id": 4,
+      "lang": "ru",
+      "value": "100",
+      "suffix": "%",
+      "label": "натуральны все наши продукты"
+    },
+    {
+      "id": 5,
+      "lang": "ru",
+      "value": "0",
+      "suffix": "",
+      "label": "добавленного сахара, красителей и консервантов"
+    },
+    {
+      "id": 6,
+      "lang": "ru",
+      "value": "10–12",
+      "suffix": "",
+      "label": "видов отборных армянских фруктов"
+    },
+    {
+      "id": 7,
+      "lang": "en",
+      "value": "100",
+      "suffix": "%",
+      "label": "of our products are natural"
+    },
+    {
+      "id": 8,
+      "lang": "en",
+      "value": "0",
+      "suffix": "",
+      "label": "added sugar, colorants or preservatives"
+    },
+    {
+      "id": 9,
+      "lang": "en",
+      "value": "10–12",
+      "suffix": "",
+      "label": "types of selected Armenian fruit"
+    }
+  ],
+  "about_page_labels": [
+    {
+      "id": 1,
+      "lang": "am",
+      "brands_title": "Մեր ապրանքանիշերը",
+      "breadcrumb_label": "Ուղի",
+      "home_label": "Գլխավոր",
+      "slider_previous_label": "Նախորդ նկարը",
+      "slider_next_label": "Հաջորդ նկարը",
+      "slider_navigation_label": "Նկարների ընտրություն",
+      "slider_image_label": "Նկար"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "brands_title": "Наши бренды",
+      "breadcrumb_label": "Навигация",
+      "home_label": "Главная",
+      "slider_previous_label": "Предыдущее фото",
+      "slider_next_label": "Следующее фото",
+      "slider_navigation_label": "Выбор фото",
+      "slider_image_label": "Фото"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "brands_title": "Our brands",
+      "breadcrumb_label": "Breadcrumb",
+      "home_label": "Home",
+      "slider_previous_label": "Previous photo",
+      "slider_next_label": "Next photo",
+      "slider_navigation_label": "Choose a photo",
+      "slider_image_label": "Photo"
     }
   ]
 }

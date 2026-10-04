@@ -193,7 +193,7 @@ export default async function AboutPage() {
 ### 5.2 Քայլերով
 
 1. `cp db_orinak_example db.json` (եթե դեռ չես արել)
-2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `about_production`, `about_why_trust_us`, `about_showcase`, `about_quality_naturalness`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
+2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `about_philosophy`, `about_philosophy_facts`, `about_page_labels`, `about_production`, `about_why_trust_us`, `about_showcase`, `about_quality_naturalness`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`, `contact_messages`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
    Նոր տողեր ավելացնելիս `id`-ները **չպետք ա կրկնվեն** արդեն եղածների հետ։
 3. Նոր collection-ը / նոր տողերը ավելացրու **քո `db.json`**-ում ու աշխատիր դրանով (`npm run dev` ավտոմատ կտեսնի փոփոխությունը)
 4. Երբ պատրաստ ես՝ **միայն քո նոր/փոխված collection-ները** copy արա `db_parts/<անուն>.json`-ի մեջ, օրինակ `db_parts/saten.json`.
@@ -238,7 +238,7 @@ export default async function AboutPage() {
 | Համագործակցության CTA (**բոլոր էջերում, բացի `/contact`**) | Vahram | `components/partner-cta/PartnerCta.jsx` + `PartnerCtaWrapper.jsx` | ամբողջ site (→ `/contact`), բացի `/contact`-ից |
 | Կատալոգ (3 էջ) | Elina | `app/catalog/*` | `/catalog`, `/catalog/dried-fruits`, `/catalog/chocolate-covered` |
 | Ապրանքի մանրամասն էջ | Vahe | `app/products/[productSlug]/*` | `/products/[slug]` |
-| About Us · Section 1–3 (Բնական որակ, Փիլիսոփայություն, Ապրանքանիշեր) | Milena | `app/about-us/_components/NaturalQuality.jsx`, `Philosophy.jsx`, `Brands.jsx` | `/about-us` |
+| About Us · Section 1–3 (Բնական որակ, Փիլիսոփայություն, Ապրանքանիշեր) | Milena | `app/about-us/_components/NaturalQuality.jsx`, `PhilosophyFacts.jsx`, `Brands.jsx` | `/about-us` |
 | About Us · Section 4–6 (Արտադրություն, Վստահություն, Որակ ու բնականություն) | Hamlet | `app/about-us/_components/Production.jsx`, `WhyTrustUs.jsx`, `QualityNaturalness.jsx` | `/about-us` |
 | About Us · Section 7–9 (Արտահանում, Գործարան, «Մենք հավատում ենք») | Jor | `app/about-us/_components/ExportCooperation.jsx`, `OurFactory.jsx`, `WeBelieve.jsx` | `/about-us` |
 | Աշխարհագրություն | Sergey | `app/geography/*` | `/geography` |
@@ -390,9 +390,8 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 
 ## 9. Ինչ դեռ չկա
 
-- About Us · Section 1–3 (Milena). մինչ այդ `about-us/page.module.css`-ում ժամանակավոր padding կա header-ի համար
 - Home · «Մեր տեսականին» (Ashot)
-- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero.png`)
+- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero.png`), About us-ի Section 1-ի և ապրանքանիշերի նկարները (`about-us/natural-quality.jpg`, `brands/brand-placeholder.png`)
 - Ապրանքների իրական համերն ու նկարները (տես §9.1)
 - Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language
