@@ -1,92 +1,84 @@
+/* Figma: about 171:5235 (desktop), main_mobile 181:7256 (mobile) */
+
 .section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-32);
+  padding: var(--space-lg) 0 var(--space-120);
+  background: var(--color-cream);
 }
 
 .title {
-  font-size: var(--font-size-h2);
+  font-size: 3.2375rem; /* 51.8px */
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 54.4px;
+  letter-spacing: -0.93px;
   color: var(--color-green);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-32);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-56);
 }
 
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .card {
-  width: 588px;
-  height: 553px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  padding: 20px;
   border-radius: var(--radius-2xl);
   background: var(--color-mint);
 }
+
 .imageWrapper {
-  width: calc(100% - 40px);        /* 20px ձախ + 20px աջ */
-  max-width: 585px;
-  height: 342.5px;
-  margin: 20px auto 0;              /* 20px վերևից, կենտրոնում */
+  height: 342px;
   overflow: hidden;
-  border-radius: var(--radius-lg);  /* ← կլորացված անկյուններ (ըստ ցանկության) */
+  border-radius: var(--radius-lg);
+  background: linear-gradient(159deg, var(--color-mint) 0%, #f5f9f6 100%);
 }
 
 .image {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;                /* ← կամ contain */
-  object-position: center;
+  object-fit: cover;
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  padding: var(--space-lg);
+  padding: 37px 20px 19px;
 }
 
 .name {
-  font-size: var(--font-size-md);
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  line-height: 28.8px;
   color: var(--color-green);
 }
 
 .description {
+  margin-top: var(--space-sm);
   font-size: var(--font-size-body);
-  line-height: 1.6;
+  line-height: 23.2px;
   color: var(--color-text);
 }
 
+/* Mobile (Figma main_mobile) */
 @media (max-width: 900px) {
   .section {
-    gap: var(--space-lg);
+    padding: var(--space-md) 0 var(--space-56);
   }
 
   .title {
     font-size: var(--font-size-title);
+    line-height: 43.5px;
   }
 
   .grid {
-    gap: var(--space-md);
+    grid-template-columns: 1fr;
+    margin-top: var(--space-32);
   }
 
-  .card {
-    border-radius: var(--radius-xl);
-    gap: var(--space-md);
+  .imageWrapper {
+    height: 223px;
   }
 
   .body {
-    padding: var(--space-md);
+    padding: 36px 0 20px;
   }
 }
