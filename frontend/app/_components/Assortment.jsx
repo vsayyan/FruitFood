@@ -48,7 +48,7 @@ export default function Assortment({ data, categories }) {
                   <span className={styles.arrow} aria-hidden='true'>
                     <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                       <path
-                        d='M6 14 14 6M7 6h7v7'
+                        d='M6 14 14 6M6 6h8v8'
                         stroke='currentColor'
                         strokeWidth='1.67'
                         strokeLinecap='round'
