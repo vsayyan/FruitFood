@@ -39,9 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'rest_framework',
     'header',
     'footer',
-    'rest_framework',
+    'product',
+    'about',
+    'contact',
+    'homepage',
+    
+    
 ]
 
 CORS_ALLOW_ALL_ORIGINS = config('CORS_ALLOW_ALL', cast=bool, default=True)

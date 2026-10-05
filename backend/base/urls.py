@@ -22,12 +22,18 @@ from rest_framework.routers import DefaultRouter
 
 from header.urls import header_router
 from footer.urls import footer_router
-
+from product.urls import product_router
+from about.urls import about_router
+from contact.urls import contact_router
+from homepage.urls import homepage_router
 router = DefaultRouter(trailing_slash=False)
 
 router.registry.extend(header_router.registry)
 router.registry.extend(footer_router.registry)
-
+router.registry.extend(product_router.registry)
+router.registry.extend(about_router.registry)
+router.registry.extend(contact_router.registry)
+router.registry.extend(homepage_router.registry)
 urlpatterns = [
     path('admin/', admin.site.urls),
     
