@@ -4,6 +4,7 @@ from .models import (
     AboutWhyTrustUs, TrustStat,
     AboutShowcase, ShowcaseImage, AboutIntro, IntroSlide,
     AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel,
+    Brand, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
 )
 
 
@@ -42,6 +43,7 @@ class AboutShowcaseAdmin(admin.ModelAdmin):
     list_filter = ["lang"]
     inlines = [ShowcaseImageInline]
 
+
 @admin.register(AboutQualityNaturalness)
 class AboutQualityNaturalnessAdmin(admin.ModelAdmin):
     list_display = ["lang", "card1_title", "card2_title"]
@@ -70,6 +72,7 @@ class AboutPageLabelAdmin(admin.ModelAdmin):
     list_display = ["lang", "brands_title", "home_label"]
     list_filter = ["lang"]
 
+
 class IntroSlideInline(admin.TabularInline):
     model = IntroSlide
     extra = 1
@@ -80,3 +83,37 @@ class AboutIntroAdmin(admin.ModelAdmin):
     list_display = ["title", "lang"]
     list_filter = ["lang"]
     inlines = [IntroSlideInline]
+
+@admin.register(Brand)
+class BrandAdmin(admin.ModelAdmin):
+    list_display = ["name", "code", "lang"]
+    list_filter = ["lang"]
+
+
+@admin.register(ExportCooperation)
+class ExportCooperationAdmin(admin.ModelAdmin):
+    list_display = ["title", "lang"]
+    list_filter = ["lang"]
+
+
+class FactorySlideInline(admin.TabularInline):
+    model = FactorySlide
+    extra = 1
+
+
+class FactoryGalleryImageInline(admin.TabularInline):
+    model = FactoryGalleryImage
+    extra = 1
+
+
+@admin.register(OurFactory)
+class OurFactoryAdmin(admin.ModelAdmin):
+    list_display = ["title_green", "lang"]
+    list_filter = ["lang"]
+    inlines = [FactorySlideInline, FactoryGalleryImageInline]
+
+
+@admin.register(WeBelieve)
+class WeBelieveAdmin(admin.ModelAdmin):
+    list_display = ["title", "lang"]
+    list_filter = ["lang"]

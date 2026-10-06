@@ -1,8 +1,10 @@
 from django.db import models
 
+from base.constants import LANG_CHOICES
+
 
 class HomepageHero(models.Model):
-    lang = models.CharField(max_length=10)
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     title = models.CharField(max_length=255)
     marked = models.CharField(max_length=100, blank=True)
     description = models.TextField()
@@ -38,7 +40,7 @@ class HeroSlide(models.Model):
 
 
 class HomeAssortment(models.Model):
-    lang = models.CharField(max_length=10)
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     eyebrow = models.CharField(max_length=100)
     title = models.CharField(max_length=255)
     description = models.TextField()
@@ -65,3 +67,100 @@ class AssortmentCard(models.Model):
 
     def __str__(self):
         return self.category_slug
+
+class Stat(models.Model):
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
+    value = models.IntegerField()
+    suffix = models.CharField(max_length=20, blank=True)
+    unit = models.CharField(max_length=20, blank=True)
+    label = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name_plural = "Stats"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"{self.value}{self.suffix} {self.label} ({self.lang})"
+
+
+class PhilosophyHeading(models.Model):
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
+    heading_1 = models.CharField(max_length=255)
+    heading_2_before = models.CharField(max_length=255, blank=True)
+    heading_2_highlight = models.CharField(max_length=255, blank=True)
+    heading_2_after = models.CharField(max_length=255, blank=True)
+
+    class Meta:
+        verbose_name_plural = "Philosophy headings"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"Philosophy heading ({self.lang})"
+
+
+class PhilosophyText(models.Model):
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
+    text = models.TextField()
+    btn = models.CharField(max_length=100)
+    slider_previous_label = models.CharField(max_length=100)
+    slider_next_label = models.CharField(max_length=100)
+    slider_image_label = models.CharField(max_length=100)
+    slider_navigation_label = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name_plural = "Philosophy text"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"Philosophy text ({self.lang})"
+
+
+class PhilosophyImage(models.Model):
+    philosophy = models.ForeignKey(PhilosophyText, related_name="images", on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0)
+    image = models.CharField(max_length=255)
+    alt = models.CharField(max_length=255, blank=True)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return self.image
+
+
+class FaqSmall(models.Model):
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
+    text = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name_plural = "FAQ small"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"{self.text} ({self.lang})"
+
+
+class FaqHeading(models.Model):
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
+    heading = models.CharField(max_length=255)
+    text = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "FAQ heading"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"{self.heading} ({self.lang})"
+
+
+class Faq(models.Model):
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
+    question = models.CharField(max_length=500)
+    answer = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "FAQ"
+        ordering = ["id"]
+
+    def __str__(self):
+        return f"{self.question} ({self.lang})"

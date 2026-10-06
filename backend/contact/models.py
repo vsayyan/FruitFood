@@ -1,8 +1,10 @@
 from django.db import models
 
+from base.constants import LANG_CHOICES
+
 
 class ContactPageContent(models.Model):
-    lang = models.CharField(max_length=10)
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     title = models.CharField(max_length=100)
     description = models.TextField()
     breadcrumb_home = models.CharField(max_length=100)
@@ -28,7 +30,7 @@ class ContactPageContent(models.Model):
 
 
 class ContactInfo(models.Model):
-    lang = models.CharField(max_length=10)
+    lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     address_label = models.CharField(max_length=100)
     address_line_1 = models.CharField(max_length=255)
     address_line_2 = models.TextField(blank=True)

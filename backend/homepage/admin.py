@@ -1,5 +1,9 @@
 from django.contrib import admin
-from .models import HomepageHero, HeroSlide, HomeAssortment, AssortmentCard
+from .models import (
+    HomepageHero, HeroSlide, HomeAssortment, AssortmentCard,
+    Stat, PhilosophyHeading, PhilosophyText, PhilosophyImage,
+    FaqSmall, FaqHeading, Faq,
+)
 
 
 class HeroSlideInline(admin.TabularInline):
@@ -24,3 +28,46 @@ class HomeAssortmentAdmin(admin.ModelAdmin):
     list_display = ["title", "lang"]
     list_filter = ["lang"]
     inlines = [AssortmentCardInline]
+
+
+@admin.register(Stat)
+class StatAdmin(admin.ModelAdmin):
+    list_display = ["label", "value", "suffix", "unit", "lang"]
+    list_filter = ["lang"]
+
+
+@admin.register(PhilosophyHeading)
+class PhilosophyHeadingAdmin(admin.ModelAdmin):
+    list_display = ["heading_1", "lang"]
+    list_filter = ["lang"]
+
+
+class PhilosophyImageInline(admin.TabularInline):
+    model = PhilosophyImage
+    extra = 1
+
+
+@admin.register(PhilosophyText)
+class PhilosophyTextAdmin(admin.ModelAdmin):
+    list_display = ["lang", "btn"]
+    list_filter = ["lang"]
+    inlines = [PhilosophyImageInline]
+
+
+@admin.register(FaqSmall)
+class FaqSmallAdmin(admin.ModelAdmin):
+    list_display = ["text", "lang"]
+    list_filter = ["lang"]
+
+
+@admin.register(FaqHeading)
+class FaqHeadingAdmin(admin.ModelAdmin):
+    list_display = ["heading", "lang"]
+    list_filter = ["lang"]
+
+
+@admin.register(Faq)
+class FaqAdmin(admin.ModelAdmin):
+    list_display = ["question", "lang"]
+    list_filter = ["lang"]
+    search_fields = ["question", "answer"]

@@ -1,7 +1,6 @@
-from django.shortcuts import render
 from base.views import FilteredReadOnlyViewSet
-from .models import Product,ProductPageLabel
-from .serializers import ProductSerializer,ProductPageLabelSerializer
+from .models import Product, ProductPageLabel, TagIcon
+from .serializers import ProductSerializer, ProductPageLabelSerializer, TagIconSerializer
 
 
 class ProductViewSet(FilteredReadOnlyViewSet):
@@ -9,7 +8,14 @@ class ProductViewSet(FilteredReadOnlyViewSet):
     serializer_class = ProductSerializer
     filter_fields = ["lang", "slug", "category_slug"]
 
+
 class ProductPageLabelViewSet(FilteredReadOnlyViewSet):
     queryset = ProductPageLabel.objects.all()
     serializer_class = ProductPageLabelSerializer
-    filter_fields = ["lang"]  
+    filter_fields = ["lang"]
+
+
+class TagIconViewSet(FilteredReadOnlyViewSet):
+    queryset = TagIcon.objects.all()
+    serializer_class = TagIconSerializer
+    filter_fields = ["code"]

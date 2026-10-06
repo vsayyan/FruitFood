@@ -40,17 +40,23 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'base',
     'header',
     'footer',
     'product',
     'about',
     'contact',
     'homepage',
-    
-    
+    'geography',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = config('CORS_ALLOW_ALL', cast=bool, default=True)
+CORS_ALLOWED_ORIGINS = config(
+    'CORS_ALLOWED_ORIGINS',
+    cast=Csv(),
+    default='http://localhost:3000,http://127.0.0.1:3000',
+)
+CORS_ALLOW_METHODS = ('GET', 'OPTIONS')
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -128,6 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 MEDIA_URL = '/media/'
@@ -138,7 +145,34 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 MAILERS = {
     'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
+        'BACKEND': config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend'),
     },
 }
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Django REST Framework
+# The public API is read-only: content is edited only through /admin/.
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ['base.permissions.ReadOnly'],
+    'DEFAULT_RENDERER_CLASSES': (
+        ['rest_framework.renderers.JSONRenderer', 'rest_framework.renderers.BrowsableAPIRenderer']
+        if DEBUG
+        else ['rest_framework.renderers.JSONRenderer']
+    ),
+}
+
+
+# Production security (active only when DEBUG=False)
+
+if not DEBUG:
+    CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', cast=Csv(), default='')
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', cast=bool, default=True)
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = config('SECURE_HSTS_SECONDS', cast=int, default=3600)
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_REFERRER_POLICY = 'same-origin'
+    X_FRAME_OPTIONS = 'DENY'

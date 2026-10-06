@@ -1,10 +1,13 @@
 from rest_framework import serializers
 from .models import (
+    AboutIntro, IntroSlide,
     AboutProduction, ProductionDirection,
     AboutWhyTrustUs, TrustStat,
     AboutShowcase, ShowcaseImage,
-    AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel, IntroSlide, AboutIntro
+    AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel,
+    Brand, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
 )
+
 
 class IntroSlideSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,6 +21,8 @@ class AboutIntroSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutIntro
         fields = "__all__"
+
+
 class ProductionDirectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductionDirection
@@ -29,7 +34,7 @@ class AboutProductionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AboutProduction
-        fields = '__all__'
+        fields = "__all__"
 
 
 class TrustStatSerializer(serializers.ModelSerializer):
@@ -37,7 +42,7 @@ class TrustStatSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TrustStat
-        fields ='__all__' 
+        fields = ["value", "label", "isHighlighted"]
 
 
 class AboutWhyTrustUsSerializer(serializers.ModelSerializer):
@@ -45,13 +50,13 @@ class AboutWhyTrustUsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AboutWhyTrustUs
-        fields = '__all__'
+        fields = "__all__"
 
 
 class ShowcaseImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ShowcaseImage
-        fields = '__all__'
+        fields = ["image", "alt"]
 
 
 class AboutShowcaseSerializer(serializers.ModelSerializer):
@@ -59,14 +64,16 @@ class AboutShowcaseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AboutShowcase
-        fields = '__all__'
+        fields = "__all__"
+
+
 class AboutQualityNaturalnessSerializer(serializers.ModelSerializer):
     card1 = serializers.SerializerMethodField()
     card2 = serializers.SerializerMethodField()
 
     class Meta:
         model = AboutQualityNaturalness
-        fields = '__all__'
+        fields = ["id", "lang", "card1", "card2"]
 
     def get_card1(self, obj):
         return {
@@ -86,16 +93,55 @@ class AboutQualityNaturalnessSerializer(serializers.ModelSerializer):
 class AboutPhilosophySerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutPhilosophy
-        fields ='__all__'
+        fields = "__all__"
 
 
 class AboutPhilosophyFactSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutPhilosophyFact
-        fields ='__all__'
+        fields = "__all__"
 
 
 class AboutPageLabelSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutPageLabel
-        fields = '__all__'
+        fields = "__all__"
+
+
+class BrandSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Brand
+        fields = "__all__"
+
+
+class ExportCooperationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExportCooperation
+        fields = "__all__"
+
+
+class FactorySlideSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FactorySlide
+        fields = ["id", "image"]
+
+
+class FactoryGalleryImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FactoryGalleryImage
+        fields = ["id", "image"]
+
+
+class OurFactorySerializer(serializers.ModelSerializer):
+    slider = FactorySlideSerializer(many=True, read_only=True)
+    gallery = FactoryGalleryImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = OurFactory
+        fields = "__all__"
+
+
+class WeBelieveSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WeBelieve
+        fields = "__all__"

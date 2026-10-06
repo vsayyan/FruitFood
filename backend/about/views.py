@@ -1,24 +1,16 @@
 from base.views import FilteredReadOnlyViewSet
 from .models import (
-    AboutProduction, 
-    AboutWhyTrustUs, 
-    AboutShowcase, 
-    AboutQualityNaturalness, 
-    AboutPhilosophy, 
-    AboutPhilosophyFact, 
-    AboutPageLabel,
-    AboutIntro
+    AboutIntro, AboutProduction, AboutWhyTrustUs, AboutShowcase,
+    AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel,
+    Brand, ExportCooperation, OurFactory, WeBelieve,
 )
 from .serializers import (
-    AboutProductionSerializer, 
-    AboutWhyTrustUsSerializer, 
-    AboutShowcaseSerializer,
-    AboutQualityNaturalnessSerializer, 
-    AboutPhilosophySerializer,
-    AboutPhilosophyFactSerializer, 
-    AboutPageLabelSerializer,
-    AboutIntroSerializer
+    AboutIntroSerializer, AboutProductionSerializer, AboutWhyTrustUsSerializer,
+    AboutShowcaseSerializer, AboutQualityNaturalnessSerializer, AboutPhilosophySerializer,
+    AboutPhilosophyFactSerializer, AboutPageLabelSerializer,
+    BrandSerializer, ExportCooperationSerializer, OurFactorySerializer, WeBelieveSerializer,
 )
+
 
 class AboutIntroViewSet(FilteredReadOnlyViewSet):
     queryset = AboutIntro.objects.prefetch_related("slider")
@@ -42,6 +34,8 @@ class AboutShowcaseViewSet(FilteredReadOnlyViewSet):
     queryset = AboutShowcase.objects.prefetch_related("images")
     serializer_class = AboutShowcaseSerializer
     filter_fields = ["lang"]
+
+
 class AboutQualityNaturalnessViewSet(FilteredReadOnlyViewSet):
     queryset = AboutQualityNaturalness.objects.all()
     serializer_class = AboutQualityNaturalnessSerializer
@@ -63,4 +57,28 @@ class AboutPhilosophyFactViewSet(FilteredReadOnlyViewSet):
 class AboutPageLabelViewSet(FilteredReadOnlyViewSet):
     queryset = AboutPageLabel.objects.all()
     serializer_class = AboutPageLabelSerializer
+    filter_fields = ["lang"]
+
+
+class BrandViewSet(FilteredReadOnlyViewSet):
+    queryset = Brand.objects.all()
+    serializer_class = BrandSerializer
+    filter_fields = ["lang", "code"]
+
+
+class ExportCooperationViewSet(FilteredReadOnlyViewSet):
+    queryset = ExportCooperation.objects.all()
+    serializer_class = ExportCooperationSerializer
+    filter_fields = ["lang"]
+
+
+class OurFactoryViewSet(FilteredReadOnlyViewSet):
+    queryset = OurFactory.objects.prefetch_related("slider", "gallery")
+    serializer_class = OurFactorySerializer
+    filter_fields = ["lang"]
+
+
+class WeBelieveViewSet(FilteredReadOnlyViewSet):
+    queryset = WeBelieve.objects.all()
+    serializer_class = WeBelieveSerializer
     filter_fields = ["lang"]

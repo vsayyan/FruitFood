@@ -326,6 +326,31 @@
       "label": "No added sugar"
     }
   ],
+  "header_labels": [
+    {
+      "id": 1,
+      "lang": "am",
+      "all_products": "Ամբողջ արտադրանքը",
+      "products_toggle_label": "Բացել արտադրանքի ցանկը",
+      "menu_label": "Մենյու"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "all_products": "Все продукты",
+      "products_toggle_label": "Открыть список продукции",
+      "menu_label": "Меню"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "all_products": "All products",
+      "products_toggle_label": "Toggle products list",
+      "menu_label": "Menu"
+    }
+  ],
+
+
   "products": [
     {
       "id": 1,
@@ -3306,6 +3331,9 @@
       "all_products_label": "All products"
     }
   ],
+
+
+
   "tag_icons": [
     {
       "id": 1,
@@ -3577,260 +3605,7 @@
       "label": "Production facility"
     }
   ],
-  "export_countries": [
-    {
-      "id": 1,
-      "lang": "am",
-      "code": "usa",
-      "name": "ԱՄՆ"
-    },
-    {
-      "id": 2,
-      "lang": "ru",
-      "code": "usa",
-      "name": "США"
-    },
-    {
-      "id": 3,
-      "lang": "en",
-      "code": "usa",
-      "name": "USA"
-    },
-    {
-      "id": 4,
-      "lang": "am",
-      "code": "france",
-      "name": "Ֆրանսիա"
-    },
-    {
-      "id": 5,
-      "lang": "ru",
-      "code": "france",
-      "name": "Франция"
-    },
-    {
-      "id": 6,
-      "lang": "en",
-      "code": "france",
-      "name": "France"
-    },
-    {
-      "id": 7,
-      "lang": "am",
-      "code": "germany",
-      "name": "Գերմանիա"
-    },
-    {
-      "id": 8,
-      "lang": "ru",
-      "code": "germany",
-      "name": "Германия"
-    },
-    {
-      "id": 9,
-      "lang": "en",
-      "code": "germany",
-      "name": "Germany"
-    },
-    {
-      "id": 10,
-      "lang": "am",
-      "code": "belgium",
-      "name": "Բելգիա"
-    },
-    {
-      "id": 11,
-      "lang": "ru",
-      "code": "belgium",
-      "name": "Бельгия"
-    },
-    {
-      "id": 12,
-      "lang": "en",
-      "code": "belgium",
-      "name": "Belgium"
-    },
-    {
-      "id": 13,
-      "lang": "am",
-      "code": "netherlands",
-      "name": "Նիդերլանդներ"
-    },
-    {
-      "id": 14,
-      "lang": "ru",
-      "code": "netherlands",
-      "name": "Нидерланды"
-    },
-    {
-      "id": 15,
-      "lang": "en",
-      "code": "netherlands",
-      "name": "Netherlands"
-    },
-    {
-      "id": 16,
-      "lang": "am",
-      "code": "czechia",
-      "name": "Չեխիա"
-    },
-    {
-      "id": 17,
-      "lang": "ru",
-      "code": "czechia",
-      "name": "Чехия"
-    },
-    {
-      "id": 18,
-      "lang": "en",
-      "code": "czechia",
-      "name": "Czech Republic"
-    },
-    {
-      "id": 19,
-      "lang": "am",
-      "code": "poland",
-      "name": "Լեհաստան"
-    },
-    {
-      "id": 20,
-      "lang": "ru",
-      "code": "poland",
-      "name": "Польша"
-    },
-    {
-      "id": 21,
-      "lang": "en",
-      "code": "poland",
-      "name": "Poland"
-    },
-    {
-      "id": 22,
-      "lang": "am",
-      "code": "russia",
-      "name": "Ռուսաստան"
-    },
-    {
-      "id": 23,
-      "lang": "ru",
-      "code": "russia",
-      "name": "Россия"
-    },
-    {
-      "id": 24,
-      "lang": "en",
-      "code": "russia",
-      "name": "Russia"
-    },
-    {
-      "id": 25,
-      "lang": "am",
-      "code": "kazakhstan",
-      "name": "Ղազախստան"
-    },
-    {
-      "id": 26,
-      "lang": "ru",
-      "code": "kazakhstan",
-      "name": "Казахстан"
-    },
-    {
-      "id": 27,
-      "lang": "en",
-      "code": "kazakhstan",
-      "name": "Kazakhstan"
-    },
-    {
-      "id": 28,
-      "lang": "am",
-      "code": "uae",
-      "name": "Արաբական Միացյալ Էմիրություններ"
-    },
-    {
-      "id": 29,
-      "lang": "ru",
-      "code": "uae",
-      "name": "Объединённые Арабские Эмираты"
-    },
-    {
-      "id": 30,
-      "lang": "en",
-      "code": "uae",
-      "name": "United Arab Emirates"
-    },
-    {
-      "id": 31,
-      "lang": "am",
-      "code": "qatar",
-      "name": "Կատար"
-    },
-    {
-      "id": 32,
-      "lang": "ru",
-      "code": "qatar",
-      "name": "Катар"
-    },
-    {
-      "id": 33,
-      "lang": "en",
-      "code": "qatar",
-      "name": "Qatar"
-    },
-    {
-      "id": 34,
-      "lang": "am",
-      "code": "kuwait",
-      "name": "Քուվեյթ"
-    },
-    {
-      "id": 35,
-      "lang": "ru",
-      "code": "kuwait",
-      "name": "Кувейт"
-    },
-    {
-      "id": 36,
-      "lang": "en",
-      "code": "kuwait",
-      "name": "Kuwait"
-    },
-    {
-      "id": 37,
-      "lang": "am",
-      "code": "saudi-arabia",
-      "name": "Սաուդյան Արաբիա"
-    },
-    {
-      "id": 38,
-      "lang": "ru",
-      "code": "saudi-arabia",
-      "name": "Саудовская Аравия"
-    },
-    {
-      "id": 39,
-      "lang": "en",
-      "code": "saudi-arabia",
-      "name": "Saudi Arabia"
-    },
-    {
-      "id": 40,
-      "lang": "am",
-      "code": "australia",
-      "name": "Ավստրալիա"
-    },
-    {
-      "id": 41,
-      "lang": "ru",
-      "code": "australia",
-      "name": "Австралия"
-    },
-    {
-      "id": 42,
-      "lang": "en",
-      "code": "australia",
-      "name": "Australia"
-    }
-  ],
+
   "brands": [
     {
       "id": 1,
@@ -3893,136 +3668,7 @@
       "image_alt": "Choco Chir"
     }
   ],
-  "about_intro": [
-    {
-      "id": 1,
-      "lang": "am",
-      "title": "Բնական որակ՝ ստեղծված Հայաստանում",
-      "body": "Fruit Food ընկերությունը հիմնադրվել է 2007 թվականին՝ մեկ պարզ գաղափարի շուրջ՝ ստեղծել առողջարար, բնական և բարձրորակ մրգային արտադրանք՝ օգտագործելով բացառապես հայկական մրգեր։",
-      "text_left": "Մեր ճանապարհը սկսվել է ընտանեկան փոքր արտադրությունից, որտեղ յուրաքանչյուր գործընթաց իրականացվում էր մեծ նվիրումով և պատասխանատվությամբ։ Առաջին իսկ տարիներից մեր արտադրանքը մեծ հետաքրքրություն առաջացրեց տեղական շուկայում՝ շնորհիվ իր բնական բաղադրության, իսկական մրգային համի և անփոփոխ որակի։",
-      "text_right": "Այսօր, տարիների փորձի, շարունակական զարգացման և նորարարության շնորհիվ, Fruit Food-ը դարձել է Հայաստանի առաջատար բնական մրգային ապրանքներ արտադրողներից մեկը՝ ներկայացնելով հայկական արտադրանքը միջազգային շուկաներում։",
-      "image_alt": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
-      "slider": [
-        {
-          "id": 1,
-          "image": "/images/about-us/natural-quality.jpg"
-        },
-        {
-          "id": 2,
-          "image": "/images/about-us/natural-quality.jpg"
-        },
-        {
-          "id": 3,
-          "image": "/images/about-us/natural-quality.jpg"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "lang": "ru",
-      "title": "Натуральное качество, созданное в Армении",
-      "body": "Компания Fruit Food была основана в 2007 году вокруг одной простой идеи — создавать полезную, натуральную и высококачественную фруктовую продукцию, используя исключительно армянские фрукты.",
-      "text_left": "Наш путь начался с небольшого семейного производства, где каждый процесс выполнялся с большой самоотдачей и ответственностью. Уже в первые годы наша продукция вызвала большой интерес на местном рынке благодаря натуральному составу, настоящему фруктовому вкусу и неизменному качеству.",
-      "text_right": "Сегодня, благодаря многолетнему опыту, постоянному развитию и инновациям, Fruit Food стала одним из ведущих производителей натуральной фруктовой продукции в Армении, представляя армянскую продукцию на международных рынках.",
-      "image_alt": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
-      "slider": [
-        {
-          "id": 1,
-          "image": "/images/about-us/natural-quality.jpg"
-        },
-        {
-          "id": 2,
-          "image": "/images/about-us/natural-quality.jpg"
-        },
-        {
-          "id": 3,
-          "image": "/images/about-us/natural-quality.jpg"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "lang": "en",
-      "title": "Natural quality, made in Armenia",
-      "body": "Fruit Food was founded in 2007 around one simple idea: to create healthy, natural and high-quality fruit products using only Armenian fruit.",
-      "text_left": "Our journey began as a small family business where every process was carried out with great dedication and responsibility. From the very first years, our products drew strong interest in the local market thanks to their natural composition, genuine fruit taste and consistent quality.",
-      "text_right": "Today, thanks to years of experience, continuous development and innovation, Fruit Food has become one of Armenia's leading producers of natural fruit products, presenting Armenian products on international markets.",
-      "image_alt": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
-      "slider": [
-        {
-          "id": 1,
-          "image": "/images/about-us/natural-quality.jpg"
-        },
-        {
-          "id": 2,
-          "image": "/images/about-us/natural-quality.jpg"
-        },
-        {
-          "id": 3,
-          "image": "/images/about-us/natural-quality.jpg"
-        }
-      ]
-    }
-  ],
-  "contact_page_contents": [
-    {
-      "id": 1,
-      "lang": "am",
-      "title": "Կապ",
-      "description": "Գրեք մեզ՝ համագործակցության, պատվերների կամ ցանկացած այլ հարցի համար:",
-      "breadcrumb_home": "Գլխավոր",
-      "breadcrumb_contact": "Կապ",
-      "breadcrumb_label": "Նավիգացիոն ուղի",
-      "form_title": "Ուղարկեք հաղորդագրություն",
-      "name_label": "Անուն",
-      "email_label": "Էլ. փոստ",
-      "phone_label": "Հեռախոս",
-      "message_label": "Հաղորդագրություն",
-      "submit_label": "Ուղարկել",
-      "sending_label": "Ուղարկվում է...",
-      "success_message": "Հաղորդագրությունը հաջողությամբ ուղարկվել է։",
-      "error_message": "Չհաջողվեց ուղարկել հաղորդագրությունը։",
-      "map_title": "Մեր գտնվելու վայրը"
-    },
-    {
-      "id": 2,
-      "lang": "ru",
-      "title": "Контакты",
-      "description": "Напишите нам по вопросам сотрудничества, заказов или любым другим вопросам.",
-      "breadcrumb_home": "Главная",
-      "breadcrumb_contact": "Контакты",
-      "breadcrumb_label": "Навигационная цепочка",
-      "form_title": "Отправьте сообщение",
-      "name_label": "Имя",
-      "email_label": "Эл. почта",
-      "phone_label": "Номер телефона",
-      "message_label": "Сообщение",
-      "submit_label": "Отправить",
-      "sending_label": "Отправка...",
-      "success_message": "Сообщение успешно отправлено.",
-      "error_message": "Не удалось отправить сообщение.",
-      "map_title": "Наше местоположение"
-    },
-    {
-      "id": 3,
-      "lang": "en",
-      "title": "Contact",
-      "description": "Write to us about partnership, orders, or any other question.",
-      "breadcrumb_home": "Home",
-      "breadcrumb_contact": "Contact",
-      "breadcrumb_label": "Breadcrumb",
-      "form_title": "Send a message",
-      "name_label": "Name",
-      "email_label": "Email",
-      "phone_label": "Phone number",
-      "message_label": "Message",
-      "submit_label": "Send",
-      "sending_label": "Sending...",
-      "success_message": "Message sent successfully.",
-      "error_message": "Failed to send the message.",
-      "map_title": "Our location"
-    }
-  ],
+
   "export_cooperation": [
     {
       "id": 1,
@@ -4346,106 +3992,262 @@
       "answer": "Yes, we accept corporate gift orders as well as bespoke individual requests."
     }
   ],
-  "header_labels": [
+  "export_countries": [
     {
       "id": 1,
       "lang": "am",
-      "all_products": "Ամբողջ արտադրանքը",
-      "products_toggle_label": "Բացել արտադրանքի ցանկը",
-      "menu_label": "Մենյու"
+      "code": "usa",
+      "name": "ԱՄՆ"
     },
     {
       "id": 2,
       "lang": "ru",
-      "all_products": "Все продукты",
-      "products_toggle_label": "Открыть список продукции",
-      "menu_label": "Меню"
+      "code": "usa",
+      "name": "США"
     },
     {
       "id": 3,
       "lang": "en",
-      "all_products": "All products",
-      "products_toggle_label": "Toggle products list",
-      "menu_label": "Menu"
-    }
-  ],
-  "contact_info": [
+      "code": "usa",
+      "name": "USA"
+    },
     {
-      "id": 1,
+      "id": 4,
       "lang": "am",
-      "address_label": "Հասցե",
-      "address_line_1": "Մ․ Գալշոյան 6–8",
-      "address_line_2": "գ․ Սուրենավան, Արարատի մարզ\nՀայաստան",
-      "email_label": "Էլ․ փոստ",
-      "email": "chocochir@mail.ru",
-      "social_label": "Սոց․ ցանցեր",
-      "social_links": [
-        {
-          "id": 1,
-          "image": "/images/contact/facebook.svg",
-          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
-          "label": "Facebook"
-        },
-        {
-          "id": 2,
-          "image": "/images/contact/instagram.svg",
-          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
-          "label": "Instagram"
-        }
-      ],
-      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+      "code": "france",
+      "name": "Ֆրանսիա"
     },
     {
-      "id": 2,
+      "id": 5,
       "lang": "ru",
-      "address_label": "Адрес",
-      "address_line_1": "М. Галшоян 6–8",
-      "address_line_2": "с. Суренаван, Араратская область\nАрмения",
-      "email_label": "Эл․ почта",
-      "email": "chocochir@mail.ru",
-      "social_label": "Соц․ сети",
-      "social_links": [
-        {
-          "id": 1,
-          "image": "/images/contact/facebook.svg",
-          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
-          "label": "Facebook"
-        },
-        {
-          "id": 2,
-          "image": "/images/contact/instagram.svg",
-          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
-          "label": "Instagram"
-        }
-      ],
-      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+      "code": "france",
+      "name": "Франция"
     },
     {
-      "id": 3,
+      "id": 6,
       "lang": "en",
-      "address_label": "Address",
-      "address_line_1": "M. Galshoyan 6–8",
-      "address_line_2": "Surenavan village, Ararat Province\nArmenia",
-      "email_label": "Email",
-      "email": "chocochir@mail.ru",
-      "social_label": "Social media",
-      "social_links": [
-        {
-          "id": 1,
-          "image": "/images/contact/facebook.svg",
-          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
-          "label": "Facebook"
-        },
-        {
-          "id": 2,
-          "image": "/images/contact/instagram.svg",
-          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
-          "label": "Instagram"
-        }
-      ],
-      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+      "code": "france",
+      "name": "France"
+    },
+    {
+      "id": 7,
+      "lang": "am",
+      "code": "germany",
+      "name": "Գերմանիա"
+    },
+    {
+      "id": 8,
+      "lang": "ru",
+      "code": "germany",
+      "name": "Германия"
+    },
+    {
+      "id": 9,
+      "lang": "en",
+      "code": "germany",
+      "name": "Germany"
+    },
+    {
+      "id": 10,
+      "lang": "am",
+      "code": "belgium",
+      "name": "Բելգիա"
+    },
+    {
+      "id": 11,
+      "lang": "ru",
+      "code": "belgium",
+      "name": "Бельгия"
+    },
+    {
+      "id": 12,
+      "lang": "en",
+      "code": "belgium",
+      "name": "Belgium"
+    },
+    {
+      "id": 13,
+      "lang": "am",
+      "code": "netherlands",
+      "name": "Նիդերլանդներ"
+    },
+    {
+      "id": 14,
+      "lang": "ru",
+      "code": "netherlands",
+      "name": "Нидерланды"
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "code": "netherlands",
+      "name": "Netherlands"
+    },
+    {
+      "id": 16,
+      "lang": "am",
+      "code": "czechia",
+      "name": "Չեխիա"
+    },
+    {
+      "id": 17,
+      "lang": "ru",
+      "code": "czechia",
+      "name": "Чехия"
+    },
+    {
+      "id": 18,
+      "lang": "en",
+      "code": "czechia",
+      "name": "Czech Republic"
+    },
+    {
+      "id": 19,
+      "lang": "am",
+      "code": "poland",
+      "name": "Լեհաստան"
+    },
+    {
+      "id": 20,
+      "lang": "ru",
+      "code": "poland",
+      "name": "Польша"
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "code": "poland",
+      "name": "Poland"
+    },
+    {
+      "id": 22,
+      "lang": "am",
+      "code": "russia",
+      "name": "Ռուսաստան"
+    },
+    {
+      "id": 23,
+      "lang": "ru",
+      "code": "russia",
+      "name": "Россия"
+    },
+    {
+      "id": 24,
+      "lang": "en",
+      "code": "russia",
+      "name": "Russia"
+    },
+    {
+      "id": 25,
+      "lang": "am",
+      "code": "kazakhstan",
+      "name": "Ղազախստան"
+    },
+    {
+      "id": 26,
+      "lang": "ru",
+      "code": "kazakhstan",
+      "name": "Казахстан"
+    },
+    {
+      "id": 27,
+      "lang": "en",
+      "code": "kazakhstan",
+      "name": "Kazakhstan"
+    },
+    {
+      "id": 28,
+      "lang": "am",
+      "code": "uae",
+      "name": "Արաբական Միացյալ Էմիրություններ"
+    },
+    {
+      "id": 29,
+      "lang": "ru",
+      "code": "uae",
+      "name": "Объединённые Арабские Эмираты"
+    },
+    {
+      "id": 30,
+      "lang": "en",
+      "code": "uae",
+      "name": "United Arab Emirates"
+    },
+    {
+      "id": 31,
+      "lang": "am",
+      "code": "qatar",
+      "name": "Կատար"
+    },
+    {
+      "id": 32,
+      "lang": "ru",
+      "code": "qatar",
+      "name": "Катар"
+    },
+    {
+      "id": 33,
+      "lang": "en",
+      "code": "qatar",
+      "name": "Qatar"
+    },
+    {
+      "id": 34,
+      "lang": "am",
+      "code": "kuwait",
+      "name": "Քուվեյթ"
+    },
+    {
+      "id": 35,
+      "lang": "ru",
+      "code": "kuwait",
+      "name": "Кувейт"
+    },
+    {
+      "id": 36,
+      "lang": "en",
+      "code": "kuwait",
+      "name": "Kuwait"
+    },
+    {
+      "id": 37,
+      "lang": "am",
+      "code": "saudi-arabia",
+      "name": "Սաուդյան Արաբիա"
+    },
+    {
+      "id": 38,
+      "lang": "ru",
+      "code": "saudi-arabia",
+      "name": "Саудовская Аравия"
+    },
+    {
+      "id": 39,
+      "lang": "en",
+      "code": "saudi-arabia",
+      "name": "Saudi Arabia"
+    },
+    {
+      "id": 40,
+      "lang": "am",
+      "code": "australia",
+      "name": "Ավստրալիա"
+    },
+    {
+      "id": 41,
+      "lang": "ru",
+      "code": "australia",
+      "name": "Австралия"
+    },
+    {
+      "id": 42,
+      "lang": "en",
+      "code": "australia",
+      "name": "Australia"
     }
   ],
+  
+
   "partner_cta": [
     {
       "id": 1,
@@ -4510,6 +4312,8 @@
       "countries_more": "and other countries"
     }
   ],
+
+
   "homepage_hero": [
     {
       "id": 1,
@@ -4690,6 +4494,218 @@
           "category_slug": "chocolate-covered",
           "badge": "62% cocoa",
           "image": "/images/homepage/assortment-1.jpg"
+        }
+      ]
+    }
+  ],
+
+
+  "contact_page_contents": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Կապ",
+      "description": "Գրեք մեզ՝ համագործակցության, պատվերների կամ ցանկացած այլ հարցի համար:",
+      "breadcrumb_home": "Գլխավոր",
+      "breadcrumb_contact": "Կապ",
+      "breadcrumb_label": "Նավիգացիոն ուղի",
+      "form_title": "Ուղարկեք հաղորդագրություն",
+      "name_label": "Անուն",
+      "email_label": "Էլ. փոստ",
+      "phone_label": "Հեռախոս",
+      "message_label": "Հաղորդագրություն",
+      "submit_label": "Ուղարկել",
+      "sending_label": "Ուղարկվում է...",
+      "success_message": "Հաղորդագրությունը հաջողությամբ ուղարկվել է։",
+      "error_message": "Չհաջողվեց ուղարկել հաղորդագրությունը։",
+      "map_title": "Մեր գտնվելու վայրը"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Контакты",
+      "description": "Напишите нам по вопросам сотрудничества, заказов или любым другим вопросам.",
+      "breadcrumb_home": "Главная",
+      "breadcrumb_contact": "Контакты",
+      "breadcrumb_label": "Навигационная цепочка",
+      "form_title": "Отправьте сообщение",
+      "name_label": "Имя",
+      "email_label": "Эл. почта",
+      "phone_label": "Номер телефона",
+      "message_label": "Сообщение",
+      "submit_label": "Отправить",
+      "sending_label": "Отправка...",
+      "success_message": "Сообщение успешно отправлено.",
+      "error_message": "Не удалось отправить сообщение.",
+      "map_title": "Наше местоположение"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Contact",
+      "description": "Write to us about partnership, orders, or any other question.",
+      "breadcrumb_home": "Home",
+      "breadcrumb_contact": "Contact",
+      "breadcrumb_label": "Breadcrumb",
+      "form_title": "Send a message",
+      "name_label": "Name",
+      "email_label": "Email",
+      "phone_label": "Phone number",
+      "message_label": "Message",
+      "submit_label": "Send",
+      "sending_label": "Sending...",
+      "success_message": "Message sent successfully.",
+      "error_message": "Failed to send the message.",
+      "map_title": "Our location"
+    }
+  ],
+  "contact_info": [
+    {
+      "id": 1,
+      "lang": "am",
+      "address_label": "Հասցե",
+      "address_line_1": "Մ․ Գալշոյան 6–8",
+      "address_line_2": "գ․ Սուրենավան, Արարատի մարզ\nՀայաստան",
+      "email_label": "Էլ․ փոստ",
+      "email": "chocochir@mail.ru",
+      "social_label": "Սոց․ ցանցեր",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/contact/facebook.svg",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
+          "label": "Facebook"
+        },
+        {
+          "id": 2,
+          "image": "/images/contact/instagram.svg",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
+          "label": "Instagram"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "address_label": "Адрес",
+      "address_line_1": "М. Галшоян 6–8",
+      "address_line_2": "с. Суренаван, Араратская область\nАрмения",
+      "email_label": "Эл․ почта",
+      "email": "chocochir@mail.ru",
+      "social_label": "Соц․ сети",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/contact/facebook.svg",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
+          "label": "Facebook"
+        },
+        {
+          "id": 2,
+          "image": "/images/contact/instagram.svg",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
+          "label": "Instagram"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "address_label": "Address",
+      "address_line_1": "M. Galshoyan 6–8",
+      "address_line_2": "Surenavan village, Ararat Province\nArmenia",
+      "email_label": "Email",
+      "email": "chocochir@mail.ru",
+      "social_label": "Social media",
+      "social_links": [
+        {
+          "id": 1,
+          "image": "/images/contact/facebook.svg",
+          "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
+          "label": "Facebook"
+        },
+        {
+          "id": 2,
+          "image": "/images/contact/instagram.svg",
+          "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
+          "label": "Instagram"
+        }
+      ],
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37302.1393869154!2d44.760097330052886!3d39.79441163219329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40153b002df9839f%3A0xa7869013bdba11be!2sFruit%20Food%20LLC!5e1!3m2!1sen!2sam!4v1790790932398!5m2!1sen!2sam"
+    }
+  ],
+
+
+
+  "about_intro": [
+    {
+      "id": 1,
+      "lang": "am",
+      "title": "Բնական որակ՝ ստեղծված Հայաստանում",
+      "body": "Fruit Food ընկերությունը հիմնադրվել է 2007 թվականին՝ մեկ պարզ գաղափարի շուրջ՝ ստեղծել առողջարար, բնական և բարձրորակ մրգային արտադրանք՝ օգտագործելով բացառապես հայկական մրգեր։",
+      "text_left": "Մեր ճանապարհը սկսվել է ընտանեկան փոքր արտադրությունից, որտեղ յուրաքանչյուր գործընթաց իրականացվում էր մեծ նվիրումով և պատասխանատվությամբ։ Առաջին իսկ տարիներից մեր արտադրանքը մեծ հետաքրքրություն առաջացրեց տեղական շուկայում՝ շնորհիվ իր բնական բաղադրության, իսկական մրգային համի և անփոփոխ որակի։",
+      "text_right": "Այսօր, տարիների փորձի, շարունակական զարգացման և նորարարության շնորհիվ, Fruit Food-ը դարձել է Հայաստանի առաջատար բնական մրգային ապրանքներ արտադրողներից մեկը՝ ներկայացնելով հայկական արտադրանքը միջազգային շուկաներում։",
+      "image_alt": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/natural-quality.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "ru",
+      "title": "Натуральное качество, созданное в Армении",
+      "body": "Компания Fruit Food была основана в 2007 году вокруг одной простой идеи — создавать полезную, натуральную и высококачественную фруктовую продукцию, используя исключительно армянские фрукты.",
+      "text_left": "Наш путь начался с небольшого семейного производства, где каждый процесс выполнялся с большой самоотдачей и ответственностью. Уже в первые годы наша продукция вызвала большой интерес на местном рынке благодаря натуральному составу, настоящему фруктовому вкусу и неизменному качеству.",
+      "text_right": "Сегодня, благодаря многолетнему опыту, постоянному развитию и инновациям, Fruit Food стала одним из ведущих производителей натуральной фруктовой продукции в Армении, представляя армянскую продукцию на международных рынках.",
+      "image_alt": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/natural-quality.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "en",
+      "title": "Natural quality, made in Armenia",
+      "body": "Fruit Food was founded in 2007 around one simple idea: to create healthy, natural and high-quality fruit products using only Armenian fruit.",
+      "text_left": "Our journey began as a small family business where every process was carried out with great dedication and responsibility. From the very first years, our products drew strong interest in the local market thanks to their natural composition, genuine fruit taste and consistent quality.",
+      "text_right": "Today, thanks to years of experience, continuous development and innovation, Fruit Food has become one of Armenia's leading producers of natural fruit products, presenting Armenian products on international markets.",
+      "image_alt": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
+      "slider": [
+        {
+          "id": 1,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/about-us/natural-quality.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/about-us/natural-quality.jpg"
         }
       ]
     }
@@ -4944,6 +4960,7 @@
         }
       ]
     },
+
     {
       "id": 2,
       "lang": "ru",

@@ -5,7 +5,7 @@ from rest_framework import viewsets
 from base.views import FilteredReadOnlyViewSet
 
 
-class LogoViewSet(viewsets.ModelViewSet):
+class LogoViewSet(viewsets.ReadOnlyModelViewSet):
     filter_fields = ()
     queryset = Logo.objects.all()
     serializer_class = LogoSerializer
@@ -26,7 +26,7 @@ class LanguagesViewSet(FilteredReadOnlyViewSet):
 class NavbarViewSet(FilteredReadOnlyViewSet):
     queryset = Navbar.objects.all().order_by('id')
     serializer_class = NavbarSerializer
-    filter_fields = ("lang",)
+    filter_fields = ("lang", "url")
 
 
 class HeaderlabelsViewSet(FilteredReadOnlyViewSet):
