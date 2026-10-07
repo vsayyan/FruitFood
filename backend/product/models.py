@@ -1,7 +1,8 @@
+from django.core.validators import FileExtensionValidator
 from django.db import models
 
 from base.constants import LANG_CHOICES
-from base.fields import image_field
+from base.fields import IMAGE_EXTENSIONS, validate_image_size
 
 
 class Product(models.Model):
@@ -31,7 +32,11 @@ class Product(models.Model):
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, related_name="gallery", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/products/")
+    image = models.FileField(
+        upload_to="images/products/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         verbose_name_plural = "Product images"
@@ -45,8 +50,16 @@ class ProductVariant(models.Model):
     product = models.ForeignKey(Product, related_name="variants", on_delete=models.CASCADE)
     code = models.CharField(max_length=10)
     flavor = models.CharField(max_length=200)
-    image = image_field("images/products/")
-    box_image = image_field("images/products/")
+    image = models.FileField(
+        upload_to="images/products/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
+    box_image = models.FileField(
+        upload_to="images/products/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         verbose_name_plural = "Product variants"

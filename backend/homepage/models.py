@@ -1,7 +1,8 @@
+from django.core.validators import FileExtensionValidator
 from django.db import models
 
 from base.constants import LANG_CHOICES
-from base.fields import image_field
+from base.fields import IMAGE_EXTENSIONS, validate_image_size
 
 
 class HomepageHero(models.Model):
@@ -31,7 +32,11 @@ class HomepageHero(models.Model):
 class HeroSlide(models.Model):
     hero = models.ForeignKey(HomepageHero, related_name="slider", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/homepage/")
+    image = models.FileField(
+        upload_to="images/homepage/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -61,7 +66,11 @@ class AssortmentCard(models.Model):
     order = models.PositiveIntegerField(default=0)
     category_slug = models.CharField(max_length=50)
     badge = models.CharField(max_length=100)
-    image = image_field("images/homepage/")
+    image = models.FileField(
+        upload_to="images/homepage/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -119,7 +128,11 @@ class PhilosophyText(models.Model):
 class PhilosophyImage(models.Model):
     philosophy = models.ForeignKey(PhilosophyText, related_name="images", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/home/")
+    image = models.FileField(
+        upload_to="images/home/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
     alt = models.CharField(max_length=255, blank=True)
 
     class Meta:

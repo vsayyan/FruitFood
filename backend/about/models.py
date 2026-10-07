@@ -1,7 +1,8 @@
+from django.core.validators import FileExtensionValidator
 from django.db import models
 
 from base.constants import LANG_CHOICES
-from base.fields import image_field
+from base.fields import IMAGE_EXTENSIONS, validate_image_size
 
 
 class AboutProduction(models.Model):
@@ -9,7 +10,11 @@ class AboutProduction(models.Model):
     subtitle = models.CharField(max_length=100)
     title = models.CharField(max_length=255)
     paragraphs = models.JSONField(default=list, blank=True)
-    image = image_field("images/about-us/")
+    image = models.FileField(
+        upload_to="images/about-us/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
     image_alt = models.CharField(max_length=255, blank=True)
 
     class Meta:
@@ -75,7 +80,11 @@ class AboutShowcase(models.Model):
 class ShowcaseImage(models.Model):
     showcase = models.ForeignKey(AboutShowcase, related_name="images", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/about-us/")
+    image = models.FileField(
+        upload_to="images/about-us/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
     alt = models.CharField(max_length=255, blank=True)
 
     class Meta:
@@ -167,7 +176,11 @@ class AboutIntro(models.Model):
 class IntroSlide(models.Model):
     intro = models.ForeignKey(AboutIntro, related_name="slider", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/about-us/")
+    image = models.FileField(
+        upload_to="images/about-us/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -182,7 +195,11 @@ class Brand(models.Model):
     name = models.CharField(max_length=100)
     card_title = models.CharField(max_length=255)
     description = models.TextField()
-    image = image_field("images/brands/")
+    image = models.FileField(
+        upload_to="images/brands/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
     image_alt = models.CharField(max_length=255, blank=True)
 
     class Meta:
@@ -235,7 +252,11 @@ class OurFactory(models.Model):
 class FactorySlide(models.Model):
     factory = models.ForeignKey(OurFactory, related_name="slider", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/about-us/")
+    image = models.FileField(
+        upload_to="images/about-us/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -247,7 +268,11 @@ class FactorySlide(models.Model):
 class FactoryGalleryImage(models.Model):
     factory = models.ForeignKey(OurFactory, related_name="gallery", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = image_field("images/about-us/")
+    image = models.FileField(
+        upload_to="images/about-us/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         ordering = ["order", "id"]

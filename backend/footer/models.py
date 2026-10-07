@@ -1,12 +1,17 @@
+from django.core.validators import FileExtensionValidator
 from django.db import models
 
 from base.constants import LANG_CHOICES
-from base.fields import image_field
+from base.fields import IMAGE_EXTENSIONS, validate_image_size
 
 class FooterLabel(models.Model):
     lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     title = models.CharField(max_length=255)
-    image = image_field("images/footer/", blank=True, null=True)
+    image = models.FileField(
+        upload_to="images/footer/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size], blank=True, null=True,
+    )
     description = models.TextField() 
     copyright = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255)
@@ -16,7 +21,11 @@ class FooterLabel(models.Model):
 
 class SocialLink(models.Model):
     footer = models.ForeignKey(FooterLabel, related_name='social_links', on_delete=models.CASCADE)
-    image = image_field("images/footer/", blank=True, null=True)
+    image = models.FileField(
+        upload_to="images/footer/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size], blank=True, null=True,
+    )
     url = models.URLField(max_length=500)
     label = models.CharField(max_length=50)
 

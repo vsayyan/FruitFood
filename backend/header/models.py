@@ -1,12 +1,17 @@
+from django.core.validators import FileExtensionValidator
 from django.db import models
 
 from base.constants import LANG_CHOICES
-from base.fields import image_field
+from base.fields import IMAGE_EXTENSIONS, validate_image_size
 
 
 class Logo(models.Model):
     title = models.CharField(max_length=100)
-    image = image_field("images/header/")
+    image = models.FileField(
+        upload_to="images/header/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         verbose_name_plural = "Logo"
@@ -18,7 +23,11 @@ class Logo(models.Model):
 class Languages(models.Model):
     code = models.CharField(max_length=20, unique=True)
     label = models.CharField(max_length=50)
-    image = image_field("images/header/")
+    image = models.FileField(
+        upload_to="images/header/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
 
     class Meta:
         verbose_name_plural = "Languages"
@@ -62,7 +71,11 @@ class Categories(models.Model):
     lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     slug = models.CharField(max_length=100, db_index=True)
     name = models.CharField(max_length=255)
-    image = image_field("images/categories/")
+    image = models.FileField(
+        upload_to="images/categories/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
     product_count = models.IntegerField(default=0)
 
     class Meta:
