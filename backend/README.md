@@ -2,7 +2,7 @@
 
 Django + Django REST Framework API for the Fruit Food site. It serves the same
 35 collections as `frontend/db_orinak_example`, with the same URLs and field
-names, so the frontend works without code changes. The API is read-only;
+names. The frontend reads all its content from this API. The API is read-only;
 content is edited through the Django admin.
 
 ## Requirements
@@ -28,14 +28,15 @@ python manage.py runserver
 
 ## Connecting the frontend
 
-In `frontend/.env.local`:
+In `frontend/.env.local` (copied from `frontend/.env.example`):
 
 ```
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
 ```
 
-Then run only Next.js (`npx next dev`). `npm run dev` also starts
-json-server on port 8000, which conflicts with Django.
+Then start the frontend with `npm run dev` while `runserver` is running.
+`frontend/next.config.mjs` allows `next/image` to load images from
+`http://127.0.0.1:8000/media/`; add the production domain there when deploying.
 
 Use `127.0.0.1`, not `localhost`: Node.js may resolve `localhost` to IPv6
 (`::1`), while `runserver` listens on IPv4 only. The frontend hides failed
