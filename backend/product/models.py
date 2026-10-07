@@ -1,6 +1,7 @@
 from django.db import models
 
 from base.constants import LANG_CHOICES
+from base.fields import image_field
 
 
 class Product(models.Model):
@@ -9,7 +10,6 @@ class Product(models.Model):
     category_slug = models.CharField(max_length=50, db_index=True)
     weight_value = models.IntegerField()
     weight_unit = models.CharField(max_length=10)
-    images = models.JSONField(default=list, blank=True)
     tags = models.JSONField(default=list, blank=True)
     name = models.CharField(max_length=200)
     composition = models.TextField(blank=True)
@@ -28,12 +28,25 @@ class Product(models.Model):
         return f"{self.name} ({self.lang})"
 
 
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, related_name="gallery", on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0)
+    image = image_field("images/products/")
+
+    class Meta:
+        verbose_name_plural = "Product images"
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return self.image.name
+
+
 class ProductVariant(models.Model):
     product = models.ForeignKey(Product, related_name="variants", on_delete=models.CASCADE)
     code = models.CharField(max_length=10)
     flavor = models.CharField(max_length=200)
-    image = models.CharField(max_length=255)
-    box_image = models.CharField(max_length=255)
+    image = image_field("images/products/")
+    box_image = image_field("images/products/")
 
     class Meta:
         verbose_name_plural = "Product variants"

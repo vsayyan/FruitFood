@@ -1,6 +1,7 @@
 from django.db import models
 
 from base.constants import LANG_CHOICES
+from base.fields import image_field
 
 
 class HomepageHero(models.Model):
@@ -30,13 +31,13 @@ class HomepageHero(models.Model):
 class HeroSlide(models.Model):
     hero = models.ForeignKey(HomepageHero, related_name="slider", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = models.CharField(max_length=255)
+    image = image_field("images/homepage/")
 
     class Meta:
         ordering = ["order", "id"]
 
     def __str__(self):
-        return self.image
+        return self.image.name
 
 
 class HomeAssortment(models.Model):
@@ -60,7 +61,7 @@ class AssortmentCard(models.Model):
     order = models.PositiveIntegerField(default=0)
     category_slug = models.CharField(max_length=50)
     badge = models.CharField(max_length=100)
-    image = models.CharField(max_length=255)
+    image = image_field("images/homepage/")
 
     class Meta:
         ordering = ["order", "id"]
@@ -118,14 +119,14 @@ class PhilosophyText(models.Model):
 class PhilosophyImage(models.Model):
     philosophy = models.ForeignKey(PhilosophyText, related_name="images", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = models.CharField(max_length=255)
+    image = image_field("images/home/")
     alt = models.CharField(max_length=255, blank=True)
 
     class Meta:
         ordering = ["order", "id"]
 
     def __str__(self):
-        return self.image
+        return self.image.name
 
 
 class FaqSmall(models.Model):

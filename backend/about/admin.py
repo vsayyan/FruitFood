@@ -1,4 +1,6 @@
 from django.contrib import admin
+
+from base.admin import ImagePreviewMixin
 from .models import (
     AboutProduction, ProductionDirection,
     AboutWhyTrustUs, TrustStat,
@@ -14,7 +16,7 @@ class ProductionDirectionInline(admin.TabularInline):
 
 
 @admin.register(AboutProduction)
-class AboutProductionAdmin(admin.ModelAdmin):
+class AboutProductionAdmin(ImagePreviewMixin, admin.ModelAdmin):
     list_display = ["title", "lang"]
     list_filter = ["lang"]
     inlines = [ProductionDirectionInline]
@@ -32,7 +34,7 @@ class AboutWhyTrustUsAdmin(admin.ModelAdmin):
     inlines = [TrustStatInline]
 
 
-class ShowcaseImageInline(admin.TabularInline):
+class ShowcaseImageInline(ImagePreviewMixin, admin.TabularInline):
     model = ShowcaseImage
     extra = 1
 
@@ -73,7 +75,7 @@ class AboutPageLabelAdmin(admin.ModelAdmin):
     list_filter = ["lang"]
 
 
-class IntroSlideInline(admin.TabularInline):
+class IntroSlideInline(ImagePreviewMixin, admin.TabularInline):
     model = IntroSlide
     extra = 1
 
@@ -85,7 +87,7 @@ class AboutIntroAdmin(admin.ModelAdmin):
     inlines = [IntroSlideInline]
 
 @admin.register(Brand)
-class BrandAdmin(admin.ModelAdmin):
+class BrandAdmin(ImagePreviewMixin, admin.ModelAdmin):
     list_display = ["name", "code", "lang"]
     list_filter = ["lang"]
 
@@ -96,12 +98,12 @@ class ExportCooperationAdmin(admin.ModelAdmin):
     list_filter = ["lang"]
 
 
-class FactorySlideInline(admin.TabularInline):
+class FactorySlideInline(ImagePreviewMixin, admin.TabularInline):
     model = FactorySlide
     extra = 1
 
 
-class FactoryGalleryImageInline(admin.TabularInline):
+class FactoryGalleryImageInline(ImagePreviewMixin, admin.TabularInline):
     model = FactoryGalleryImage
     extra = 1
 

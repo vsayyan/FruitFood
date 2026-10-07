@@ -1,4 +1,6 @@
 from django.contrib import admin
+
+from base.admin import ImagePreviewMixin
 from .models import (
     HomepageHero, HeroSlide, HomeAssortment, AssortmentCard,
     Stat, PhilosophyHeading, PhilosophyText, PhilosophyImage,
@@ -6,7 +8,7 @@ from .models import (
 )
 
 
-class HeroSlideInline(admin.TabularInline):
+class HeroSlideInline(ImagePreviewMixin, admin.TabularInline):
     model = HeroSlide
     extra = 1
 
@@ -18,7 +20,7 @@ class HomepageHeroAdmin(admin.ModelAdmin):
     inlines = [HeroSlideInline]
 
 
-class AssortmentCardInline(admin.TabularInline):
+class AssortmentCardInline(ImagePreviewMixin, admin.TabularInline):
     model = AssortmentCard
     extra = 1
 
@@ -42,7 +44,7 @@ class PhilosophyHeadingAdmin(admin.ModelAdmin):
     list_filter = ["lang"]
 
 
-class PhilosophyImageInline(admin.TabularInline):
+class PhilosophyImageInline(ImagePreviewMixin, admin.TabularInline):
     model = PhilosophyImage
     extra = 1
 

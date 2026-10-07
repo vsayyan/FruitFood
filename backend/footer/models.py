@@ -1,11 +1,12 @@
 from django.db import models
 
 from base.constants import LANG_CHOICES
+from base.fields import image_field
 
 class FooterLabel(models.Model):
     lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     title = models.CharField(max_length=255)
-    image = models.CharField(max_length=255, blank=True, null=True)
+    image = image_field("images/footer/", blank=True, null=True)
     description = models.TextField() 
     copyright = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255)
@@ -15,7 +16,7 @@ class FooterLabel(models.Model):
 
 class SocialLink(models.Model):
     footer = models.ForeignKey(FooterLabel, related_name='social_links', on_delete=models.CASCADE)
-    image = models.CharField(max_length=255, blank=True, null=True)
+    image = image_field("images/footer/", blank=True, null=True)
     url = models.URLField(max_length=500)
     label = models.CharField(max_length=50)
 

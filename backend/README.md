@@ -7,7 +7,7 @@ content is edited through the Django admin.
 
 ## Requirements
 
-- Python 3.14 (see `Pipfile`)
+- Python 3.12 or newer
 - Pipenv
 
 ## Setup
@@ -18,6 +18,7 @@ pipenv install
 cp .env.example .env        # then set SECRET_KEY
 pipenv shell
 python manage.py migrate
+python manage.py load_sample
 python manage.py createsuperuser
 python manage.py runserver
 ```
@@ -49,7 +50,32 @@ sections silently, so the page would just look empty.
   `products` (`slug`, `category_slug`), `categories` (`slug`),
   `navbars` (`url`), `brands` and `export_countries` (`code`), `tag_icons` (`code`).
 - An unknown slug returns `[]` with status 200, not 404.
-- Image fields are plain paths into `frontend/public` (e.g. `/images/...`).
+- Images are returned as full URLs
+  (`http://127.0.0.1:8000/media/images/products/x.png`), so the browser loads
+  them from Django. Set `PUBLIC_BASE_URL` in production if the API runs behind
+  a proxy.
+
+## Images and the admin
+
+Every image is a file field, so images are uploaded in the admin
+(`/admin/`) instead of typing paths. Uploaded files are saved in
+`backend/media/images/<section>/`, and the database stores the path relative
+to `media/` (for example `images/products/x.png`).
+
+- Allowed formats: jpg, jpeg, png, webp, gif, svg. Maximum size: 5 MB.
+- Product photos are edited in the "Product images" block on the product
+  page; their order is the order on the site.
+- The "Preview" column shows the current image.
+- Replacing or deleting an image does not delete the old file from disk.
+- Only trusted staff users should get admin access: an uploaded SVG can contain
+  scripts.
+
+## Sample data
+
+`python manage.py load_sample` fills the database from
+`frontend/db_orinak_example`. It replaces existing content, so content edited
+in the admin is lost. Run it after `migrate` on a new machine, or after the
+sample file changes. `--path` loads another file.
 
 ## Apps
 
@@ -75,7 +101,9 @@ python manage.py test base
 The tests load `frontend/db_orinak_example` into a temporary database and check
 that every endpoint returns exactly the same data, in all three languages. They
 also check filters, the read-only API and CORS. Your real `db.sqlite3` is not
-touched.
+touched. Admin tests upload an image to a temporary folder and check that
+the API returns it, that non-image files are rejected and that every admin page
+opens.
 
 ## Production
 
@@ -84,3 +112,7 @@ Set `DEBUG=False`, a real `SECRET_KEY`, `ALLOWED_HOSTS`,
 `DEBUG=False` the browsable API is turned off and HTTPS, secure cookies and
 HSTS are enabled. Run `python manage.py check --deploy` and
 `python manage.py collectstatic` before deploying.
+
+Django serves `/media/` only when `DEBUG=True`. In production the web server
+(for example nginx) must serve `backend/media/` at `/media/`. Back up
+`backend/media/` together with the database: uploaded images exist only there.

@@ -4,14 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
-pillow = "*"
 django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 python-decouple = "*"
 
 [dev-packages]
-
-[requires]
-python_version = "3.14"

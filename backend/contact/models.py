@@ -1,6 +1,7 @@
 from django.db import models
 
 from base.constants import LANG_CHOICES
+from base.fields import image_field
 
 
 class ContactPageContent(models.Model):
@@ -50,7 +51,7 @@ class ContactInfo(models.Model):
 class ContactSocialLink(models.Model):
     contact = models.ForeignKey(ContactInfo, related_name="social_links", on_delete=models.CASCADE)
     order = models.PositiveIntegerField(default=0)
-    image = models.CharField(max_length=255)
+    image = image_field("images/contact/")
     url = models.URLField(max_length=500)
     label = models.CharField(max_length=100)
 

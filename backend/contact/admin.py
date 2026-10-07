@@ -1,4 +1,6 @@
 from django.contrib import admin
+
+from base.admin import ImagePreviewMixin
 from .models import ContactPageContent, ContactInfo, ContactSocialLink
 
 
@@ -8,7 +10,7 @@ class ContactPageContentAdmin(admin.ModelAdmin):
     list_filter = ["lang"]
 
 
-class ContactSocialLinkInline(admin.TabularInline):
+class ContactSocialLinkInline(ImagePreviewMixin, admin.TabularInline):
     model = ContactSocialLink
     extra = 1
 

@@ -1,12 +1,14 @@
 from rest_framework import serializers
+
+from base.serializers import ModelSerializer
 from .models import FooterLabel, SocialLink, PartnerCta
 
-class SocialLinkSerializer(serializers.ModelSerializer):
+class SocialLinkSerializer(ModelSerializer):
     class Meta:
         model = SocialLink
         fields = ['id', 'image', 'url', 'label']
 
-class FooterLabelSerializer(serializers.ModelSerializer):
+class FooterLabelSerializer(ModelSerializer):
     social_links = SocialLinkSerializer(many=True)
 
     class Meta:
@@ -23,7 +25,7 @@ class FooterLabelSerializer(serializers.ModelSerializer):
         return footer
 
 
-class PartnerCtaSerializer(serializers.ModelSerializer):
+class PartnerCtaSerializer(ModelSerializer):
     class Meta:
         model = PartnerCta
         fields = '__all__'

@@ -1,8 +1,15 @@
 from django.contrib import admin
-from .models import Product, ProductVariant, ProductPageLabel, TagIcon
+
+from base.admin import ImagePreviewMixin
+from .models import Product, ProductImage, ProductVariant, ProductPageLabel, TagIcon
 
 
-class ProductVariantInline(admin.TabularInline):
+class ProductImageInline(ImagePreviewMixin, admin.TabularInline):
+    model = ProductImage
+    extra = 1
+
+
+class ProductVariantInline(ImagePreviewMixin, admin.TabularInline):
     model = ProductVariant
     extra = 1
 
@@ -12,7 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ["name", "lang", "slug", "category_slug"]
     list_filter = ["lang", "category_slug"]
     search_fields = ["name", "slug"]
-    inlines = [ProductVariantInline]
+    inlines = [ProductImageInline, ProductVariantInline]
 
 
 @admin.register(ProductPageLabel)

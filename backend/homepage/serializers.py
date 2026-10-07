@@ -1,4 +1,6 @@
 from rest_framework import serializers
+
+from base.serializers import ModelSerializer
 from .models import (
     HomepageHero, HeroSlide, HomeAssortment, AssortmentCard,
     Stat, PhilosophyHeading, PhilosophyText, PhilosophyImage,
@@ -6,13 +8,13 @@ from .models import (
 )
 
 
-class HeroSlideSerializer(serializers.ModelSerializer):
+class HeroSlideSerializer(ModelSerializer):
     class Meta:
         model = HeroSlide
         fields = ["id", "image"]
 
 
-class HomepageHeroSerializer(serializers.ModelSerializer):
+class HomepageHeroSerializer(ModelSerializer):
     slider = HeroSlideSerializer(many=True, read_only=True)
 
     class Meta:
@@ -20,13 +22,13 @@ class HomepageHeroSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class AssortmentCardSerializer(serializers.ModelSerializer):
+class AssortmentCardSerializer(ModelSerializer):
     class Meta:
         model = AssortmentCard
         fields = ["id", "category_slug", "badge", "image"]
 
 
-class HomeAssortmentSerializer(serializers.ModelSerializer):
+class HomeAssortmentSerializer(ModelSerializer):
     cards = AssortmentCardSerializer(many=True, read_only=True)
 
     class Meta:
@@ -34,25 +36,25 @@ class HomeAssortmentSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class StatSerializer(serializers.ModelSerializer):
+class StatSerializer(ModelSerializer):
     class Meta:
         model = Stat
         fields = "__all__"
 
 
-class PhilosophyHeadingSerializer(serializers.ModelSerializer):
+class PhilosophyHeadingSerializer(ModelSerializer):
     class Meta:
         model = PhilosophyHeading
         fields = "__all__"
 
 
-class PhilosophyImageSerializer(serializers.ModelSerializer):
+class PhilosophyImageSerializer(ModelSerializer):
     class Meta:
         model = PhilosophyImage
         fields = ["id", "image", "alt"]
 
 
-class PhilosophyTextSerializer(serializers.ModelSerializer):
+class PhilosophyTextSerializer(ModelSerializer):
     images = PhilosophyImageSerializer(many=True, read_only=True)
 
     class Meta:
@@ -60,19 +62,19 @@ class PhilosophyTextSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class FaqSmallSerializer(serializers.ModelSerializer):
+class FaqSmallSerializer(ModelSerializer):
     class Meta:
         model = FaqSmall
         fields = "__all__"
 
 
-class FaqHeadingSerializer(serializers.ModelSerializer):
+class FaqHeadingSerializer(ModelSerializer):
     class Meta:
         model = FaqHeading
         fields = "__all__"
 
 
-class FaqSerializer(serializers.ModelSerializer):
+class FaqSerializer(ModelSerializer):
     class Meta:
         model = Faq
         fields = "__all__"

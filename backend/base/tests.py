@@ -1,103 +1,23 @@
-import json
-from pathlib import Path
+import shutil
+import tempfile
 
-from django.conf import settings
-from django.test import TestCase
+from django.contrib import admin
+from django.contrib.auth import get_user_model
+from django.core.files.uploadedfile import SimpleUploadedFile
+from django.test import TestCase, override_settings
+from django.urls import reverse
 
-from header.models import Logo, Languages, Navbar, Headerlabels, Categories, Tags
-from footer.models import FooterLabel, SocialLink, PartnerCta
-from product.models import Product, ProductVariant, ProductPageLabel, TagIcon
-from homepage.models import (
-    HomepageHero, HeroSlide, HomeAssortment, AssortmentCard, Stat,
-    PhilosophyHeading, PhilosophyText, PhilosophyImage, FaqSmall, FaqHeading, Faq,
-)
-from about.models import (
-    AboutIntro, IntroSlide, AboutProduction, ProductionDirection,
-    AboutWhyTrustUs, TrustStat, AboutShowcase, ShowcaseImage,
-    AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel,
-    Brand, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
-)
-from contact.models import ContactPageContent, ContactInfo, ContactSocialLink
-from geography.models import GeographyContent, ExportCountry
+from about.models import Brand
 
+from base.sample import COLLECTIONS, LANGS, SAMPLE_DB, load_sample, read_sample
+from homepage.models import Faq
 
-SAMPLE_DB = Path(settings.BASE_DIR).parent / "frontend" / "db_orinak_example"
-LANGS = ["am", "ru", "en"]
-
-
-def child(model, fk, rename=None, keep_id=False):
-    return {"model": model, "fk": fk, "rename": rename or {}, "keep_id": keep_id}
-
-
-COLLECTIONS = {
-    "logos": {"model": Logo},
-    "languages": {"model": Languages},
-    "navbars": {"model": Navbar},
-    "header_labels": {"model": Headerlabels},
-    "categories": {"model": Categories},
-    "tags": {"model": Tags},
-    "footer_labels": {"model": FooterLabel, "children": {"social_links": child(SocialLink, "footer")}},
-    "partner_cta": {"model": PartnerCta},
-    "products": {"model": Product, "children": {"variants": child(ProductVariant, "product", {"id": "code"}, keep_id=True)}},
-    "product_page_labels": {"model": ProductPageLabel},
-    "tag_icons": {"model": TagIcon},
-    "homepage_hero": {"model": HomepageHero, "children": {"slider": child(HeroSlide, "hero")}},
-    "home_assortment": {"model": HomeAssortment, "children": {"cards": child(AssortmentCard, "assortment")}},
-    "stats": {"model": Stat},
-    "philosophy_headings": {"model": PhilosophyHeading},
-    "philosophy_text": {"model": PhilosophyText, "children": {"images": child(PhilosophyImage, "philosophy")}},
-    "faq_small": {"model": FaqSmall},
-    "faq_heading": {"model": FaqHeading},
-    "faq": {"model": Faq},
-    "about_intro": {"model": AboutIntro, "children": {"slider": child(IntroSlide, "intro")}},
-    "about_production": {"model": AboutProduction, "children": {"directions": child(ProductionDirection, "production")}},
-    "about_why_trust_us": {"model": AboutWhyTrustUs, "children": {"stats": child(TrustStat, "section", {"isHighlighted": "is_highlighted"})}},
-    "about_showcase": {"model": AboutShowcase, "children": {"images": child(ShowcaseImage, "showcase")}},
-    "about_quality_naturalness": {"model": AboutQualityNaturalness, "flatten": ["card1", "card2"]},
-    "about_philosophy": {"model": AboutPhilosophy},
-    "about_philosophy_facts": {"model": AboutPhilosophyFact},
-    "about_page_labels": {"model": AboutPageLabel},
-    "brands": {"model": Brand},
-    "export_cooperation": {"model": ExportCooperation},
-    "our_factory": {"model": OurFactory, "children": {
-        "slider": child(FactorySlide, "factory"),
-        "gallery": child(FactoryGalleryImage, "factory"),
-    }},
-    "we_believe": {"model": WeBelieve},
-    "contact_page_contents": {"model": ContactPageContent},
-    "contact_info": {"model": ContactInfo, "children": {"social_links": child(ContactSocialLink, "contact")}},
-    "geography_contents": {"model": GeographyContent},
-    "export_countries": {"model": ExportCountry},
-}
-
-
-def load_sample_into_test_db(data):
-    for name, spec in COLLECTIONS.items():
-        rows = data[name]
-        if isinstance(rows, dict):
-            rows = [rows]
-        children = spec.get("children", {})
-        for row in rows:
-            row = dict(row)
-            for key in spec.get("flatten", []):
-                for sub_key, value in (row.pop(key, None) or {}).items():
-                    row[f"{key}_{sub_key}"] = value
-            nested = {key: row.pop(key, []) for key in children}
-            obj = spec["model"].objects.create(**row)
-            for key, c in children.items():
-                for index, item in enumerate(nested[key] or []):
-                    item = dict(item)
-                    if not c["keep_id"]:
-                        item.pop("id", None)
-                    for old, new in c["rename"].items():
-                        if old in item:
-                            item[new] = item.pop(old)
-                    if "order" in {f.name for f in c["model"]._meta.concrete_fields}:
-                        item["order"] = index
-                    c["model"].objects.create(**{c["fk"]: obj}, **item)
+MEDIA_HOST = "http://localhost"
 
 
 def normalize(value, top=True):
+    if isinstance(value, str) and value.startswith(MEDIA_HOST):
+        return value[len(MEDIA_HOST):]
     if isinstance(value, dict):
         return {
             k: normalize(v, False)
@@ -117,8 +37,8 @@ class ApiContractTests(TestCase):
         if not SAMPLE_DB.exists():
             cls.sample = None
             return
-        cls.sample = json.loads(SAMPLE_DB.read_text(encoding="utf-8"))
-        load_sample_into_test_db(cls.sample)
+        cls.sample = read_sample()
+        load_sample(cls.sample)
 
     def setUp(self):
         if self.sample is None:
@@ -177,3 +97,74 @@ class ApiContractTests(TestCase):
 
         other = self.get("/api/faq?lang=am", HTTP_ORIGIN="https://evil.example")
         self.assertIsNone(other.get("Access-Control-Allow-Origin"))
+
+    def test_images_are_served_from_backend(self):
+        logo = self.get("/api/logos").json()
+        self.assertEqual(logo["image"], "http://localhost/media/images/header/logo.svg")
+        product = self.get("/api/products?lang=am").json()[0]
+        self.assertTrue(all(url.startswith("http://localhost/media/images/") for url in product["images"]))
+
+    def test_product_images_keep_their_order(self):
+        expected = next(p for p in self.sample["products"] if p["lang"] == "am")
+        product = self.get(f"/api/products?lang=am&slug={expected['slug']}").json()[0]
+        self.assertEqual(normalize(product["images"]), expected["images"])
+
+
+PNG = (
+    b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89"
+    b"\x00\x00\x00\rIDATx\x9cc\xf8\x0f\x00\x00\x01\x01\x00\x05\x18\xd8N\x00\x00\x00\x00IEND\xaeB`\x82"
+)
+
+
+class AdminUploadTests(TestCase):
+    """Images are uploaded through /admin/ and come back from the API as backend URLs."""
+
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.media_root = tempfile.mkdtemp()
+        cls.media_override = override_settings(MEDIA_ROOT=cls.media_root)
+        cls.media_override.enable()
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.media_override.disable()
+        shutil.rmtree(cls.media_root, ignore_errors=True)
+        super().tearDownClass()
+
+    def setUp(self):
+        user = get_user_model().objects.create_superuser("admin", "admin@example.com", "pass")
+        self.client.force_login(user)
+
+    def add_brand(self, upload):
+        return self.client.post(reverse("admin:about_brand_add"), {
+            "lang": "en",
+            "code": "test-brand",
+            "name": "Test",
+            "card_title": "Test card",
+            "description": "Test description",
+            "image": upload,
+            "image_alt": "Test",
+        }, HTTP_HOST="localhost")
+
+    def test_admin_upload_is_returned_by_api(self):
+        response = self.add_brand(SimpleUploadedFile("new-brand.png", PNG, content_type="image/png"))
+        self.assertEqual(response.status_code, 302)
+        brand = Brand.objects.get(code="test-brand")
+        self.assertTrue(brand.image.name.startswith("images/brands/new-brand"))
+        self.assertTrue(brand.image.storage.exists(brand.image.name))
+
+        api = self.client.get("/api/brands?lang=en", HTTP_HOST="localhost").json()
+        self.assertEqual(api[0]["image"], "http://localhost/media/" + brand.image.name)
+
+    def test_admin_rejects_non_image_files(self):
+        response = self.add_brand(SimpleUploadedFile("evil.html", b"<script>alert(1)</script>", content_type="text/html"))
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse(Brand.objects.filter(code="test-brand").exists())
+
+    def test_every_admin_page_opens(self):
+        for model, model_admin in admin.site._registry.items():
+            info = (model._meta.app_label, model._meta.model_name)
+            for url in [reverse("admin:%s_%s_changelist" % info), reverse("admin:%s_%s_add" % info)]:
+                with self.subTest(url=url):
+                    self.assertEqual(self.client.get(url, HTTP_HOST="localhost").status_code, 200)

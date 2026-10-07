@@ -138,6 +138,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 MEDIA_URL = '/media/'
+PUBLIC_BASE_URL = config('PUBLIC_BASE_URL', default='').rstrip('/')
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Email
@@ -157,9 +158,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ['base.permissions.ReadOnly'],
     'DEFAULT_RENDERER_CLASSES': (
-        ['rest_framework.renderers.JSONRenderer', 'rest_framework.renderers.BrowsableAPIRenderer']
+        ['base.renderers.MediaURLJSONRenderer', 'rest_framework.renderers.BrowsableAPIRenderer']
         if DEBUG
-        else ['rest_framework.renderers.JSONRenderer']
+        else ['base.renderers.MediaURLJSONRenderer']
     ),
 }
 

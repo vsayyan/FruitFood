@@ -4,7 +4,7 @@ from .serializers import ProductSerializer, ProductPageLabelSerializer, TagIconS
 
 
 class ProductViewSet(FilteredReadOnlyViewSet):
-    queryset = Product.objects.prefetch_related("variants")
+    queryset = Product.objects.prefetch_related("gallery", "variants")
     serializer_class = ProductSerializer
     filter_fields = ["lang", "slug", "category_slug"]
 

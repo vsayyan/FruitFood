@@ -1,11 +1,12 @@
 from django.db import models
 
 from base.constants import LANG_CHOICES
+from base.fields import image_field
 
 
 class Logo(models.Model):
     title = models.CharField(max_length=100)
-    image = models.CharField(max_length=255)
+    image = image_field("images/header/")
 
     class Meta:
         verbose_name_plural = "Logo"
@@ -17,7 +18,7 @@ class Logo(models.Model):
 class Languages(models.Model):
     code = models.CharField(max_length=20, unique=True)
     label = models.CharField(max_length=50)
-    image = models.CharField(max_length=255)
+    image = image_field("images/header/")
 
     class Meta:
         verbose_name_plural = "Languages"
@@ -61,7 +62,7 @@ class Categories(models.Model):
     lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)
     slug = models.CharField(max_length=100, db_index=True)
     name = models.CharField(max_length=255)
-    image = models.CharField(max_length=255)
+    image = image_field("images/categories/")
     product_count = models.IntegerField(default=0)
 
     class Meta:
