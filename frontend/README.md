@@ -408,7 +408,7 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 | Gallery-ի 2-րդ, 3-րդ նկար | `images[1..2]` → `/images/products/test/<slug>-gallery-2/3.jpg` | 1600×1067 |
 | Համի անուն | `variants[].flavor` | «Համ N» / «Вкус N» / «Taste N», որտեղ իրականը հայտնի չէր |
 
-Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո (կամ admin-ից) փոխում ես միայն `flavor`, `image`, `box_image`, `images` դաշտերը, իսկ `public/images/products/test/` folder-ը կարելի ա ջնջել։
+Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Ապրանքի էջի բոլոր նկարները (gallery, thumbnail-ներ, համերի քարտեր) **լրիվ լցնում են իրենց քարտը** (`object-fit: cover`), դատարկ եզրեր չկան, դրա համար իրական նկարները պետք ա լինեն առանց սպիտակ/թափանցիկ եզրերի (desktop-ում gallery-ն ~1:1 ա, mobile-ում ~4:3)։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո (կամ admin-ից) փոխում ես միայն `flavor`, `image`, `box_image`, `images` դաշտերը, իսկ `public/images/products/test/` folder-ը կարելի ա ջնջել։
 
 ### 9.2 Slider-ներ
 
