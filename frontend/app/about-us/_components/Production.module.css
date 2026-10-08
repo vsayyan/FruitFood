@@ -95,6 +95,9 @@
   overflow: hidden;
 }
 
+.image {
+  object-position: left center;
+}
 
 @media (max-width: 900px) {
   .section {

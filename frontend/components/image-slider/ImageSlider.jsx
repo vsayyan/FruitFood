@@ -7,7 +7,7 @@ import styles from './ImageSlider.module.css'
 
 const SWIPE_THRESHOLD = 50
 
-export default function ImageSlider({ images = [], labels = {}, sizes = '100vw', preload = false, href, className = '' }) {
+export default function ImageSlider({ images = [], labels = {}, sizes = '100vw', preload = false, href, className = '', imageClassName = '' }) {
   const [current, setCurrent] = useState(0)
   const touchStartX = useRef(null)
   const count = images.length
@@ -43,7 +43,7 @@ export default function ImageSlider({ images = [], labels = {}, sizes = '100vw',
               fill
               sizes={sizes}
               preload={preload && index === 0}
-              className={styles.image}
+              className={`${styles.image} ${imageClassName}`.trim()}
               draggable={false}
             />
           )

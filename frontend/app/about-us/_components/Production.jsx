@@ -72,6 +72,7 @@ export default function Production({ data, labels }) {
                   slide: labels?.slider_image_label,
                 }}
                 sizes='(max-width: 900px) 100vw, 533px'
+                imageClassName={styles.image}
               />
             </div>
           )}
