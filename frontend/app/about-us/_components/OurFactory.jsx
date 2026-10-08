@@ -1,24 +1,8 @@
-'use client'
-
-import { useState } from 'react'
+import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './OurFactory.module.css'
 
 export default function OurFactory({ data }) {
   const sliderImages = data.slider || []
-
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === sliderImages.length - 1 ? 0 : prev + 1
-    )
-  }
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? sliderImages.length - 1 : prev - 1
-    )
-  }
 
   if (!sliderImages.length) {
     return null
@@ -45,66 +29,17 @@ export default function OurFactory({ data }) {
           </div>
 
           <div className={styles.slider}>
-            <img
-              src={sliderImages[currentIndex].image}
-              alt={data.label}
-              className={styles.sliderImage}
+            <ImageSlider
+              images={sliderImages.map((item, index) => ({ src: item.image, alt: `${data.slider_image_label} ${index + 1}` }))}
+              labels={{
+                previous: data.slider_previous_label,
+                next: data.slider_next_label,
+                navigation: data.slider_navigation_label,
+                slide: data.slider_image_label,
+              }}
+              sizes='(max-width: 900px) 100vw, 570px'
             />
-
-            {sliderImages.length > 1 && (
-              <>
-                <button
-                  type="button"
-                  className={`${styles.arrow} ${styles.prev}`}
-                  onClick={prevSlide}
-                  aria-label={data.slider_previous_label}
-                >
-                  ‹
-                </button>
-
-                <button
-                  type="button"
-                  className={`${styles.arrow} ${styles.next}`}
-                  onClick={nextSlide}
-                  aria-label={data.slider_next_label}
-                >
-                  ›
-                </button>
-
-                <div
-                  className={styles.dots}
-                  role="group"
-                  aria-label={data.slider_navigation_label}
-                >
-                  {sliderImages.map((item, index) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      className={`${styles.dot} ${
-                        index === currentIndex ? styles.active : ''
-                      }`}
-                      onClick={() => setCurrentIndex(index)}
-                      aria-label={`${data.slider_image_label} ${index + 1}`}
-                      aria-current={
-                        index === currentIndex ? 'true' : undefined
-                      }
-                    />
-                  ))}
-                </div>
-              </>
-            )}
           </div>
-        </div>
-
-        <div className={styles.strip} aria-label={data.slider_navigation_label}>
-          {sliderImages.map((item, index) => (
-            <div key={item.id} className={styles.stripItem}>
-              <img
-                src={item.image}
-                alt={`${data.slider_image_label} ${index + 1}`}
-              />
-            </div>
-          ))}
         </div>
 
         <div className={styles.gallery}>

@@ -23,9 +23,14 @@ class HomepageHeroSerializer(ModelSerializer):
 
 
 class AssortmentCardSerializer(ModelSerializer):
+    images = serializers.SerializerMethodField()
+
     class Meta:
         model = AssortmentCard
-        fields = ["id", "category_slug", "badge", "image"]
+        fields = ["id", "category_slug", "badge", "images"]
+
+    def get_images(self, obj):
+        return [item.image.url for item in obj.images.all() if item.image]
 
 
 class HomeAssortmentSerializer(ModelSerializer):

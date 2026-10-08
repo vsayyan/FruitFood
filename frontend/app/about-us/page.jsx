@@ -72,9 +72,9 @@ export default async function AboutUsPage() {
       />
       <PhilosophyFacts data={aboutPhilosophy[0]} facts={aboutPhilosophyFacts} />
       <Brands data={brands} labels={aboutPageLabels[0]} />
-      <Production data={aboutProduction[0]} />
+      <Production data={aboutProduction[0]} labels={aboutPageLabels[0]} />
       <WhyTrustUs data={aboutWhyTrustUs[0]} />
-      <ProductShowcaseSlider data={aboutShowcase[0]} />
+      <ProductShowcaseSlider data={aboutShowcase[0]} labels={aboutPageLabels[0]} />
       <QualityNaturalness data={aboutQualityNaturalness[0]} />
       <ExportCooperation data={exportCooperation[0]} />
       {ourFactory[0] && <OurFactory data={ourFactory[0]} />}

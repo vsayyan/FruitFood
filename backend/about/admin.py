@@ -2,11 +2,11 @@ from django.contrib import admin
 
 from base.admin import ImagePreviewMixin
 from .models import (
-    AboutProduction, ProductionDirection,
+    AboutProduction, ProductionDirection, ProductionImage,
     AboutWhyTrustUs, TrustStat,
     AboutShowcase, ShowcaseImage, AboutIntro, IntroSlide,
     AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel,
-    Brand, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
+    Brand, BrandImage, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
 )
 
 
@@ -15,11 +15,16 @@ class ProductionDirectionInline(admin.TabularInline):
     extra = 1
 
 
+class ProductionImageInline(ImagePreviewMixin, admin.TabularInline):
+    model = ProductionImage
+    extra = 1
+
+
 @admin.register(AboutProduction)
-class AboutProductionAdmin(ImagePreviewMixin, admin.ModelAdmin):
+class AboutProductionAdmin(admin.ModelAdmin):
     list_display = ["title", "lang"]
     list_filter = ["lang"]
-    inlines = [ProductionDirectionInline]
+    inlines = [ProductionImageInline, ProductionDirectionInline]
 
 
 class TrustStatInline(admin.TabularInline):
@@ -86,10 +91,16 @@ class AboutIntroAdmin(admin.ModelAdmin):
     list_filter = ["lang"]
     inlines = [IntroSlideInline]
 
+class BrandImageInline(ImagePreviewMixin, admin.TabularInline):
+    model = BrandImage
+    extra = 1
+
+
 @admin.register(Brand)
-class BrandAdmin(ImagePreviewMixin, admin.ModelAdmin):
+class BrandAdmin(admin.ModelAdmin):
     list_display = ["name", "code", "lang"]
     list_filter = ["lang"]
+    inlines = [BrandImageInline]
 
 
 @admin.register(ExportCooperation)

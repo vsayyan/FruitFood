@@ -2,13 +2,32 @@
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
 }
 
-.sliderImage {
-  display: block;
+.track {
+  display: flex;
   width: 100%;
   height: 100%;
+  transition: transform 0.45s ease;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.slideLink {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.image {
   object-fit: cover;
+  user-select: none;
 }
 
 .arrow {
@@ -29,6 +48,7 @@
   line-height: 1;
   cursor: pointer;
   transform: translateY(-50%);
+  transition: background-color 0.2s ease;
 }
 
 .arrow:hover {
@@ -66,7 +86,9 @@
   border: none;
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .dot.active {
@@ -74,3 +96,10 @@
   transform: scale(1.2);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .track,
+  .arrow,
+  .dot {
+    transition: none;
+  }
+}

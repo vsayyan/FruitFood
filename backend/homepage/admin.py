@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from base.admin import ImagePreviewMixin
 from .models import (
-    HomepageHero, HeroSlide, HomeAssortment, AssortmentCard,
+    HomepageHero, HeroSlide, HomeAssortment, AssortmentCard, AssortmentCardImage,
     Stat, PhilosophyHeading, PhilosophyText, PhilosophyImage,
     FaqSmall, FaqHeading, Faq,
 )
@@ -20,9 +20,21 @@ class HomepageHeroAdmin(admin.ModelAdmin):
     inlines = [HeroSlideInline]
 
 
-class AssortmentCardInline(ImagePreviewMixin, admin.TabularInline):
+class AssortmentCardInline(admin.TabularInline):
     model = AssortmentCard
     extra = 1
+    show_change_link = True
+
+
+class AssortmentCardImageInline(ImagePreviewMixin, admin.TabularInline):
+    model = AssortmentCardImage
+    extra = 1
+
+
+@admin.register(AssortmentCard)
+class AssortmentCardAdmin(admin.ModelAdmin):
+    list_display = ["category_slug", "badge", "assortment"]
+    inlines = [AssortmentCardImageInline]
 
 
 @admin.register(HomeAssortment)

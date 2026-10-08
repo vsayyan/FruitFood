@@ -104,6 +104,7 @@ components/                    Global component-ներ (ամեն էջում են
   partner-cta/  PartnerCta.jsx (Server Component, տվյալը՝ action.js-ով),
                 PartnerCtaWrapper.jsx ('use client', միայն pathname-ով թաքցնում ա /contact-ում),
                 PartnerCta.module.css   (Vahram, §6)
+  image-slider/  ImageSlider.jsx + .module.css   Կայքի բոլոր slider-ները (‹ › սլաքներ, ներքևում dot-եր, swipe), §9.2
 
 lib/
   axios.js                     axios instance (ՉԵՍ ՓՈԽՈՒՄ)
@@ -384,7 +385,7 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 
 ## 9. Ինչ դեռ չկա
 
-- Իրական լուսանկարներ. factory (`about-us/factory-1.jpg`-ը placeholder ա), Philosophy slider-ի 3 slide-ը նույն լուսանկարն են (`philosophy_text.images`), About us-ի Production-ի և slider-ի նկարները (`about_production`, `about_showcase`), Hero-ի նկարը (`homepage/hero-1.png`, slider-ի 3 slide-ը նույն նկարն են (`homepage_hero.slider`)), «Մեր տեսականին»-ի 2 քարտի նկարը (`homepage/assortment-1.jpg`, `home_assortment.cards`), About us-ի Section 1-ի և ապրանքանիշերի նկարները (`about-us/natural-quality.jpg`, `brands/brand-placeholder.png`)
+- Իրական լուսանկարներ. բոլոր slider-ները հիմա test նկարներով են (§9.2), factory gallery-ն՝ `about-us/factory-1.jpg` placeholder
 - Ապրանքների իրական համերն ու նկարները (տես §9.1)
 - Language switcher-ի design-ը
 - `not-found.jsx`, `error.jsx`-ի տեքստերը՝ hardcode, ոչ multi-language
@@ -400,7 +401,24 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 | Gallery-ի 2-րդ, 3-րդ նկար | `images[1..2]` → `/media/images/products/test/<slug>-gallery-2/3.jpg` | 1600×1067 |
 | Համի անուն | `variants[].flavor` | «Համ N» / «Вкус N» / «Taste N», որտեղ իրականը հայտնի չէր |
 
-Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո admin-ից փոխում ես միայն `flavor`, `image`, `box_image` դաշտերն ու ապրանքի «Product images» բլոկը, իսկ `backend/media/images/products/test/` folder-ը կարելի ա ջնջել։
+Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Ապրանքի էջի բոլոր նկարները (gallery, thumbnail-ներ, համերի քարտեր) **լրիվ լցնում են իրենց քարտը** (`object-fit: cover`), դատարկ եզրեր չկան, դրա համար իրական նկարները պետք ա լինեն առանց սպիտակ/թափանցիկ եզրերի (desktop-ում gallery-ն ~1:1 ա, mobile-ում ~4:3)։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո admin-ից փոխում ես միայն `flavor`, `image`, `box_image` դաշտերն ու ապրանքի «Product images» բլոկը, իսկ `backend/media/images/products/test/` folder-ը կարելի ա ջնջել։
+
+### 9.2 Slider-ներ
+
+Բոլոր slider-ները մեկ component են՝ `components/image-slider/ImageSlider.jsx` (props. `images=[{src, alt}]`, `labels={previous, next, navigation, slide}`, `sizes`, `preload`, `href`)։ Autoplay չկա։ Նկարները գալիս են API-ից (admin-ում փոխվում են).
+
+| Բաժին | API դաշտ | Test նկար (`backend/media/images/test/`) |
+|---|---|---|
+| Home / Hero | `homepage_hero.slider` | `slide-square-1..3.jpg` |
+| Home / Մեր տեսականին | `home_assortment.cards[].images` | `slide-landscape-1..3.jpg` |
+| Home / Philosophy | `philosophy_text.images` | `slide-square-1..3.jpg` |
+| About / Section 1 | `about_intro.slider` | `slide-wide-1..3.jpg` |
+| About / Ապրանքանիշեր | `brands[].images` | `slide-landscape-1..3.jpg` |
+| About / Production | `about_production.images` | `slide-landscape-1..3.jpg` |
+| About / Showcase | `about_showcase.images` | `slide-wide-1..3.jpg` |
+| About / Our Factory | `our_factory.slider` | `slide-square-1..3.jpg` |
+
+Իրական նկարները ստանալուց հետո admin-ում փոխում ես միայն այս նկարները, իսկ `backend/media/images/test/`-ը կարելի ա ջնջել։
 
 ## 10. `db_orinak_example`-ի կարճ օրինակ
 

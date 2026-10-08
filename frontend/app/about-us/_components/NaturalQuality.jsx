@@ -1,19 +1,11 @@
-'use client'
-
-import { useState } from 'react'
 import Link from 'next/link'
+import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './NaturalQuality.module.css'
 
 export default function NaturalQuality({ data, labels, current }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
   if (!data) return null
 
   const slides = data.slider ?? []
-  const lastIndex = slides.length - 1
-
-  const nextSlide = () => setCurrentIndex((prev) => (prev === lastIndex ? 0 : prev + 1))
-  const prevSlide = () => setCurrentIndex((prev) => (prev === 0 ? lastIndex : prev - 1))
 
   return (
     <>
@@ -44,50 +36,16 @@ export default function NaturalQuality({ data, labels, current }) {
         <section className={styles.media}>
           <div className='container'>
             <div className={styles.slider}>
-              <img
-                src={slides[currentIndex].image}
-                alt={data.image_alt ?? ''}
-                className={styles.sliderImage}
+              <ImageSlider
+                images={slides.map((slide) => ({ src: slide.image, alt: data.image_alt }))}
+                labels={{
+                  previous: labels?.slider_previous_label,
+                  next: labels?.slider_next_label,
+                  navigation: labels?.slider_navigation_label,
+                  slide: labels?.slider_image_label,
+                }}
+                sizes='(max-width: 1280px) 100vw, 1200px'
               />
-
-              {slides.length > 1 && (
-                <>
-                  <button
-                    type='button'
-                    className={`${styles.arrow} ${styles.prev}`}
-                    onClick={prevSlide}
-                    aria-label={labels?.slider_previous_label}
-                  >
-                    ‹
-                  </button>
-
-                  <button
-                    type='button'
-                    className={`${styles.arrow} ${styles.next}`}
-                    onClick={nextSlide}
-                    aria-label={labels?.slider_next_label}
-                  >
-                    ›
-                  </button>
-
-                  <div
-                    className={styles.dots}
-                    role='group'
-                    aria-label={labels?.slider_navigation_label}
-                  >
-                    {slides.map((item, index) => (
-                      <button
-                        key={item.id ?? index}
-                        type='button'
-                        className={`${styles.dot} ${index === currentIndex ? styles.active : ''}`}
-                        onClick={() => setCurrentIndex(index)}
-                        aria-label={`${labels?.slider_image_label ?? ''} ${index + 1}`}
-                        aria-current={index === currentIndex ? 'true' : undefined}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
             </div>
           </div>
         </section>

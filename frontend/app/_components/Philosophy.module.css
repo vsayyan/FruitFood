@@ -15,68 +15,6 @@
   background: var(--color-cream);
 }
 
-.image {
-  object-fit: cover;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding-bottom: 3px;
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.85);
-  color: var(--color-text);
-  font-size: var(--font-size-h3);
-  line-height: 1;
-  transform: translateY(-50%);
-}
-
-.arrow:hover {
-  background: var(--color-white);
-}
-
-.arrow:focus-visible,
-.dot:focus-visible {
-  outline: 2px solid var(--color-green);
-  outline-offset: 3px;
-}
-
-.prev {
-  left: var(--space-sm);
-}
-
-.next {
-  right: var(--space-sm);
-}
-
-.dots {
-  position: absolute;
-  left: 50%;
-  bottom: var(--space-sm);
-  z-index: 2;
-  display: flex;
-  gap: var(--space-xs);
-  transform: translateX(-50%);
-}
-
-.dot {
-  width: 9px;
-  height: 9px;
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.dot.active {
-  background: var(--color-white);
-  transform: scale(1.2);
-}
-
 .content {
   flex: 1 1 579px;
   padding-top: 60px;

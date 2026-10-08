@@ -52,6 +52,10 @@ class HomeAssortment(models.Model):
     description = models.TextField()
     link_label = models.CharField(max_length=100)
     url_catalog = models.CharField(max_length=255)
+    slider_previous_label = models.CharField(max_length=100, blank=True)
+    slider_next_label = models.CharField(max_length=100, blank=True)
+    slider_navigation_label = models.CharField(max_length=100, blank=True)
+    slider_image_label = models.CharField(max_length=100, blank=True)
 
     class Meta:
         verbose_name_plural = "Home assortment"
@@ -66,6 +70,16 @@ class AssortmentCard(models.Model):
     order = models.PositiveIntegerField(default=0)
     category_slug = models.CharField(max_length=50)
     badge = models.CharField(max_length=100)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return self.category_slug
+
+class AssortmentCardImage(models.Model):
+    card = models.ForeignKey(AssortmentCard, related_name="images", on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0)
     image = models.FileField(
         upload_to="images/homepage/",
         max_length=255,
@@ -76,7 +90,7 @@ class AssortmentCard(models.Model):
         ordering = ["order", "id"]
 
     def __str__(self):
-        return self.category_slug
+        return self.image.name
 
 class Stat(models.Model):
     lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)

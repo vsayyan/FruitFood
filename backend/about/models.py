@@ -10,11 +10,6 @@ class AboutProduction(models.Model):
     subtitle = models.CharField(max_length=100)
     title = models.CharField(max_length=255)
     paragraphs = models.JSONField(default=list, blank=True)
-    image = models.FileField(
-        upload_to="images/about-us/",
-        max_length=255,
-        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
-    )
     image_alt = models.CharField(max_length=255, blank=True)
 
     class Meta:
@@ -24,6 +19,21 @@ class AboutProduction(models.Model):
     def __str__(self):
         return f"About production ({self.lang})"
 
+
+class ProductionImage(models.Model):
+    production = models.ForeignKey(AboutProduction, related_name="images", on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0)
+    image = models.FileField(
+        upload_to="images/about-us/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
+
+    class Meta:
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return self.image.name
 
 class ProductionDirection(models.Model):
     production = models.ForeignKey(AboutProduction, related_name="directions", on_delete=models.CASCADE)
@@ -195,11 +205,6 @@ class Brand(models.Model):
     name = models.CharField(max_length=100)
     card_title = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.FileField(
-        upload_to="images/brands/",
-        max_length=255,
-        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
-    )
     image_alt = models.CharField(max_length=255, blank=True)
 
     class Meta:
@@ -212,6 +217,21 @@ class Brand(models.Model):
     def __str__(self):
         return f"{self.name} ({self.lang})"
 
+
+class BrandImage(models.Model):
+    brand = models.ForeignKey(Brand, related_name="images", on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0)
+    image = models.FileField(
+        upload_to="images/brands/",
+        max_length=255,
+        validators=[FileExtensionValidator(IMAGE_EXTENSIONS), validate_image_size],
+    )
+
+    class Meta:
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return self.image.name
 
 class ExportCooperation(models.Model):
     lang = models.CharField(max_length=10, choices=LANG_CHOICES, db_index=True)

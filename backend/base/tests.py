@@ -143,19 +143,24 @@ class AdminUploadTests(TestCase):
             "name": "Test",
             "card_title": "Test card",
             "description": "Test description",
-            "image": upload,
             "image_alt": "Test",
+            "images-TOTAL_FORMS": "1",
+            "images-INITIAL_FORMS": "0",
+            "images-MIN_NUM_FORMS": "0",
+            "images-MAX_NUM_FORMS": "1000",
+            "images-0-order": "0",
+            "images-0-image": upload,
         }, HTTP_HOST="localhost")
 
     def test_admin_upload_is_returned_by_api(self):
         response = self.add_brand(SimpleUploadedFile("new-brand.png", PNG, content_type="image/png"))
         self.assertEqual(response.status_code, 302)
-        brand = Brand.objects.get(code="test-brand")
-        self.assertTrue(brand.image.name.startswith("images/brands/new-brand"))
-        self.assertTrue(brand.image.storage.exists(brand.image.name))
+        image = Brand.objects.get(code="test-brand").images.get().image
+        self.assertTrue(image.name.startswith("images/brands/new-brand"))
+        self.assertTrue(image.storage.exists(image.name))
 
         api = self.client.get("/api/brands?lang=en", HTTP_HOST="localhost").json()
-        self.assertEqual(api[0]["image"], "http://localhost/media/" + brand.image.name)
+        self.assertEqual(api[0]["images"], ["http://localhost/media/" + image.name])
 
     def test_admin_rejects_non_image_files(self):
         response = self.add_brand(SimpleUploadedFile("evil.html", b"<script>alert(1)</script>", content_type="text/html"))

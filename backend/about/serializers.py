@@ -32,11 +32,15 @@ class ProductionDirectionSerializer(ModelSerializer):
 
 
 class AboutProductionSerializer(ModelSerializer):
+    images = serializers.SerializerMethodField()
     directions = ProductionDirectionSerializer(many=True, read_only=True)
 
     class Meta:
         model = AboutProduction
         fields = "__all__"
+
+    def get_images(self, obj):
+        return [item.image.url for item in obj.images.all() if item.image]
 
 
 class TrustStatSerializer(ModelSerializer):
@@ -111,9 +115,14 @@ class AboutPageLabelSerializer(ModelSerializer):
 
 
 class BrandSerializer(ModelSerializer):
+    images = serializers.SerializerMethodField()
+
     class Meta:
         model = Brand
         fields = "__all__"
+
+    def get_images(self, obj):
+        return [item.image.url for item in obj.images.all() if item.image]
 
 
 class ExportCooperationSerializer(ModelSerializer):

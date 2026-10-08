@@ -9,14 +9,14 @@ from header.models import Logo, Languages, Navbar, Headerlabels, Categories, Tag
 from footer.models import FooterLabel, SocialLink, PartnerCta
 from product.models import Product, ProductImage, ProductVariant, ProductPageLabel, TagIcon
 from homepage.models import (
-    HomepageHero, HeroSlide, HomeAssortment, AssortmentCard, Stat,
+    HomepageHero, HeroSlide, HomeAssortment, AssortmentCard, AssortmentCardImage, Stat,
     PhilosophyHeading, PhilosophyText, PhilosophyImage, FaqSmall, FaqHeading, Faq,
 )
 from about.models import (
-    AboutIntro, IntroSlide, AboutProduction, ProductionDirection,
+    AboutIntro, IntroSlide, AboutProduction, ProductionDirection, ProductionImage,
     AboutWhyTrustUs, TrustStat, AboutShowcase, ShowcaseImage,
     AboutQualityNaturalness, AboutPhilosophy, AboutPhilosophyFact, AboutPageLabel,
-    Brand, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
+    Brand, BrandImage, ExportCooperation, OurFactory, FactorySlide, FactoryGalleryImage, WeBelieve,
 )
 from contact.models import ContactPageContent, ContactInfo, ContactSocialLink
 from geography.models import GeographyContent, ExportCountry
@@ -26,8 +26,8 @@ SAMPLE_DB = Path(settings.BASE_DIR).parent / "frontend" / "db_orinak_example"
 LANGS = ["am", "ru", "en"]
 
 
-def child(model, fk, rename=None, keep_id=False):
-    return {"model": model, "fk": fk, "rename": rename or {}, "keep_id": keep_id}
+def child(model, fk, rename=None, keep_id=False, children=None):
+    return {"model": model, "fk": fk, "rename": rename or {}, "keep_id": keep_id, "children": children or {}}
 
 
 COLLECTIONS = {
@@ -46,7 +46,9 @@ COLLECTIONS = {
     "product_page_labels": {"model": ProductPageLabel},
     "tag_icons": {"model": TagIcon},
     "homepage_hero": {"model": HomepageHero, "children": {"slider": child(HeroSlide, "hero")}},
-    "home_assortment": {"model": HomeAssortment, "children": {"cards": child(AssortmentCard, "assortment")}},
+    "home_assortment": {"model": HomeAssortment, "children": {
+        "cards": child(AssortmentCard, "assortment", children={"images": child(AssortmentCardImage, "card")}),
+    }},
     "stats": {"model": Stat},
     "philosophy_headings": {"model": PhilosophyHeading},
     "philosophy_text": {"model": PhilosophyText, "children": {"images": child(PhilosophyImage, "philosophy")}},
@@ -54,14 +56,17 @@ COLLECTIONS = {
     "faq_heading": {"model": FaqHeading},
     "faq": {"model": Faq},
     "about_intro": {"model": AboutIntro, "children": {"slider": child(IntroSlide, "intro")}},
-    "about_production": {"model": AboutProduction, "children": {"directions": child(ProductionDirection, "production")}},
+    "about_production": {"model": AboutProduction, "children": {
+        "images": child(ProductionImage, "production"),
+        "directions": child(ProductionDirection, "production"),
+    }},
     "about_why_trust_us": {"model": AboutWhyTrustUs, "children": {"stats": child(TrustStat, "section", {"isHighlighted": "is_highlighted"})}},
     "about_showcase": {"model": AboutShowcase, "children": {"images": child(ShowcaseImage, "showcase")}},
     "about_quality_naturalness": {"model": AboutQualityNaturalness, "flatten": ["card1", "card2"]},
     "about_philosophy": {"model": AboutPhilosophy},
     "about_philosophy_facts": {"model": AboutPhilosophyFact},
     "about_page_labels": {"model": AboutPageLabel},
-    "brands": {"model": Brand},
+    "brands": {"model": Brand, "children": {"images": child(BrandImage, "brand")}},
     "export_cooperation": {"model": ExportCooperation},
     "our_factory": {"model": OurFactory, "children": {
         "slider": child(FactorySlide, "factory"),
@@ -98,24 +103,35 @@ def load_sample(data):
                     row[f"{key}_{sub_key}"] = value
             nested = {key: row.pop(key, []) for key in children}
             obj = spec["model"].objects.create(**to_file_names(spec["model"], row))
-            for key, c in children.items():
-                for index, item in enumerate(nested[key] or []):
-                    item = {"image": item} if isinstance(item, str) else dict(item)
-                    if not c["keep_id"]:
-                        item.pop("id", None)
-                    for old, new in c["rename"].items():
-                        if old in item:
-                            item[new] = item.pop(old)
-                    if "order" in {f.name for f in c["model"]._meta.concrete_fields}:
-                        item["order"] = index
-                    c["model"].objects.create(**{c["fk"]: obj}, **to_file_names(c["model"], item))
+            create_children(obj, children, nested)
+
+
+def create_children(parent, children, nested):
+    for key, c in children.items():
+        for index, item in enumerate(nested[key] or []):
+            item = {"image": item} if isinstance(item, str) else dict(item)
+            if not c["keep_id"]:
+                item.pop("id", None)
+            for old, new in c["rename"].items():
+                if old in item:
+                    item[new] = item.pop(old)
+            if "order" in {f.name for f in c["model"]._meta.concrete_fields}:
+                item["order"] = index
+            grandchildren = {name: item.pop(name, []) for name in c["children"]}
+            obj = c["model"].objects.create(**{c["fk"]: parent}, **to_file_names(c["model"], item))
+            create_children(obj, c["children"], grandchildren)
+
+
+def child_models(children):
+    for c in children.values():
+        yield c["model"]
+        yield from child_models(c["children"])
 
 
 def all_models():
     for spec in COLLECTIONS.values():
         yield spec["model"]
-        for c in spec.get("children", {}).values():
-            yield c["model"]
+        yield from child_models(spec.get("children", {}))
 
 
 def clear_sample():

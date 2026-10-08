@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Slider from './Slider'
+import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './Hero.module.css'
 
 const MARQUEE_COPIES = 4
@@ -34,7 +34,17 @@ export default function Hero({ data }) {
 
         {slides.length > 0 && (
           <div className={styles.imageWrapper}>
-            <Slider data={data} />
+            <ImageSlider
+              images={slides.map((slide) => ({ src: slide.image, alt: data.slider_image_label }))}
+              labels={{
+                previous: data.slider_previous_label,
+                next: data.slider_next_label,
+                navigation: data.slider_navigation_label,
+                slide: data.slider_dot_label,
+              }}
+              sizes='(max-width: 900px) 100vw, 517px'
+              preload
+            />
           </div>
         )}
 
