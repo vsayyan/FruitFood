@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './Assortment.module.css'
 
 export default function Assortment({ data, categories }) {
@@ -30,21 +30,29 @@ export default function Assortment({ data, categories }) {
         <ul className={styles.grid}>
           {cards.map((card) => (
             <li key={card.id}>
-              <Link href={`/catalog/${card.category.slug}`} className={styles.card}>
+              <article className={styles.card}>
                 {card.badge && <span className={styles.badge}>{card.badge}</span>}
 
-                <span className={styles.media}>
-                  <Image
-                    src={card.image ?? card.category.image}
-                    alt=''
-                    fill
+                <div className={styles.media}>
+                  <ImageSlider
+                    images={(card.images ?? [card.category.image]).map((src) => ({ src, alt: card.category.name }))}
+                    labels={{
+                      previous: data.slider_previous_label,
+                      next: data.slider_next_label,
+                      navigation: data.slider_navigation_label,
+                      slide: data.slider_image_label,
+                    }}
                     sizes='(max-width: 600px) calc(100vw - 80px), (max-width: 900px) calc(50vw - 56px), 520px'
-                    className={styles.image}
+                    href={`/catalog/${card.category.slug}`}
                   />
-                </span>
+                </div>
 
-                <span className={styles.footer}>
-                  <h3 className={styles.name}>{card.category.name}</h3>
+                <div className={styles.footer}>
+                  <h3 className={styles.name}>
+                    <Link href={`/catalog/${card.category.slug}`} className={styles.cardLink}>
+                      {card.category.name}
+                    </Link>
+                  </h3>
                   <span className={styles.arrow} aria-hidden='true'>
                     <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                       <path
@@ -56,8 +64,8 @@ export default function Assortment({ data, categories }) {
                       />
                     </svg>
                   </span>
-                </span>
-              </Link>
+                </div>
+              </article>
             </li>
           ))}
         </ul>

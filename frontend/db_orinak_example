@@ -3368,17 +3368,17 @@
       "images": [
         {
           "id": 1,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-1.jpg",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         },
         {
           "id": 2,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-2.jpg",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         },
         {
           "id": 3,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-3.jpg",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         }
       ],
@@ -3395,17 +3395,17 @@
       "images": [
         {
           "id": 1,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-1.jpg",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         },
         {
           "id": 2,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-2.jpg",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         },
         {
           "id": 3,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-3.jpg",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         }
       ],
@@ -3422,17 +3422,17 @@
       "images": [
         {
           "id": 1,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-1.jpg",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         },
         {
           "id": 2,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-2.jpg",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         },
         {
           "id": 3,
-          "image": "/images/home/philosophy-1.png",
+          "image": "/images/test/slide-square-3.jpg",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         }
       ],
@@ -3839,8 +3839,12 @@
       "name": "Ֆրութ Ֆուդ",
       "card_title": "Fruit Food, Frutamin, Frutini, Frutik",
       "description": "Բնական չրեր, մրգային լավաշներ, մրգային բատոնչիկներ և մրգային ձողիկներ։",
-      "image": "/images/brands/brand-placeholder.png",
-      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik"
+      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik",
+      "images": [
+        "/images/test/slide-landscape-1.jpg",
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg"
+      ]
     },
     {
       "id": 2,
@@ -3849,8 +3853,12 @@
       "name": "Фрут Фуд",
       "card_title": "Fruit Food, Frutamin, Frutini, Frutik",
       "description": "Натуральные сухофрукты, фруктовый лаваш, фруктовые батончики и фруктовые палочки.",
-      "image": "/images/brands/brand-placeholder.png",
-      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik"
+      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik",
+      "images": [
+        "/images/test/slide-landscape-1.jpg",
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg"
+      ]
     },
     {
       "id": 3,
@@ -3859,8 +3867,12 @@
       "name": "Fruit Food",
       "card_title": "Fruit Food, Frutamin, Frutini, Frutik",
       "description": "Natural dried fruits, fruit lavash, fruit bars and fruit sticks.",
-      "image": "/images/brands/brand-placeholder.png",
-      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik"
+      "image_alt": "Fruit Food, Frutamin, Frutini, Frutik",
+      "images": [
+        "/images/test/slide-landscape-1.jpg",
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg"
+      ]
     },
     {
       "id": 4,
@@ -3869,8 +3881,12 @@
       "name": "Չոկո Չիր",
       "card_title": "Choco Chir",
       "description": "Բարձրորակ (62% կակաոյի պարունակությամբ) շոկոլադով պատված բնական մրգային պաստեղներ, ինչպես նաև ջնարակապատ չրեր ընկույզով, նուշով և ծիրանի կորիզով։",
-      "image": "/images/brands/brand-placeholder.png",
-      "image_alt": "Choco Chir"
+      "image_alt": "Choco Chir",
+      "images": [
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg",
+        "/images/test/slide-landscape-1.jpg"
+      ]
     },
     {
       "id": 5,
@@ -3879,8 +3895,12 @@
       "name": "Чоко Чир",
       "card_title": "Choco Chir",
       "description": "Натуральная фруктовая пастила в высококачественном шоколаде (62% какао), а также сухофрукты в глазури с грецким орехом, миндалём и ядром абрикосовой косточки.",
-      "image": "/images/brands/brand-placeholder.png",
-      "image_alt": "Choco Chir"
+      "image_alt": "Choco Chir",
+      "images": [
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg",
+        "/images/test/slide-landscape-1.jpg"
+      ]
     },
     {
       "id": 6,
@@ -3889,8 +3909,12 @@
       "name": "Choco Chir",
       "card_title": "Choco Chir",
       "description": "Natural fruit pastilles in premium chocolate (62% cocoa), as well as glazed dried fruits with walnut, almond and apricot kernel.",
-      "image": "/images/brands/brand-placeholder.png",
-      "image_alt": "Choco Chir"
+      "image_alt": "Choco Chir",
+      "images": [
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg",
+        "/images/test/slide-landscape-1.jpg"
+      ]
     }
   ],
   "about_intro": [
@@ -3905,15 +3929,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-3.jpg"
         }
       ]
     },
@@ -3928,15 +3952,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-3.jpg"
         }
       ]
     },
@@ -3951,15 +3975,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/natural-quality.jpg"
+          "image": "/images/test/slide-wide-3.jpg"
         }
       ]
     }
@@ -4058,15 +4082,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-3.jpg"
         }
       ],
       "gallery": [
@@ -4101,15 +4125,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-3.jpg"
         }
       ],
       "gallery": [
@@ -4144,15 +4168,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/images/test/slide-square-3.jpg"
         }
       ],
       "gallery": [
@@ -4524,15 +4548,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-3.jpg"
         }
       ],
       "slider_image_label": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
@@ -4561,15 +4585,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-3.jpg"
         }
       ],
       "slider_image_label": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
@@ -4598,15 +4622,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/homepage/hero-1.png"
+          "image": "/images/test/slide-square-3.jpg"
         }
       ],
       "slider_image_label": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
@@ -4637,15 +4661,27 @@
           "id": 1,
           "category_slug": "dried-fruits",
           "badge": "Առանց ավելացված շաքարի",
-          "image": "/images/homepage/assortment-1.jpg"
+          "images": [
+            "/images/test/slide-landscape-1.jpg",
+            "/images/test/slide-landscape-2.jpg",
+            "/images/test/slide-landscape-3.jpg"
+          ]
         },
         {
           "id": 2,
           "category_slug": "chocolate-covered",
           "badge": "62% կակաո",
-          "image": "/images/homepage/assortment-1.jpg"
+          "images": [
+            "/images/test/slide-landscape-2.jpg",
+            "/images/test/slide-landscape-3.jpg",
+            "/images/test/slide-landscape-1.jpg"
+          ]
         }
-      ]
+      ],
+      "slider_previous_label": "Նախորդ նկարը",
+      "slider_next_label": "Հաջորդ նկարը",
+      "slider_navigation_label": "Նկարների կառավարում",
+      "slider_image_label": "Նկար"
     },
     {
       "id": 2,
@@ -4660,15 +4696,27 @@
           "id": 1,
           "category_slug": "dried-fruits",
           "badge": "Без добавленного сахара",
-          "image": "/images/homepage/assortment-1.jpg"
+          "images": [
+            "/images/test/slide-landscape-1.jpg",
+            "/images/test/slide-landscape-2.jpg",
+            "/images/test/slide-landscape-3.jpg"
+          ]
         },
         {
           "id": 2,
           "category_slug": "chocolate-covered",
           "badge": "62% какао",
-          "image": "/images/homepage/assortment-1.jpg"
+          "images": [
+            "/images/test/slide-landscape-2.jpg",
+            "/images/test/slide-landscape-3.jpg",
+            "/images/test/slide-landscape-1.jpg"
+          ]
         }
-      ]
+      ],
+      "slider_previous_label": "Предыдущее изображение",
+      "slider_next_label": "Следующее изображение",
+      "slider_navigation_label": "Управление изображениями",
+      "slider_image_label": "Изображение"
     },
     {
       "id": 3,
@@ -4683,15 +4731,27 @@
           "id": 1,
           "category_slug": "dried-fruits",
           "badge": "No added sugar",
-          "image": "/images/homepage/assortment-1.jpg"
+          "images": [
+            "/images/test/slide-landscape-1.jpg",
+            "/images/test/slide-landscape-2.jpg",
+            "/images/test/slide-landscape-3.jpg"
+          ]
         },
         {
           "id": 2,
           "category_slug": "chocolate-covered",
           "badge": "62% cocoa",
-          "image": "/images/homepage/assortment-1.jpg"
+          "images": [
+            "/images/test/slide-landscape-2.jpg",
+            "/images/test/slide-landscape-3.jpg",
+            "/images/test/slide-landscape-1.jpg"
+          ]
         }
-      ]
+      ],
+      "slider_previous_label": "Previous image",
+      "slider_next_label": "Next image",
+      "slider_navigation_label": "Image navigation",
+      "slider_image_label": "Image"
     }
   ],
   "about_production": [
@@ -4715,8 +4775,12 @@
           "text": "Շոկոլադապատ և ջնարակապատ մրգային արտադրանք՝ համակցված ընտրված ընդեղենի հետ։"
         }
       ],
-      "image": "/images/about-us/factory-1.jpg",
-      "image_alt": "Fruit Food-ի արտադրանքը"
+      "image_alt": "Fruit Food-ի արտադրանքը",
+      "images": [
+        "/images/test/slide-landscape-1.jpg",
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg"
+      ]
     },
     {
       "id": 2,
@@ -4738,8 +4802,12 @@
           "text": "Фруктовая продукция в шоколаде и глазури в сочетании с отборными орехами."
         }
       ],
-      "image": "/images/about-us/factory-1.jpg",
-      "image_alt": "Продукция Fruit Food"
+      "image_alt": "Продукция Fruit Food",
+      "images": [
+        "/images/test/slide-landscape-1.jpg",
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg"
+      ]
     },
     {
       "id": 3,
@@ -4761,8 +4829,12 @@
           "text": "Chocolate and glaze-covered fruit products combined with selected nuts."
         }
       ],
-      "image": "/images/about-us/factory-1.jpg",
-      "image_alt": "Fruit Food products"
+      "image_alt": "Fruit Food products",
+      "images": [
+        "/images/test/slide-landscape-1.jpg",
+        "/images/test/slide-landscape-2.jpg",
+        "/images/test/slide-landscape-3.jpg"
+      ]
     }
   ],
   "about_why_trust_us": [
@@ -4931,15 +5003,15 @@
       "next_label": "Հաջորդ նկարը",
       "images": [
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-1.jpg",
           "alt": "Fruit Food-ի արտադրանքը"
         },
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-2.jpg",
           "alt": "Fruit Food-ի արտադրանքը"
         },
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-3.jpg",
           "alt": "Fruit Food-ի արտադրանքը"
         }
       ]
@@ -4951,15 +5023,15 @@
       "next_label": "Следующее фото",
       "images": [
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-1.jpg",
           "alt": "Продукция Fruit Food"
         },
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-2.jpg",
           "alt": "Продукция Fruit Food"
         },
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-3.jpg",
           "alt": "Продукция Fruit Food"
         }
       ]
@@ -4971,15 +5043,15 @@
       "next_label": "Next photo",
       "images": [
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-1.jpg",
           "alt": "Fruit Food products"
         },
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-2.jpg",
           "alt": "Fruit Food products"
         },
         {
-          "image": "/images/about-us/factory-1.jpg",
+          "image": "/images/test/slide-wide-3.jpg",
           "alt": "Fruit Food products"
         }
       ]

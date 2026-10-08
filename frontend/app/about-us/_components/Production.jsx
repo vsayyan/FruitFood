@@ -1,6 +1,7 @@
+import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './Production.module.css'
 
-export default function Production({ data }) {
+export default function Production({ data, labels }) {
   if (!data) return null
 
   const renderTitle = () => {
@@ -60,12 +61,17 @@ export default function Production({ data }) {
               </div>
             ))}
 
-          {data.image && (
+          {data.images?.length > 0 && (
             <div className={styles.imageWrapper}>
-              <img
-                src={data.image}
-                alt={data.image_alt || data.subtitle || ''}
-                className={styles.image}
+              <ImageSlider
+                images={data.images.map((src) => ({ src, alt: data.image_alt || data.subtitle }))}
+                labels={{
+                  previous: labels?.slider_previous_label,
+                  next: labels?.slider_next_label,
+                  navigation: labels?.slider_navigation_label,
+                  slide: labels?.slider_image_label,
+                }}
+                sizes='(max-width: 900px) 100vw, 533px'
               />
             </div>
           )}

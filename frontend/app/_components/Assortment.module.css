@@ -59,6 +59,7 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -67,9 +68,22 @@
   background: var(--color-mint);
 }
 
-.card:focus-visible {
+.card:has(.cardLink:focus-visible) {
   outline: 2px solid var(--color-green);
   outline-offset: 3px;
+}
+
+.cardLink {
+  color: inherit;
+  outline: none;
+}
+
+.cardLink::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: var(--radius-2xl);
 }
 
 .badge {
@@ -93,10 +107,7 @@
   overflow: hidden;
   border-radius: var(--radius-lg);
   background: var(--color-white);
-}
-
-.image {
-  object-fit: cover;
+  z-index: 2;
 }
 
 .footer {
@@ -134,12 +145,12 @@
 }
 
 .card:hover .arrow,
-.card:focus-visible .arrow {
+.card:has(.cardLink:focus-visible) .arrow {
   background: var(--color-green);
 }
 
 .card:hover .arrow svg,
-.card:focus-visible .arrow svg {
+.card:has(.cardLink:focus-visible) .arrow svg {
   transform: rotate(-45deg);
 }
 
