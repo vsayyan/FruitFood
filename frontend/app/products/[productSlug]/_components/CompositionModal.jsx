@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import styles from './CompositionModal.module.css'
+import asset from '@/lib/assets'
 
 export default function CompositionModal({ title, composition, labels, onClose }) {
   const closeButton = useRef(null)
@@ -47,7 +48,7 @@ export default function CompositionModal({ title, composition, labels, onClose }
           onClick={onClose}
           aria-label={labels.close_button}
         >
-          <img src="/images/products/icons/close.svg" alt="" width="16" height="16" />
+          <img src={asset('/images/products/icons/close.svg')} alt="" width="16" height="16" />
         </button>
       </section>
     </div>

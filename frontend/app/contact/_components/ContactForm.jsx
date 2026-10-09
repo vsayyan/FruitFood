@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import styles from './ContactForm.module.css'
+import asset from '@/lib/assets'
 
 export default function ContactForm({ labels }) {
   const [status, setStatus] = useState('idle')
@@ -121,7 +122,7 @@ export default function ContactForm({ labels }) {
           </span>
 
           <img
-            src="/images/contact/arrow.svg"
+            src={asset('/images/contact/arrow.svg')}
             alt=""
             className={styles.arrow}
           />

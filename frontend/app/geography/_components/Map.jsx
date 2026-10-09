@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import CountryList from './CountryList'
 import styles from './Map.module.css'
+import asset from '@/lib/assets'
 
 export default function Map({ title, countries, moreLabel }) {
   return (
@@ -10,7 +11,7 @@ export default function Map({ title, countries, moreLabel }) {
 
         <div className={styles.map}>
           <Image
-            src='/images/geography/world-map.png'
+            src={asset('/images/geography/world-map.png')}
             alt=''
             fill
             sizes='(max-width: 900px) 100vw, 1200px'
