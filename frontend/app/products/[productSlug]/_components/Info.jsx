@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import CompositionModal from './CompositionModal'
 import styles from './Info.module.css'
 import asset from '@/lib/assets'
@@ -44,13 +45,13 @@ export default function Info({ product, tags, labels, selectedIndex, onSelect })
                   title={variant.flavor}
                 >
                   {variant.image ? (
-                    <img className={styles.variantImage} src={variant.image} alt="" />
+                    <Image className={styles.variantImage} src={variant.image} alt="" width={128} height={128} />
                   ) : (
                     <span className={styles.variantName}>{variant.flavor}</span>
                   )}
                   {isSelected && (
                     <span className={styles.check} aria-hidden="true">
-                      <img src={asset('/images/products/icons/check.svg')} alt="" />
+                      <Image src={asset('/images/products/icons/check.svg')} alt="" width={20} height={20} />
                     </span>
                   )}
                 </button>
@@ -84,7 +85,7 @@ export default function Info({ product, tags, labels, selectedIndex, onSelect })
           aria-haspopup="dialog"
         >
           <span className={styles.compositionIcon} aria-hidden="true">
-            <img src={asset('/images/products/icons/composition.svg')} alt="" width="16" height="16" />
+            <Image src={asset('/images/products/icons/composition.svg')} alt="" width={16} height={16} />
           </span>
           <span className={styles.compositionText}>{labels.composition_button}</span>
           <span className={styles.compositionArrow} aria-hidden="true">→</span>

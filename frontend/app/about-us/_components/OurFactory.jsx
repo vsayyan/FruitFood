@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './OurFactory.module.css'
 
@@ -48,9 +49,12 @@ export default function OurFactory({ data }) {
               key={item.id}
               className={styles.galleryItem}
             >
-              <img
+              <Image
                 src={item.image}
                 alt={`${data.label} ${item.id}`}
+                width={334}
+                height={445}
+                sizes='334px'
               />
             </div>
           ))}
