@@ -36,7 +36,7 @@ NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
 
 Then start the frontend with `npm run dev` while `runserver` is running.
 `frontend/next.config.mjs` allows `next/image` to load images from
-`http://127.0.0.1:8000/media/`; add the production domain there when deploying.
+`http://127.0.0.1:8000/media/` and `/static/`; add the production domain there when deploying.
 
 Use `127.0.0.1`, not `localhost`: Node.js may resolve `localhost` to IPv6
 (`::1`), while `runserver` listens on IPv4 only. The frontend hides failed
@@ -68,6 +68,10 @@ to `media/` (for example `images/products/x.png`).
   page; their order is the order on the site.
 - The "Preview" column shows the current image.
 - Replacing or deleting an image does not delete the old file from disk.
+
+UI icons of the site (logo fallback, arrows, menu, map, pins) are not content,
+so they are Django static files in `backend/base/static/images/`. The frontend
+loads them from `<API origin>/static/images/...` through `frontend/lib/assets.js`.
 - Only trusted staff users should get admin access: an uploaded SVG can contain
   scripts.
 
@@ -114,6 +118,7 @@ Set `DEBUG=False`, a real `SECRET_KEY`, `ALLOWED_HOSTS`,
 HSTS are enabled. Run `python manage.py check --deploy` and
 `python manage.py collectstatic` before deploying.
 
-Django serves `/media/` only when `DEBUG=True`. In production the web server
-(for example nginx) must serve `backend/media/` at `/media/`. Back up
+Django serves `/media/` and `/static/` only when `DEBUG=True`. In production the
+web server (for example nginx) must serve `backend/media/` at `/media/` and
+`backend/staticfiles/` (after `collectstatic`) at `/static/`. Back up
 `backend/media/` together with the database: uploaded images exist only there.

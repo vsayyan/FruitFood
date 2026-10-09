@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import styles from './Gallery.module.css'
+import asset from '@/lib/assets'
 
 export default function Gallery({ images, name, labels }) {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -32,7 +33,7 @@ export default function Gallery({ images, name, labels }) {
               onClick={() => showImage(activeIndex - 1)}
               aria-label={labels.previous_image}
             >
-              <img className={styles.arrowPrev} src="/images/products/icons/arrow.svg" alt="" width="24" height="24" />
+              <img className={styles.arrowPrev} src={asset('/images/products/icons/arrow.svg')} alt="" width="24" height="24" />
             </button>
             <button
               className={styles.arrow}
@@ -40,7 +41,7 @@ export default function Gallery({ images, name, labels }) {
               onClick={() => showImage(activeIndex + 1)}
               aria-label={labels.next_image}
             >
-              <img className={styles.arrowNext} src="/images/products/icons/arrow.svg" alt="" width="24" height="24" />
+              <img className={styles.arrowNext} src={asset('/images/products/icons/arrow.svg')} alt="" width="24" height="24" />
             </button>
           </div>
         )}

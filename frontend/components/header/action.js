@@ -1,7 +1,8 @@
 import { displayLang } from '@/lib/lang'
 import axios from '@/lib/axios'
+import asset from '@/lib/assets'
 
-const DEFAULT_LOGO = { title: 'Fruit Food', image: '/images/header/logo.svg' }
+const DEFAULT_LOGO = { title: 'Fruit Food', image: asset('/images/header/logo.svg') }
 
 export async function getLogo() {
   try {

@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useMenubar } from '@/context/menubarContext'
 import styles from './Header.module.css'
+import asset from '@/lib/assets'
 
 const Menubar = ({ label }) => {
     const {isMenuOpen, setIsMenuOpen} = useMenubar()
@@ -18,8 +19,8 @@ const Menubar = ({ label }) => {
             >
                 <Image
                     src={
-                        isMenuOpen  ? '/images/header/x_mark.svg'
-                                    : '/images/header/menubar.svg'
+                        isMenuOpen  ? asset('/images/header/x_mark.svg')
+                                    : asset('/images/header/menubar.svg')
                     }
                     className={styles.menubar}
                     alt=''

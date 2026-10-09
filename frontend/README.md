@@ -108,9 +108,10 @@ components/                    Global component-ներ (ամեն էջում են
 lib/
   axios.js                     axios instance (ՉԵՍ ՓՈԽՈՒՄ)
   lang.js                      displayLang() — լեզուն cookie-ից (ՉԵՍ ՓՈԽՈՒՄ)
-
-public/images/<բաժին>/         Միայն UI պատկերակներ, որ կոդում են գրված (լոգո, սլաքներ, դրոշներ, քարտեզ)։ Բովանդակության բոլոր նկարները backend-ում են՝ `backend/media/images/` (admin-ից)
+  assets.js                    asset('/images/...') → UI պատկերակի հասցեն backend-ում (`<API-ի հասցե>/static/images/...`)
 ```
+
+`public/` folder չկա։ UI պատկերակները (լոգո, սլաքներ, մենյու, քարտեզ) Django-ի static ֆայլեր են՝ `backend/base/static/images/`, կոդում՝ `asset('/images/header/down.svg')`։ Բովանդակության բոլոր նկարները՝ `backend/media/images/` (admin-ից)։ Նոր պատկերակ պետք ա՝ դիր `backend/base/static/images/<բաժին>/`-ում և օգտագործիր `asset()`-ով։
 
 ## 4. Կոդի կանոններ
 

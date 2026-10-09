@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useMenubar } from '@/context/menubarContext'
 import styles from './Navbar.module.css'
+import asset from '@/lib/assets'
 
 export default function Navbar({ data, categories, labels }) {
   const pathname = usePathname()
@@ -55,7 +56,7 @@ export default function Navbar({ data, categories, labels }) {
                   onClick={() => setOpenProducts((prev) => !prev)}
                 >
                   <Image
-                    src="/images/header/down.svg"
+                    src={asset('/images/header/down.svg')}
                     alt=""
                     width={9}
                     height={8}
@@ -63,7 +64,7 @@ export default function Navbar({ data, categories, labels }) {
                   />
 
                   <Image
-                    src="/images/header/up.svg"
+                    src={asset('/images/header/up.svg')}
                     alt=""
                     width={9}
                     height={8}
@@ -93,8 +94,8 @@ export default function Navbar({ data, categories, labels }) {
                       <Image
                         src={
                           elem.slug === 'dried-fruits'
-                            ? '/images/header/dried-fruits.svg'
-                            : '/images/header/chocolate-covered.svg'
+                            ? asset('/images/header/dried-fruits.svg')
+                            : asset('/images/header/chocolate-covered.svg')
                         }
                         alt={elem.name}
                         width={48}
@@ -114,7 +115,7 @@ export default function Navbar({ data, categories, labels }) {
                   }}
                 >
                   <Image
-                    src="/images/header/all-products.svg"
+                    src={asset('/images/header/all-products.svg')}
                     alt=""
                     width={48}
                     height={48}

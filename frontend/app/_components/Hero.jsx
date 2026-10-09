@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ImageSlider from '@/components/image-slider/ImageSlider'
 import styles from './Hero.module.css'
+import asset from '@/lib/assets'
 
 const MARQUEE_COPIES = 4
 
@@ -80,7 +81,7 @@ export default function Hero({ data }) {
                 <span>{item}</span>
 
                 <Image
-                  src="/images/homepage/star.svg"
+                  src={asset('/images/homepage/star.svg')}
                   alt=""
                   width={9}
                   height={9}

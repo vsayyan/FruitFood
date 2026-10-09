@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './Header.module.css'
 
 export default function Langs({ data, lang }) {
+  const current = data.find((item) => item.code === lang)
 
   const changeLang = (code) => {
     const date = new Date()
@@ -16,13 +17,15 @@ export default function Langs({ data, lang }) {
   return (
     <div className={styles.langDropdown}>
       <span className={styles.currentLang}>
-        <Image
-                src={`/images/header/${lang}.svg`}
-                alt={data.find((item) => item.code === lang)?.label ?? ''}
-                width={19}
-                height={15}
-                loading='eager'
-            />
+        {current?.image && (
+          <Image
+            src={current.image}
+            alt={current.label ?? ''}
+            width={19}
+            height={15}
+            loading='eager'
+          />
+        )}
       </span>
       <div className={styles.langMenu}>
         {data.map((item) => (

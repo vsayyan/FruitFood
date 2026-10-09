@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import CompositionModal from './CompositionModal'
 import styles from './Info.module.css'
+import asset from '@/lib/assets'
 
 export default function Info({ product, tags, labels, selectedIndex, onSelect }) {
   const variants = product.variants ?? []
@@ -49,7 +50,7 @@ export default function Info({ product, tags, labels, selectedIndex, onSelect })
                   )}
                   {isSelected && (
                     <span className={styles.check} aria-hidden="true">
-                      <img src="/images/products/icons/check.svg" alt="" />
+                      <img src={asset('/images/products/icons/check.svg')} alt="" />
                     </span>
                   )}
                 </button>
@@ -83,7 +84,7 @@ export default function Info({ product, tags, labels, selectedIndex, onSelect })
           aria-haspopup="dialog"
         >
           <span className={styles.compositionIcon} aria-hidden="true">
-            <img src="/images/products/icons/composition.svg" alt="" width="16" height="16" />
+            <img src={asset('/images/products/icons/composition.svg')} alt="" width="16" height="16" />
           </span>
           <span className={styles.compositionText}>{labels.composition_button}</span>
           <span className={styles.compositionArrow} aria-hidden="true">→</span>

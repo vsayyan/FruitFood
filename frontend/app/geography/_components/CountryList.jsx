@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './CountryList.module.css'
+import asset from '@/lib/assets'
 
 export default function CountryList({ countries, moreLabel }) {
   const items = moreLabel
@@ -11,7 +12,7 @@ export default function CountryList({ countries, moreLabel }) {
       {items.map((country) => (
         <li key={country.code} className={styles.country}>
           <Image
-            src='/images/geography/pin.svg'
+            src={asset('/images/geography/pin.svg')}
             alt=''
             width={18}
             height={18}

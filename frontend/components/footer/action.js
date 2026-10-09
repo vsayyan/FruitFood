@@ -1,8 +1,9 @@
 import { displayLang } from '@/lib/lang'
 import axios from '@/lib/axios'
 import { getNavbar } from '../header/action'
+import asset from '@/lib/assets'
 
-const DEFAULT_FOOTER = { title: 'Fruit Food', image: '/images/footer/logo.svg', social_links: [] }
+const DEFAULT_FOOTER = { title: 'Fruit Food', image: asset('/images/footer/logo.svg'), social_links: [] }
 
 export async function getFooterLabel(lang) {
   try {
