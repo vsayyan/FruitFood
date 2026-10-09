@@ -66,7 +66,6 @@ npm run dev                   # http://localhost:3000 ← սա բաց արա bro
 
 ```
 db_orinak_example              Sample տվյալներ. backend-ի `load_sample`-ը բազան սրանից ա լցնում (ՉԵՍ ՓՈԽՈՒՄ)
-db_parts/<անուն>.json          Հին ֆայլեր json-server-ի ժամանակից
 .env.example                   copy → .env.local
 proxy.js                       /products/<slug>, /catalog/<slug>. slug-ը API-ում չկա → իրական 404 status (loading.jsx-ի պատճառով notFound()-ը 200 էր տալիս)
 
@@ -110,7 +109,7 @@ lib/
   axios.js                     axios instance (ՉԵՍ ՓՈԽՈՒՄ)
   lang.js                      displayLang() — լեզուն cookie-ից (ՉԵՍ ՓՈԽՈՒՄ)
 
-public/images/<բաժին>/         UI պատկերակներ, որ կոդում են գրված (լոգո, սլաքներ, դրոշներ)։ Բովանդակության նկարները backend-ում են՝ `backend/media/images/`
+public/images/<բաժին>/         Միայն UI պատկերակներ, որ կոդում են գրված (լոգո, սլաքներ, դրոշներ, քարտեզ)։ Բովանդակության բոլոր նկարները backend-ում են՝ `backend/media/images/` (admin-ից)
 ```
 
 ## 4. Կոդի կանոններ
