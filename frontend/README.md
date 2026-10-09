@@ -94,8 +94,11 @@ There is no `public/` folder.
 - `next.config.mjs` allows `next/image` to load `/media/**` and `/static/**`
   from the local backend. **For production, add the real API domain there.**
 - Product page images fill their card (`object-fit: cover`), so real photos
-  must have no white or transparent margins (gallery ~1:1 on desktop, ~4:3 on
-  mobile).
+  must have no white or transparent margins. Sizes: gallery images
+  (`box_image` and product images) **1200×1200**, taste images **400×400**.
+  On mobile the gallery is 4:3, so keep the product inside the middle 75% of
+  the height. The test images in `backend/media/images/products/test/` show
+  the right sizes.
 - New UI icon: put it in `backend/base/static/images/<section>/` and use
   `asset()`.
 
