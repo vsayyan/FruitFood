@@ -2,26 +2,26 @@
   "logos": {
     "id": 1,
     "title": "Fruit Food",
-    "image": "/images/header/logo.svg"
+    "image": "/media/images/header/logo.svg"
   },
   "languages": [
     {
       "id": 1,
       "code": "am",
       "label": "Հայ",
-      "image": "/images/header/am.svg"
+      "image": "/media/images/header/am.svg"
     },
     {
       "id": 2,
       "code": "ru",
       "label": "Рус",
-      "image": "/images/header/ru.svg"
+      "image": "/media/images/header/ru.svg"
     },
     {
       "id": 3,
       "code": "en",
       "label": "Eng",
-      "image": "/images/header/en.svg"
+      "image": "/media/images/header/en.svg"
     }
   ],
   "navbars": [
@@ -121,7 +121,7 @@
       "id": 1,
       "lang": "am",
       "title": "Fruit Food",
-      "image": "/images/footer/logo.svg",
+      "image": "/media/images/footer/logo.svg",
       "description": "Հայաստանյան բնական չորամրգեր և մրգային քաղցրավենիք 1995 թվականից։",
       "copyright": "© 2026 Fruit Food. Բոլոր իրավունքները պաշտպանված են։",
       "subtitle": "Կապվեք մեզ հետ",
@@ -130,13 +130,13 @@
       "social_links": [
         {
           "id": 1,
-          "image": "/images/footer/facebook.svg",
+          "image": "/media/images/footer/facebook.svg",
           "url": "https://www.facebook.com/share/1QV6qjpqvG/",
           "label": "Facebook"
         },
         {
           "id": 2,
-          "image": "/images/footer/instagram.svg",
+          "image": "/media/images/footer/instagram.svg",
           "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
@@ -147,7 +147,7 @@
       "id": 2,
       "lang": "ru",
       "title": "Fruit Food",
-      "image": "/images/footer/logo.svg",
+      "image": "/media/images/footer/logo.svg",
       "description": "Армянские натуральные сухофрукты и фруктовые сладости с 1995 года.",
       "copyright": "© 2026 Fruit Food. Все права защищены.",
       "subtitle": "Свяжитесь с нами",
@@ -156,13 +156,13 @@
       "social_links": [
         {
           "id": 1,
-          "image": "/images/footer/facebook.svg",
+          "image": "/media/images/footer/facebook.svg",
           "url": "https://www.facebook.com/share/1QV6qjpqvG/",
           "label": "Facebook"
         },
         {
           "id": 2,
-          "image": "/images/footer/instagram.svg",
+          "image": "/media/images/footer/instagram.svg",
           "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
@@ -173,7 +173,7 @@
       "id": 3,
       "lang": "en",
       "title": "Fruit Food",
-      "image": "/images/footer/logo.svg",
+      "image": "/media/images/footer/logo.svg",
       "description": "Armenian natural dried fruit and fruit sweets since 1995.",
       "copyright": "© 2026 Fruit Food. All rights reserved.",
       "subtitle": "Contact us",
@@ -182,13 +182,13 @@
       "social_links": [
         {
           "id": 1,
-          "image": "/images/footer/facebook.svg",
+          "image": "/media/images/footer/facebook.svg",
           "url": "https://www.facebook.com/share/1QV6qjpqvG/",
           "label": "Facebook"
         },
         {
           "id": 2,
-          "image": "/images/footer/instagram.svg",
+          "image": "/media/images/footer/instagram.svg",
           "url": "https://www.instagram.com/fruit_food_armenia/",
           "label": "Instagram"
         }
@@ -202,42 +202,42 @@
       "lang": "am",
       "slug": "dried-fruits",
       "name": "Չրեր և չրային պաստեղներ",
-      "image": "/images/categories/dried-fruits.jpg"
+      "image": "/media/images/categories/dried-fruits.jpg"
     },
     {
       "id": 2,
       "lang": "ru",
       "slug": "dried-fruits",
       "name": "Сухофрукты и фруктовая пастила",
-      "image": "/images/categories/dried-fruits.jpg"
+      "image": "/media/images/categories/dried-fruits.jpg"
     },
     {
       "id": 3,
       "lang": "en",
       "slug": "dried-fruits",
       "name": "Dried fruits & fruit leathers",
-      "image": "/images/categories/dried-fruits.jpg"
+      "image": "/media/images/categories/dried-fruits.jpg"
     },
     {
       "id": 4,
       "lang": "am",
       "slug": "chocolate-covered",
       "name": "Շոկոլադապատ չրեր և պաստեղներ",
-      "image": "/images/categories/chocolate-covered.jpg"
+      "image": "/media/images/categories/chocolate-covered.jpg"
     },
     {
       "id": 5,
       "lang": "ru",
       "slug": "chocolate-covered",
       "name": "Сухофрукты и пастила в шоколаде",
-      "image": "/images/categories/chocolate-covered.jpg"
+      "image": "/media/images/categories/chocolate-covered.jpg"
     },
     {
       "id": 6,
       "lang": "en",
       "slug": "chocolate-covered",
       "name": "Chocolate-covered dried fruits & leathers",
-      "image": "/images/categories/chocolate-covered.jpg"
+      "image": "/media/images/categories/chocolate-covered.jpg"
     }
   ],
   "tags": [
@@ -335,9 +335,9 @@
       "weight_value": 230,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-230-assorted.webp",
-        "/images/products/choco-chir-230-2.jpg",
-        "/images/products/choco-chir-230-3.jpg"
+        "/media/images/products/choco-chir-230-assorted.webp",
+        "/media/images/products/choco-chir-230-2.jpg",
+        "/media/images/products/choco-chir-230-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -351,32 +351,32 @@
         {
           "id": "v1",
           "flavor": "Դեղձ, թուզ, սալոր՝ նուշով և ընկույզով",
-          "image": "/images/products/taste-assorted.jpg",
-          "box_image": "/images/products/choco-chir-230-assorted.webp"
+          "image": "/media/images/products/taste-assorted.jpg",
+          "box_image": "/media/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Դեղձ ընկույզով",
-          "image": "/images/products/taste-peach-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-peach.webp"
+          "image": "/media/images/products/taste-peach-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Սալոր նուշով",
-          "image": "/images/products/taste-plum-almond.jpg",
-          "box_image": "/images/products/choco-chir-230-plum.webp"
+          "image": "/media/images/products/taste-plum-almond.jpg",
+          "box_image": "/media/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Ծիրան ընկույզով",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-apricot.webp"
+          "image": "/media/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Թուզ ընկույզով",
-          "image": "/images/products/taste-fig-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-fig.webp"
+          "image": "/media/images/products/taste-fig-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-fig.webp"
         }
       ],
       "default_variant": "v2",
@@ -390,9 +390,9 @@
       "weight_value": 230,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-230-assorted.webp",
-        "/images/products/choco-chir-230-2.jpg",
-        "/images/products/choco-chir-230-3.jpg"
+        "/media/images/products/choco-chir-230-assorted.webp",
+        "/media/images/products/choco-chir-230-2.jpg",
+        "/media/images/products/choco-chir-230-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -406,32 +406,32 @@
         {
           "id": "v1",
           "flavor": "Ассорти: персик, инжир и слива с миндалём и грецким орехом",
-          "image": "/images/products/taste-assorted.jpg",
-          "box_image": "/images/products/choco-chir-230-assorted.webp"
+          "image": "/media/images/products/taste-assorted.jpg",
+          "box_image": "/media/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Персик с грецким орехом",
-          "image": "/images/products/taste-peach-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-peach.webp"
+          "image": "/media/images/products/taste-peach-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Слива с миндалём",
-          "image": "/images/products/taste-plum-almond.jpg",
-          "box_image": "/images/products/choco-chir-230-plum.webp"
+          "image": "/media/images/products/taste-plum-almond.jpg",
+          "box_image": "/media/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Абрикос с грецким орехом",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-apricot.webp"
+          "image": "/media/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Инжир с грецким орехом",
-          "image": "/images/products/taste-fig-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-fig.webp"
+          "image": "/media/images/products/taste-fig-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-fig.webp"
         }
       ],
       "default_variant": "v2",
@@ -445,9 +445,9 @@
       "weight_value": 230,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-230-assorted.webp",
-        "/images/products/choco-chir-230-2.jpg",
-        "/images/products/choco-chir-230-3.jpg"
+        "/media/images/products/choco-chir-230-assorted.webp",
+        "/media/images/products/choco-chir-230-2.jpg",
+        "/media/images/products/choco-chir-230-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -461,32 +461,32 @@
         {
           "id": "v1",
           "flavor": "Assorted peach, fig and plum with almond and walnut",
-          "image": "/images/products/taste-assorted.jpg",
-          "box_image": "/images/products/choco-chir-230-assorted.webp"
+          "image": "/media/images/products/taste-assorted.jpg",
+          "box_image": "/media/images/products/choco-chir-230-assorted.webp"
         },
         {
           "id": "v2",
           "flavor": "Peach with walnut",
-          "image": "/images/products/taste-peach-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-peach.webp"
+          "image": "/media/images/products/taste-peach-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-peach.webp"
         },
         {
           "id": "v3",
           "flavor": "Plum with almond",
-          "image": "/images/products/taste-plum-almond.jpg",
-          "box_image": "/images/products/choco-chir-230-plum.webp"
+          "image": "/media/images/products/taste-plum-almond.jpg",
+          "box_image": "/media/images/products/choco-chir-230-plum.webp"
         },
         {
           "id": "v4",
           "flavor": "Apricot with walnut",
-          "image": "/images/products/taste-apricot-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-apricot.webp"
+          "image": "/media/images/products/taste-apricot-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-apricot.webp"
         },
         {
           "id": "v5",
           "flavor": "Fig with walnut",
-          "image": "/images/products/taste-fig-walnut.jpg",
-          "box_image": "/images/products/choco-chir-230-fig.webp"
+          "image": "/media/images/products/taste-fig-walnut.jpg",
+          "box_image": "/media/images/products/choco-chir-230-fig.webp"
         }
       ],
       "default_variant": "v2",
@@ -500,9 +500,9 @@
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
-        "/images/products/chrer-200.png",
-        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
+        "/media/images/products/chrer-200.png",
+        "/media/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -516,32 +516,32 @@
         {
           "id": "v1",
           "flavor": "Համ 1",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -555,9 +555,9 @@
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
-        "/images/products/chrer-200.png",
-        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
+        "/media/images/products/chrer-200.png",
+        "/media/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -571,32 +571,32 @@
         {
           "id": "v1",
           "flavor": "Вкус 1",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -610,9 +610,9 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/products/chrer-200.png",
-        "/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
+        "/media/images/products/chrer-200.png",
+        "/media/images/products/test/shokoladapatat-chrer-200-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -626,32 +626,32 @@
         {
           "id": "v1",
           "flavor": "Taste 1",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-200-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-200-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-200-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -665,9 +665,9 @@
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-200.png",
-        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
-        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
+        "/media/images/products/choco-chir-200.png",
+        "/media/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/media/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -680,32 +680,32 @@
         {
           "id": "v1",
           "flavor": "Համ 1",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -719,9 +719,9 @@
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-200.png",
-        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
-        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
+        "/media/images/products/choco-chir-200.png",
+        "/media/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/media/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -734,32 +734,32 @@
         {
           "id": "v1",
           "flavor": "Вкус 1",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -773,9 +773,9 @@
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-200.png",
-        "/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
-        "/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
+        "/media/images/products/choco-chir-200.png",
+        "/media/images/products/test/znarakapat-pastether-mini-250-gallery-2.jpg",
+        "/media/images/products/test/znarakapat-pastether-mini-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -788,32 +788,32 @@
         {
           "id": "v1",
           "flavor": "Taste 1",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-1.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-2.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-3.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-4.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
-          "box_image": "/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
+          "image": "/media/images/products/test/znarakapat-pastether-mini-250-taste-5.jpg",
+          "box_image": "/media/images/products/test/znarakapat-pastether-mini-250-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -827,9 +827,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/pastilles-mini-250.png",
-        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
+        "/media/images/products/pastilles-mini-250.png",
+        "/media/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -842,32 +842,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Դեղձ",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -881,9 +881,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/pastilles-mini-250.png",
-        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
+        "/media/images/products/pastilles-mini-250.png",
+        "/media/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -896,32 +896,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Персик",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -935,9 +935,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/pastilles-mini-250.png",
-        "/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
+        "/media/images/products/pastilles-mini-250.png",
+        "/media/images/products/test/shokoladapatat-pastether-30-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-pastether-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -950,32 +950,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Peach",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-pastether-30-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-pastether-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-pastether-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -989,9 +989,9 @@
       "weight_value": 170,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-pastilles-30.png",
-        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
+        "/media/images/products/choco-pastilles-30.png",
+        "/media/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1004,32 +1004,32 @@
         {
           "id": "v1",
           "flavor": "Կեռաս",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1043,9 +1043,9 @@
       "weight_value": 170,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-pastilles-30.png",
-        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
+        "/media/images/products/choco-pastilles-30.png",
+        "/media/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1058,32 +1058,32 @@
         {
           "id": "v1",
           "flavor": "Черешня",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1097,9 +1097,9 @@
       "weight_value": 170,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-pastilles-30.png",
-        "/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
+        "/media/images/products/choco-pastilles-30.png",
+        "/media/images/products/test/shokoladapatat-salikner-170-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-salikner-170-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1112,32 +1112,32 @@
         {
           "id": "v1",
           "flavor": "Cherry",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-170-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-170-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-170-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1151,9 +1151,9 @@
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-bars-170.png",
-        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
+        "/media/images/products/choco-bars-170.png",
+        "/media/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1166,26 +1166,26 @@
         {
           "id": "v1",
           "flavor": "Բալ",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
       "default_variant": "v1",
@@ -1199,9 +1199,9 @@
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-bars-170.png",
-        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
+        "/media/images/products/choco-bars-170.png",
+        "/media/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1214,26 +1214,26 @@
         {
           "id": "v1",
           "flavor": "Вишня",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
       "default_variant": "v1",
@@ -1247,9 +1247,9 @@
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-bars-170.png",
-        "/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
+        "/media/images/products/choco-bars-170.png",
+        "/media/images/products/test/shokoladapatat-salikner-50-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-salikner-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1262,26 +1262,26 @@
         {
           "id": "v1",
           "flavor": "Sour Cherry",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-salikner-50-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-salikner-50-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-salikner-50-box-4.webp"
         }
       ],
       "default_variant": "v1",
@@ -1295,9 +1295,9 @@
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-bars-50.png",
-        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
+        "/media/images/products/choco-bars-50.png",
+        "/media/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1310,32 +1310,32 @@
         {
           "id": "v1",
           "flavor": "Համ 1",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1349,9 +1349,9 @@
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-bars-50.png",
-        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
+        "/media/images/products/choco-bars-50.png",
+        "/media/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1364,32 +1364,32 @@
         {
           "id": "v1",
           "flavor": "Вкус 1",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1403,9 +1403,9 @@
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-bars-50.png",
-        "/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
+        "/media/images/products/choco-bars-50.png",
+        "/media/images/products/test/shokoladapatat-chrer-120-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1418,32 +1418,32 @@
         {
           "id": "v1",
           "flavor": "Taste 1",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-120-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-120-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-120-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1457,9 +1457,9 @@
       "weight_value": 120,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-120.png",
-        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
+        "/media/images/products/choco-chir-120.png",
+        "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1472,32 +1472,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան նուշով և ընկույզով",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1511,9 +1511,9 @@
       "weight_value": 120,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-120.png",
-        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
+        "/media/images/products/choco-chir-120.png",
+        "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1526,32 +1526,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос с миндалем и грецким орехом",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1565,9 +1565,9 @@
       "weight_value": 120,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-120.png",
-        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
-        "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
+        "/media/images/products/choco-chir-120.png",
+        "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-2.jpg",
+        "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1580,32 +1580,32 @@
         {
           "id": "v1",
           "flavor": "Apricot with almond and walnut",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-1.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-2.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-3.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-4.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
-          "box_image": "/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
+          "image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-taste-5.jpg",
+          "box_image": "/media/images/products/test/shokoladapatat-chrer-nuzhov-ynkuyqov-120-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -1619,9 +1619,9 @@
       "weight_value": 200,
       "weight_unit": "գ",
       "images": [
-        "/images/products/choco-chir-nuts-120.png",
-        "/images/products/test/chrer-200-gallery-2.jpg",
-        "/images/products/test/chrer-200-gallery-3.jpg"
+        "/media/images/products/choco-chir-nuts-120.png",
+        "/media/images/products/test/chrer-200-gallery-2.jpg",
+        "/media/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1634,44 +1634,44 @@
         {
           "id": "v1",
           "flavor": "Դեղձ",
-          "image": "/images/products/test/chrer-200-taste-1.jpg",
-          "box_image": "/images/products/test/chrer-200-box-1.webp"
+          "image": "/media/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Խնձոր",
-          "image": "/images/products/test/chrer-200-taste-2.jpg",
-          "box_image": "/images/products/test/chrer-200-box-2.webp"
+          "image": "/media/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/chrer-200-taste-3.jpg",
-          "box_image": "/images/products/test/chrer-200-box-3.webp"
+          "image": "/media/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/chrer-200-taste-4.jpg",
-          "box_image": "/images/products/test/chrer-200-box-4.webp"
+          "image": "/media/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/chrer-200-taste-5.jpg",
-          "box_image": "/images/products/test/chrer-200-box-5.webp"
+          "image": "/media/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Համ 6",
-          "image": "/images/products/test/chrer-200-taste-6.jpg",
-          "box_image": "/images/products/test/chrer-200-box-6.webp"
+          "image": "/media/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Համ 7",
-          "image": "/images/products/test/chrer-200-taste-7.jpg",
-          "box_image": "/images/products/test/chrer-200-box-7.webp"
+          "image": "/media/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-7.webp"
         }
       ],
       "default_variant": "v1",
@@ -1685,9 +1685,9 @@
       "weight_value": 200,
       "weight_unit": "г",
       "images": [
-        "/images/products/choco-chir-nuts-120.png",
-        "/images/products/test/chrer-200-gallery-2.jpg",
-        "/images/products/test/chrer-200-gallery-3.jpg"
+        "/media/images/products/choco-chir-nuts-120.png",
+        "/media/images/products/test/chrer-200-gallery-2.jpg",
+        "/media/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1700,44 +1700,44 @@
         {
           "id": "v1",
           "flavor": "Персик",
-          "image": "/images/products/test/chrer-200-taste-1.jpg",
-          "box_image": "/images/products/test/chrer-200-box-1.webp"
+          "image": "/media/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Яблоко",
-          "image": "/images/products/test/chrer-200-taste-2.jpg",
-          "box_image": "/images/products/test/chrer-200-box-2.webp"
+          "image": "/media/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/chrer-200-taste-3.jpg",
-          "box_image": "/images/products/test/chrer-200-box-3.webp"
+          "image": "/media/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/chrer-200-taste-4.jpg",
-          "box_image": "/images/products/test/chrer-200-box-4.webp"
+          "image": "/media/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/chrer-200-taste-5.jpg",
-          "box_image": "/images/products/test/chrer-200-box-5.webp"
+          "image": "/media/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Вкус 6",
-          "image": "/images/products/test/chrer-200-taste-6.jpg",
-          "box_image": "/images/products/test/chrer-200-box-6.webp"
+          "image": "/media/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Вкус 7",
-          "image": "/images/products/test/chrer-200-taste-7.jpg",
-          "box_image": "/images/products/test/chrer-200-box-7.webp"
+          "image": "/media/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-7.webp"
         }
       ],
       "default_variant": "v1",
@@ -1751,9 +1751,9 @@
       "weight_value": 200,
       "weight_unit": "g",
       "images": [
-        "/images/products/choco-chir-nuts-120.png",
-        "/images/products/test/chrer-200-gallery-2.jpg",
-        "/images/products/test/chrer-200-gallery-3.jpg"
+        "/media/images/products/choco-chir-nuts-120.png",
+        "/media/images/products/test/chrer-200-gallery-2.jpg",
+        "/media/images/products/test/chrer-200-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1766,44 +1766,44 @@
         {
           "id": "v1",
           "flavor": "Peach",
-          "image": "/images/products/test/chrer-200-taste-1.jpg",
-          "box_image": "/images/products/test/chrer-200-box-1.webp"
+          "image": "/media/images/products/test/chrer-200-taste-1.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Apple",
-          "image": "/images/products/test/chrer-200-taste-2.jpg",
-          "box_image": "/images/products/test/chrer-200-box-2.webp"
+          "image": "/media/images/products/test/chrer-200-taste-2.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/chrer-200-taste-3.jpg",
-          "box_image": "/images/products/test/chrer-200-box-3.webp"
+          "image": "/media/images/products/test/chrer-200-taste-3.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/chrer-200-taste-4.jpg",
-          "box_image": "/images/products/test/chrer-200-box-4.webp"
+          "image": "/media/images/products/test/chrer-200-taste-4.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/chrer-200-taste-5.jpg",
-          "box_image": "/images/products/test/chrer-200-box-5.webp"
+          "image": "/media/images/products/test/chrer-200-taste-5.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Taste 6",
-          "image": "/images/products/test/chrer-200-taste-6.jpg",
-          "box_image": "/images/products/test/chrer-200-box-6.webp"
+          "image": "/media/images/products/test/chrer-200-taste-6.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Taste 7",
-          "image": "/images/products/test/chrer-200-taste-7.jpg",
-          "box_image": "/images/products/test/chrer-200-box-7.webp"
+          "image": "/media/images/products/test/chrer-200-taste-7.jpg",
+          "box_image": "/media/images/products/test/chrer-200-box-7.webp"
         }
       ],
       "default_variant": "v1",
@@ -1817,9 +1817,9 @@
       "weight_value": 100,
       "weight_unit": "գ",
       "images": [
-        "/images/products/apple-dry-100.png",
-        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
-        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
+        "/media/images/products/apple-dry-100.png",
+        "/media/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/media/images/products/test/khndzori-chir-100-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1833,8 +1833,8 @@
         {
           "id": "v1",
           "flavor": "Խնձոր",
-          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
-          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
+          "image": "/media/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/media/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
       "default_variant": "v1"
@@ -1847,9 +1847,9 @@
       "weight_value": 100,
       "weight_unit": "г",
       "images": [
-        "/images/products/apple-dry-100.png",
-        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
-        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
+        "/media/images/products/apple-dry-100.png",
+        "/media/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/media/images/products/test/khndzori-chir-100-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1863,8 +1863,8 @@
         {
           "id": "v1",
           "flavor": "Яблоко",
-          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
-          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
+          "image": "/media/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/media/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
       "default_variant": "v1"
@@ -1877,9 +1877,9 @@
       "weight_value": 100,
       "weight_unit": "g",
       "images": [
-        "/images/products/apple-dry-100.png",
-        "/images/products/test/khndzori-chir-100-gallery-2.jpg",
-        "/images/products/test/khndzori-chir-100-gallery-3.jpg"
+        "/media/images/products/apple-dry-100.png",
+        "/media/images/products/test/khndzori-chir-100-gallery-2.jpg",
+        "/media/images/products/test/khndzori-chir-100-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1893,8 +1893,8 @@
         {
           "id": "v1",
           "flavor": "Apple",
-          "image": "/images/products/test/khndzori-chir-100-taste-1.jpg",
-          "box_image": "/images/products/test/khndzori-chir-100-box-1.webp"
+          "image": "/media/images/products/test/khndzori-chir-100-taste-1.jpg",
+          "box_image": "/media/images/products/test/khndzori-chir-100-box-1.webp"
         }
       ],
       "default_variant": "v1"
@@ -1907,9 +1907,9 @@
       "weight_value": 250,
       "weight_unit": "գ",
       "images": [
-        "/images/products/frutamin-250.png",
-        "/images/products/test/frutamin-250-gallery-2.jpg",
-        "/images/products/test/frutamin-250-gallery-3.jpg"
+        "/media/images/products/frutamin-250.png",
+        "/media/images/products/test/frutamin-250-gallery-2.jpg",
+        "/media/images/products/test/frutamin-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1922,14 +1922,14 @@
         {
           "id": "v1",
           "flavor": "Համ 1",
-          "image": "/images/products/test/frutamin-250-taste-1.jpg",
-          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+          "image": "/media/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/media/images/products/test/frutamin-250-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/frutamin-250-taste-2.jpg",
-          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+          "image": "/media/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/media/images/products/test/frutamin-250-box-2.webp"
         }
       ],
       "default_variant": "v1",
@@ -1943,9 +1943,9 @@
       "weight_value": 250,
       "weight_unit": "г",
       "images": [
-        "/images/products/frutamin-250.png",
-        "/images/products/test/frutamin-250-gallery-2.jpg",
-        "/images/products/test/frutamin-250-gallery-3.jpg"
+        "/media/images/products/frutamin-250.png",
+        "/media/images/products/test/frutamin-250-gallery-2.jpg",
+        "/media/images/products/test/frutamin-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1958,14 +1958,14 @@
         {
           "id": "v1",
           "flavor": "Вкус 1",
-          "image": "/images/products/test/frutamin-250-taste-1.jpg",
-          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+          "image": "/media/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/media/images/products/test/frutamin-250-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/frutamin-250-taste-2.jpg",
-          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+          "image": "/media/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/media/images/products/test/frutamin-250-box-2.webp"
         }
       ],
       "default_variant": "v1",
@@ -1979,9 +1979,9 @@
       "weight_value": 250,
       "weight_unit": "g",
       "images": [
-        "/images/products/frutamin-250.png",
-        "/images/products/test/frutamin-250-gallery-2.jpg",
-        "/images/products/test/frutamin-250-gallery-3.jpg"
+        "/media/images/products/frutamin-250.png",
+        "/media/images/products/test/frutamin-250-gallery-2.jpg",
+        "/media/images/products/test/frutamin-250-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -1994,14 +1994,14 @@
         {
           "id": "v1",
           "flavor": "Taste 1",
-          "image": "/images/products/test/frutamin-250-taste-1.jpg",
-          "box_image": "/images/products/test/frutamin-250-box-1.webp"
+          "image": "/media/images/products/test/frutamin-250-taste-1.jpg",
+          "box_image": "/media/images/products/test/frutamin-250-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/frutamin-250-taste-2.jpg",
-          "box_image": "/images/products/test/frutamin-250-box-2.webp"
+          "image": "/media/images/products/test/frutamin-250-taste-2.jpg",
+          "box_image": "/media/images/products/test/frutamin-250-box-2.webp"
         }
       ],
       "default_variant": "v1",
@@ -2015,9 +2015,9 @@
       "weight_value": 400,
       "weight_unit": "գ",
       "images": [
-        "/images/products/frutini-400.png",
-        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
-        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
+        "/media/images/products/frutini-400.png",
+        "/media/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/media/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2030,32 +2030,32 @@
         {
           "id": "v1",
           "flavor": "Համ 1",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2069,9 +2069,9 @@
       "weight_value": 400,
       "weight_unit": "г",
       "images": [
-        "/images/products/frutini-400.png",
-        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
-        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
+        "/media/images/products/frutini-400.png",
+        "/media/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/media/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2084,32 +2084,32 @@
         {
           "id": "v1",
           "flavor": "Вкус 1",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2123,9 +2123,9 @@
       "weight_value": 400,
       "weight_unit": "g",
       "images": [
-        "/images/products/frutini-400.png",
-        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
-        "/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
+        "/media/images/products/frutini-400.png",
+        "/media/images/products/test/frutini-mrgayin-lavashner-400-gallery-2.jpg",
+        "/media/images/products/test/frutini-mrgayin-lavashner-400-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2138,32 +2138,32 @@
         {
           "id": "v1",
           "flavor": "Taste 1",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-1.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-2.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-3.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-4.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
-          "box_image": "/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
+          "image": "/media/images/products/test/frutini-mrgayin-lavashner-400-taste-5.jpg",
+          "box_image": "/media/images/products/test/frutini-mrgayin-lavashner-400-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2177,9 +2177,9 @@
       "weight_value": 90,
       "weight_unit": "գ",
       "images": [
-        "/images/products/fruit-lavash-90.png",
-        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
-        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
+        "/media/images/products/fruit-lavash-90.png",
+        "/media/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2192,56 +2192,56 @@
         {
           "id": "v1",
           "flavor": "Կեռաս",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Համ 6",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Համ 7",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-7.webp"
         },
         {
           "id": "v8",
           "flavor": "Համ 8",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-8.webp"
         },
         {
           "id": "v9",
           "flavor": "Համ 9",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
       "default_variant": "v1",
@@ -2255,9 +2255,9 @@
       "weight_value": 90,
       "weight_unit": "г",
       "images": [
-        "/images/products/fruit-lavash-90.png",
-        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
-        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
+        "/media/images/products/fruit-lavash-90.png",
+        "/media/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2270,56 +2270,56 @@
         {
           "id": "v1",
           "flavor": "Черешня",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Вкус 6",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Вкус 7",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-7.webp"
         },
         {
           "id": "v8",
           "flavor": "Вкус 8",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-8.webp"
         },
         {
           "id": "v9",
           "flavor": "Вкус 9",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
       "default_variant": "v1",
@@ -2333,9 +2333,9 @@
       "weight_value": 90,
       "weight_unit": "g",
       "images": [
-        "/images/products/fruit-lavash-90.png",
-        "/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
-        "/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
+        "/media/images/products/fruit-lavash-90.png",
+        "/media/images/products/test/mrgayin-lavashner-90-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-lavashner-90-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2348,56 +2348,56 @@
         {
           "id": "v1",
           "flavor": "Cherry",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-5.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-5.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Taste 6",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-6.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-6.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Taste 7",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-7.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-7.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-7.webp"
         },
         {
           "id": "v8",
           "flavor": "Taste 8",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-8.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-8.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-8.webp"
         },
         {
           "id": "v9",
           "flavor": "Taste 9",
-          "image": "/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
-          "box_image": "/images/products/test/mrgayin-lavashner-90-box-9.webp"
+          "image": "/media/images/products/test/mrgayin-lavashner-90-taste-9.jpg",
+          "box_image": "/media/images/products/test/mrgayin-lavashner-90-box-9.webp"
         }
       ],
       "default_variant": "v1",
@@ -2411,9 +2411,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/pastilles-box-30.png",
-        "/images/products/test/pastethner-30-gallery-2.jpg",
-        "/images/products/test/pastethner-30-gallery-3.jpg"
+        "/media/images/products/pastilles-box-30.png",
+        "/media/images/products/test/pastethner-30-gallery-2.jpg",
+        "/media/images/products/test/pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2426,32 +2426,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/test/pastethner-30-taste-1.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/pastethner-30-taste-2.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/pastethner-30-taste-3.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/pastethner-30-taste-4.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/pastethner-30-taste-5.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-5.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2465,9 +2465,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/pastilles-box-30.png",
-        "/images/products/test/pastethner-30-gallery-2.jpg",
-        "/images/products/test/pastethner-30-gallery-3.jpg"
+        "/media/images/products/pastilles-box-30.png",
+        "/media/images/products/test/pastethner-30-gallery-2.jpg",
+        "/media/images/products/test/pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2480,32 +2480,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/test/pastethner-30-taste-1.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/pastethner-30-taste-2.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/pastethner-30-taste-3.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/pastethner-30-taste-4.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/pastethner-30-taste-5.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-5.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2519,9 +2519,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/pastilles-box-30.png",
-        "/images/products/test/pastethner-30-gallery-2.jpg",
-        "/images/products/test/pastethner-30-gallery-3.jpg"
+        "/media/images/products/pastilles-box-30.png",
+        "/media/images/products/test/pastethner-30-gallery-2.jpg",
+        "/media/images/products/test/pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2534,32 +2534,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/test/pastethner-30-taste-1.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-1.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/pastethner-30-taste-2.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-2.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/pastethner-30-taste-3.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-3.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/pastethner-30-taste-4.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-4.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/pastethner-30-taste-5.jpg",
-          "box_image": "/images/products/test/pastethner-30-box-5.webp"
+          "image": "/media/images/products/test/pastethner-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/pastethner-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2573,9 +2573,9 @@
       "weight_value": 50,
       "weight_unit": "գ",
       "images": [
-        "/images/products/natural-lavash-50.png",
-        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
-        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
+        "/media/images/products/natural-lavash-50.png",
+        "/media/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/media/images/products/test/bnakan-lavash-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2588,32 +2588,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2627,9 +2627,9 @@
       "weight_value": 50,
       "weight_unit": "г",
       "images": [
-        "/images/products/natural-lavash-50.png",
-        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
-        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
+        "/media/images/products/natural-lavash-50.png",
+        "/media/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/media/images/products/test/bnakan-lavash-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2642,32 +2642,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2681,9 +2681,9 @@
       "weight_value": 50,
       "weight_unit": "g",
       "images": [
-        "/images/products/natural-lavash-50.png",
-        "/images/products/test/bnakan-lavash-50-gallery-2.jpg",
-        "/images/products/test/bnakan-lavash-50-gallery-3.jpg"
+        "/media/images/products/natural-lavash-50.png",
+        "/media/images/products/test/bnakan-lavash-50-gallery-2.jpg",
+        "/media/images/products/test/bnakan-lavash-50-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2696,32 +2696,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/test/bnakan-lavash-50-taste-1.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-1.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-1.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/bnakan-lavash-50-taste-2.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-2.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-2.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/bnakan-lavash-50-taste-3.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-3.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-3.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/bnakan-lavash-50-taste-4.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-4.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-4.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/bnakan-lavash-50-taste-5.jpg",
-          "box_image": "/images/products/test/bnakan-lavash-50-box-5.webp"
+          "image": "/media/images/products/test/bnakan-lavash-50-taste-5.jpg",
+          "box_image": "/media/images/products/test/bnakan-lavash-50-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -2735,9 +2735,9 @@
       "weight_value": 20,
       "weight_unit": "գ",
       "images": [
-        "/images/products/fruit-sticks-20.png",
-        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
-        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
+        "/media/images/products/fruit-sticks-20.png",
+        "/media/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2750,50 +2750,50 @@
         {
           "id": "v1",
           "flavor": "Համ 1",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Համ 6",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Համ 7",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-7.webp"
         },
         {
           "id": "v8",
           "flavor": "Համ 8",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-8.webp"
         }
       ],
       "default_variant": "v1",
@@ -2807,9 +2807,9 @@
       "weight_value": 20,
       "weight_unit": "г",
       "images": [
-        "/images/products/fruit-sticks-20.png",
-        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
-        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
+        "/media/images/products/fruit-sticks-20.png",
+        "/media/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2822,50 +2822,50 @@
         {
           "id": "v1",
           "flavor": "Вкус 1",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Вкус 6",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Вкус 7",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-7.webp"
         },
         {
           "id": "v8",
           "flavor": "Вкус 8",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-8.webp"
         }
       ],
       "default_variant": "v1",
@@ -2879,9 +2879,9 @@
       "weight_value": 20,
       "weight_unit": "g",
       "images": [
-        "/images/products/fruit-sticks-20.png",
-        "/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
-        "/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
+        "/media/images/products/fruit-sticks-20.png",
+        "/media/images/products/test/mrgayin-stikner-20-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-stikner-20-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2894,50 +2894,50 @@
         {
           "id": "v1",
           "flavor": "Taste 1",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-5.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-5.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-5.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-5.webp"
         },
         {
           "id": "v6",
           "flavor": "Taste 6",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-6.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-6.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-6.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-6.webp"
         },
         {
           "id": "v7",
           "flavor": "Taste 7",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-7.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-7.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-7.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-7.webp"
         },
         {
           "id": "v8",
           "flavor": "Taste 8",
-          "image": "/images/products/test/mrgayin-stikner-20-taste-8.jpg",
-          "box_image": "/images/products/test/mrgayin-stikner-20-box-8.webp"
+          "image": "/media/images/products/test/mrgayin-stikner-20-taste-8.jpg",
+          "box_image": "/media/images/products/test/mrgayin-stikner-20-box-8.webp"
         }
       ],
       "default_variant": "v1",
@@ -2951,9 +2951,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/pastilles-cigar-30.png",
-        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
-        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
+        "/media/images/products/pastilles-cigar-30.png",
+        "/media/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/media/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -2967,32 +2967,32 @@
         {
           "id": "v1",
           "flavor": "Ծիրան",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Համ 5",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -3006,9 +3006,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/pastilles-cigar-30.png",
-        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
-        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
+        "/media/images/products/pastilles-cigar-30.png",
+        "/media/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/media/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -3022,32 +3022,32 @@
         {
           "id": "v1",
           "flavor": "Абрикос",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Вкус 5",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -3061,9 +3061,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/pastilles-cigar-30.png",
-        "/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
-        "/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
+        "/media/images/products/pastilles-cigar-30.png",
+        "/media/images/products/test/pastethner-sigari-tespov-30-gallery-2.jpg",
+        "/media/images/products/test/pastethner-sigari-tespov-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -3077,32 +3077,32 @@
         {
           "id": "v1",
           "flavor": "Apricot",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-4.webp"
         },
         {
           "id": "v5",
           "flavor": "Taste 5",
-          "image": "/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
-          "box_image": "/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
+          "image": "/media/images/products/test/pastethner-sigari-tespov-30-taste-5.jpg",
+          "box_image": "/media/images/products/test/pastethner-sigari-tespov-30-box-5.webp"
         }
       ],
       "default_variant": "v1",
@@ -3116,9 +3116,9 @@
       "weight_value": 30,
       "weight_unit": "գ",
       "images": [
-        "/images/products/fruit-patety-30.png",
-        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
-        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
+        "/media/images/products/fruit-patety-30.png",
+        "/media/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -3131,26 +3131,26 @@
         {
           "id": "v1",
           "flavor": "Սալոր",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Համ 2",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Համ 3",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Համ 4",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
       "default_variant": "v1",
@@ -3164,9 +3164,9 @@
       "weight_value": 30,
       "weight_unit": "г",
       "images": [
-        "/images/products/fruit-patety-30.png",
-        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
-        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
+        "/media/images/products/fruit-patety-30.png",
+        "/media/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -3179,26 +3179,26 @@
         {
           "id": "v1",
           "flavor": "Слива",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Вкус 2",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Вкус 3",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Вкус 4",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
       "default_variant": "v1",
@@ -3212,9 +3212,9 @@
       "weight_value": 30,
       "weight_unit": "g",
       "images": [
-        "/images/products/fruit-patety-30.png",
-        "/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
-        "/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
+        "/media/images/products/fruit-patety-30.png",
+        "/media/images/products/test/mrgayin-pastethner-30-gallery-2.jpg",
+        "/media/images/products/test/mrgayin-pastethner-30-gallery-3.jpg"
       ],
       "tags": [
         "100_natural",
@@ -3227,26 +3227,26 @@
         {
           "id": "v1",
           "flavor": "Plum",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-1.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-1.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-1.webp"
         },
         {
           "id": "v2",
           "flavor": "Taste 2",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-2.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-2.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-2.webp"
         },
         {
           "id": "v3",
           "flavor": "Taste 3",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-3.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-3.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-3.webp"
         },
         {
           "id": "v4",
           "flavor": "Taste 4",
-          "image": "/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
-          "box_image": "/images/products/test/mrgayin-pastethner-30-box-4.webp"
+          "image": "/media/images/products/test/mrgayin-pastethner-30-taste-4.jpg",
+          "box_image": "/media/images/products/test/mrgayin-pastethner-30-box-4.webp"
         }
       ],
       "default_variant": "v1",
@@ -3368,17 +3368,17 @@
       "images": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg",
+          "image": "/media/images/test/slide-square-1.jpg",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg",
+          "image": "/media/images/test/slide-square-2.jpg",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg",
+          "image": "/media/images/test/slide-square-3.jpg",
           "alt": "Choco Chir մրգային պաստեղներ մուգ գլազուրով"
         }
       ],
@@ -3395,17 +3395,17 @@
       "images": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg",
+          "image": "/media/images/test/slide-square-1.jpg",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg",
+          "image": "/media/images/test/slide-square-2.jpg",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg",
+          "image": "/media/images/test/slide-square-3.jpg",
           "alt": "Фруктовые пастилки Choco Chir в тёмной глазури"
         }
       ],
@@ -3422,17 +3422,17 @@
       "images": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg",
+          "image": "/media/images/test/slide-square-1.jpg",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg",
+          "image": "/media/images/test/slide-square-2.jpg",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg",
+          "image": "/media/images/test/slide-square-3.jpg",
           "alt": "Choco Chir fruit pastilles in dark glaze"
         }
       ],
@@ -3841,9 +3841,9 @@
       "description": "Բնական չրեր, մրգային լավաշներ, մրգային բատոնչիկներ և մրգային ձողիկներ։",
       "image_alt": "Fruit Food, Frutamin, Frutini, Frutik",
       "images": [
-        "/images/test/slide-landscape-1.jpg",
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg"
+        "/media/images/test/slide-landscape-1.jpg",
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg"
       ]
     },
     {
@@ -3855,9 +3855,9 @@
       "description": "Натуральные сухофрукты, фруктовый лаваш, фруктовые батончики и фруктовые палочки.",
       "image_alt": "Fruit Food, Frutamin, Frutini, Frutik",
       "images": [
-        "/images/test/slide-landscape-1.jpg",
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg"
+        "/media/images/test/slide-landscape-1.jpg",
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg"
       ]
     },
     {
@@ -3869,9 +3869,9 @@
       "description": "Natural dried fruits, fruit lavash, fruit bars and fruit sticks.",
       "image_alt": "Fruit Food, Frutamin, Frutini, Frutik",
       "images": [
-        "/images/test/slide-landscape-1.jpg",
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg"
+        "/media/images/test/slide-landscape-1.jpg",
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg"
       ]
     },
     {
@@ -3883,9 +3883,9 @@
       "description": "Բարձրորակ (62% կակաոյի պարունակությամբ) շոկոլադով պատված բնական մրգային պաստեղներ, ինչպես նաև ջնարակապատ չրեր ընկույզով, նուշով և ծիրանի կորիզով։",
       "image_alt": "Choco Chir",
       "images": [
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg",
-        "/images/test/slide-landscape-1.jpg"
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg",
+        "/media/images/test/slide-landscape-1.jpg"
       ]
     },
     {
@@ -3897,9 +3897,9 @@
       "description": "Натуральная фруктовая пастила в высококачественном шоколаде (62% какао), а также сухофрукты в глазури с грецким орехом, миндалём и ядром абрикосовой косточки.",
       "image_alt": "Choco Chir",
       "images": [
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg",
-        "/images/test/slide-landscape-1.jpg"
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg",
+        "/media/images/test/slide-landscape-1.jpg"
       ]
     },
     {
@@ -3911,9 +3911,9 @@
       "description": "Natural fruit pastilles in premium chocolate (62% cocoa), as well as glazed dried fruits with walnut, almond and apricot kernel.",
       "image_alt": "Choco Chir",
       "images": [
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg",
-        "/images/test/slide-landscape-1.jpg"
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg",
+        "/media/images/test/slide-landscape-1.jpg"
       ]
     }
   ],
@@ -3929,15 +3929,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-wide-1.jpg"
+          "image": "/media/images/test/slide-wide-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-wide-2.jpg"
+          "image": "/media/images/test/slide-wide-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-wide-3.jpg"
+          "image": "/media/images/test/slide-wide-3.jpg"
         }
       ]
     },
@@ -3952,15 +3952,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-wide-1.jpg"
+          "image": "/media/images/test/slide-wide-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-wide-2.jpg"
+          "image": "/media/images/test/slide-wide-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-wide-3.jpg"
+          "image": "/media/images/test/slide-wide-3.jpg"
         }
       ]
     },
@@ -3975,15 +3975,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-wide-1.jpg"
+          "image": "/media/images/test/slide-wide-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-wide-2.jpg"
+          "image": "/media/images/test/slide-wide-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-wide-3.jpg"
+          "image": "/media/images/test/slide-wide-3.jpg"
         }
       ]
     }
@@ -4082,29 +4082,29 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg"
+          "image": "/media/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg"
+          "image": "/media/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg"
+          "image": "/media/images/test/slide-square-3.jpg"
         }
       ],
       "gallery": [
         {
           "id": 1,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         }
       ],
       "bottom_left_text": "Արտադրական համալիրի ճարտարապետությունը համատեղում է ժամանակակից տեխնոլոգիաներն ու հայկական ավանդական ոճը։ Հնաոճ ամրոց հիշեցնող արտաքին տեսքը խորհրդանշում է մեր նվիրվածությունը հայկական արժեքներին։",
@@ -4125,29 +4125,29 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg"
+          "image": "/media/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg"
+          "image": "/media/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg"
+          "image": "/media/images/test/slide-square-3.jpg"
         }
       ],
       "gallery": [
         {
           "id": 1,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         }
       ],
       "bottom_left_text": "Архитектура производственного комплекса сочетает современные технологии и традиционный армянский стиль. Внешний вид, напоминающий старинную крепость, символизирует нашу приверженность армянским ценностям.",
@@ -4168,29 +4168,29 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg"
+          "image": "/media/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg"
+          "image": "/media/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg"
+          "image": "/media/images/test/slide-square-3.jpg"
         }
       ],
       "gallery": [
         {
           "id": 1,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         },
         {
           "id": 3,
-          "image": "/images/about-us/factory-1.jpg"
+          "image": "/media/images/about-us/factory-1.jpg"
         }
       ],
       "bottom_left_text": "The architecture of the production complex combines modern technologies with traditional Armenian style. Its appearance, reminiscent of an ancient fortress, symbolizes our dedication to Armenian values.",
@@ -4406,13 +4406,13 @@
       "social_links": [
         {
           "id": 1,
-          "image": "/images/contact/facebook.svg",
+          "image": "/media/images/contact/facebook.svg",
           "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
           "label": "Facebook"
         },
         {
           "id": 2,
-          "image": "/images/contact/instagram.svg",
+          "image": "/media/images/contact/instagram.svg",
           "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
           "label": "Instagram"
         }
@@ -4431,13 +4431,13 @@
       "social_links": [
         {
           "id": 1,
-          "image": "/images/contact/facebook.svg",
+          "image": "/media/images/contact/facebook.svg",
           "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
           "label": "Facebook"
         },
         {
           "id": 2,
-          "image": "/images/contact/instagram.svg",
+          "image": "/media/images/contact/instagram.svg",
           "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
           "label": "Instagram"
         }
@@ -4456,13 +4456,13 @@
       "social_links": [
         {
           "id": 1,
-          "image": "/images/contact/facebook.svg",
+          "image": "/media/images/contact/facebook.svg",
           "url": "https://www.facebook.com/share/1QV6qjpqvG/?mibextid=wwXIfr",
           "label": "Facebook"
         },
         {
           "id": 2,
-          "image": "/images/contact/instagram.svg",
+          "image": "/media/images/contact/instagram.svg",
           "url": "https://www.instagram.com/fruit_food_armenia?stkn=Mm4xdzhzZW1qbmpy",
           "label": "Instagram"
         }
@@ -4548,15 +4548,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg"
+          "image": "/media/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg"
+          "image": "/media/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg"
+          "image": "/media/images/test/slide-square-3.jpg"
         }
       ],
       "slider_image_label": "Choco Chir չրեր մուգ շոկոլադում և թարմ ելակ",
@@ -4585,15 +4585,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg"
+          "image": "/media/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg"
+          "image": "/media/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg"
+          "image": "/media/images/test/slide-square-3.jpg"
         }
       ],
       "slider_image_label": "Сухофрукты Choco Chir в тёмном шоколаде и свежая клубника",
@@ -4622,15 +4622,15 @@
       "slider": [
         {
           "id": 1,
-          "image": "/images/test/slide-square-1.jpg"
+          "image": "/media/images/test/slide-square-1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/test/slide-square-2.jpg"
+          "image": "/media/images/test/slide-square-2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/test/slide-square-3.jpg"
+          "image": "/media/images/test/slide-square-3.jpg"
         }
       ],
       "slider_image_label": "Choco Chir dried fruit in dark chocolate with fresh strawberries",
@@ -4662,9 +4662,9 @@
           "category_slug": "dried-fruits",
           "badge": "Առանց ավելացված շաքարի",
           "images": [
-            "/images/test/slide-landscape-1.jpg",
-            "/images/test/slide-landscape-2.jpg",
-            "/images/test/slide-landscape-3.jpg"
+            "/media/images/test/slide-landscape-1.jpg",
+            "/media/images/test/slide-landscape-2.jpg",
+            "/media/images/test/slide-landscape-3.jpg"
           ]
         },
         {
@@ -4672,9 +4672,9 @@
           "category_slug": "chocolate-covered",
           "badge": "62% կակաո",
           "images": [
-            "/images/test/slide-landscape-2.jpg",
-            "/images/test/slide-landscape-3.jpg",
-            "/images/test/slide-landscape-1.jpg"
+            "/media/images/test/slide-landscape-2.jpg",
+            "/media/images/test/slide-landscape-3.jpg",
+            "/media/images/test/slide-landscape-1.jpg"
           ]
         }
       ],
@@ -4697,9 +4697,9 @@
           "category_slug": "dried-fruits",
           "badge": "Без добавленного сахара",
           "images": [
-            "/images/test/slide-landscape-1.jpg",
-            "/images/test/slide-landscape-2.jpg",
-            "/images/test/slide-landscape-3.jpg"
+            "/media/images/test/slide-landscape-1.jpg",
+            "/media/images/test/slide-landscape-2.jpg",
+            "/media/images/test/slide-landscape-3.jpg"
           ]
         },
         {
@@ -4707,9 +4707,9 @@
           "category_slug": "chocolate-covered",
           "badge": "62% какао",
           "images": [
-            "/images/test/slide-landscape-2.jpg",
-            "/images/test/slide-landscape-3.jpg",
-            "/images/test/slide-landscape-1.jpg"
+            "/media/images/test/slide-landscape-2.jpg",
+            "/media/images/test/slide-landscape-3.jpg",
+            "/media/images/test/slide-landscape-1.jpg"
           ]
         }
       ],
@@ -4732,9 +4732,9 @@
           "category_slug": "dried-fruits",
           "badge": "No added sugar",
           "images": [
-            "/images/test/slide-landscape-1.jpg",
-            "/images/test/slide-landscape-2.jpg",
-            "/images/test/slide-landscape-3.jpg"
+            "/media/images/test/slide-landscape-1.jpg",
+            "/media/images/test/slide-landscape-2.jpg",
+            "/media/images/test/slide-landscape-3.jpg"
           ]
         },
         {
@@ -4742,9 +4742,9 @@
           "category_slug": "chocolate-covered",
           "badge": "62% cocoa",
           "images": [
-            "/images/test/slide-landscape-2.jpg",
-            "/images/test/slide-landscape-3.jpg",
-            "/images/test/slide-landscape-1.jpg"
+            "/media/images/test/slide-landscape-2.jpg",
+            "/media/images/test/slide-landscape-3.jpg",
+            "/media/images/test/slide-landscape-1.jpg"
           ]
         }
       ],
@@ -4777,9 +4777,9 @@
       ],
       "image_alt": "Fruit Food-ի արտադրանքը",
       "images": [
-        "/images/test/slide-landscape-1.jpg",
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg"
+        "/media/images/test/slide-landscape-1.jpg",
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg"
       ]
     },
     {
@@ -4804,9 +4804,9 @@
       ],
       "image_alt": "Продукция Fruit Food",
       "images": [
-        "/images/test/slide-landscape-1.jpg",
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg"
+        "/media/images/test/slide-landscape-1.jpg",
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg"
       ]
     },
     {
@@ -4831,9 +4831,9 @@
       ],
       "image_alt": "Fruit Food products",
       "images": [
-        "/images/test/slide-landscape-1.jpg",
-        "/images/test/slide-landscape-2.jpg",
-        "/images/test/slide-landscape-3.jpg"
+        "/media/images/test/slide-landscape-1.jpg",
+        "/media/images/test/slide-landscape-2.jpg",
+        "/media/images/test/slide-landscape-3.jpg"
       ]
     }
   ],
@@ -5003,15 +5003,15 @@
       "next_label": "Հաջորդ նկարը",
       "images": [
         {
-          "image": "/images/test/slide-wide-1.jpg",
+          "image": "/media/images/test/slide-wide-1.jpg",
           "alt": "Fruit Food-ի արտադրանքը"
         },
         {
-          "image": "/images/test/slide-wide-2.jpg",
+          "image": "/media/images/test/slide-wide-2.jpg",
           "alt": "Fruit Food-ի արտադրանքը"
         },
         {
-          "image": "/images/test/slide-wide-3.jpg",
+          "image": "/media/images/test/slide-wide-3.jpg",
           "alt": "Fruit Food-ի արտադրանքը"
         }
       ]
@@ -5023,15 +5023,15 @@
       "next_label": "Следующее фото",
       "images": [
         {
-          "image": "/images/test/slide-wide-1.jpg",
+          "image": "/media/images/test/slide-wide-1.jpg",
           "alt": "Продукция Fruit Food"
         },
         {
-          "image": "/images/test/slide-wide-2.jpg",
+          "image": "/media/images/test/slide-wide-2.jpg",
           "alt": "Продукция Fruit Food"
         },
         {
-          "image": "/images/test/slide-wide-3.jpg",
+          "image": "/media/images/test/slide-wide-3.jpg",
           "alt": "Продукция Fruit Food"
         }
       ]
@@ -5043,15 +5043,15 @@
       "next_label": "Next photo",
       "images": [
         {
-          "image": "/images/test/slide-wide-1.jpg",
+          "image": "/media/images/test/slide-wide-1.jpg",
           "alt": "Fruit Food products"
         },
         {
-          "image": "/images/test/slide-wide-2.jpg",
+          "image": "/media/images/test/slide-wide-2.jpg",
           "alt": "Fruit Food products"
         },
         {
-          "image": "/images/test/slide-wide-3.jpg",
+          "image": "/media/images/test/slide-wide-3.jpg",
           "alt": "Fruit Food products"
         }
       ]

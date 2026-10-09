@@ -2,12 +2,12 @@
 
 > ⚠️ **ԿԱՐԴԱ ՍԿՍԵԼՈՒՑ ԱՌԱՋ**
 > 1. Ուղիղ `main`-ի մեջ **ոչ ոք** commit/push չի անում։ Ամեն մարդ աշխատում ա **իր branch-ում** ու ուղարկում ա **Pull Request (PR)**։ Ինտեգրումը (merge դեպի `main`) անում ա միայն **Vahe**-ն։
-> 2. `db_orinak_example`-ը **չես փոխում**։ Դա ընդհանուր օրինակ ա։ Ամեն մարդ իր համակարգչում ունի **իր սեփական `db.json`**-ը (git-ի մեջ չի գնում)։
-> 3. Քո նոր տվյալները (collection-ները) ուղարկում ես առանձին ֆայլով՝ `db_parts/<քո-անուն>.json`։ Մանրամասն՝ [§5](#5-քո-dbjson-ը) և [§7](#7-git--ինչպես-աշխատել-ու-ուղարկել)։
+> 2. Բոլոր տվյալները (տեքստեր, ապրանքներ, նկարներ) գալիս են **Django backend-ից** (`../backend`)։ json-server և `db.json` այլևս չկան։ Frontend-ը աշխատեցնելուց առաջ պետք ա միացած լինի backend-ը (§2)։
+> 3. Տվյալները փոխվում են **Django admin-ից** (http://127.0.0.1:8000/admin/)։ Նոր collection կամ field պետք ա՝ գրիր Narek-ին (backend model)։ Մանրամասն՝ [§5](#5-տվյալները-django) և [§7](#7-git--ինչպես-աշխատել-ու-ուղարկել)։
 
-Այս `frontend/` folder-ը պարունակում է գործող Next.js հավելվածը, route-երը, shared component-ները, տվյալների օրինակն ու asset-ները։ Նոր task սկսելիս նախ ստուգիր համապատասխան էջի և component-ի առկա կոդը, հետո պահպանիր §4-ի pattern-ները։ Django backend-ի համար նախատեսված դատարկ պանակը գտնվում է repository-ի root-ում՝ `backend/`։
+Այս `frontend/` folder-ը պարունակում է գործող Next.js հավելվածը, route-երը, shared component-ները, տվյալների օրինակն ու asset-ները։ Նոր task սկսելիս նախ ստուգիր համապատասխան էջի և component-ի առկա կոդը, հետո պահպանիր §4-ի pattern-ները։ Django backend-ը գտնվում է repository-ի root-ում՝ `backend/` (տես `backend/README.md`)։
 
-**Stack.** Next.js 16 (App Router) + React 19 · plain JavaScript (`.jsx`) · CSS Modules · axios · json-server (mock API)
+**Stack.** Next.js 16 (App Router) + React 19 · plain JavaScript (`.jsx`) · CSS Modules · axios · Django REST API (`../backend`)
 
 ---
 
@@ -21,44 +21,52 @@ actions.js  (տվյալ բերող ֆունկցիաներ, ամեն route-ի մ�
       ↓
 lib/axios.js  ← baseURL = NEXT_PUBLIC_API_URL
       ↓
-(հիմա)   json-server  →  db.json            http://localhost:8000
-(վերջում) Django REST API                    Narek
+Django REST API (../backend)              http://127.0.0.1:8000/api
 ```
 
-- `db.json`-ը json-server-ով դառնում ա **իրական HTTP API**. ամեն collection = endpoint (`/products`, `/faq`, ...)
+- Ամեն collection = endpoint (`/api/products`, `/api/faq`, ...)
+- Նկարները նույնպես backend-ից են գալիս՝ `http://127.0.0.1:8000/media/images/...` (`next.config.mjs`-ում թույլատրված ա)
 - Ամեն տող ունի `lang` field, ֆիլտրվում ա query-ով՝ `products?lang=am`
 - Լեզուն **cookie**-ում ա, ոչ URL-ում (`/catalog`, ոչ թե `/am/catalog`)
-- Django-ին անցնելիս frontend-ի կոդը **չի փոխվում**, փոխվում ա միայն `.env.local`-ի `NEXT_PUBLIC_API_URL`-ը
+- API-ի հասցեն `.env.local`-ի `NEXT_PUBLIC_API_URL`-ն ա
 
 ## 2. Setup (առաջին անգամ)
 
-Պետք ա՝ **Node.js 20+** և **git**։
+Պետք ա՝ **Node.js 20+**, **Python 3.12+**, **Pipenv** և **git**։
+
+**1. Backend (առաջին terminal)** — մանրամասն՝ `backend/README.md`
 
 ```bash
 git clone https://github.com/vsayyan/FruitFood.git
+cd FruitFood/backend
+pipenv install
+cp .env.example .env          # հետո լրացրու SECRET_KEY-ը
+pipenv shell
+python manage.py migrate
+python manage.py load_sample  # բազան լցնում ա db_orinak_example-ից
+python manage.py runserver    # http://127.0.0.1:8000
+```
+
+**2. Frontend (երկրորդ terminal)**
+
+```bash
 cd FruitFood/frontend
 npm install
 cp .env.example .env.local
-cp db_orinak_example db.json
-npm run dev
+npm run dev                   # http://localhost:3000 ← սա բաց արա browser-ում
 ```
 
-`npm run dev`-ը միաժամանակ միացնում ա 2 սերվեր.
-- `json-server` → http://localhost:8000 (կարդում ա **`db.json`**-ը, ոչ թե `db_orinak_example`-ը)
-- `next dev` → http://localhost:3000 ← սա բաց արա browser-ում
+Ստուգելու համար, որ API-ն աշխատում ա, բաց արա http://127.0.0.1:8000/api/products?lang=am
 
-Ստուգելու համար, որ API-ն աշխատում ա, բաց արա http://localhost:8000/products?lang=am
+> Windows-ում `cp`-ի փոխարեն՝ `copy .env.example .env.local` և `copy .env.example .env`
 
-> Windows-ում `cp`-ի փոխարեն՝ `copy .env.example .env.local` և `copy db_orinak_example db.json`
-
-Եթե էջը error ա տալիս՝ ամենահավանականն այն ա, որ `db.json` չկա, կամ json-server-ը չի միացել (նայիր terminal-ը)։
+Եթե էջը error ա տալիս կամ բաժինները դատարկ են՝ ամենահավանականն այն ա, որ backend-ը (`runserver`) միացած չի (նայիր terminal-ը)։ `.env.local`-ում գրիր `127.0.0.1`, ոչ թե `localhost`։
 
 ## 3. Folder structure
 
 ```
-db_orinak_example              Ընդհանուր օրինակ DB (ՉԵՍ ՓՈԽՈՒՄ, ինտեգրում ա անում Vahe-ն)
-db.json                        Քո լոկալ DB-ն (copy օրինակից, git-ում չկա)
-db_parts/<անուն>.json          Քո նոր collection-ները՝ ուղարկելու համար (§5)
+db_orinak_example              Sample տվյալներ. backend-ի `load_sample`-ը բազան սրանից ա լցնում (ՉԵՍ ՓՈԽՈՒՄ)
+db_parts/<անուն>.json          Հին ֆայլեր json-server-ի ժամանակից
 .env.example                   copy → .env.local
 proxy.js                       /products/<slug>, /catalog/<slug>. slug-ը API-ում չկա → իրական 404 status (loading.jsx-ի պատճառով notFound()-ը 200 էր տալիս)
 
@@ -68,7 +76,7 @@ app/
   page.jsx + page.module.css   Home
   fonts.js                     Noto Sans Armenian + Noto Sans (cyrillic). layout.jsx-ն ու global-error.jsx-ը սրանից են վերցնում
   loading.jsx / error.jsx / not-found.jsx   Ընդհանուր loading, error, 404
-  global-error.jsx             Երբ սխալը հենց layout-ում ա (օր.՝ json-server-ը միացած չի). նույն error.jsx-ն ա՝ սեփական <html>-ով
+  global-error.jsx             Երբ սխալը հենց layout-ում ա (օր.՝ backend-ը միացած չի). նույն error.jsx-ն ա՝ սեփական <html>-ով
   sitemap.js / robots.js       SEO
   catalog/
     actions.js                 getAllProducts(), getProductPageLabels()
@@ -102,9 +110,7 @@ lib/
   axios.js                     axios instance (ՉԵՍ ՓՈԽՈՒՄ)
   lang.js                      displayLang() — լեզուն cookie-ից (ՉԵՍ ՓՈԽՈՒՄ)
 
-public/images/<բաժին>/         Նկարներ (db-ում գրվում ա `/images/...`)
-public/images/products/test/   Ժամանակավոր test նկարներ ապրանքների համար (§9.1)
-public/images/test/            Slider-ների ժամանակավոր test նկարներ «TEST n/3» նշանով (§9.2)
+public/images/<բաժին>/         UI պատկերակներ, որ կոդում են գրված (լոգո, սլաքներ, դրոշներ)։ Բովանդակության նկարները backend-ում են՝ `backend/media/images/`
 ```
 
 ## 4. Կոդի կանոններ
@@ -180,48 +186,35 @@ export default async function AboutPage() {
 }
 ```
 
-## 5. Քո `db.json`-ը
+## 5. Տվյալները (Django)
 
 ### 5.1 Ինչպես ա կազմակերպված
 
-| Ֆայլ | Ում ա | git-ում կա՞ | Ինչ ես անում |
-|---|---|---|---|
-| `db_orinak_example` | Ընդհանուր | ✅ | **Չես փոխում.** Միայն copy ես անում |
-| `db.json` | Քո լոկալը | ❌ (`.gitignore`) | Ազատ փոխում ես, ավելացնում, փորձարկում |
-| `db_parts/<անուն>.json` | Քոնը | ✅ | Միայն **քո նոր** collection-ները, Vahe-ին ուղարկելու համար |
+| Որտեղ | Ինչ ա | Ինչ ես անում |
+|---|---|---|
+| Django admin (http://127.0.0.1:8000/admin/) | Իրական տվյալներն ու նկարները | Տեքստ փոխել, նկար upload անել |
+| `backend/db.sqlite3` | Քո լոկալ բազան (git-ում չկա) | `python manage.py load_sample`-ով լցնում ես |
+| `db_orinak_example` | Sample տվյալներ ամբողջ թիմի համար | **Չես փոխում** |
 
-Ինչու այսպես. եթե ամբողջ թիմը նույն `db.json`-ը փոխեն ու push անեն, ամեն PR-ում conflict կլինի։ Այս ձևով ամեն մեկը գրում ա միայն իր ֆայլը, իսկ Vahe-ն ինտեգրման ժամանակ դրանք միացնում ա `db_orinak_example`-ի մեջ։
+Admin-ում փոխածդ մնում ա միայն քո համակարգչում։ `load_sample`-ը բազան նորից լցնում ա `db_orinak_example`-ից ու **ջնջում ա** admin-ում արած փոփոխությունները։
 
-### 5.2 Քայլերով
+### 5.2 Նոր տվյալ պետք ա
 
-1. `cp db_orinak_example db.json` (եթե դեռ չես արել)
-2. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞** օրինակում։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `home_assortment`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `about_philosophy`, `about_philosophy_facts`, `about_page_labels`, `about_production`, `about_why_trust_us`, `about_showcase`, `about_quality_naturalness`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
-   Նոր տողեր ավելացնելիս `id`-ները **չպետք ա կրկնվեն** արդեն եղածների հետ։
-3. Նոր collection-ը / նոր տողերը ավելացրու **քո `db.json`**-ում ու աշխատիր դրանով (`npm run dev` ավտոմատ կտեսնի փոփոխությունը)
-4. Երբ պատրաստ ես՝ **միայն քո նոր/փոխված collection-ները** copy արա `db_parts/<անուն>.json`-ի մեջ, օրինակ `db_parts/saten.json`.
-
-```json
-{
-  "faq": [
-    { "id": 1, "lang": "am", "question": "...", "answer": "..." },
-    { "id": 2, "lang": "ru", "question": "...", "answer": "..." },
-    { "id": 3, "lang": "en", "question": "...", "answer": "..." }
-  ]
-}
-```
-
-5. Եթե **արդեն գոյություն ունեցող** collection ես փոխել (օրինակ field ես ավելացրել `products`-ին)՝ PR-ի նկարագրության մեջ **պարտադիր գրիր**, թե ինչ ես փոխել։
+1. Նայիր՝ քո բաժնի collection-ը **արդեն կա՞**։ Հիմա կան՝ `logos`, `languages`, `navbars`, `header_labels`, `footer_labels`, `categories`, `products`, `product_page_labels`, `tags`, `tag_icons`, `homepage_hero`, `home_assortment`, `philosophy_headings`, `philosophy_text`, `faq`, `faq_heading`, `faq_small`, `stats`, `brands`, `about_intro`, `about_philosophy`, `about_philosophy_facts`, `about_page_labels`, `about_production`, `about_why_trust_us`, `about_showcase`, `about_quality_naturalness`, `export_cooperation`, `our_factory`, `we_believe`, `export_countries`, `geography_contents`, `partner_cta`, `contact_page_contents`, `contact_info`։ Եթե կա՝ օգտագործիր նույն անունն ու field-երը, ու ստուգիր, որ կոդում field-երի անունները **ճիշտ նույնն** են, ինչ db-ում։
+2. Եթե կա՝ նոր տողերը ավելացրու admin-ից։
+3. Եթե պետք ա **նոր collection կամ նոր field**՝ գրիր Narek-ին, թե ինչ field-եր են պետք (§5.3-ի ձևաչափով)։ Նա ավելացնում ա Django model-ը, admin-ը և endpoint-ը։
+4. PR-ի նկարագրության մեջ **պարտադիր գրիր**, թե որ collection/field-երն ես օգտագործում կամ փոխել։
 
 ### 5.3 db-ի ձևաչափի կանոններ
 
 1. Collection-ի ու field-ի անուն՝ **snake_case** (`category_slug`, `export_countries`), ոչ `categorySlug`
 2. **Ամեն լեզու՝ առանձին տող** իր `"lang": "am" | "ru" | "en"`-ով։ `{ "am": "...", "ru": "..." }` object **չկա**։ Բոլոր 3 լեզուները պարտադիր են։
-3. `id`-ն ամեն collection-ում **եզակի** ա (json-server-ը id-ով ա աշխատում)
+3. `id`-ն ամեն collection-ում **եզակի** ա (այն տալիս ա backend-ը)
 4. `slug` / `code`՝ lowercase kebab-case (`dried-fruits`), նույնը բոլոր 3 լեզուների տողերում
 5. Nested array-ի ներսը (`variants`, `social_links`) արդեն plain string ա, որովհետև ամբողջ տողը մեկ լեզվով ա
-6. Նկար՝ `public/images/<բաժին>/file.jpg`, db-ում գրվում ա `"/images/<բաժին>/file.jpg"`
+6. Նկարը upload ա արվում admin-ից, պահվում ա `backend/media/images/<բաժին>/`-ում, API-ն տալիս ա ամբողջական հասցե՝ `"http://127.0.0.1:8000/media/images/<բաժին>/file.jpg"`
 7. Ֆիլտր՝ `GET /products?lang=am&category_slug=dried-fruits` (2 ֆիլտրը՝ AND)
-8. Նոր collection = պարզապես նոր key JSON-ում, json-server-ը ինքն ա endpoint ստեղծում
+8. Նոր collection = նոր Django model + endpoint (Narek)
 
 Մեկ տող collection-ի օրինակ (`about_intro`, `contact_page_contents`)՝ actions-ում վերադարձնում ես `res.data[0]`։
 
@@ -232,7 +225,7 @@ export default async function AboutPage() {
 | Էջ / Section | Ով | Folder | Route |
 |---|---|---|---|
 | Team lead / review / ինտեգրում | Vahe | ամբողջ repo | `main` |
-| Backend (Django, հետագայում) | Narek | `../backend/` | — |
+| Backend (Django) | Narek | `../backend/` | — |
 | Header + Footer | Vahag | `components/header/*`, `components/footer/*` | ընդհանուր |
 | Home · Section 1 (Hero) | Vahag | `app/_components/Hero.jsx` | `/` |
 | Home · Section 2 («Մեր տեսականին») + Stats | Ashot | `app/_components/Assortment.jsx`, `app/_components/Stats.jsx` | `/` (քարտերը → `/catalog/<slug>`) |
@@ -246,7 +239,7 @@ export default async function AboutPage() {
 | Աշխարհագրություն | Sergey | `app/geography/*` | `/geography` |
 | Կապ | Vahram | `app/contact/*` | `/contact` |
 
-Եթե 2+ հոգի նույն folder-ում են (օրինակ `app/about-us` կամ Home page-ը)՝ ամեն մեկը գրում ա **իր առանձին component-ը** `_components/`-ում, իսկ `page.jsx`-ում ընդհամենը import ա անում։ `page.jsx`-ում conflict-ը Vahe-ն ա լուծում ինտեգրման ժամանակ։ Ամեն մեկն իր section-ի համար db collection(-ներ)ը ինքն ա որոշում ու ավելացնում իր `db.json`-ում, §5-ի կանոններով։
+Եթե 2+ հոգի նույն folder-ում են (օրինակ `app/about-us` կամ Home page-ը)՝ ամեն մեկը գրում ա **իր առանձին component-ը** `_components/`-ում, իսկ `page.jsx`-ում ընդհամենը import ա անում։ `page.jsx`-ում conflict-ը Vahe-ն ա լուծում ինտեգրման ժամանակ։ Ամեն մեկն իր section-ի համար db collection(-ներ)ը ինքն ա որոշում ու §5-ի կանոններով գրում Narek-ին։
 
 **Catalog → Product-ի կապը (Elina ↔ Vahe).** Elina-ի catalog-ի ProductCard-ը (`Link href="/products/..."`) տանում ա ապրանքի էջին, բայց կարևոր ա, թե **ինչո՞վ** է link-ը կառուցվում.
 - `db_orinak_example`-ում ապրանքի `id`-ն **լեզվով ա տարբերվում** (նույն ապրանքը am-ում ունի, ասենք, `id: 1`, ru-ում՝ `id: 2`), մինչդեռ `slug`-ը (`shokoladapatat-chrer-230`) **նույնն ա բոլոր լեզուներում**։
@@ -306,7 +299,7 @@ git checkout -b feature/<անուն>-<task>     # օրինակ՝ feature/saten-f
 
 ```bash
 git status                          # ինչ ես փոխել
-git add app/about db_parts/saten.json public/images/about
+git add app/about
 git commit -m "faq: add accordion component"
 git push -u origin feature/saten-faq   # առաջին push-ը, հետո ուղղակի `git push`
 ```
@@ -326,7 +319,7 @@ git merge origin/main
 
 Այս հրամանները աշխատեցրու քո feature branch-ում․ կմնաս նույն branch-ում և կշարունակես այնտեղ աշխատել։
 
-Եթե `db_orinak_example`-ը փոխվել ա՝ նորից `cp db_orinak_example db.json` ու քո `db_parts/<անուն>.json`-ի collection-ները նորից ավելացրու `db.json`-ում։
+Եթե backend-ը փոխվել ա՝ `backend/`-ում աշխատեցրու `python manage.py migrate`, իսկ եթե `db_orinak_example`-ը փոխվել ա՝ նաև `python manage.py load_sample`։
 
 Conflict եղավ ու չգիտես ինչ անել՝ **մի ջնջիր ուրիշի կոդը**, գրիր Vahe-ին։
 
@@ -339,7 +332,7 @@ npm run lint:fix
 npm run build
 ```
 
-Երկուսն էլ **առանց error** պետք ա անցնեն (build-ի ժամանակ `npm run dev`-ը/json-server-ը պետք ա միացած լինի)։
+Երկուսն էլ **առանց error** պետք ա անցնեն (build-ի ժամանակ backend-ը (`runserver`) պետք ա միացած լինի)։
 
 Հետո.
 1. `git push`
@@ -354,10 +347,9 @@ npm run build
 
 ## Ֆայլեր
 - app/about/_components/Faq.jsx
-- db_parts/saten.json
 
 ## db
-- Նոր collection-ներ: faq
+- Օգտագործված collection-ներ: faq
 - Փոխված գոյություն ունեցող collection-ներ: չկա / (ինչ ու ինչու)
 
 ## Ստուգում
@@ -370,7 +362,7 @@ npm run build
 6. **Reviewer**՝ Vahe
 7. **Ինքդ merge մի արա.** Vahe-ն review ա անում.
    - եթե comment ա գրել՝ ուղղում ես **նույն branch-ում**, `commit` + `push`, PR-ը ինքն ա թարմանում (նոր PR մի բաց)
-   - եթե ամեն ինչ OK ա՝ Vahe-ն merge ա անում `main`-ի մեջ ու `db_parts/<անուն>.json`-ը միացնում `db_orinak_example`-ին
+   - եթե ամեն ինչ OK ա՝ Vahe-ն merge ա անում `main`-ի մեջ
 
 Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **նոր** branch)։
 
@@ -378,17 +370,18 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 
 - ❌ `git push origin main`
 - ❌ `git push --force`
-- ❌ commit անել `db.json`, `.env.local`, `node_modules` (ու **երբեք** `git add -f`)
+- ❌ commit անել `.env.local`, `backend/.env`, `db.sqlite3`, `node_modules` (ու **երբեք** `git add -f`)
 - ❌ commit անել փորձնական ֆայլեր (test նկարներ, screenshot-ներ) կամ `package-lock.json`, եթե package չես ավելացրել
 - ❌ փոխել `db_orinak_example`, `lib/*`, `package.json`, `layout.jsx`, `globals.css`՝ առանց Vahe-ին հարցնելու
 - ❌ `npm install <package>` առանց հարցնելու (`package-lock.json`-ի conflict)
 
-## 8. Ինտեգրում Django-ի հետ (նախագծի վերջում)
+## 8. Ինտեգրում Django-ի հետ (արված ա)
 
-1. Narek-ը Django model-երը գրում ա **ուղիղ `db_orinak_example`-ի collection-ների ու field-երի անուններով** (collection = model, field = column, `lang` = language column)
-2. REST endpoint-ները կրկնում են նույն query pattern-ը (`?lang=am&category_slug=...`)
-3. `.env.local`-ում `NEXT_PUBLIC_API_URL`-ը փոխվում ա Django-ի հասցեին
-4. Component-ները և `actions.js`-երը **չեն փոխվում**
+1. Django model-երը կրկնում են **`db_orinak_example`-ի collection-ների ու field-երի անունները** (collection = model, field = column, `lang` = language column)
+2. REST endpoint-ները կրկնում են նույն query pattern-ը (`/api/products?lang=am&category_slug=...`)
+3. `.env.local`-ում `NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api`
+4. Component-ները և `actions.js`-երը **չեն փոխվել**
+5. Նկարները գալիս են backend-ից. `next.config.mjs`-ում `images.remotePatterns`-ը թույլատրում ա `127.0.0.1:8000/media/**`։ Production-ում այնտեղ պետք ա ավելացնել իրական domain-ը
 
 ## 9. Ինչ դեռ չկա
 
@@ -403,18 +396,18 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 
 | Ինչ | Որտեղ | Չափ |
 |---|---|---|
-| Համի փոքր նկար | `variants[].image` → `/images/products/test/<slug>-taste-N.jpg` | 400×400 |
-| Համի մեծ (տուփի) նկար | `variants[].box_image` → `/images/products/test/<slug>-box-N.webp` | 1200×1200 |
-| Gallery-ի 2-րդ, 3-րդ նկար | `images[1..2]` → `/images/products/test/<slug>-gallery-2/3.jpg` | 1600×1067 |
+| Համի փոքր նկար | `variants[].image` → `/media/images/products/test/<slug>-taste-N.jpg` | 400×400 |
+| Համի մեծ (տուփի) նկար | `variants[].box_image` → `/media/images/products/test/<slug>-box-N.webp` | 1200×1200 |
+| Gallery-ի 2-րդ, 3-րդ նկար | `images[1..2]` → `/media/images/products/test/<slug>-gallery-2/3.jpg` | 1600×1067 |
 | Համի անուն | `variants[].flavor` | «Համ N» / «Вкус N» / «Taste N», որտեղ իրականը հայտնի չէր |
 
-Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Ապրանքի էջի բոլոր նկարները (gallery, thumbnail-ներ, համերի քարտեր) **լրիվ լցնում են իրենց քարտը** (`object-fit: cover`), դատարկ եզրեր չկան, դրա համար իրական նկարները պետք ա լինեն առանց սպիտակ/թափանցիկ եզրերի (desktop-ում gallery-ն ~1:1 ա, mobile-ում ~4:3)։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո (կամ admin-ից) փոխում ես միայն `flavor`, `image`, `box_image`, `images` դաշտերը, իսկ `public/images/products/test/` folder-ը կարելի ա ջնջել։
+Համ ընտրելիս gallery-ի առաջին նկարը դառնում ա այդ համի `box_image`-ը։ Ապրանքի էջի բոլոր նկարները (gallery, thumbnail-ներ, համերի քարտեր) **լրիվ լցնում են իրենց քարտը** (`object-fit: cover`), դատարկ եզրեր չկան, դրա համար իրական նկարները պետք ա լինեն առանց սպիտակ/թափանցիկ եզրերի (desktop-ում gallery-ն ~1:1 ա, mobile-ում ~4:3)։ Կատալոգի «N ՀԱՄ»-ը գալիս ա `tastes_count`-ից։ Իրական տվյալները ստանալուց հետո admin-ից փոխում ես միայն `flavor`, `image`, `box_image` դաշտերն ու ապրանքի «Product images» բլոկը, իսկ `backend/media/images/products/test/` folder-ը կարելի ա ջնջել։
 
 ### 9.2 Slider-ներ
 
-Բոլոր slider-ները մեկ component են՝ `components/image-slider/ImageSlider.jsx` (props. `images=[{src, alt}]`, `labels={previous, next, navigation, slide}`, `sizes`, `preload`, `href`)։ Autoplay չկա։ Նկարները գալիս են db-ից.
+Բոլոր slider-ները մեկ component են՝ `components/image-slider/ImageSlider.jsx` (props. `images=[{src, alt}]`, `labels={previous, next, navigation, slide}`, `sizes`, `preload`, `href`)։ Autoplay չկա։ Նկարները գալիս են API-ից (admin-ում փոխվում են).
 
-| Բաժին | db դաշտ | Test նկար |
+| Բաժին | API դաշտ | Test նկար (`backend/media/images/test/`) |
 |---|---|---|
 | Home / Hero | `homepage_hero.slider` | `slide-square-1..3.jpg` |
 | Home / Մեր տեսականին | `home_assortment.cards[].images` | `slide-landscape-1..3.jpg` |
@@ -425,9 +418,9 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
 | About / Showcase | `about_showcase.images` | `slide-wide-1..3.jpg` |
 | About / Our Factory | `our_factory.slider` | `slide-square-1..3.jpg` |
 
-`home_assortment.cards`, `brands`, `about_production`-ում `image`-ը դարձել ա `images` (array)։ Իրական նկարները ստանալուց հետո փոխում ես միայն այս դաշտերը, իսկ `public/images/test/`-ը կարելի ա ջնջել։
+Իրական նկարները ստանալուց հետո admin-ում փոխում ես միայն այս նկարները, իսկ `backend/media/images/test/`-ը կարելի ա ջնջել։
 
-## 10. `db.json`-ի կարճ օրինակ
+## 10. `db_orinak_example`-ի կարճ օրինակ
 
 Սա **ամբողջական `db_orinak_example`-ի կրճատ տարբերակն ա** (մի քանի collection, յուրաքանչյուրում ընդամենը 2-3 տող)՝ պարզապես ցույց տալու ֆորմատը։ Իսկական, ամբողջական տվյալների համար բացիր հենց `db_orinak_example`-ը։
 
@@ -444,9 +437,9 @@ Merge-ից հետո նոր task-ի համար՝ նորից §7.1 (`main`-ից **
     { "id": 2, "lang": "en", "title": "Home", "url": "/" }
   ],
   "categories": [
-    { "id": 1, "lang": "am", "slug": "dried-fruits", "name": "Չրեր և չրային պաստեղներ", "image": "/images/categories/dried-fruits.jpg" },
-    { "id": 2, "lang": "ru", "slug": "dried-fruits", "name": "Сухофрукты и фруктовая пастила", "image": "/images/categories/dried-fruits.jpg" },
-    { "id": 3, "lang": "en", "slug": "dried-fruits", "name": "Dried fruits & fruit leathers", "image": "/images/categories/dried-fruits.jpg" }
+    { "id": 1, "lang": "am", "slug": "dried-fruits", "name": "Չրեր և չրային պաստեղներ", "image": "/media/images/categories/dried-fruits.jpg" },
+    { "id": 2, "lang": "ru", "slug": "dried-fruits", "name": "Сухофрукты и фруктовая пастила", "image": "/media/images/categories/dried-fruits.jpg" },
+    { "id": 3, "lang": "en", "slug": "dried-fruits", "name": "Dried fruits & fruit leathers", "image": "/media/images/categories/dried-fruits.jpg" }
   ],
   "products": [
     { "id": 1, "lang": "am", "slug": "chrer-200", "category_slug": "dried-fruits", "name": "Չրեր", "weight_value": 200, "weight_unit": "g" },
