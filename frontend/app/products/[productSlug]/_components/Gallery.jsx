@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import styles from './Gallery.module.css'
 import asset from '@/lib/assets'
 
@@ -17,10 +18,13 @@ export default function Gallery({ images, name, labels }) {
       <div className={styles.stageWrap}>
         <div className={styles.stage} aria-live="polite">
           {images[activeIndex] && (
-            <img
+            <Image
               className={styles.mainImage}
               src={images[activeIndex]}
               alt={`${name} — ${labels.image_label} ${activeIndex + 1}`}
+              fill
+              sizes='(max-width: 900px) 100vw, 560px'
+              preload
             />
           )}
         </div>
@@ -33,7 +37,7 @@ export default function Gallery({ images, name, labels }) {
               onClick={() => showImage(activeIndex - 1)}
               aria-label={labels.previous_image}
             >
-              <img className={styles.arrowPrev} src={asset('/images/products/icons/arrow.svg')} alt="" width="24" height="24" />
+              <Image className={styles.arrowPrev} src={asset('/images/products/icons/arrow.svg')} alt="" width={24} height={24} />
             </button>
             <button
               className={styles.arrow}
@@ -41,7 +45,7 @@ export default function Gallery({ images, name, labels }) {
               onClick={() => showImage(activeIndex + 1)}
               aria-label={labels.next_image}
             >
-              <img className={styles.arrowNext} src={asset('/images/products/icons/arrow.svg')} alt="" width="24" height="24" />
+              <Image className={styles.arrowNext} src={asset('/images/products/icons/arrow.svg')} alt="" width={24} height={24} />
             </button>
           </div>
         )}
@@ -58,7 +62,7 @@ export default function Gallery({ images, name, labels }) {
               aria-label={`${labels.image_label} ${index + 1}`}
               aria-pressed={index === activeIndex}
             >
-              <img src={src} alt="" />
+              <Image src={src} alt="" width={80} height={80} />
             </button>
           ))}
         </div>

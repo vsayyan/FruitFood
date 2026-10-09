@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import styles from './CompositionModal.module.css'
 import asset from '@/lib/assets'
 
@@ -48,7 +49,7 @@ export default function CompositionModal({ title, composition, labels, onClose }
           onClick={onClose}
           aria-label={labels.close_button}
         >
-          <img src={asset('/images/products/icons/close.svg')} alt="" width="16" height="16" />
+          <Image src={asset('/images/products/icons/close.svg')} alt="" width={16} height={16} />
         </button>
       </section>
     </div>

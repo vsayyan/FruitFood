@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './ContactInfo.module.css'
 
 export default function ContactInfo({ info }) {
@@ -30,7 +31,7 @@ export default function ContactInfo({ info }) {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={link.image} alt={link.label} />
+              <Image src={link.image} alt={link.label} width={38} height={38} />
             </a>
           ))}
         </div>

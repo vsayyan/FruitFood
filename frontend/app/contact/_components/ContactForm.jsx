@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import emailjs from '@emailjs/browser'
 import styles from './ContactForm.module.css'
 import asset from '@/lib/assets'
@@ -121,9 +122,11 @@ export default function ContactForm({ labels }) {
               : labels.submit_label}
           </span>
 
-          <img
+          <Image
             src={asset('/images/contact/arrow.svg')}
             alt=""
+            width={18}
+            height={18}
             className={styles.arrow}
           />
         </span>
