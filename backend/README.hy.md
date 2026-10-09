@@ -92,7 +92,7 @@ macOS-ում Homebrew-ի Python-ով. Pipenv-ը տեղադրիր `brew install p
 | Մեր մասին. Արտադրություն | About production | Production images |
 | Մեր մասին. Showcase | About showcase | Showcase images |
 | Մեր մասին. Մեր գործարանը | Our factory | Factory slides, Factory gallery images |
-| Ապրանքի էջ | Products | Product images, Product variants (`image`՝ համի քարտ, `box_image`՝ մեծ նկար) |
+| Ապրանքի էջ | Products | Product images, Product variants (`image`՝ համի քարտ 400×400, `box_image`՝ մեծ նկար 1200×1200), ապրանքի նկարներ 1200×1200 |
 
 Նկարների մեծ մասը test նկարներ են (`media/images/test/`,
 `media/images/products/test/`, «TEST n/3» նշանով)։ Երբ բոլորը փոխարինվեն,

@@ -90,7 +90,7 @@ macOS с Python из Homebrew: ставьте Pipenv через `brew install pi
 | О нас: производство | About production | Production images |
 | О нас: витрина | About showcase | Showcase images |
 | О нас: наш завод | Our factory | Factory slides, Factory gallery images |
-| Страница товара | Products | Product images, Product variants (`image` — карточка вкуса, `box_image` — большое фото) |
+| Страница товара | Products | Product images, Product variants (`image` — карточка вкуса 400×400, `box_image` — большое фото 1200×1200); фото товара 1200×1200 |
 
 Большинство изображений тестовые (`media/images/test/`,
 `media/images/products/test/`, с пометкой «TEST n/3»). Удалите эти папки, когда

@@ -90,7 +90,7 @@ Content images are file fields: they are uploaded in the admin and saved in
 | About: production | About production | Production images |
 | About: showcase | About showcase | Showcase images |
 | About: our factory | Our factory | Factory slides, Factory gallery images |
-| Product page | Products | Product images, Product variants (`image` = taste card, `box_image` = large image) |
+| Product page | Products | Product images, Product variants (`image` = taste card 400×400, `box_image` = large image 1200×1200); product images 1200×1200 |
 
 Most images are test images (`media/images/test/`, `media/images/products/test/`,
 marked "TEST n/3"). Delete those folders when every image has been replaced.
