@@ -92,8 +92,8 @@ db_orinak_example               sample տվյալներ, որ load_sample-ը լ�
 | UI պատկերակներ (սլաքներ, մենյու, քարտեզ, pin-եր) | `backend/base/static/images/` | `asset('/images/header/down.svg')`՝ `lib/assets.js`-ից |
 
 - `next.config.mjs`-ը թույլ է տալիս `next/image`-ին բեռնել `/media/**`-ը և
-  `/static/**`-ը լոկալ backend-ից։ **Production-ի համար այնտեղ ավելացրու API-ի
-  իրական domain-ը։**
+  `/static/**`-ը լոկալ backend-ից և `NEXT_PUBLIC_API_URL`-ի domain-ից, ուստի
+  production-ում ձեռքով ոչինչ ավելացնել պետք չէ։
 - Ապրանքի էջի նկարները լրիվ լցնում են քարտը (`object-fit: cover`), ուստի
   իրական լուսանկարները պետք է լինեն առանց սպիտակ կամ թափանցիկ եզրերի։
   Չափերը. gallery-ի նկարներ (`box_image` և ապրանքի նկարներ) **1200×1200**,
@@ -163,6 +163,10 @@ sample տվյալներ), տես [backend README](../backend/README.hy.md)։
 ## Env փոփոխականներ (`.env.local`)
 
 `.env.example`-ը copy արա `.env.local`։ Այս ֆայլը երբեք commit չի արվում։
+
+`NEXT_PUBLIC_*` արժեքները կայքի մեջ են մտնում `npm run build`-ի ժամանակ։
+Server-ում դրանք բոլորը դիր build-ից **առաջ**, իսկ որևէ մեկը փոխելուց հետո
+նորից build արա։
 
 | Փոփոխական | Արժեք |
 | --- | --- |

@@ -151,6 +151,9 @@ MAILERS = {
 }
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# The contact form uses EmailJS, so Django never sends email in production.
+SILENCED_SYSTEM_CHECKS = ['mail.E001']
+
 
 # Django REST Framework
 # The public API is read-only: content is edited only through /admin/.

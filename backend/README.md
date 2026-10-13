@@ -79,6 +79,9 @@ Content images are file fields: they are uploaded in the admin and saved in
 - Assortment card images: open the card from "Home assortment" (the "Change"
   link) or from "Assortment cards".
 - Replacing or deleting an image does not delete the old file from disk.
+- Users and Groups are hidden in the admin. Admin users are managed from the
+  terminal: `pipenv run python manage.py createsuperuser` (new) and
+  `pipenv run python manage.py changepassword <username>` (new password).
 
 | Site section | Admin page | Block |
 | --- | --- | --- |
@@ -160,22 +163,25 @@ touched.
 - Django serves `/media/` and `/static/` only with `DEBUG=True`. In production
   the web server (for example nginx) serves `backend/media/` at `/media/` and
   `backend/staticfiles/` at `/static/`.
-- Run with gunicorn:
+- Run with gunicorn (already in `Pipfile` and `requirements.txt`):
 
 ```bash
-pipenv install gunicorn
+pipenv install                # or: pip install -r requirements.txt
 pipenv run python manage.py migrate
 pipenv run python manage.py collectstatic --noinput
 pipenv run python manage.py check --deploy
 pipenv run gunicorn base.wsgi:application --bind 0.0.0.0:8000
 ```
 
-The contact form uses EmailJS, so Django sends no email. `check --deploy`
-reports `mail.E001` for the console email backend; add
-`SILENCED_SYSTEM_CHECKS = ["mail.E001"]` to `base/settings.py`.
+The contact form uses EmailJS, so Django sends no email; that is why
+`mail.E001` is silenced in `base/settings.py`.
 
-The frontend also needs the production API domain in `NEXT_PUBLIC_API_URL`
-and in `images.remotePatterns` of `frontend/next.config.mjs`.
+The frontend needs the production API address in `NEXT_PUBLIC_API_URL`
+**before** `npm run build`; `frontend/next.config.mjs` then allows images from
+that domain automatically.
+
+`requirements.txt` is generated from `Pipfile.lock` for hosts without Pipenv.
+After changing dependencies run `pipenv requirements > requirements.txt`.
 
 ## Problems
 

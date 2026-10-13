@@ -1,5 +1,13 @@
 from django.contrib import admin
+from django.contrib.auth.models import Group, User
 from django.utils.html import format_html
+
+admin.site.site_header = "FruitFood Administrator"
+admin.site.site_title = "Home"
+admin.site.index_title = "Welcome to FruitFood admin panel"
+
+admin.site.unregister(Group)
+admin.site.unregister(User)
 
 
 class ImagePreviewMixin:
