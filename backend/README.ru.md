@@ -79,6 +79,9 @@ macOS с Python из Homebrew: ставьте Pipenv через `brew install pi
 - Изображения карточек ассортимента: откройте карточку из «Home assortment»
   (ссылка «Change») или из «Assortment cards».
 - Замена или удаление изображения не удаляет старый файл с диска.
+- Users и Groups в админке скрыты. Администраторы управляются из терминала:
+  `pipenv run python manage.py createsuperuser` (новый) и
+  `pipenv run python manage.py changepassword <имя>` (новый пароль).
 
 | Раздел сайта | Страница админки | Блок |
 | --- | --- | --- |
@@ -162,22 +165,25 @@ pipenv run python manage.py test
 - Django отдаёт `/media/` и `/static/` только при `DEBUG=True`. В продакшене
   веб-сервер (например, nginx) отдаёт `backend/media/` по `/media/` и
   `backend/staticfiles/` по `/static/`.
-- Запуск через gunicorn:
+- Запуск через gunicorn (уже есть в `Pipfile` и `requirements.txt`):
 
 ```bash
-pipenv install gunicorn
+pipenv install                # или: pip install -r requirements.txt
 pipenv run python manage.py migrate
 pipenv run python manage.py collectstatic --noinput
 pipenv run python manage.py check --deploy
 pipenv run gunicorn base.wsgi:application --bind 0.0.0.0:8000
 ```
 
-Форма обратной связи работает через EmailJS, Django писем не отправляет.
-`check --deploy` выдаёт `mail.E001` для консольного email-бэкенда; добавьте
-`SILENCED_SYSTEM_CHECKS = ["mail.E001"]` в `base/settings.py`.
+Форма обратной связи работает через EmailJS, Django писем не отправляет,
+поэтому `mail.E001` отключён в `base/settings.py`.
 
-Фронтенду тоже нужен домен API продакшена в `NEXT_PUBLIC_API_URL` и в
-`images.remotePatterns` файла `frontend/next.config.mjs`.
+Фронтенду нужен адрес API продакшена в `NEXT_PUBLIC_API_URL` **до**
+`npm run build`; тогда `frontend/next.config.mjs` сам разрешит изображения с
+этого домена.
+
+`requirements.txt` создаётся из `Pipfile.lock` для хостингов без Pipenv. После
+изменения зависимостей запустите `pipenv requirements > requirements.txt`.
 
 ## Проблемы
 

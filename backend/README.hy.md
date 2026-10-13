@@ -81,6 +81,9 @@ macOS-ում Homebrew-ի Python-ով. Pipenv-ը տեղադրիր `brew install p
 - «Մեր տեսականին»-ի քարտերի նկարները. բաց արա քարտը «Home assortment»-ից
   («Change» հղումով) կամ «Assortment cards»-ից։
 - Նկարը փոխելը կամ ջնջելը հին ֆայլը disk-ից չի ջնջում։
+- Users և Groups բաժինները admin-ում թաքցված են։ Admin user-ները կառավարվում
+  են terminal-ից. `pipenv run python manage.py createsuperuser` (նոր) և
+  `pipenv run python manage.py changepassword <username>` (նոր password)։
 
 | Կայքի բաժին | Admin-ի էջ | Բլոկ |
 | --- | --- | --- |
@@ -163,23 +166,26 @@ upload-ը, ոչ նկար ֆայլերի մերժումը և որ admin-ի ամե
 - Django-ն `/media/`-ը և `/static/`-ը տալիս է միայն `DEBUG=True`-ի դեպքում։
   Production-ում web server-ը (օրինակ՝ nginx) տալիս է `backend/media/`-ն
   `/media/`-ով և `backend/staticfiles/`-ը `/static/`-ով։
-- Աշխատեցում gunicorn-ով.
+- Աշխատեցում gunicorn-ով (արդեն կա `Pipfile`-ում և `requirements.txt`-ում).
 
 ```bash
-pipenv install gunicorn
+pipenv install                # կամ՝ pip install -r requirements.txt
 pipenv run python manage.py migrate
 pipenv run python manage.py collectstatic --noinput
 pipenv run python manage.py check --deploy
 pipenv run gunicorn base.wsgi:application --bind 0.0.0.0:8000
 ```
 
-Կապի ձևը աշխատում է EmailJS-ով, ու Django-ն email չի ուղարկում։
-`check --deploy`-ը console email backend-ի համար տալիս է `mail.E001`.
-`base/settings.py`-ում ավելացրու `SILENCED_SYSTEM_CHECKS = ["mail.E001"]`։
+Կապի ձևը աշխատում է EmailJS-ով, ու Django-ն email չի ուղարկում, դրա համար
+`base/settings.py`-ում `mail.E001`-ը անջատված է։
 
-Frontend-ին նույնպես պետք է production API-ի domain-ը
-`NEXT_PUBLIC_API_URL`-ում և `frontend/next.config.mjs`-ի
-`images.remotePatterns`-ում։
+Frontend-ին պետք է production API-ի հասցեն `NEXT_PUBLIC_API_URL`-ում
+`npm run build`-ից **առաջ**. այդ դեպքում `frontend/next.config.mjs`-ը ինքը
+թույլ է տալիս այդ domain-ի նկարները։
+
+`requirements.txt`-ը ստեղծվում է `Pipfile.lock`-ից այն hosting-ների համար, որտեղ
+Pipenv չկա։ Dependency-ները փոխելուց հետո աշխատեցրու
+`pipenv requirements > requirements.txt`։
 
 ## Խնդիրներ
 

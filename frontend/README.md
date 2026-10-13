@@ -92,7 +92,8 @@ There is no `public/` folder.
 | UI icons (arrows, menu, map, pins) | `backend/base/static/images/` | `asset('/images/header/down.svg')` from `lib/assets.js` |
 
 - `next.config.mjs` allows `next/image` to load `/media/**` and `/static/**`
-  from the local backend. **For production, add the real API domain there.**
+  from the local backend and from the domain in `NEXT_PUBLIC_API_URL`, so in
+  production nothing has to be added by hand.
 - Product page images fill their card (`object-fit: cover`), so real photos
   must have no white or transparent margins. Sizes: gallery images
   (`box_image` and product images) **1200×1200**, taste images **400×400**.
@@ -162,6 +163,9 @@ sample data), see the [backend README](../backend/README.md).
 ## Environment variables (`.env.local`)
 
 Copy `.env.example` to `.env.local`. It is never committed.
+
+`NEXT_PUBLIC_*` values are built into the site by `npm run build`. On a server
+set all of them **before** the build, and rebuild after changing any of them.
 
 | Variable | Value |
 | --- | --- |
